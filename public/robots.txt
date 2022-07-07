@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://samhwang.github.io/sitemap/sitemap-index.xml
+Host: https://samhwang.github.io
