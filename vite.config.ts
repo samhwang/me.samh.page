@@ -5,6 +5,9 @@ const isProduction = (mode: string) => mode === 'production';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  build: {
+    manifest: true,
+  },
   plugins: [react()],
   base: isProduction(mode) ? '/rebuild/' : '/',
 }));
