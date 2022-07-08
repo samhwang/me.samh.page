@@ -31,7 +31,7 @@ jobs:
         run: pnpm test
 
       - name: Build Public files
-        run: pnpm build:only
+        run: pnpm build
 
       - name: Archive public assets
         uses: actions/upload-artifact@v2
