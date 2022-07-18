@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Lang Icon Should render without crashing and match snapshot 1`] = `
-Object {
+exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -77,8 +77,8 @@ Object {
 }
 `;
 
-exports[`Social Icon Should render without crashing and match snapshot 1`] = `
-Object {
+exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>

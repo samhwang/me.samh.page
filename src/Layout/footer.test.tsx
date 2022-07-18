@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './footer';
 

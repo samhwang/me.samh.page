@@ -10,4 +10,12 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [react()],
   base: isProduction(mode) ? '/rebuild/' : '/',
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    setupFiles: ['src/setupTests.ts'],
+    coverage: {
+      enabled: true,
+    },
+  },
 }));

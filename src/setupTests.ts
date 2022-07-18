@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
-import 'jest-extended';
-import 'jest-extended/all';
+import { beforeAll, afterEach, afterAll } from 'vitest';
 import { server } from './__mocks__/msw/server';
 
 beforeAll(() => server.listen());

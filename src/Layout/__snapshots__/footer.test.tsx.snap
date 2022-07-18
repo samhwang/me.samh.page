@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Footer Should render without crashing and match snapshot 1`] = `
-Object {
+exports[`Footer > Should render without crashing and match snapshot 1`] = `
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>

@@ -1,5 +1,6 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import { describe, it, expect } from 'vitest';
 import LangIcon from './lang-icon';
 import SocialIcon from './social-icon';
 
