@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   base: isProduction(mode) ? '/rebuild/' : '/',
   test: {
     globals: true,
-    environment: 'happy-dom',
+    environment: 'jsdom',
     setupFiles: ['src/setupTests.ts'],
     coverage: {
       enabled: true,
