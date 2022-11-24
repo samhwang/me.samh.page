@@ -3,7 +3,7 @@ import SEO from './seo';
 import Footer from './footer';
 import Sidebar from './sidebar';
 import '../assets/sass/resume.scss';
-import 'devicons/css/devicons.scss';
+import 'devicon/devicon.min.css';
 import metadata from '../metadata';
 
 export type LayoutProps = {

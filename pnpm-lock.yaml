@@ -22,7 +22,7 @@ specifiers:
   '@vitest/coverage-c8': ^0.25.3
   '@vitest/ui': ^0.25.3
   bootstrap: ^5.2.3
-  devicons: ^1.8.0
+  devicon: ^2.15.1
   eslint: ^8.28.0
   eslint-config-airbnb: ^19.0.4
   eslint-config-airbnb-typescript: ^17.0.0
@@ -35,7 +35,6 @@ specifiers:
   jsdom: ^20.0.3
   prettier: ^2.8.0
   react: ^18.2.0
-  react-devicons: ^2.14.0
   react-dom: ^18.2.0
   react-helmet: ^6.1.0
   react-router-dom: ^6.4.3
@@ -56,9 +55,8 @@ dependencies:
   '@popperjs/core': 2.11.6
   '@react-hookz/web': 19.2.0_biqbaboplfbrettd7655fr4n2y
   bootstrap: 5.2.3_@popperjs+core@2.11.6
-  devicons: 1.8.0
+  devicon: 2.15.1
   react: 18.2.0
-  react-devicons: 2.14.0
   react-dom: 18.2.0_react@18.2.0
   react-helmet: 6.1.0_react@18.2.0
   react-router-dom: 6.4.3_biqbaboplfbrettd7655fr4n2y
@@ -2503,9 +2501,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /devicons/1.8.0:
-    resolution: {integrity: sha512-tRS3bNxy9mbDVK0g4/+t5PlwMjjOteuh5LAhjMgimAPUgiKB+wCUCf7+uugufZ1vC9AKMRn5Pljbi210qCbmkQ==}
-    engines: {node: '>=0.10.3'}
+  /devicon/2.15.1:
+    resolution: {integrity: sha512-iyapbDVaq1PgMSMZ4IekgjH230aSUU4kHmZ142lQ2TJ+9HB4P4V78eNDkyaQEEoi0KJhxIGPcTSFqxHaZ4OMyw==}
     dev: false
 
   /diff-sequences/28.1.1:
@@ -4390,12 +4387,6 @@ packages:
       safe-buffer: 5.2.1
     dev: true
 
-  /react-devicons/2.14.0:
-    resolution: {integrity: sha512-4k/fQvDapIQJDlLKTEM8yxV5UTF8OvGrGeM4F06KRQYGYAtP8CxjC1LBWEyHL0M7rHga1rH9H14kJoFIb8O2kg==}
-    dependencies:
-      react: 17.0.2
-    dev: false
-
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -4466,14 +4457,6 @@ packages:
       react: ^16.3.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
-    dev: false
-
-  /react/17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: false
 
   /react/18.2.0:
