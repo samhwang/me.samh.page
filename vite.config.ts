@@ -9,34 +9,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    VitePWA({
-      injectRegister: 'auto',
-      base: '/',
-      includeAssets: ['favicon.svg', 'robots.txt', 'humans.txt'],
-      manifest: {
-        name: 'samhwang page',
-        short_name: 'samhwang',
-        description: 'homepage for samhwang',
-        icons: [
-          {
-            src: 'img192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'img512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'img512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
-    }),
+    VitePWA(),
   ],
   test: {
     globals: true,
