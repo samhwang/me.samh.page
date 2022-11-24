@@ -2,8 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-const isProduction = (mode: string) => mode === 'production';
-
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   build: {
@@ -13,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     VitePWA({
       injectRegister: 'auto',
-      base: isProduction(mode) ? '/rebuild/' : '/',
+      base: '/',
       includeAssets: ['favicon.svg', 'robots.txt', 'humans.txt'],
       manifest: {
         name: 'samhwang page',
