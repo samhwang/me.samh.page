@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ResumePage from './Resume/page';
 import ErrorPage from './404';
 
@@ -9,14 +9,24 @@ function App() {
     return isProduction(import.meta.env.MODE) ? '/rebuild/' : '/';
   }, []);
 
-  return (
-    <BrowserRouter basename={basename}>
-      <Routes>
-        <Route path="/" element={<ResumePage />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
+  const router = useMemo(
+    () =>
+      createBrowserRouter(
+        [
+          {
+            path: '/',
+            element: <ResumePage />,
+            errorElement: <ErrorPage />,
+          },
+        ],
+        {
+          basename,
+        }
+      ),
+    [basename]
   );
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
