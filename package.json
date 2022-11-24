@@ -6,7 +6,6 @@
     "workerDirectory": "public"
   },
   "scripts": {
-    "prepare": "husky install",
     "dev": "vite",
     "prebuild": "rimraf dist",
     "build:only": "vite build",
@@ -59,10 +58,8 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^20.0.3",
-    "lint-staged": "^13.0.3",
     "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
     "sass": "^1.56.1",
