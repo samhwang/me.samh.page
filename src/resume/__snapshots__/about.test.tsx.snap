@@ -1,0 +1,158 @@
+// Vitest Snapshot v1
+
+exports[`Render About Data > Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
+        <div
+          class="w-100"
+        >
+          <h1
+            class="mb-0"
+          >
+            Sam
+            <span
+              class="text-primary"
+            >
+              Huynh
+            </span>
+          </h1>
+          <div
+            class="subheading mb-5"
+          >
+            Melbourne, Victoria, Australia
+          </div>
+          <p
+            class="lead mb-5"
+          >
+            I have always been passionate about computers, and how technology can bring the world closer. That was the reason why I walked down the path of Software Development. Besides my studies, I have worked in a lot of Agile teams of up to 10 people, delivering high quality responsive web applications on different platforms (PHP, NodeJS) for clients in different industries (retail, sports, and education.)
+          </p>
+          <div
+            class="social-icons"
+          >
+            <a
+              href="/https://github.com/samhwang"
+            >
+              <i
+                class="devicon-github-original"
+              />
+            </a>
+            <a
+              href="/https://www.linkedin.com/in/samhwang2112/"
+            >
+              <i
+                class="devicon-linkedin-plain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      id="about"
+    >
+      <div
+        class="w-100"
+      >
+        <h1
+          class="mb-0"
+        >
+          Sam
+          <span
+            class="text-primary"
+          >
+            Huynh
+          </span>
+        </h1>
+        <div
+          class="subheading mb-5"
+        >
+          Melbourne, Victoria, Australia
+        </div>
+        <p
+          class="lead mb-5"
+        >
+          I have always been passionate about computers, and how technology can bring the world closer. That was the reason why I walked down the path of Software Development. Besides my studies, I have worked in a lot of Agile teams of up to 10 people, delivering high quality responsive web applications on different platforms (PHP, NodeJS) for clients in different industries (retail, sports, and education.)
+        </p>
+        <div
+          class="social-icons"
+        >
+          <a
+            href="/https://github.com/samhwang"
+          >
+            <i
+              class="devicon-github-original"
+            />
+          </a>
+          <a
+            href="/https://www.linkedin.com/in/samhwang2112/"
+          >
+            <i
+              class="devicon-linkedin-plain"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

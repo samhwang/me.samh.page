@@ -21,6 +21,13 @@
     "format": "pnpm lint:fix && pnpm prettier"
   },
   "dependencies": {
+    "@fontsource/mulish": "^4.5.13",
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/saira-extra-condensed": "^4.5.10",
+    "@makotot/ghostui": "^2.0.0",
+    "@popperjs/core": "^2.11.6",
+    "@react-hookz/web": "^19.2.0",
+    "bootstrap": "^5.2.3",
     "devicons": "^1.8.0",
     "react": "^18.2.0",
     "react-devicons": "^2.14.0",
@@ -58,6 +65,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
+    "sass": "^1.56.1",
     "tsx": "^3.12.1",
     "typescript": "^4.9.3",
     "vite": "^3.2.4",

@@ -1,0 +1,190 @@
+// Vitest Snapshot v1
+
+exports[`Project section rendering > Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="projects"
+      >
+        <div
+          class="w-100"
+        >
+          <h2
+            class="mb-5"
+          >
+            Projects
+          </h2>
+          <ul
+            class="fa-ul mb-0"
+          >
+            <li>
+              <i
+                class="fa-li fa fa-tasks text-warning"
+              />
+              <p>
+                <a
+                  href="/https://github.com/samhwang"
+                >
+                  <strong>
+                    My GitHub code repository:
+                  </strong>
+                </a>
+                 The host of my many curious projects, from setting up a custom firmware to my keyboard and my own shell configs, to testing and learning new programming languages and techniques.
+              </p>
+            </li>
+            <li>
+              <i
+                class="fa-li fa fa-tasks text-warning"
+              />
+              <p>
+                <a
+                  href="/https://samhwang.github.io"
+                >
+                  <strong>
+                    My GitHub.io page:
+                  </strong>
+                </a>
+                 This site was hosted on GitHub Pages, built with the Gatsby framework for ReactJS.
+              </p>
+            </li>
+            <li>
+              <i
+                class="fa-li fa fa-tasks text-warning"
+              />
+              <p>
+                <a
+                  href="/https://pi-hole.net/"
+                >
+                  <strong>
+                    Pi-Hole:
+                  </strong>
+                </a>
+                 A self-hosted DNS server that will act as an ad black-hole and can be easily installed on any Raspberry Pi (hence the name, Pi-Hole), or any computer running Linux. To maintain stable and seamless connection between dropouts, I have also set up 2 of them, and sync the ad blocking lists together using a sync script.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      id="projects"
+    >
+      <div
+        class="w-100"
+      >
+        <h2
+          class="mb-5"
+        >
+          Projects
+        </h2>
+        <ul
+          class="fa-ul mb-0"
+        >
+          <li>
+            <i
+              class="fa-li fa fa-tasks text-warning"
+            />
+            <p>
+              <a
+                href="/https://github.com/samhwang"
+              >
+                <strong>
+                  My GitHub code repository:
+                </strong>
+              </a>
+               The host of my many curious projects, from setting up a custom firmware to my keyboard and my own shell configs, to testing and learning new programming languages and techniques.
+            </p>
+          </li>
+          <li>
+            <i
+              class="fa-li fa fa-tasks text-warning"
+            />
+            <p>
+              <a
+                href="/https://samhwang.github.io"
+              >
+                <strong>
+                  My GitHub.io page:
+                </strong>
+              </a>
+               This site was hosted on GitHub Pages, built with the Gatsby framework for ReactJS.
+            </p>
+          </li>
+          <li>
+            <i
+              class="fa-li fa fa-tasks text-warning"
+            />
+            <p>
+              <a
+                href="/https://pi-hole.net/"
+              >
+                <strong>
+                  Pi-Hole:
+                </strong>
+              </a>
+               A self-hosted DNS server that will act as an ad black-hole and can be easily installed on any Raspberry Pi (hence the name, Pi-Hole), or any computer running Linux. To maintain stable and seamless connection between dropouts, I have also set up 2 of them, and sync the ad blocking lists together using a sync script.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

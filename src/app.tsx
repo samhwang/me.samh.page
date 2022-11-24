@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ResumePage from './Resume/page';
+import ResumePage from './resume/page';
 import ErrorPage from './404';
 
 function App() {

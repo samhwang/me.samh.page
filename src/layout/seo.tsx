@@ -16,12 +16,7 @@ export interface SEOProps {
   };
 }
 
-export default function SEO({
-  title,
-  description,
-  meta,
-  defaultFallback,
-}: SEOProps) {
+export default function SEO({ title, description, meta, defaultFallback }: SEOProps) {
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
   const defaultMeta: MetaProp[] = [
@@ -31,8 +26,7 @@ export default function SEO({
     },
     {
       name: `viewport`,
-      content:
-        'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
+      content: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
     },
     {
       property: `og:title`,
@@ -55,12 +49,7 @@ export default function SEO({
       <title>{title}</title>
       <html lang="en" />
       {helmetMeta.map(({ name, property, content }) => (
-        <meta
-          key={name || property}
-          name={name && name}
-          property={property && property}
-          content={content}
-        />
+        <meta key={name || property} name={name && name} property={property && property} content={content} />
       ))}
     </Helmet>
   );

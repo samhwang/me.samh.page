@@ -1,0 +1,2198 @@
+// Vitest Snapshot v1
+
+exports[`Experience Component > Should render without crashing and match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="experience"
+      >
+        <div
+          class="w-100"
+        >
+          <h2
+            class="mb-5"
+          >
+            Experience
+          </h2>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                Full Stack Software Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                HungryHungry
+              </div>
+              <ul />
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  Frontend: React, Angular, Bootstrap, Jest
+                </li>
+                <li>
+                  HTML5, CSS3 and CSS (SASS)
+                </li>
+                <li>
+                  Backend: PHP7 (Drupal), NodeJS
+                </li>
+                <li>
+                  REST API
+                </li>
+                <li>
+                  Database: MariaDB
+                </li>
+                <li>
+                  Serverless Functions using Serverless Framework and AWS CDK
+                </li>
+                <li>
+                  AWS (EC2, Lambda, Cloudwatch)
+                </li>
+                <li>
+                  CI/CD: BuildKite Pipelines
+                </li>
+                <li>
+                  Project management using JIRA and Confluence
+                </li>
+                <li>
+                  Error and Metrics reporting with Datadog
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-react-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-angularjs-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-nodejs-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-npm-original-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-yarn-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-drupal-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-sass-orignal"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-amazonwebservices-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-docker-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bitbucket-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jira-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-confluence-original"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Jun 2021 - Present
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                Full Stack Software Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Hertz Australia
+              </div>
+              <ul>
+                <li>
+                  Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary
+                </li>
+                <li>
+                  Built new feature into Hertz's booking API, including but not limited to integrations with insurance partners and franchisee, error monitoring, reporting rental analytics and tracking systems, using GraphQL (Apollo), MongoDB, NodeJS (Express), EJS, ReactJS, Sentry and web sockets on AWS Serverless platform, with a dashboard on Elastic Beanstalk.
+                </li>
+                <li>
+                  Rebuilt Hertz's customer portal for past journey information tand the shuttle bus tracking and booking portal, using React/Redux and Material UI
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  Front-end: React, EJS, jQuery, Bootstrap, Material UI, Jest, Storybook, sockets.io
+                </li>
+                <li>
+                  Back-end: PHP7 (Wordpress), NodeJS (Express)
+                </li>
+                <li>
+                  HTML5, CSS3 and CSS pre-processors like SASS and LESS
+                </li>
+                <li>
+                  GraphQL (Apollo) and REST API
+                </li>
+                <li>
+                  Docker containers & docker-compose
+                </li>
+                <li>
+                  Database: MySQL & MongoDB
+                </li>
+                <li>
+                  Serverless architecture and websockets
+                </li>
+                <li>
+                  AWS (Lambda, Elastic Beanstalk, SQS, SES, SNS, CloudWatch, S3)
+                </li>
+                <li>
+                  CI/CD: GitHub Actions pipeline and GitHub Container Registry
+                </li>
+                <li>
+                  Project management using JIRA and Confluence
+                </li>
+                <li>
+                  Error reporting and monitoring: Sentry, Dashbird
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jquery-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-react-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-redux-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-materialui-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-storybook-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-nodejs-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-express-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-socketio-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-graphql-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jest-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mocha-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-npm-original-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-yarn-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-wordpress-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-sass-orignal"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-less-plain-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mysql-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mongodb-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-amazonwebservices-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-docker-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-github-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jira-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-confluence-original"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Oct 2019 - Jun 2021
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                Web Application Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Bonntech Business Solutions
+              </div>
+              <ul>
+                <li>
+                  Built the base framework, along with its own create and update script to speed up the initial setup for future projects.
+                </li>
+                <li>
+                  Assisted in setting up Bonntech's central Git repository and private Composer Packagist for internal projects and libraries.
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  PHP 7.3, using CodeIgniter framework and Composer package manager with self-hosted Packagist
+                </li>
+                <li>
+                  MySQL database management and data modelling
+                </li>
+                <li>
+                  HTML5, CSS, JavaScript (jQuery, Bootstrap, Datatables, and AJAX)
+                </li>
+                <li>
+                  Apache server configurations
+                </li>
+                <li>
+                  Built containerized development environments with Docker
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-composer-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bootstrap-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-less-plain-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-sass-orignal"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mysql-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-docker-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-gitlab-plain"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                May 2019 - Oct 2019
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                Software Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Classcom
+              </div>
+              <ul>
+                <li>
+                  Collaborated on building new core features of the ClassCom project
+                </li>
+                <li>
+                  Created automated test and build scripts and participated in code reviews in a bi-weekly release schedule.
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  JavaScript, using the Meteor full stack framework (with Node/Express for backend processing, Blaze for templating, CSS pre-processing with LESS)
+                </li>
+                <li>
+                  Automated test scripting with CucumberJS and Mocha.
+                </li>
+                <li>
+                  MongoDB database and data modelling.
+                </li>
+                <li>
+                  REST APIs
+                </li>
+                <li>
+                  Project management using Azure DevOps
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-nodejs-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-meteor-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mocha-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-cucumber-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-less-plain-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mongodb-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-npm-original-wordmark"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-azure-plain"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Jan 2019 - Apr 2019
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                PHP Developer Intern
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Psych Press
+              </div>
+              <ul>
+                <li>
+                  Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  PHP 7, using CodeIgniter, Laravel and Moodle framework.
+                </li>
+                <li>
+                  JavaScript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)
+                </li>
+                <li>
+                  Microsoft SQL Server Database
+                </li>
+                <li>
+                  Migration from Microsoft servers to Amazon Web Services EC2 Linux instances
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-laravel-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jquery-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-d3js-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bootstrap-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-amazonwebservices-original"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bitbucket-plain"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Jun 2017 - Sep 2017
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                Web Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Mint n Co. Accessories
+              </div>
+              <ul>
+                <li>
+                  Designed and built the e-commerce site for Mint and Co. Accessories from the ground up.
+                </li>
+                <li>
+                  Provided regular maintenance to ensure 99.9% site availability.
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  CPanel hosting control panel for Apache server
+                </li>
+                <li>
+                  PHP using the Wordpress framework and WooCommerce e-commerce plugin
+                </li>
+                <li>
+                  MySQL database
+                </li>
+                <li>
+                  JavaScript (jQuery, Bootstrap)
+                </li>
+                <li>
+                  Paypal Gateway API
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-wordpress-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-woocommerce-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bootstrap-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mysql-plain"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Oct 2015 - Feb 2016
+              </span>
+            </div>
+          </div>
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div
+              class="resume-content"
+            >
+              <h3
+                class="mb-0"
+              >
+                PHP Developer
+              </h3>
+              <div
+                class="subheading mb-3"
+              >
+                Right Left Communication
+              </div>
+              <ul>
+                <li>
+                  Developed, supported, monitored and maintained 4 websites for different clients from various industries.
+                </li>
+              </ul>
+              <h4>
+                Technologies involved:
+              </h4>
+              <ul>
+                <li>
+                  CPanel hosting control panel for Apache server
+                </li>
+                <li>
+                  PHP using the Joomla framework
+                </li>
+                <li>
+                  JavaScript (jQuery, Bootstrap)
+                </li>
+                <li>
+                  MySQL database
+                </li>
+              </ul>
+              <ul
+                class="list-inline dev-icons"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-php-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-bootstrap-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-html5-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-css3-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-javascript-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-jquery-plain"
+                  />
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <i
+                    class="devicon-mysql-plain"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="resume-date text-md-right"
+            >
+              <span
+                class="text-primary"
+              >
+                Sep 2014 - Feb 2015
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+      id="experience"
+    >
+      <div
+        class="w-100"
+      >
+        <h2
+          class="mb-5"
+        >
+          Experience
+        </h2>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              Full Stack Software Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              HungryHungry
+            </div>
+            <ul />
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                Frontend: React, Angular, Bootstrap, Jest
+              </li>
+              <li>
+                HTML5, CSS3 and CSS (SASS)
+              </li>
+              <li>
+                Backend: PHP7 (Drupal), NodeJS
+              </li>
+              <li>
+                REST API
+              </li>
+              <li>
+                Database: MariaDB
+              </li>
+              <li>
+                Serverless Functions using Serverless Framework and AWS CDK
+              </li>
+              <li>
+                AWS (EC2, Lambda, Cloudwatch)
+              </li>
+              <li>
+                CI/CD: BuildKite Pipelines
+              </li>
+              <li>
+                Project management using JIRA and Confluence
+              </li>
+              <li>
+                Error and Metrics reporting with Datadog
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-react-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-angularjs-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-nodejs-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-npm-original-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-yarn-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-drupal-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-sass-orignal"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-amazonwebservices-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-docker-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bitbucket-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jira-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-confluence-original"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Jun 2021 - Present
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              Full Stack Software Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Hertz Australia
+            </div>
+            <ul>
+              <li>
+                Built the Github Actions and GitHub packages pipeline to publish the Flexicar website docker images, along with setting up APIs to access GitHub packages for cleaning up when necessary
+              </li>
+              <li>
+                Built new feature into Hertz's booking API, including but not limited to integrations with insurance partners and franchisee, error monitoring, reporting rental analytics and tracking systems, using GraphQL (Apollo), MongoDB, NodeJS (Express), EJS, ReactJS, Sentry and web sockets on AWS Serverless platform, with a dashboard on Elastic Beanstalk.
+              </li>
+              <li>
+                Rebuilt Hertz's customer portal for past journey information tand the shuttle bus tracking and booking portal, using React/Redux and Material UI
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                Front-end: React, EJS, jQuery, Bootstrap, Material UI, Jest, Storybook, sockets.io
+              </li>
+              <li>
+                Back-end: PHP7 (Wordpress), NodeJS (Express)
+              </li>
+              <li>
+                HTML5, CSS3 and CSS pre-processors like SASS and LESS
+              </li>
+              <li>
+                GraphQL (Apollo) and REST API
+              </li>
+              <li>
+                Docker containers & docker-compose
+              </li>
+              <li>
+                Database: MySQL & MongoDB
+              </li>
+              <li>
+                Serverless architecture and websockets
+              </li>
+              <li>
+                AWS (Lambda, Elastic Beanstalk, SQS, SES, SNS, CloudWatch, S3)
+              </li>
+              <li>
+                CI/CD: GitHub Actions pipeline and GitHub Container Registry
+              </li>
+              <li>
+                Project management using JIRA and Confluence
+              </li>
+              <li>
+                Error reporting and monitoring: Sentry, Dashbird
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jquery-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-react-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-redux-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-materialui-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-storybook-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-nodejs-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-express-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-socketio-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-graphql-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jest-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mocha-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-npm-original-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-yarn-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-wordpress-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-sass-orignal"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-less-plain-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mysql-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mongodb-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-amazonwebservices-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-docker-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-github-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jira-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-confluence-original"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Oct 2019 - Jun 2021
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              Web Application Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Bonntech Business Solutions
+            </div>
+            <ul>
+              <li>
+                Built the base framework, along with its own create and update script to speed up the initial setup for future projects.
+              </li>
+              <li>
+                Assisted in setting up Bonntech's central Git repository and private Composer Packagist for internal projects and libraries.
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                PHP 7.3, using CodeIgniter framework and Composer package manager with self-hosted Packagist
+              </li>
+              <li>
+                MySQL database management and data modelling
+              </li>
+              <li>
+                HTML5, CSS, JavaScript (jQuery, Bootstrap, Datatables, and AJAX)
+              </li>
+              <li>
+                Apache server configurations
+              </li>
+              <li>
+                Built containerized development environments with Docker
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-composer-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bootstrap-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-less-plain-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-sass-orignal"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mysql-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-docker-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-gitlab-plain"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              May 2019 - Oct 2019
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              Software Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Classcom
+            </div>
+            <ul>
+              <li>
+                Collaborated on building new core features of the ClassCom project
+              </li>
+              <li>
+                Created automated test and build scripts and participated in code reviews in a bi-weekly release schedule.
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                JavaScript, using the Meteor full stack framework (with Node/Express for backend processing, Blaze for templating, CSS pre-processing with LESS)
+              </li>
+              <li>
+                Automated test scripting with CucumberJS and Mocha.
+              </li>
+              <li>
+                MongoDB database and data modelling.
+              </li>
+              <li>
+                REST APIs
+              </li>
+              <li>
+                Project management using Azure DevOps
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-nodejs-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-meteor-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mocha-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-cucumber-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-less-plain-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mongodb-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-npm-original-wordmark"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-azure-plain"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Jan 2019 - Apr 2019
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              PHP Developer Intern
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Psych Press
+            </div>
+            <ul>
+              <li>
+                Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                PHP 7, using CodeIgniter, Laravel and Moodle framework.
+              </li>
+              <li>
+                JavaScript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)
+              </li>
+              <li>
+                Microsoft SQL Server Database
+              </li>
+              <li>
+                Migration from Microsoft servers to Amazon Web Services EC2 Linux instances
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-laravel-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jquery-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-d3js-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bootstrap-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-amazonwebservices-original"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bitbucket-plain"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Jun 2017 - Sep 2017
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              Web Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Mint n Co. Accessories
+            </div>
+            <ul>
+              <li>
+                Designed and built the e-commerce site for Mint and Co. Accessories from the ground up.
+              </li>
+              <li>
+                Provided regular maintenance to ensure 99.9% site availability.
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                CPanel hosting control panel for Apache server
+              </li>
+              <li>
+                PHP using the Wordpress framework and WooCommerce e-commerce plugin
+              </li>
+              <li>
+                MySQL database
+              </li>
+              <li>
+                JavaScript (jQuery, Bootstrap)
+              </li>
+              <li>
+                Paypal Gateway API
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-wordpress-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-woocommerce-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bootstrap-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mysql-plain"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Oct 2015 - Feb 2016
+            </span>
+          </div>
+        </div>
+        <div
+          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div
+            class="resume-content"
+          >
+            <h3
+              class="mb-0"
+            >
+              PHP Developer
+            </h3>
+            <div
+              class="subheading mb-3"
+            >
+              Right Left Communication
+            </div>
+            <ul>
+              <li>
+                Developed, supported, monitored and maintained 4 websites for different clients from various industries.
+              </li>
+            </ul>
+            <h4>
+              Technologies involved:
+            </h4>
+            <ul>
+              <li>
+                CPanel hosting control panel for Apache server
+              </li>
+              <li>
+                PHP using the Joomla framework
+              </li>
+              <li>
+                JavaScript (jQuery, Bootstrap)
+              </li>
+              <li>
+                MySQL database
+              </li>
+            </ul>
+            <ul
+              class="list-inline dev-icons"
+            >
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-php-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-bootstrap-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-html5-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-css3-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-javascript-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-jquery-plain"
+                />
+              </li>
+              <li
+                class="list-inline-item"
+              >
+                <i
+                  class="devicon-mysql-plain"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="resume-date text-md-right"
+          >
+            <span
+              class="text-primary"
+            >
+              Sep 2014 - Feb 2015
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
