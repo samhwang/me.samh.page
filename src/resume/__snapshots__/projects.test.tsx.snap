@@ -26,7 +26,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
               />
               <p>
                 <a
-                  href="/https://github.com/samhwang"
+                  href="https://github.com/samhwang"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   <strong>
                     My GitHub code repository:
@@ -41,7 +43,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
               />
               <p>
                 <a
-                  href="/https://samhwang.github.io"
+                  href="https://samhwang.github.io"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   <strong>
                     My GitHub.io page:
@@ -56,7 +60,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
               />
               <p>
                 <a
-                  href="/https://pi-hole.net/"
+                  href="https://pi-hole.net/"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   <strong>
                     Pi-Hole:
@@ -92,7 +98,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             />
             <p>
               <a
-                href="/https://github.com/samhwang"
+                href="https://github.com/samhwang"
+                rel="noreferrer"
+                target="_blank"
               >
                 <strong>
                   My GitHub code repository:
@@ -107,7 +115,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             />
             <p>
               <a
-                href="/https://samhwang.github.io"
+                href="https://samhwang.github.io"
+                rel="noreferrer"
+                target="_blank"
               >
                 <strong>
                   My GitHub.io page:
@@ -122,7 +132,9 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             />
             <p>
               <a
-                href="/https://pi-hole.net/"
+                href="https://pi-hole.net/"
+                rel="noreferrer"
+                target="_blank"
               >
                 <strong>
                   Pi-Hole:

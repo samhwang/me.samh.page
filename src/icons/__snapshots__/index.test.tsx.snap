@@ -83,7 +83,9 @@ exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <a
-        href="/https://github.com/samhwang"
+        href="https://github.com/samhwang"
+        rel="noreferrer"
+        target="_blank"
       >
         <i
           class="devicon-github-plain"
@@ -93,7 +95,9 @@ exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <a
-      href="/https://github.com/samhwang"
+      href="https://github.com/samhwang"
+      rel="noreferrer"
+      target="_blank"
     >
       <i
         class="devicon-github-plain"

@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export interface SocialLinkProps {
   icon: string;
   url: string;
@@ -7,8 +5,8 @@ export interface SocialLinkProps {
 
 export default function SocialIcon({ icon, url }: SocialLinkProps) {
   return (
-    <Link to={url}>
+    <a href={url} target="_blank" rel="noreferrer">
       <i className={`devicon-${icon}`} />
-    </Link>
+    </a>
   );
 }

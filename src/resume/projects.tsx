@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import metadata from '../metadata';
 
 interface ProjectProps {
@@ -9,9 +8,9 @@ interface ProjectProps {
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (
-    <Link to={url}>
+    <a href={url} rel="noreferrer" target="_blank">
       <strong>{`${title}:`}</strong>
-    </Link>
+    </a>
   ) : (
     <strong>{`${title}:`}</strong>
   );

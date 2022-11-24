@@ -36,14 +36,18 @@ exports[`Render About Data > Should match snapshot 1`] = `
             class="social-icons"
           >
             <a
-              href="/https://github.com/samhwang"
+              href="https://github.com/samhwang"
+              rel="noreferrer"
+              target="_blank"
             >
               <i
                 class="devicon-github-original"
               />
             </a>
             <a
-              href="/https://www.linkedin.com/in/samhwang2112/"
+              href="https://www.linkedin.com/in/samhwang2112/"
+              rel="noreferrer"
+              target="_blank"
             >
               <i
                 class="devicon-linkedin-plain"
@@ -86,14 +90,18 @@ exports[`Render About Data > Should match snapshot 1`] = `
           class="social-icons"
         >
           <a
-            href="/https://github.com/samhwang"
+            href="https://github.com/samhwang"
+            rel="noreferrer"
+            target="_blank"
           >
             <i
               class="devicon-github-original"
             />
           </a>
           <a
-            href="/https://www.linkedin.com/in/samhwang2112/"
+            href="https://www.linkedin.com/in/samhwang2112/"
+            rel="noreferrer"
+            target="_blank"
           >
             <i
               class="devicon-linkedin-plain"
