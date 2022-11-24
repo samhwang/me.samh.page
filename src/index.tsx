@@ -3,12 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 
-async function renderRoot() {
-  if (import.meta.env.DEV) {
-    const { worker } = await import('./__mocks__/msw/browser');
-    await worker.start();
-  }
-
+function renderRoot() {
   const RootComponent = (
     <StrictMode>
       <App />
