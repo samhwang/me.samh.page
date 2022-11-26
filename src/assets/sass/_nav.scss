@@ -9,10 +9,8 @@
       outline-color: lighten($primary, 15%);
     }
   }
-}
 
-@media (min-width: 992px) {
-  #sideNav {
+  @media (min-width: 992px) {
     text-align: center;
     position: fixed;
     top: 0;
