@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { describe, it, expect, vi } from 'vitest';
 import Education from './education';
+import RenderWrapper from '../test-utils/render-wrapper';
 import { useEducationData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
@@ -19,12 +19,7 @@ describe('Education section render', () => {
     ];
     mockHook.mockReturnValueOnce(mockEducation);
 
-    const EducationSection = (
-      <BrowserRouter>
-        <Education />
-      </BrowserRouter>
-    );
-    const tree = render(EducationSection);
+    const tree = render(<Education />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });

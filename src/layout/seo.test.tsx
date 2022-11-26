@@ -12,8 +12,8 @@ describe('SEO Rendering', () => {
         description: 'Default Description',
       },
     };
-    const SEOComponent = <SEO title={data.title} description={data.description} defaultFallback={data.defaultFallback} />;
-    const tree = render(SEOComponent);
+
+    const tree = render(<SEO title={data.title} description={data.description} defaultFallback={data.defaultFallback} />);
     expect(tree).toMatchSnapshot();
   });
 });

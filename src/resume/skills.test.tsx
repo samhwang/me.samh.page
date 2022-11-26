@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { describe, it, expect, vi } from 'vitest';
 import SkillSection from './skills';
+import RenderWrapper from '../test-utils/render-wrapper';
 import { useSkillsData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
@@ -20,12 +20,7 @@ describe('Skill Section Component', () => {
     };
     mockHook.mockReturnValueOnce(mockSkills);
 
-    const SkillSectionComponent = (
-      <BrowserRouter>
-        <SkillSection />
-      </BrowserRouter>
-    );
-    const tree = render(SkillSectionComponent);
+    const tree = render(<SkillSection />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });

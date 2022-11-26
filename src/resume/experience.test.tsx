@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { describe, it, expect, vi } from 'vitest';
 import Experiences from './experience';
+import RenderWrapper from '../test-utils/render-wrapper';
 import { useExperienceData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
@@ -21,12 +21,7 @@ describe('Experience Component', () => {
     ];
     mockHook.mockReturnValueOnce(mockExperience);
 
-    const ExperienceSection = (
-      <BrowserRouter>
-        <Experiences />
-      </BrowserRouter>
-    );
-    const tree = render(ExperienceSection);
+    const tree = render(<Experiences />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });

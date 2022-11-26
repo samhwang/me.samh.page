@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { describe, it, expect, vi } from 'vitest';
 import ProjectSection from './projects';
+import RenderWrapper from '../test-utils/render-wrapper';
 import { useProjectsData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
@@ -18,12 +18,7 @@ describe('Project section rendering', () => {
     ];
     mockHook.mockReturnValueOnce(mockProjects);
 
-    const ProjectsComponent = (
-      <BrowserRouter>
-        <ProjectSection />
-      </BrowserRouter>
-    );
-    const tree = render(ProjectsComponent);
+    const tree = render(<ProjectSection />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });

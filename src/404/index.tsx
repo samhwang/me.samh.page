@@ -1,6 +1,6 @@
 import Layout from '../layout/layout';
 
-function ErrorPage() {
+export default function ErrorPage() {
   return (
     <Layout title="Error 404: Page not found" description="Error 404: Page not found">
       <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
@@ -19,5 +19,3 @@ function ErrorPage() {
     </Layout>
   );
 }
-
-export default ErrorPage;

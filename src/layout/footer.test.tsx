@@ -1,15 +1,11 @@
 import { render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import { BrowserRouter } from 'react-router-dom';
 import Footer from './footer';
+import RenderWrapper from '../test-utils/render-wrapper';
 
 describe('Footer', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = render(
-      <BrowserRouter>
-        <Footer />
-      </BrowserRouter>
-    );
+    const tree = render(<Footer />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });
