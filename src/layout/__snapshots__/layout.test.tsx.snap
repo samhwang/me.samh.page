@@ -19,7 +19,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             <span
               class="d-block d-lg-none"
             >
-              Sam Huynh
+              First Last
             </span>
             <span
               class="d-none d-lg-block"
@@ -34,7 +34,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   type="image/jpeg"
                 />
                 <img
-                  alt="Sam Huynh Avatar"
+                  alt="First Last Avatar"
                   class="img-fluid img-profile rounded-circle mx-auto mb-2"
                   src="/src/assets/img/avatar.jpg"
                 />
@@ -163,7 +163,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           <span
             class="d-block d-lg-none"
           >
-            Sam Huynh
+            First Last
           </span>
           <span
             class="d-none d-lg-block"
@@ -178,7 +178,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 type="image/jpeg"
               />
               <img
-                alt="Sam Huynh Avatar"
+                alt="First Last Avatar"
                 class="img-fluid img-profile rounded-circle mx-auto mb-2"
                 src="/src/assets/img/avatar.jpg"
               />

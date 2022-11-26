@@ -15,17 +15,17 @@ exports[`Render About Data > Should match snapshot 1`] = `
           <h1
             class="mb-0"
           >
-            Sam
+            test
             <span
               class="text-primary"
             >
-              Huynh
+              test
             </span>
           </h1>
           <div
             class="subheading mb-5"
           >
-            Melbourne, Victoria, Australia
+            123 Test Drive
           </div>
           <p
             class="lead mb-5"
@@ -36,21 +36,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
             class="social-icons"
           >
             <a
-              href="https://github.com/samhwang"
+              href="test social URL"
               rel="noreferrer"
               target="_blank"
             >
               <i
-                class="devicon-github-original"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/samhwang2112/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i
-                class="devicon-linkedin-plain"
+                class="devicon-test-icon"
               />
             </a>
           </div>
@@ -69,17 +60,17 @@ exports[`Render About Data > Should match snapshot 1`] = `
         <h1
           class="mb-0"
         >
-          Sam
+          test
           <span
             class="text-primary"
           >
-            Huynh
+            test
           </span>
         </h1>
         <div
           class="subheading mb-5"
         >
-          Melbourne, Victoria, Australia
+          123 Test Drive
         </div>
         <p
           class="lead mb-5"
@@ -90,21 +81,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
           class="social-icons"
         >
           <a
-            href="https://github.com/samhwang"
+            href="test social URL"
             rel="noreferrer"
             target="_blank"
           >
             <i
-              class="devicon-github-original"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/samhwang2112/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i
-              class="devicon-linkedin-plain"
+              class="devicon-test-icon"
             />
           </a>
         </div>

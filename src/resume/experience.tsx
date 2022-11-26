@@ -1,5 +1,5 @@
 import LangIcon from '../icons/lang-icon';
-import metadata from '../metadata';
+import { useExperienceData } from '../../metadata/use-metadata';
 
 interface JobDescriptionProps {
   title: string;
@@ -41,7 +41,7 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
 }
 
 export default function Experiences() {
-  const { experience } = metadata.personalInformation;
+  const experience = useExperienceData();
 
   return (
     <section className="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">

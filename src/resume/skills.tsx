@@ -1,4 +1,4 @@
-import metadata from '../metadata';
+import { useSkillsData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
 
 interface SkillProps {
@@ -20,7 +20,7 @@ function Skill({ title, description }: SkillProps) {
 }
 
 export default function SkillSection() {
-  const { skills, techStack } = metadata.personalInformation;
+  const { skills, techStack } = useSkillsData();
 
   return (
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">

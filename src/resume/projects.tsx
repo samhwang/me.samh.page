@@ -1,4 +1,4 @@
-import metadata from '../metadata';
+import { useProjectsData } from '../../metadata/use-metadata';
 
 interface ProjectProps {
   title: string;
@@ -31,7 +31,7 @@ Project.defaultProps = {
 };
 
 export default function ProjectSection() {
-  const { projects } = metadata.personalInformation;
+  const projects = useProjectsData();
 
   return (
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">

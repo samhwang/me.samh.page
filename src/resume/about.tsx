@@ -1,8 +1,8 @@
-import metadata from '../metadata';
+import { useAboutData } from '../../metadata/use-metadata';
 import SocialIcon from '../icons/social-icon';
 
 export default function About() {
-  const { firstName, lastName, address, socialLinks } = metadata.personalInformation;
+  const { firstName, lastName, address, socialLinks } = useAboutData();
 
   return (
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">

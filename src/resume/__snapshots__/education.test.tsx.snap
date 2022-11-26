@@ -26,15 +26,15 @@ exports[`Education section render > Should match snapshot 1`] = `
               <h3
                 class="mb-0"
               >
-                Navitas Professionals
+                Test
               </h3>
               <div
                 class="subheading mb-3"
               >
-                Professional Year Program in Computer Science
+                Test
               </div>
               <div>
-                incl. Cert IV in Business
+                Test
               </div>
             </div>
             <div
@@ -43,35 +43,7 @@ exports[`Education section render > Should match snapshot 1`] = `
               <span
                 class="text-primary"
               >
-                Oct 2016 - Oct 2017
-              </span>
-            </div>
-          </div>
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div
-              class="resume-content"
-            >
-              <h3
-                class="mb-0"
-              >
-                RMIT University
-              </h3>
-              <div
-                class="subheading mb-3"
-              >
-                Bachelor of Information Technology
-              </div>
-              <div />
-            </div>
-            <div
-              class="resume-date text-md-right"
-            >
-              <span
-                class="text-primary"
-              >
-                Oct 2012 - Dec 2015
+                2020 - 2021
               </span>
             </div>
           </div>
@@ -101,15 +73,15 @@ exports[`Education section render > Should match snapshot 1`] = `
             <h3
               class="mb-0"
             >
-              Navitas Professionals
+              Test
             </h3>
             <div
               class="subheading mb-3"
             >
-              Professional Year Program in Computer Science
+              Test
             </div>
             <div>
-              incl. Cert IV in Business
+              Test
             </div>
           </div>
           <div
@@ -118,35 +90,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             <span
               class="text-primary"
             >
-              Oct 2016 - Oct 2017
-            </span>
-          </div>
-        </div>
-        <div
-          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
-          <div
-            class="resume-content"
-          >
-            <h3
-              class="mb-0"
-            >
-              RMIT University
-            </h3>
-            <div
-              class="subheading mb-3"
-            >
-              Bachelor of Information Technology
-            </div>
-            <div />
-          </div>
-          <div
-            class="resume-date text-md-right"
-          >
-            <span
-              class="text-primary"
-            >
-              Oct 2012 - Dec 2015
+              2020 - 2021
             </span>
           </div>
         </div>

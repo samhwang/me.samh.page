@@ -4,7 +4,7 @@ import Footer from './footer';
 import Sidebar from './sidebar';
 import '../assets/sass/resume.scss';
 import 'devicon/devicon.min.css';
-import metadata from '../metadata';
+import { useSiteMetadata } from '../../metadata/use-metadata';
 
 export type LayoutProps = {
   title: string;
@@ -13,10 +13,7 @@ export type LayoutProps = {
 };
 
 export default function Layout({ children, title, description }: LayoutProps) {
-  const defaultFallback = {
-    title: metadata.siteTitle,
-    description: metadata.siteDescription,
-  };
+  const defaultFallback = useSiteMetadata();
 
   return (
     <>

@@ -1,4 +1,4 @@
-import metadata from '../metadata';
+import { useEducationData } from '../../metadata/use-metadata';
 
 interface SchoolProps {
   institute: string;
@@ -23,7 +23,7 @@ function School({ institute, degree, major, duration }: SchoolProps) {
 }
 
 export default function Education() {
-  const { education } = metadata.personalInformation;
+  const education = useEducationData();
 
   return (
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
