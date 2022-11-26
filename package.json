@@ -8,9 +8,8 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "rimraf dist",
-    "build:only": "vite build",
+    "build": "vite build",
     "typecheck": "tsc",
-    "build": "pnpm typecheck && pnpm build:only",
     "preview": "vite preview",
     "pretest": "rimraf coverage",
     "test": "vitest",
