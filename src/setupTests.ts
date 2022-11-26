@@ -1,5 +1,6 @@
+import { cleanup } from '@testing-library/react';
 import matchers, { TestingLibraryMatchers } from '@testing-library/jest-dom/matchers';
-import { expect } from 'vitest';
+import { expect, afterEach } from 'vitest';
 
 declare global {
   namespace Vi {
@@ -8,3 +9,7 @@ declare global {
 }
 
 expect.extend(matchers);
+
+afterEach(() => {
+  cleanup();
+});
