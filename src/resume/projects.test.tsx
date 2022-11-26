@@ -15,6 +15,10 @@ describe('Project section rendering', () => {
         description: 'Test Description',
         url: 'http://test url',
       },
+      {
+        title: 'Test Title 2',
+        description: 'Test Description 2',
+      },
     ];
     mockHook.mockReturnValueOnce(mockProjects);
 

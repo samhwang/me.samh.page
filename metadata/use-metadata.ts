@@ -36,7 +36,13 @@ export function useExperienceData() {
   return experience;
 }
 
-export function useProjectsData() {
+interface Projects {
+  title: string;
+  description: string;
+  url?: string;
+}
+
+export function useProjectsData(): Projects[] {
   const { projects } = metadata.personalInformation;
   return projects;
 }

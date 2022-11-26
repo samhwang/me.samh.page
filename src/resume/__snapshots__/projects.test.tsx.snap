@@ -37,6 +37,17 @@ exports[`Project section rendering > Should match snapshot 1`] = `
                  Test Description
               </p>
             </li>
+            <li>
+              <i
+                class="fa-li fa fa-tasks text-warning"
+              />
+              <p>
+                <strong>
+                  Test Title 2:
+                </strong>
+                 Test Description 2
+              </p>
+            </li>
           </ul>
         </div>
       </section>
@@ -73,6 +84,17 @@ exports[`Project section rendering > Should match snapshot 1`] = `
                 </strong>
               </a>
                Test Description
+            </p>
+          </li>
+          <li>
+            <i
+              class="fa-li fa fa-tasks text-warning"
+            />
+            <p>
+              <strong>
+                Test Title 2:
+              </strong>
+               Test Description 2
             </p>
           </li>
         </ul>
