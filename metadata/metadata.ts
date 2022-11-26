@@ -49,7 +49,7 @@ const ICONS = {
   BITBUCKET: 'bitbucket-plain',
   CONFLUENCE: 'confluence-original',
   TRELLO: 'trello-plain',
-  ESLINT: 'eslint-original'
+  ESLINT: 'eslint-original',
 };
 
 const metadata = {
@@ -91,8 +91,8 @@ const metadata = {
           "Built and maintained various parts of, and introduce more functionality into HH's Ordering System in the course of migrating the legacy monolith tech stack into microservices: Payments, Identity, POS Integrations, Assisted Marketing, Kiosk, Bar Tabs, Notifications, ...",
           "Built and maintained HH's UI Components Library to streamline the UI Apps creation process",
           "Built and maintained HH's internal NPM Packages on CodeArtifact",
-          "Automated microservices deployment using Buildkite CI/CD pipelines",
-          "Assisted in interviewing and onboarding new staff members",
+          'Automated microservices deployment using Buildkite CI/CD pipelines',
+          'Assisted in interviewing and onboarding new staff members',
         ],
         techIcons: [
           ICONS.JS,
@@ -196,18 +196,7 @@ const metadata = {
           'Built the base framework, along with its own create and update script to speed up the initial setup for future projects.',
           "Assisted in setting up Bonntech's central Git repository and private Composer Packagist for internal projects and libraries.",
         ],
-        techIcons: [
-          ICONS.PHP,
-          ICONS.COMPOSER,
-          ICONS.JS,
-          ICONS.BOOTSTRAP,
-          ICONS.CSS3,
-          ICONS.LESS,
-          ICONS.SASS,
-          ICONS.MYSQL,
-          ICONS.DOCKER,
-          ICONS.GITLAB,
-        ],
+        techIcons: [ICONS.PHP, ICONS.COMPOSER, ICONS.JS, ICONS.BOOTSTRAP, ICONS.CSS3, ICONS.LESS, ICONS.SASS, ICONS.MYSQL, ICONS.DOCKER, ICONS.GITLAB],
         technologies: [
           'PHP 7.3, using CodeIgniter framework and Composer package manager with self-hosted Packagist',
           'MySQL database management and data modelling',
@@ -249,21 +238,8 @@ const metadata = {
         title: 'PHP Developer Intern',
         companyName: 'Psych Press',
         duration: 'Jun 2017 - Sep 2017',
-        description: [
-          'Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.',
-        ],
-        techIcons: [
-          ICONS.PHP,
-          ICONS.LARAVEL,
-          ICONS.JS,
-          ICONS.JQUERY,
-          ICONS.D3JS,
-          ICONS.BOOTSTRAP,
-          ICONS.HTML5,
-          ICONS.CSS3,
-          ICONS.AWS,
-          ICONS.BITBUCKET,
-        ],
+        description: ['Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.'],
+        techIcons: [ICONS.PHP, ICONS.LARAVEL, ICONS.JS, ICONS.JQUERY, ICONS.D3JS, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.AWS, ICONS.BITBUCKET],
         technologies: [
           'PHP 7, using CodeIgniter, Laravel and Moodle framework.',
           'JavaScript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)',
@@ -279,16 +255,7 @@ const metadata = {
           'Designed and built the e-commerce site for Mint and Co. Accessories from the ground up.',
           'Provided regular maintenance to ensure 99.9% site availability.',
         ],
-        techIcons: [
-          ICONS.PHP,
-          ICONS.WORDPRESS,
-          ICONS.WOOCOMMERCE,
-          ICONS.BOOTSTRAP,
-          ICONS.HTML5,
-          ICONS.CSS3,
-          ICONS.JS,
-          ICONS.MYSQL,
-        ],
+        techIcons: [ICONS.PHP, ICONS.WORDPRESS, ICONS.WOOCOMMERCE, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.MYSQL],
         technologies: [
           'CPanel hosting control panel for Apache server',
           'PHP using the Wordpress framework and WooCommerce e-commerce plugin',
@@ -301,24 +268,9 @@ const metadata = {
         title: 'PHP Developer',
         companyName: 'Right Left Communication',
         duration: 'Sep 2014 - Feb 2015',
-        description: [
-          'Developed, supported, monitored and maintained 4 websites for different clients from various industries.',
-        ],
-        techIcons: [
-          ICONS.PHP,
-          ICONS.BOOTSTRAP,
-          ICONS.HTML5,
-          ICONS.CSS3,
-          ICONS.JS,
-          ICONS.JQUERY,
-          ICONS.MYSQL,
-        ],
-        technologies: [
-          'CPanel hosting control panel for Apache server',
-          'PHP using the Joomla framework',
-          'JavaScript (jQuery, Bootstrap)',
-          'MySQL database',
-        ],
+        description: ['Developed, supported, monitored and maintained 4 websites for different clients from various industries.'],
+        techIcons: [ICONS.PHP, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.JQUERY, ICONS.MYSQL],
+        technologies: ['CPanel hosting control panel for Apache server', 'PHP using the Joomla framework', 'JavaScript (jQuery, Bootstrap)', 'MySQL database'],
       },
     ],
     education: [
@@ -344,8 +296,7 @@ const metadata = {
       },
       {
         title: 'My GitHub.io page',
-        description:
-          'This site was hosted on GitHub Pages, built with the Vite & React.',
+        description: 'This site was hosted on GitHub Pages, built with the Vite & React.',
         url: 'https://samhwang.github.io',
       },
       {
@@ -356,9 +307,10 @@ const metadata = {
       },
       {
         title: 'VAIT Discord Bot',
-        description: 'A Discord bot for the Vietnamese Aussies in IT Community, comes with built-in community requested and admin features. Built with DiscordJS and TypeScript.',
+        description:
+          'A Discord bot for the Vietnamese Aussies in IT Community, comes with built-in community requested and admin features. Built with DiscordJS and TypeScript.',
         url: 'https://github.com/viet-aus-it/vait-discord-bot',
-      }
+      },
     ],
     skills: [
       {

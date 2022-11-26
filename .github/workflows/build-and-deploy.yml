@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
