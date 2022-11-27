@@ -8,7 +8,7 @@ interface ProjectProps {
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (
-    <a href={url} rel="noreferrer" target="_blank">
+    <a href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
     </a>
   ) : (

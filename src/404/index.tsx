@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Layout from '../layout/layout';
 
 export default function ErrorPage() {
@@ -12,7 +13,7 @@ export default function ErrorPage() {
           </h3>
           <h4>
             {`Please go back to the `}
-            <a href="/">Home page.</a>
+            <Link to="/">Home page.</Link>
           </h4>
         </header>
       </section>

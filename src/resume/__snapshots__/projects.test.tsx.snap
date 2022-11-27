@@ -26,6 +26,7 @@ exports[`Project section rendering > Should match snapshot 1`] = `
               />
               <p>
                 <a
+                  aria-label="Project Test Title URL"
                   href="http://test url"
                   rel="noreferrer"
                   target="_blank"
@@ -75,6 +76,7 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             />
             <p>
               <a
+                aria-label="Project Test Title URL"
                 href="http://test url"
                 rel="noreferrer"
                 target="_blank"

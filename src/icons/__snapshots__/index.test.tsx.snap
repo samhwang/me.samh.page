@@ -83,6 +83,7 @@ exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <a
+        aria-label="github-plain URL"
         href="https://github.com/samhwang"
         rel="noreferrer"
         target="_blank"
@@ -95,6 +96,7 @@ exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <a
+      aria-label="github-plain URL"
       href="https://github.com/samhwang"
       rel="noreferrer"
       target="_blank"

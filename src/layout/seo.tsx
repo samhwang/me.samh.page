@@ -1,15 +1,10 @@
 import { Helmet } from 'react-helmet';
-
-interface MetaProp {
-  name?: string;
-  content?: string;
-  property?: string;
-}
+import type { MetaHTMLAttributes } from 'react';
 
 export interface SEOProps {
   title: string;
   description?: string;
-  meta?: MetaProp[] | MetaProp;
+  meta?: MetaHTMLAttributes<HTMLMetaElement>[] | MetaHTMLAttributes<HTMLMetaElement>;
   defaultFallback: {
     title: string;
     description: string;
@@ -19,7 +14,7 @@ export interface SEOProps {
 export default function SEO({ title, description, meta, defaultFallback }: SEOProps) {
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
-  const defaultMeta: MetaProp[] = [
+  const defaultMeta: MetaHTMLAttributes<HTMLMetaElement>[] = [
     {
       name: `description`,
       content: metaDescription,
@@ -48,9 +43,13 @@ export default function SEO({ title, description, meta, defaultFallback }: SEOPr
     <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
       <title>{title}</title>
       <html lang="en" />
-      {helmetMeta.map(({ name, property, content }) => (
-        <meta key={name || property} name={name && name} property={property && property} content={content} />
-      ))}
+      {helmetMeta.map(({ name, property, content }) => {
+        if (name) {
+          return <meta key={name} name={name} content={content} />;
+        }
+
+        return <meta key={property} property={property && property} content={content} />;
+      })}
     </Helmet>
   );
 }
