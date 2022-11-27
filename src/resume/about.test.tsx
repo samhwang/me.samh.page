@@ -12,6 +12,7 @@ describe('Render About Data', () => {
     const mockAbout = {
       firstName: 'test',
       lastName: 'test',
+      bio: 'test test test',
       address: '123 Test Drive',
       socialLinks: [
         {

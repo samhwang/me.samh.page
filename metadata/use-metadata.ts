@@ -17,10 +17,11 @@ export function useSidebarData() {
 }
 
 export function useAboutData() {
-  const { firstName, lastName, address, socialLinks } = metadata.personalInformation;
+  const { firstName, lastName, bio, address, socialLinks } = metadata.personalInformation;
   return {
     firstName,
     lastName,
+    bio,
     address,
     socialLinks,
   };
