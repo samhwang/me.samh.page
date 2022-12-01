@@ -1,3 +1,4 @@
+// Icons List. See https://devicon.dev/
 const ICONS = {
   PHP: 'php-plain',
   CODEIGNITER: 'codeigniter-plain',
@@ -52,19 +53,22 @@ const ICONS = {
   ESLINT: 'eslint-original',
 };
 
+// Manifest for PWA.
+export const manifest = {
+  name: 'Sam Huynh Website',
+  short_name: 'Sam Huynh',
+  start_url: '/',
+  background_color: '#FFFFFF',
+  theme_color: '#FFFFFF',
+  display: 'standalone',
+  icon: 'src/assets/img/website-icon.png',
+};
+
 const metadata = {
   siteTitle: 'Sam Huynh',
   siteUrl: 'https://samhwang.github.io',
   siteDescription: 'Online profile of Sam Huynh.',
-  manifest: {
-    name: 'Sam Huynh Website',
-    short_name: 'Sam Huynh',
-    start_url: '/',
-    background_color: '#FFFFFF',
-    theme_color: '#FFFFFF',
-    display: 'standalone',
-    icon: 'src/assets/img/website-icon.png',
-  },
+  manifest,
   personalInformation: {
     firstName: 'Sam',
     lastName: 'Huynh',
