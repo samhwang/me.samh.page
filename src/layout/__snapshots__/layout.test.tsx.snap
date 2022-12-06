@@ -131,18 +131,34 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             >
               Sam Huynh
             </a>
-            . Hosted on 
+            .
+             Hosted on 
             <a
               href="/https://pages.github.com/"
             >
               GitHub Pages
             </a>
-            . Built with 
+            .
+             Built with 
             <a
               href="/https://www.vitejs.dev/"
             >
-              Vite.
+              Vite
             </a>
+             and 
+            <a
+              href="/https://reactjs.org/"
+            >
+              React
+            </a>
+            . 
+             Deployed with 
+            <a
+              href="/https://github.com/features/actions"
+            >
+              GitHub Actions
+            </a>
+            .
           </p>
         </section>
       </div>
@@ -275,18 +291,34 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           >
             Sam Huynh
           </a>
-          . Hosted on 
+          .
+           Hosted on 
           <a
             href="/https://pages.github.com/"
           >
             GitHub Pages
           </a>
-          . Built with 
+          .
+           Built with 
           <a
             href="/https://www.vitejs.dev/"
           >
-            Vite.
+            Vite
           </a>
+           and 
+          <a
+            href="/https://reactjs.org/"
+          >
+            React
+          </a>
+          . 
+           Deployed with 
+          <a
+            href="/https://github.com/features/actions"
+          >
+            GitHub Actions
+          </a>
+          .
         </p>
       </section>
     </div>
