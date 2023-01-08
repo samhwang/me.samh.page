@@ -102,11 +102,12 @@ const metadata = {
         companyName: 'HungryHungry',
         duration: 'Jun 2021 - Present',
         description: [
-          "Kickstarted the migration process for HH's Backend System legacy monolith into microservices: Payments, Identity, POS Integrations, Dockets, Assisted Marketing, Kiosk, Bar Tabs, Notifications, ...",
-          "Built and maintained HH's UI Components Library based on the Design System to streamline the UI Apps creation process, and various internal NPM packages on CodeArtifact",
-          'Automated microservices deployment using BuildKite CI/CD pipelines',
-          'Assisted in interviewing and onboarding new staff members',
-          "Took part in being the Engineer-on-Call to maintain HH's service uptime over busy periods",
+          "Spearheaded the migration process for HH's PHP/Drupal Backend System legacy monolith into Node/TypeScript microservices.",
+          "Built and maintained HH's UI React Components Library based on the Design System to streamline the UI Apps creation process, and various internal NPM packages on CodeArtifact.",
+          'Automated microservices deployment using BuildKite CI/CD pipelines.',
+          'Assisted in interviewing and onboarding new staff members.',
+          "Integrated payments provider (Stripe, AfterPay) into HH's Payments service, and AWS Cognito into the Customer Identity service.",
+          'Took part in being the Engineer-on-Call to maintain 99.99% service uptime over busy periods.',
         ],
         techIcons: [
           ICONS.JS,
