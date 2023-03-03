@@ -1,17 +1,15 @@
 import { Helmet } from 'react-helmet';
 import type { MetaHTMLAttributes } from 'react';
+import { useSiteMetadata } from '../../metadata/use-metadata';
 
 export interface SEOProps {
   title: string;
   description?: string;
   meta?: MetaHTMLAttributes<HTMLMetaElement>[] | MetaHTMLAttributes<HTMLMetaElement>;
-  defaultFallback: {
-    title: string;
-    description: string;
-  };
 }
 
-export default function SEO({ title, description, meta, defaultFallback }: SEOProps) {
+export default function SEO({ title, description, meta }: SEOProps) {
+  const defaultFallback = useSiteMetadata();
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
   const defaultMeta: MetaHTMLAttributes<HTMLMetaElement>[] = [

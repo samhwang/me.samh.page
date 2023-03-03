@@ -1,18 +1,13 @@
-import { Fragment, ReactNode } from 'react';
-import Layout from '../layout/layout';
+import { Fragment } from 'react';
+import SEO from '../layout/seo';
 import About from './about';
 import Education from './education';
 import Experiences from './experience';
 import ProjectSection from './projects';
 import SkillSection from './skills';
 
-interface SectionType {
-  id: string;
-  content: ReactNode;
-}
-
 export default function ResumePage() {
-  const sections: SectionType[] = [
+  const sections = [
     { id: 'about', content: <About /> },
     { id: 'experience', content: <Experiences /> },
     { id: 'education', content: <Education /> },
@@ -20,16 +15,15 @@ export default function ResumePage() {
     { id: 'projects', content: <ProjectSection /> },
   ];
 
-  const children = sections.map(({ id, content }) => (
-    <Fragment key={id}>
-      {content}
-      <hr className="m-0" />
-    </Fragment>
-  ));
-
   return (
-    <Layout title="Resume" description="Sam Huynh resume">
-      {children}
-    </Layout>
+    <>
+      <SEO title="Resume" description="Sam Huynh resume" />
+      {sections.map(({ id, content }) => (
+        <Fragment key={id}>
+          {content}
+          <hr className="m-0" />
+        </Fragment>
+      ))}
+    </>
   );
 }

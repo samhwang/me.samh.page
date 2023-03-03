@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import Layout from './layout';
-import RenderWrapper from '../test-utils/render-wrapper';
 import { useSiteMetadata, useSidebarData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
@@ -21,12 +21,19 @@ describe('Layout rendering', () => {
     };
     mockSidebarHook.mockReturnValueOnce(mockSidebarData);
 
-    const tree = render(
-      <Layout title="Test Render" description="Test Render">
-        <h1>This is a test!</h1>
-      </Layout>,
-      { wrapper: RenderWrapper }
-    );
+    const router = createMemoryRouter([
+      {
+        path: '/',
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <h1>This is a test!</h1>,
+          },
+        ],
+      },
+    ]);
+    const tree = render(<RouterProvider router={router} />);
     expect(tree).toMatchSnapshot();
   });
 });

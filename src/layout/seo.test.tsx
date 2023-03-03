@@ -7,13 +7,9 @@ describe('SEO Rendering', () => {
     const data: SEOProps = {
       title: 'Test Render',
       description: 'Test Render',
-      defaultFallback: {
-        title: 'Default Title',
-        description: 'Default Description',
-      },
     };
 
-    const tree = render(<SEO title={data.title} description={data.description} defaultFallback={data.defaultFallback} />);
+    const tree = render(<SEO title={data.title} description={data.description} />);
     expect(tree).toMatchSnapshot();
   });
 });

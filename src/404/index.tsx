@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import Layout from '../layout/layout';
+import SEO from '../layout/seo';
 
 export default function ErrorPage() {
   return (
-    <Layout title="Error 404: Page not found" description="Error 404: Page not found">
+    <>
+      <SEO title="Error 404: Page not found" description="Error 404: Page not found" />
       <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
         <header className="major">
           <h2>Error 404: Page not found.</h2>
@@ -17,6 +18,6 @@ export default function ErrorPage() {
           </h4>
         </header>
       </section>
-    </Layout>
+    </>
   );
 }
