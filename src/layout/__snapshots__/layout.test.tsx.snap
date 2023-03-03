@@ -1,4 +1,4 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Layout rendering > Should match snapshot 1`] = `
 {
@@ -127,34 +127,34 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           <p>
             © 2022 
             <a
-              href="/https://github.com/samhwang"
+              href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             .
              Hosted on 
             <a
-              href="/https://pages.github.com/"
+              href="https://pages.github.com/"
             >
               GitHub Pages
             </a>
             .
              Built with 
             <a
-              href="/https://www.vitejs.dev/"
+              href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
-              href="/https://reactjs.org/"
+              href="https://reactjs.org/"
             >
               React
             </a>
             . 
              Deployed with 
             <a
-              href="/https://github.com/features/actions"
+              href="https://github.com/features/actions"
             >
               GitHub Actions
             </a>
@@ -287,34 +287,34 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         <p>
           © 2022 
           <a
-            href="/https://github.com/samhwang"
+            href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           .
            Hosted on 
           <a
-            href="/https://pages.github.com/"
+            href="https://pages.github.com/"
           >
             GitHub Pages
           </a>
           .
            Built with 
           <a
-            href="/https://www.vitejs.dev/"
+            href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
-            href="/https://reactjs.org/"
+            href="https://reactjs.org/"
           >
             React
           </a>
           . 
            Deployed with 
           <a
-            href="/https://github.com/features/actions"
+            href="https://github.com/features/actions"
           >
             GitHub Actions
           </a>
