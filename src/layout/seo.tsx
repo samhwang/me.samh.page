@@ -14,24 +14,24 @@ export default function SEO({ title, description, meta }: SEOProps) {
   const metaDescription = description || defaultFallback.description;
   const defaultMeta: MetaHTMLAttributes<HTMLMetaElement>[] = [
     {
-      name: `description`,
+      name: 'description',
       content: metaDescription,
     },
     {
-      name: `viewport`,
+      name: 'viewport',
       content: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no',
     },
     {
-      property: `og:title`,
+      property: 'og:title',
       content: title,
     },
     {
-      property: `og:description`,
+      property: 'og:description',
       content: metaDescription,
     },
     {
-      property: `og:type`,
-      content: `website`,
+      property: 'og:type',
+      content: 'website',
     },
   ];
 

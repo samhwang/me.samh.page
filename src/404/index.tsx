@@ -10,10 +10,10 @@ export default function ErrorPage() {
           <h2>Error 404: Page not found.</h2>
           <h3>
             It seems like you&apos;ve hit a dead end. There&apos;s nothing to
-            {` see here.`}
+            {' see here.'}
           </h3>
           <h4>
-            {`Please go back to the `}
+            {'Please go back to the '}
             <Link to="/">Home page.</Link>
           </h4>
         </header>

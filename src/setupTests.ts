@@ -4,7 +4,7 @@ import { beforeAll, afterAll, afterEach, expect, vi } from 'vitest';
 
 declare global {
   namespace Vi {
-    interface JestAssertion<T = any> extends jest.Matchers<void, T>, TestingLibraryMatchers<T, void> {}
+    interface JestAssertion<T = unknown> extends jest.Matchers<void, T>, TestingLibraryMatchers<T, void> {}
   }
 }
 

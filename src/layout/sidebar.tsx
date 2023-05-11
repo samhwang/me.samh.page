@@ -61,9 +61,7 @@ export default function Sidebar() {
                 return (
                   <li className={className} ref={ref} key={href}>
                     <Scroll type="id" element={href} counter={i}>
-                      <a className="nav-link" href={`#${href}`}>
-                        {content}
-                      </a>
+                      <span className="nav-link">{content}</span>
                     </Scroll>
                   </li>
                 );
