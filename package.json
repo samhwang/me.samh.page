@@ -13,10 +13,11 @@
     "preview": "vite preview",
     "pretest": "rimraf coverage",
     "test": "vitest",
-    "lint": "eslint --cache .",
-    "lint:fix": "pnpm lint --fix",
-    "prettier": "prettier --cache --write .",
-    "format": "pnpm lint:fix && pnpm prettier"
+    "lint": "rome check ./src/*",
+    "lint:fix": "rome check --apply ./src/**",
+    "lint:fix:unsafe": "rome check --apply-unsafe ./src/**",
+    "format": "rome format --write ./src/**/*.ts ./src/**/*.tsx",
+    "ci": "rome ci ./src/**/*.ts ./src/**/*.tsx"
   },
   "dependencies": {
     "@fontsource/mulish": "^4.5.14",
@@ -60,6 +61,7 @@
     "jsdom": "^22.0.0",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
+    "rome": "^12.0.0",
     "sass": "^1.62.1",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4",

@@ -1,6 +1,6 @@
 [build]
   publish = "dist/"
-  command = "pnpm run lint && pnpm run test && pnpm run build"
+  command = "pnpm run ci && pnpm run test && pnpm run build"
 
 [[redirects]]
   from = "/*"
