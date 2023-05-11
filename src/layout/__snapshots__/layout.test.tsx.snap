@@ -64,52 +64,47 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               <li
                 class="nav-item"
               >
-                <a
+                <span
                   class="nav-link"
-                  href="#about"
                 >
                   About
-                </a>
+                </span>
               </li>
               <li
                 class="nav-item"
               >
-                <a
+                <span
                   class="nav-link"
-                  href="#experience"
                 >
                   Experience
-                </a>
+                </span>
               </li>
               <li
                 class="nav-item"
               >
-                <a
+                <span
                   class="nav-link"
-                  href="#education"
                 >
                   Education
-                </a>
+                </span>
               </li>
               <li
                 class="nav-item"
               >
-                <a
+                <span
                   class="nav-link"
-                  href="#skills"
                 >
                   Skills
-                </a>
+                </span>
               </li>
               <li
                 class="nav-item active"
               >
-                <a
+                <span
                   class="nav-link"
-                  href="#projects"
                 >
                   Projects
-                </a>
+                </span>
               </li>
             </div>
           </div>
@@ -217,52 +212,47 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             <li
               class="nav-item"
             >
-              <a
+              <span
                 class="nav-link"
-                href="#about"
               >
                 About
-              </a>
+              </span>
             </li>
             <li
               class="nav-item"
             >
-              <a
+              <span
                 class="nav-link"
-                href="#experience"
               >
                 Experience
-              </a>
+              </span>
             </li>
             <li
               class="nav-item"
             >
-              <a
+              <span
                 class="nav-link"
-                href="#education"
               >
                 Education
-              </a>
+              </span>
             </li>
             <li
               class="nav-item"
             >
-              <a
+              <span
                 class="nav-link"
-                href="#skills"
               >
                 Skills
-              </a>
+              </span>
             </li>
             <li
               class="nav-item active"
             >
-              <a
+              <span
                 class="nav-link"
-                href="#projects"
               >
                 Projects
-              </a>
+              </span>
             </li>
           </div>
         </div>
