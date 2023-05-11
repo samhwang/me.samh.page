@@ -18,9 +18,9 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
           .
            Hosted on 
           <a
-            href="https://pages.github.com/"
+            href="https://app.netlify.com"
           >
-            GitHub Pages
+            Netlify
           </a>
           .
            Built with 
@@ -34,13 +34,6 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
             href="https://reactjs.org/"
           >
             React
-          </a>
-          . 
-           Deployed with 
-          <a
-            href="https://github.com/features/actions"
-          >
-            GitHub Actions
           </a>
           .
         </p>
@@ -61,9 +54,9 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
         .
          Hosted on 
         <a
-          href="https://pages.github.com/"
+          href="https://app.netlify.com"
         >
-          GitHub Pages
+          Netlify
         </a>
         .
          Built with 
@@ -77,13 +70,6 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
           href="https://reactjs.org/"
         >
           React
-        </a>
-        . 
-         Deployed with 
-        <a
-          href="https://github.com/features/actions"
-        >
-          GitHub Actions
         </a>
         .
       </p>

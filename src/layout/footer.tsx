@@ -5,6 +5,7 @@ export default function Footer() {
     github: <Link to="https://github.com/samhwang">Sam Huynh</Link>,
     githubPages: <Link to="https://pages.github.com/">GitHub Pages</Link>,
     githubAction: <Link to="https://github.com/features/actions">GitHub Actions</Link>,
+    netlify: <Link to="https://app.netlify.com">Netlify</Link>,
     vite: <Link to="https://www.vitejs.dev/">Vite</Link>,
     react: <Link to="https://reactjs.org/">React</Link>,
   };
@@ -14,11 +15,10 @@ export default function Footer() {
       <p>
         {`© ${new Date().getFullYear()} `}
         {LINKS.github}.{` Hosted on `}
-        {LINKS.githubPages}.{` Built with `}
+        {LINKS.netlify}.{` Built with `}
         {LINKS.vite}
         {` and `}
-        {LINKS.react}. {` Deployed with `}
-        {LINKS.githubAction}.
+        {LINKS.react}.
       </p>
     </section>
   );

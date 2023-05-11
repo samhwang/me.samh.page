@@ -13,7 +13,7 @@ GitHub: samhwang
 Vite
 Node
 React
-GitHub Pages & Actions
+Netlify
 
 /* SITE */
 Last update: 2022/07/07
