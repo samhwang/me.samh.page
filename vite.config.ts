@@ -1,4 +1,5 @@
 /// <reference types="vitest" />
+/// <reference types="vite/client" />
 
 import { defineConfig } from 'vite';
 import reactBabel from '@vitejs/plugin-react';
@@ -27,6 +28,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['src/setupTests.ts'],
     coverage: {
+      provider: 'c8',
       enabled: !!process.env.CI,
     },
   },
