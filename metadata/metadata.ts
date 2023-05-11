@@ -314,9 +314,9 @@ const metadata = {
         url: 'https://github.com/samhwang',
       },
       {
-        title: 'My GitHub.io page',
-        description: "The page you're viewing right now! Hosted on GitHub Pages, built with the Vite & React, deployed with GitHub Actions.",
-        url: 'https://samhwang.github.io',
+        title: 'My Resume page',
+        description: "The page you're viewing right now! Hosted on Netlify, built with the Vite & React.",
+        url: 'https://me.samh.page',
       },
       {
         title: 'VAIT Discord Bot',
