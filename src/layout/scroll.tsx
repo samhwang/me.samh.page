@@ -54,7 +54,7 @@ export default function Scroll({ type, element, offset, timeout, children, count
   return typeof children === 'object' ? (
     cloneElement(children, { onClick: handleClick })
   ) : (
-    <span onClick={handleClick} onKeyDown={handleClick} role="tab" tabIndex={counter}>
+    <span onClick={handleClick} onKeyDown={handleClick} role='tab' tabIndex={counter}>
       {children}
     </span>
   );

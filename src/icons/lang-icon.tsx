@@ -9,7 +9,7 @@ export default function LangIcon({ name }: LangIconProps) {
   const onMouseHandler = () => toggleColorIcon();
 
   return (
-    <li className="list-inline-item">
+    <li className='list-inline-item'>
       <i className={currentIconClass} onMouseEnter={onMouseHandler} onMouseLeave={onMouseHandler} />
     </li>
   );
