@@ -15,6 +15,8 @@ const ICONS = {
   REDUX: 'redux-original',
   GATSBY: 'gatsby-plain',
   ANGULAR: 'angularjs-plain',
+  VUE: 'vuejs-plain',
+  NUXT: 'nuxtjs-plain',
   MATERIALUI: 'materialui-plain',
   STORYBOOK: 'storybook-plain',
   NODE: 'nodejs-plain',
@@ -99,9 +101,38 @@ const metadata = {
     address: 'Melbourne, Victoria, Australia',
     experience: [
       {
-        title: 'Full Stack Software Developer',
+        title: 'Senior Full Stack Software Engineer',
+        companyName: 'Lyka Pet Food',
+        duration: 'Jun 2023 - Present',
+        description: [],
+        technologies: [
+          'Front-end: Vue, Nuxt, TailwindCSS',
+          'Back-end: PHP (Laravel)',
+          'Testing: Vitest, PHPUnit, Playwright',
+        ],
+        techIcons: [
+          ICONS.JS,
+          ICONS.TS,
+          ICONS.VUE,
+          ICONS.NUXT,
+          ICONS.HTML5,
+          ICONS.CSS3,
+          ICONS.TAILWIND,
+          ICONS.NPM,
+          ICONS.PHP,
+          ICONS.LARAVEL,
+          ICONS.MYSQL,
+          ICONS.AWS,
+          ICONS.DOCKER,
+          ICONS.GITHUB,
+          ICONS.BITBUCKET,
+          ICONS.JIRA,
+        ]
+      },
+      {
+        title: 'Full Stack Software Engineer',
         companyName: 'HungryHungry',
-        duration: 'Jun 2021 - Present',
+        duration: 'Jun 2021 - Jun 2023',
         description: [
           "Spearheaded the migration process for HH's PHP/Drupal Backend System legacy monolith into Node/TypeScript microservices.",
           "Built and maintained HH's UI React Components Library based on the Design System to streamline the UI Apps creation process, and various internal NPM packages on CodeArtifact.",
@@ -331,6 +362,11 @@ const metadata = {
         description: 'A CLI tool to convert BitWarden exports into acceptable formats for 1Password, easing the transition process',
         url: 'https://github.com/samhwang/bitwarden-to-1password',
       },
+      {
+        title: 'tRPC Netlify Functions Adapter',
+        description: 'An adpater to run a standalone tRPC server on Netlify Functions',
+        url: 'https://github.com/samhwang/trpc-utils/tree/main/packages/netlify-functions',
+      }
     ],
     skills: [
       {
