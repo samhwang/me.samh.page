@@ -9,3 +9,6 @@ coverage
 
 # Generated from MSW
 public/mockServiceWorker.js
+
+# Local Netlify folder
+.netlify
