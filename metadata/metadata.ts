@@ -36,7 +36,7 @@ const ICONS = {
   RUST: 'rust-plain',
   HTML5: 'html5-plain',
   CSS3: 'css3-plain',
-  SASS: 'sass-orignal',
+  SASS: 'sass-plain',
   TAILWIND: 'tailwindcss-plain',
   LESS: 'less-plain-wordmark',
   BOOTSTRAP: 'bootstrap-plain',
