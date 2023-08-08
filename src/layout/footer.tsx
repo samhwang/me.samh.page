@@ -13,12 +13,7 @@ export default function Footer() {
   return (
     <section className='resume-section p-3 p-lg-5 d-flex align-items-center'>
       <p>
-        {`© ${new Date().getFullYear()} `}
-        {LINKS.github}.{' Hosted on '}
-        {LINKS.netlify}.{' Built with '}
-        {LINKS.vite}
-        {' and '}
-        {LINKS.react}.
+        © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.netlify}. Built with {LINKS.vite} and {LINKS.react}.
       </p>
     </section>
   );

@@ -9,21 +9,21 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
-          © 2022 
+          © 
+          2022
+           
           <a
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
-          .
-           Hosted on 
+          . Hosted on 
           <a
             href="https://app.netlify.com"
           >
             Netlify
           </a>
-          .
-           Built with 
+          . Built with 
           <a
             href="https://www.vitejs.dev/"
           >
@@ -45,21 +45,21 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
       class="resume-section p-3 p-lg-5 d-flex align-items-center"
     >
       <p>
-        © 2022 
+        © 
+        2022
+         
         <a
           href="https://github.com/samhwang"
         >
           Sam Huynh
         </a>
-        .
-         Hosted on 
+        . Hosted on 
         <a
           href="https://app.netlify.com"
         >
           Netlify
         </a>
-        .
-         Built with 
+        . Built with 
         <a
           href="https://www.vitejs.dev/"
         >
