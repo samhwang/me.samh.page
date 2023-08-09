@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, ElementRef } from 'react';
 import { useToggle } from '@react-hookz/web';
 import { Scrollspy } from '@makotot/ghostui';
 import Scroll from './scroll';
@@ -10,19 +10,19 @@ export default function Sidebar() {
   const { firstName, lastName } = useSidebarData();
 
   const tabs = [
-    { content: 'About', href: 'about', ref: useRef<HTMLLIElement>(null) },
+    { content: 'About', href: 'about', ref: useRef<ElementRef<'li'>>(null) },
     {
       content: 'Experience',
       href: 'experience',
-      ref: useRef<HTMLLIElement>(null),
+      ref: useRef<ElementRef<'li'>>(null),
     },
     {
       content: 'Education',
       href: 'education',
-      ref: useRef<HTMLLIElement>(null),
+      ref: useRef<ElementRef<'li'>>(null),
     },
-    { content: 'Skills', href: 'skills', ref: useRef<HTMLLIElement>(null) },
-    { content: 'Projects', href: 'projects', ref: useRef<HTMLLIElement>(null) },
+    { content: 'Skills', href: 'skills', ref: useRef<ElementRef<'li'>>(null) },
+    { content: 'Projects', href: 'projects', ref: useRef<ElementRef<'li'>>(null) },
   ];
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
