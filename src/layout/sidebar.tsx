@@ -1,29 +1,45 @@
-import { useRef, ElementRef } from 'react';
+import { useState } from 'react';
 import { useToggle } from '@react-hookz/web';
-import { Scrollspy } from '@makotot/ghostui';
-import Scroll from './scroll';
 import avatarJPG from '../assets/img/avatar.jpg';
 import avatarWebP from '../assets/img/avatar.webp';
 import { useSidebarData } from '../../metadata/use-metadata';
+import NavTab from './nav-tab';
+
+interface Tab {
+  content: string;
+  href: string;
+}
 
 export default function Sidebar() {
   const { firstName, lastName } = useSidebarData();
 
-  const tabs = [
-    { content: 'About', href: 'about', ref: useRef<ElementRef<'li'>>(null) },
+  const tabs: Tab[] = [
+    { content: 'About', href: 'about' },
     {
       content: 'Experience',
       href: 'experience',
-      ref: useRef<ElementRef<'li'>>(null),
     },
     {
       content: 'Education',
       href: 'education',
-      ref: useRef<ElementRef<'li'>>(null),
     },
-    { content: 'Skills', href: 'skills', ref: useRef<ElementRef<'li'>>(null) },
-    { content: 'Projects', href: 'projects', ref: useRef<ElementRef<'li'>>(null) },
+    { content: 'Skills', href: 'skills' },
+    { content: 'Projects', href: 'projects' },
   ];
+  const [tabInView, setTabInView] = useState(0);
+  const scrollTo = (element: Element | null, tabIndex: number) => {
+    if (!element) {
+      return;
+    }
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+    setTabInView(tabIndex);
+  };
+
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
   return (
@@ -51,24 +67,15 @@ export default function Sidebar() {
         <span className='navbar-toggler-icon' />
       </button>
       <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`} id='navbarSupportedContent'>
-        <Scrollspy sectionRefs={tabs.map(({ ref }) => ref)}>
-          {({ currentElementIndexInViewport }) => (
-            <div className='navbar-nav'>
-              {tabs.map(({ href, content, ref }, i) => {
-                const isActive = currentElementIndexInViewport === i;
-                const className = isActive ? 'nav-item active' : 'nav-item';
+        <div className='navbar-nav'>
+          {tabs.map(({ href, content }, tabIndex) => {
+            const isActive = tabInView === tabIndex;
+            const block = document.getElementById(href);
+            const handleClick = () => scrollTo(block, tabIndex);
 
-                return (
-                  <li className={className} ref={ref} key={href}>
-                    <Scroll type='id' element={href} counter={i}>
-                      <span className='nav-link'>{content}</span>
-                    </Scroll>
-                  </li>
-                );
-              })}
-            </div>
-          )}
-        </Scrollspy>
+            return <NavTab content={content} isActive={isActive} onClick={handleClick} onKeyDown={handleClick} key={href} />;
+          })}
+        </div>
       </div>
     </nav>
   );

@@ -27,7 +27,6 @@
     "@fontsource/mulish": "^5.0.8",
     "@fontsource/roboto": "^5.0.8",
     "@fontsource/saira-extra-condensed": "^5.0.8",
-    "@makotot/ghostui": "^2.0.0",
     "@popperjs/core": "^2.11.8",
     "@react-hookz/web": "^23.1.0",
     "bootstrap": "^5.3.1",
