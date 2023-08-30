@@ -9,7 +9,7 @@ export default function NavTab({ content, isActive, onClick, onKeyDown }: NavTab
   const className = isActive ? 'nav-item active' : 'nav-item';
   return (
     <li className={className}>
-      <span className='nav-link' onClick={onClick} onKeyDown={onKeyDown}>
+      <span className="nav-link" onClick={onClick} onKeyDown={onKeyDown}>
         {content}
       </span>
     </li>

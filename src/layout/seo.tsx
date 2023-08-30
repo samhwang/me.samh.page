@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet';
 import type { MetaHTMLAttributes } from 'react';
+import { Helmet } from 'react-helmet';
 import { useSiteMetadata } from '../../metadata/use-metadata';
 
 export interface SEOProps {
@@ -40,7 +40,7 @@ export default function SEO({ title, description, meta }: SEOProps) {
   return (
     <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
       <title>{title}</title>
-      <html lang='en' />
+      <html lang="en" />
       {helmetMeta.map(({ name, property, content }) => {
         if (name) {
           return <meta key={name} name={name} content={content} />;

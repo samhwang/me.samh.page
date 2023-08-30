@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
-import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider, createMemoryRouter } from 'react-router-dom';
+import { describe, expect, it, vi } from 'vitest';
+import { useSidebarData, useSiteMetadata } from '../../metadata/use-metadata';
 import Layout from './layout';
-import { useSiteMetadata, useSidebarData } from '../../metadata/use-metadata';
 
 vi.mock('../../metadata/use-metadata');
 const mockMetadataHook = vi.mocked(useSiteMetadata);

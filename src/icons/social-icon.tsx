@@ -5,7 +5,7 @@ export interface SocialLinkProps {
 
 export default function SocialIcon({ icon, url }: SocialLinkProps) {
   return (
-    <a href={url} target='_blank' rel='noreferrer' aria-label={`${icon} URL`}>
+    <a href={url} target="_blank" rel="noreferrer" aria-label={`${icon} URL`}>
       <i className={`devicon-${icon}`} />
     </a>
   );

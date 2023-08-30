@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
-import SkillSection from './skills';
-import RenderWrapper from '../test-utils/render-wrapper';
+import { describe, expect, it, vi } from 'vitest';
 import { useSkillsData } from '../../metadata/use-metadata';
+import RenderWrapper from '../test-utils/render-wrapper';
+import SkillSection from './skills';
 
 vi.mock('../../metadata/use-metadata');
 const mockHook = vi.mocked(useSkillsData);

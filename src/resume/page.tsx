@@ -17,11 +17,11 @@ export default function ResumePage() {
 
   return (
     <>
-      <SEO title='Resume' description='Sam Huynh resume' />
+      <SEO title="Resume" description="Sam Huynh resume" />
       {sections.map(({ id, content }) => (
         <Fragment key={id}>
           {content}
-          <hr className='m-0' />
+          <hr className="m-0" />
         </Fragment>
       ))}
     </>

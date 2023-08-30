@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
-import Experiences from './experience';
-import RenderWrapper from '../test-utils/render-wrapper';
+import { describe, expect, it, vi } from 'vitest';
 import { useExperienceData } from '../../metadata/use-metadata';
+import RenderWrapper from '../test-utils/render-wrapper';
+import Experiences from './experience';
 
 vi.mock('../../metadata/use-metadata');
 const mockHook = vi.mocked(useExperienceData);

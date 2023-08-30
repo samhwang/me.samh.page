@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 export default function useIconClass(name: string) {
   const DEFAULT_ICON_CLASS = useMemo<string>(() => `devicon-${name}`, [name]);
