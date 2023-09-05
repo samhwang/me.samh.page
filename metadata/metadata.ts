@@ -109,6 +109,11 @@ const metadata = {
           'Front-end: Vue, Nuxt, TailwindCSS',
           'Back-end: PHP (Laravel)',
           'Testing: Vitest, PHPUnit, Playwright',
+          'Database: MySQL',
+          'Data analytics integration with Twillio Segments & Customer.IO',
+          'Monorepo Management with Turborepo',
+          'Ran, built and maintained CI/CD pipeline with Bitbucket CI & Github Actions',
+          'Error and Metrics reporting with Sentry, Logz.io and Honeycomb',
         ],
         techIcons: [
           ICONS.JS,
