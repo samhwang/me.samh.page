@@ -1,5 +1,4 @@
 import { useToggle } from '@react-hookz/web';
-import { useState } from 'react';
 import { useSidebarData } from '../../metadata/use-metadata';
 import avatarJPG from '../assets/img/avatar.jpg';
 import avatarWebP from '../assets/img/avatar.webp';
@@ -26,19 +25,6 @@ export default function Sidebar() {
     { content: 'Skills', href: 'skills' },
     { content: 'Projects', href: 'projects' },
   ];
-  const [tabInView, setTabInView] = useState(0);
-  const scrollTo = (element: Element | null, tabIndex: number) => {
-    if (!element) {
-      return;
-    }
-
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-    setTabInView(tabIndex);
-  };
 
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
@@ -68,12 +54,8 @@ export default function Sidebar() {
       </button>
       <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`} id="navbarSupportedContent">
         <div className="navbar-nav">
-          {tabs.map(({ href, content }, tabIndex) => {
-            const isActive = tabInView === tabIndex;
-            const block = document.getElementById(href);
-            const handleClick = () => scrollTo(block, tabIndex);
-
-            return <NavTab content={content} isActive={isActive} onClick={handleClick} onKeyDown={handleClick} key={href} />;
+          {tabs.map(({ href, content }) => {
+            return <NavTab content={content} key={href} href={href} />;
           })}
         </div>
       </div>
