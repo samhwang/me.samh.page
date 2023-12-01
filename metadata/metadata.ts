@@ -78,7 +78,7 @@ export const manifest = {
 
 const metadata = {
   siteTitle: 'Sam Huynh',
-  siteUrl: 'https://samhwang.github.io',
+  siteUrl: 'https://me.samh.page',
   siteDescription: 'Online profile of Sam Huynh.',
   manifest,
   personalInformation: {
@@ -113,7 +113,7 @@ const metadata = {
           'Front-end: TypeScript, Vue, Nuxt, TailwindCSS',
           'Back-end: PHP8 (Laravel)',
           'Testing: Vitest, PHPUnit, Playwright',
-          'Database: MySQL',
+          'Database: MySQL, DynamoDB',
           'Data analytics integration with Twillio Segments & Customer.io',
           'Monorepo Management with Turborepo',
           'Ran, built and maintained CI/CD pipeline with Bitbucket Pipeline & Github Actions',
@@ -130,6 +130,7 @@ const metadata = {
           ICONS.TAILWIND,
           ICONS.NPM,
           ICONS.YARN,
+          ICONS.ESLINT,
           ICONS.PHP,
           ICONS.COMPOSER,
           ICONS.LARAVEL,
