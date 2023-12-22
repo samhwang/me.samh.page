@@ -6,7 +6,7 @@ exports[`Education section render > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
         id="education"
       >
         <div
@@ -18,11 +18,9 @@ exports[`Education section render > Should match snapshot 1`] = `
             Education
           </h2>
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
-            <div
-              class="resume-content"
-            >
+            <div>
               <h3
                 class="mb-0"
               >
@@ -38,7 +36,7 @@ exports[`Education section render > Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="resume-date text-md-right"
+              class="_date_3f4a70 text-md-right"
             >
               <span
                 class="text-primary"
@@ -53,7 +51,7 @@ exports[`Education section render > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
       id="education"
     >
       <div
@@ -65,11 +63,9 @@ exports[`Education section render > Should match snapshot 1`] = `
           Education
         </h2>
         <div
-          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
         >
-          <div
-            class="resume-content"
-          >
+          <div>
             <h3
               class="mb-0"
             >
@@ -85,7 +81,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="resume-date text-md-right"
+            class="_date_3f4a70 text-md-right"
           >
             <span
               class="text-primary"

@@ -1,4 +1,6 @@
+import clsx from 'clsx';
 import { useProjectsData } from '../../metadata/use-metadata';
+import classes from '../layout/resume-item.module.scss';
 
 type ProjectProps = {
   title: string;
@@ -34,7 +36,7 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+    <section className={clsx(classes.section, 'p-3 p-lg-5 d-flex align-items-center')} id="projects">
       <div className="w-100">
         <h2 className="mb-5">Projects</h2>
         <ul className="fa-ul mb-0">

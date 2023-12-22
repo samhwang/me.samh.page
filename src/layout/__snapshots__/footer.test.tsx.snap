@@ -6,7 +6,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 
@@ -42,7 +42,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
     >
       <p>
         © 

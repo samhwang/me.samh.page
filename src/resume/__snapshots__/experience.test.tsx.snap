@@ -6,7 +6,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
   "baseElement": <body>
     <div>
       <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        class="_section_3f4a70 p-3 p-lg-5 d-flex justify-content-center"
         id="experience"
       >
         <div
@@ -18,11 +18,9 @@ exports[`Experience Component > Should render without crashing and match snapsho
             Experience
           </h2>
           <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            class="d-flex flex-column flex-md-row justify-content-between mb-5"
           >
-            <div
-              class="resume-content"
-            >
+            <div>
               <h3
                 class="mb-0"
               >
@@ -47,7 +45,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
                 </li>
               </ul>
               <ul
-                class="list-inline dev-icons"
+                class="list-inline _devIcons_6abadc"
               >
                 <li
                   class="list-inline-item"
@@ -59,7 +57,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               </ul>
             </div>
             <div
-              class="resume-date text-md-right"
+              class="_date_3f4a70 text-md-right"
             >
               <span
                 class="text-primary"
@@ -74,7 +72,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
   </body>,
   "container": <div>
     <section
-      class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+      class="_section_3f4a70 p-3 p-lg-5 d-flex justify-content-center"
       id="experience"
     >
       <div
@@ -86,11 +84,9 @@ exports[`Experience Component > Should render without crashing and match snapsho
           Experience
         </h2>
         <div
-          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
         >
-          <div
-            class="resume-content"
-          >
+          <div>
             <h3
               class="mb-0"
             >
@@ -115,7 +111,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               </li>
             </ul>
             <ul
-              class="list-inline dev-icons"
+              class="list-inline _devIcons_6abadc"
             >
               <li
                 class="list-inline-item"
@@ -127,7 +123,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </ul>
           </div>
           <div
-            class="resume-date text-md-right"
+            class="_date_3f4a70 text-md-right"
           >
             <span
               class="text-primary"
