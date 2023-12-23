@@ -113,8 +113,8 @@ const metadata = {
         ],
         technologies: [
           'Front-end: TypeScript, Vue, Nuxt, TailwindCSS',
-          'Back-end: PHP8 (Laravel)',
-          'Testing: Vitest, PHPUnit, Playwright',
+          'Back-end: PHP 8 (Laravel)',
+          'Testing: Vitest, PHPUnit, Playwright, Artillery',
           'Database: MySQL, DynamoDB',
           'AWS (Lambda, S3, SQS, EventBridge, SNS, ECS, ELB, CloudFront, Route 53, CloudFormation)',
           'Data analytics integration with Twillio Segments & Customer.io',
@@ -244,7 +244,7 @@ const metadata = {
         ],
         technologies: [
           'Front-end: React, EJS, jQuery, Bootstrap, Material UI, Jest, Storybook, SocketIO',
-          'Back-end: PHP7 (Wordpress), NodeJS (Express)',
+          'Back-end: PHP 7 (Wordpress), NodeJS (Express)',
           'HTML5, CSS3 and CSS pre-processors like SASS and LESS',
           'GraphQL (Apollo) and REST API',
           'Docker containers & docker-compose',
@@ -388,7 +388,7 @@ const metadata = {
       {
         title: 'Professional Proficiency',
         description: [
-          'Backend: PHP 7, NodeJS/TypeScript (Meteor, Express, Fastify, Serverless Framework)',
+          'Backend: PHP, NodeJS/TypeScript (Meteor, Express, Fastify, Serverless Framework)',
           'Frontend: jQuery, React (Redux, Gatsby, Storybook), HTML5, CSS, LESS, SASS & Tailwind',
           'Testing: Jest, Mocha, Vitest, React Testing Framework',
           'Event Streaming: Apache Kafka, AWS SQS, SocketIO',
