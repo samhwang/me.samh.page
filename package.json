@@ -10,7 +10,7 @@
     "node": "^20.0.0",
     "pnpm": "^8.0.0"
   },
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.12.1",
   "scripts": {
     "dev": "vite",
     "netlify": "netlify dev",
@@ -25,17 +25,17 @@
     "ci": "biome ci ./src/**/*.ts ./src/**/*.tsx"
   },
   "dependencies": {
-    "@fontsource/mulish": "^5.0.15",
+    "@fontsource/mulish": "^5.0.16",
     "@fontsource/roboto": "^5.0.8",
-    "@fontsource/saira-extra-condensed": "^5.0.17",
+    "@fontsource/saira-extra-condensed": "^5.0.18",
     "@popperjs/core": "^2.11.8",
-    "@react-hookz/web": "^23.1.0",
+    "@react-hookz/web": "^24.0.2",
     "bootstrap": "^5.3.2",
     "devicon": "^2.15.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.20.1"
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
@@ -43,21 +43,21 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
-    "@types/node": "^20.10.2",
-    "@types/react": "^18.2.39",
-    "@types/react-dom": "^18.2.17",
-    "@types/react-helmet": "^6.1.9",
-    "@vitejs/plugin-react": "^4.2.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-helmet": "^6.1.11",
+    "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "@vitest/coverage-v8": "^0.34.6",
-    "@vitest/ui": "^0.34.6",
+    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
     "jsdom": "^23.0.1",
-    "netlify-cli": "^17.8.1",
+    "netlify-cli": "^17.10.1",
     "sass": "^1.69.5",
-    "tsx": "^4.6.1",
-    "typescript": "^5.3.2",
-    "vite": "^5.0.4",
-    "vite-plugin-pwa": "^0.17.2",
-    "vitest": "^0.34.6"
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-pwa": "^0.17.4",
+    "vitest": "^1.1.0"
   }
 }
