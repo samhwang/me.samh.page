@@ -2,7 +2,6 @@ import { useToggle } from '@react-hookz/web';
 import { useSidebarData } from '../../metadata/use-metadata';
 import avatarJPG from '../assets/img/avatar.jpg';
 import avatarWebP from '../assets/img/avatar.webp';
-import NavTab from './nav-tab';
 
 interface Tab {
   content: string;
@@ -54,9 +53,13 @@ export default function Sidebar() {
       </button>
       <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`} id="navbarSupportedContent">
         <div className="navbar-nav">
-          {tabs.map(({ href, content }) => {
-            return <NavTab content={content} key={href} href={href} />;
-          })}
+          {tabs.map(({ href, content }) => (
+            <li className="nav-item" key={href}>
+              <a className="nav-link" href={`#${href}`}>
+                {content}
+              </a>
+            </li>
+          ))}
         </div>
       </div>
     </nav>
