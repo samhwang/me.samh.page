@@ -124,7 +124,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </h1>
         </div>
         <section
-          class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+          class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
         >
           <p>
             © 
@@ -279,7 +279,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         </h1>
       </div>
       <section
-        class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 

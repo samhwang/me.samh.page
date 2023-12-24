@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useProjectsData } from '../../metadata/use-metadata';
-import classes from '../layout/resume-item.module.scss';
+import classes from './common.module.scss';
 
 type ProjectProps = {
   title: string;

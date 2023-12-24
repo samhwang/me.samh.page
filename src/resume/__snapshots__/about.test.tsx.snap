@@ -6,7 +6,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
         id="about"
       >
         <div
@@ -52,7 +52,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+      class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
       id="about"
     >
       <div

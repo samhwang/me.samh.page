@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useAboutData } from '../../metadata/use-metadata';
 import iconClasses from '../icons/icon.module.scss';
 import SocialIcon from '../icons/social-icon';
-import resumeClasses from '../layout/resume-item.module.scss';
+import resumeClasses from './common.module.scss';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();

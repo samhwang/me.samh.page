@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import classes from '../layout/resume-item.module.scss';
-import SEO from '../layout/seo';
+import classes from '../resume/common.module.scss';
+import SEO from '../seo';
 
 export default function ErrorPage() {
   return (

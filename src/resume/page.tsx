@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import SEO from '../layout/seo';
+import SEO from '../seo';
 import About from './about';
 import Education from './education';
 import Experiences from './experience';

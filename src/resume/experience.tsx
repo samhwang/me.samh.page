@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
 import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
-import resumeClasses from '../layout/resume-item.module.scss';
+import resumeClasses from './common.module.scss';
 
 type JobDescriptionProps = {
   title: string;

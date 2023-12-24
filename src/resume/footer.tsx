@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import classes from '../layout/resume-item.module.scss';
+import classes from './common.module.scss';
 
 export default function Footer() {
   const LINKS = {

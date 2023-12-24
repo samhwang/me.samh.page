@@ -6,7 +6,7 @@ exports[`Education section render > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
         id="education"
       >
         <div
@@ -36,7 +36,7 @@ exports[`Education section render > Should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="_date_3f4a70 text-md-right"
+              class="_date_044294 text-md-right"
             >
               <span
                 class="text-primary"
@@ -51,7 +51,7 @@ exports[`Education section render > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="_section_3f4a70 p-3 p-lg-5 d-flex align-items-center"
+      class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
       id="education"
     >
       <div
@@ -81,7 +81,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="_date_3f4a70 text-md-right"
+            class="_date_044294 text-md-right"
           >
             <span
               class="text-primary"
