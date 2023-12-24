@@ -382,9 +382,9 @@ const metadata = {
         url: 'https://github.com/viet-aus-it/vait-discord-bot',
       },
       {
-        title: 'BitWarden to 1Password',
-        description: 'A CLI tool to convert BitWarden exports into acceptable formats for 1Password, easing the transition process',
-        url: 'https://github.com/samhwang/bitwarden-to-1password',
+        title: 'Arrange Brewfile',
+        description: 'A CLI tool to arrange Brew bundle file for easier setup on new machines.',
+        url: 'https://github.com/samhwang/arrange-brewfile'
       },
       {
         title: 'tRPC Netlify Functions Adapter',
