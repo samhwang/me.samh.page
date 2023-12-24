@@ -1,3 +1,5 @@
+import { ManifestOptions } from 'vite-plugin-pwa';
+
 // Icons List. See https://devicon.dev/
 const ICONS = {
   PHP: 'php-plain',
@@ -66,14 +68,18 @@ const ICONS = {
 };
 
 // Manifest for PWA.
-export const manifest = {
+export const manifest: Partial<ManifestOptions> = {
   name: 'Sam Huynh Website',
   short_name: 'Sam Huynh',
   start_url: '/',
   background_color: '#FFFFFF',
   theme_color: '#FFFFFF',
   display: 'standalone',
-  icon: 'src/assets/img/website-icon.png',
+  icons: [
+    {
+      src: 'src/assets/img/website-icon.png',
+    },
+  ],
 };
 
 const metadata = {
@@ -143,7 +149,7 @@ const metadata = {
           ICONS.GITHUB,
           ICONS.BITBUCKET,
           ICONS.JIRA,
-        ]
+        ],
       },
       {
         title: 'Full Stack Software Engineer',
@@ -382,7 +388,7 @@ const metadata = {
         title: 'tRPC Netlify Functions Adapter',
         description: 'An adpater to run a standalone tRPC server on Netlify Functions',
         url: 'https://github.com/samhwang/trpc-utils/tree/main/packages/netlify-functions',
-      }
+      },
     ],
     skills: [
       {
