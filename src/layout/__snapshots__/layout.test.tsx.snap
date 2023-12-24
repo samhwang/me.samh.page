@@ -61,56 +61,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             <div
               class="navbar-nav"
             >
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#about"
+              <ul>
+                <li
+                  class="nav-item"
                 >
-                  About
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#experience"
+                  <a
+                    class="nav-link"
+                    href="#about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
                 >
-                  Experience
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#education"
+                  <a
+                    class="nav-link"
+                    href="#experience"
+                  >
+                    Experience
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
                 >
-                  Education
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#skills"
+                  <a
+                    class="nav-link"
+                    href="#education"
+                  >
+                    Education
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
                 >
-                  Skills
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#projects"
+                  <a
+                    class="nav-link"
+                    href="#skills"
+                  >
+                    Skills
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
                 >
-                  Projects
-                </a>
-              </li>
+                  <a
+                    class="nav-link"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -214,56 +216,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           <div
             class="navbar-nav"
           >
-            <li
-              class="nav-item"
-            >
-              <a
-                class="nav-link"
-                href="#about"
+            <ul>
+              <li
+                class="nav-item"
               >
-                About
-              </a>
-            </li>
-            <li
-              class="nav-item"
-            >
-              <a
-                class="nav-link"
-                href="#experience"
+                <a
+                  class="nav-link"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="nav-item"
               >
-                Experience
-              </a>
-            </li>
-            <li
-              class="nav-item"
-            >
-              <a
-                class="nav-link"
-                href="#education"
+                <a
+                  class="nav-link"
+                  href="#experience"
+                >
+                  Experience
+                </a>
+              </li>
+              <li
+                class="nav-item"
               >
-                Education
-              </a>
-            </li>
-            <li
-              class="nav-item"
-            >
-              <a
-                class="nav-link"
-                href="#skills"
+                <a
+                  class="nav-link"
+                  href="#education"
+                >
+                  Education
+                </a>
+              </li>
+              <li
+                class="nav-item"
               >
-                Skills
-              </a>
-            </li>
-            <li
-              class="nav-item"
-            >
-              <a
-                class="nav-link"
-                href="#projects"
+                <a
+                  class="nav-link"
+                  href="#skills"
+                >
+                  Skills
+                </a>
+              </li>
+              <li
+                class="nav-item"
               >
-                Projects
-              </a>
-            </li>
+                <a
+                  class="nav-link"
+                  href="#projects"
+                >
+                  Projects
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

@@ -53,13 +53,15 @@ export default function Sidebar() {
       </button>
       <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`} id="navbarSupportedContent">
         <div className="navbar-nav">
-          {tabs.map(({ href, content }) => (
-            <li className="nav-item" key={href}>
-              <a className="nav-link" href={`#${href}`}>
-                {content}
-              </a>
-            </li>
-          ))}
+          <ul>
+            {tabs.map(({ href, content }) => (
+              <li className="nav-item" key={href}>
+                <a className="nav-link" href={`#${href}`}>
+                  {content}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
