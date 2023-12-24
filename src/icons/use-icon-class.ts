@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { useCallback, useMemo, useState } from 'react';
 
 export default function useIconClass(name: string) {
@@ -5,7 +6,7 @@ export default function useIconClass(name: string) {
   const [iconClass, setIconClass] = useState(DEFAULT_ICON_CLASS);
 
   const toggleColorIcon = useCallback(
-    () => setIconClass((currentClass) => (currentClass === DEFAULT_ICON_CLASS ? `${DEFAULT_ICON_CLASS} colored` : DEFAULT_ICON_CLASS)),
+    () => setIconClass((currentClass) => clsx(DEFAULT_ICON_CLASS, currentClass === DEFAULT_ICON_CLASS && 'colored')),
     [DEFAULT_ICON_CLASS]
   );
 
