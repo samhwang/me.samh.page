@@ -67,6 +67,8 @@ const ICONS = {
   JETBRAINS: 'jetbrains-plain',
 };
 
+export const iconClasses = Object.values(ICONS).map((icon) => `devicon-${icon}`);
+
 // Manifest for PWA.
 export const manifest: Partial<ManifestOptions> = {
   name: 'Sam Huynh Website',
