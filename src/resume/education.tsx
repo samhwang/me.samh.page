@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { useEducationData } from '../../metadata/use-metadata';
-import classes from './common.module.scss';
+import commonClasses from './common.module.scss';
+import typographyClasses from './typography.module.scss';
 
 type SchoolProps = {
   institute: string;
@@ -14,11 +15,11 @@ function School({ institute, degree, major, duration }: SchoolProps) {
     <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div>
         <h3 className="mb-0">{institute}</h3>
-        <div className="subheading mb-3">{degree}</div>
+        <div className={clsx('mb-3', typographyClasses.subheading)}>{degree}</div>
         <div>{major}</div>
       </div>
-      <div className={clsx(classes.date, 'text-md-right')}>
-        <span className={clsx(classes.textPrimary)}>{duration}</span>
+      <div className={clsx(commonClasses.date, 'text-md-right')}>
+        <span className={clsx(commonClasses.textPrimary)}>{duration}</span>
       </div>
     </div>
   );

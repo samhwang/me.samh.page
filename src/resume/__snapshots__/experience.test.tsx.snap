@@ -23,7 +23,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               Test Title
             </h3>
             <div
-              class="subheading mb-3"
+              class="mb-3 _subheading_bfda06"
             >
               Test Company
             </div>
@@ -84,7 +84,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             Test Title
           </h3>
           <div
-            class="subheading mb-3"
+            class="mb-3 _subheading_bfda06"
           >
             Test Company
           </div>

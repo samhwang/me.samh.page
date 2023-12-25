@@ -3,6 +3,7 @@ import { useExperienceData } from '../../metadata/use-metadata';
 import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
 import commonClasses from './common.module.scss';
+import typographyClasses from './typography.module.scss';
 
 type JobDescriptionProps = {
   title: string;
@@ -18,7 +19,7 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
     <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div>
         <h3 className="mb-0">{title}</h3>
-        <div className="subheading mb-3">{companyName}</div>
+        <div className={clsx('mb-3', typographyClasses.subheading)}>{companyName}</div>
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>

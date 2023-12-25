@@ -6,7 +6,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="main-body"
+        class="_mainBody_bfda06"
       >
         <nav
           class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
@@ -164,7 +164,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="main-body"
+      class="_mainBody_bfda06"
     >
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"

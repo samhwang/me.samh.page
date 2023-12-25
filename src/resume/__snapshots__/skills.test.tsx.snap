@@ -14,7 +14,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
           Skills and Proficiency
         </h2>
         <div
-          class="subheading mb-3"
+          class="mb-3 _subheading_bfda06"
         >
           test title
         </div>
@@ -47,7 +47,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
         Skills and Proficiency
       </h2>
       <div
-        class="subheading mb-3"
+        class="mb-3 _subheading_bfda06"
       >
         test title
       </div>

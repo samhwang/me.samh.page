@@ -9,7 +9,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
         class="w-100"
       >
         <h1
-          class="mb-0"
+          class="mb-0 _h1_bfda06"
         >
           test
           <span
@@ -19,12 +19,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
           </span>
         </h1>
         <div
-          class="subheading mb-5"
+          class="mb-5 _subheading_bfda06"
         >
           123 Test Drive
         </div>
         <p
-          class="lead mb-5"
+          class="mb-5 _lead_bfda06"
         >
           test test test
         </p>
@@ -50,7 +50,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
       class="w-100"
     >
       <h1
-        class="mb-0"
+        class="mb-0 _h1_bfda06"
       >
         test
         <span
@@ -60,12 +60,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
         </span>
       </h1>
       <div
-        class="subheading mb-5"
+        class="mb-5 _subheading_bfda06"
       >
         123 Test Drive
       </div>
       <p
-        class="lead mb-5"
+        class="mb-5 _lead_bfda06"
       >
         test test test
       </p>
