@@ -383,13 +383,13 @@ const metadata = {
       },
       {
         title: 'Arrange Brewfile',
-        description: 'A CLI tool to arrange Brew bundle file for easier setup on new machines.',
+        description: 'A CLI tool to arrange Brew bundle file alphabetically. Handy for checking this file in Git after dumping Brew bundles.',
         url: 'https://github.com/samhwang/arrange-brewfile'
       },
       {
         title: 'tRPC Netlify Functions Adapter',
         description: 'An adpater to run a standalone tRPC server on Netlify Functions',
-        url: 'https://github.com/samhwang/trpc-utils/tree/main/packages/netlify-functions',
+        url: 'https://github.com/samhwang/trpc-utils/tree/master/libraries/trpc-netlify-functions',
       },
     ],
     skills: [
