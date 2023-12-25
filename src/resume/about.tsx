@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useAboutData } from '../../metadata/use-metadata';
 import SocialIcon from '../icons/social-icon';
 import * as commonStyles from './common.styles';
-import iconClasses from './icon.module.scss';
+import * as iconStyles from './icon.styles';
 import * as typographyStyles from './typography.styles';
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
         </h1>
         <div className={clsx('mb-5', typographyStyles.subheading)}>{address}</div>
         <p className={clsx('mb-5', typographyStyles.lead)}>{bio}</p>
-        <div className={clsx(iconClasses.socialIcons)}>
+        <div className={clsx(iconStyles.socialIcons)}>
           {socialLinks.map(({ icon, name, url }) => (
             <SocialIcon key={name} icon={icon} url={url} />
           ))}

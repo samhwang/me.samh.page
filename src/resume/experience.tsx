@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
 import * as commonStyles from './common.styles';
-import iconClasses from './icon.module.scss';
+import * as iconStyles from './icon.styles';
 import * as typographyStyles from './typography.styles';
 
 type JobDescriptionProps = {
@@ -31,7 +31,7 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
             <li key={tech}>{tech}</li>
           ))}
         </ul>
-        <ul className={clsx('list-inline', iconClasses.devIcons)}>
+        <ul className={clsx('list-inline', iconStyles.devIcons)}>
           {techIcons.map((icon) => (
             <LangIcon name={icon} key={icon} />
           ))}

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useSkillsData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
-import iconClasses from './icon.module.scss';
+import * as iconStyles from './icon.styles';
 import * as typographyStyles from './typography.styles';
 
 type SkillProps = {
@@ -33,7 +33,7 @@ export default function SkillSection() {
         {skills.map(({ title, description }) => (
           <Skill title={title} description={description} key={title} />
         ))}
-        <ul className={clsx('list-inline', iconClasses.devIcons)}>
+        <ul className={clsx('list-inline', iconStyles.devIcons)}>
           {techStack.map((language) => (
             <LangIcon name={language} key={language} />
           ))}

@@ -41,7 +41,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               </li>
             </ul>
             <ul
-              class="list-inline _devIcons_75ebdb"
+              class="list-inline fs_3rem"
             >
               <li
                 class="list-inline-item"
@@ -102,7 +102,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </li>
           </ul>
           <ul
-            class="list-inline _devIcons_75ebdb"
+            class="list-inline fs_3rem"
           >
             <li
               class="list-inline-item"
