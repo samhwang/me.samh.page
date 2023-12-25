@@ -7,8 +7,8 @@ dist-ssr
 # Test Coverage
 coverage
 
-# Generated from MSW
-public/mockServiceWorker.js
+# Generated from PandaCSS
+styled-system
 
 # Local Netlify folder
 .netlify

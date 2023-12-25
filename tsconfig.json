@@ -21,7 +21,7 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./src", "./metadata", "vite.config.*"],
+  "include": ["./src", "./metadata", "vite.config.*", "./styled-system"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
