@@ -1,7 +1,7 @@
-export interface SocialLinkProps {
+export type SocialLinkProps = {
   icon: string;
   url: string;
-}
+};
 
 export default function SocialIcon({ icon, url }: SocialLinkProps) {
   return (

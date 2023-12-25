@@ -1,10 +1,10 @@
 import { useProjectsData } from '../../metadata/use-metadata';
 
-interface ProjectProps {
+type ProjectProps = {
   title: string;
   description: string;
   url?: string;
-}
+};
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (

@@ -1,8 +1,8 @@
 import useIconClass from './use-icon-class';
 
-interface LangIconProps {
+type LangIconProps = {
   name: string;
-}
+};
 
 export default function LangIcon({ name }: LangIconProps) {
   const [currentIconClass, toggleColorIcon] = useIconClass(name);

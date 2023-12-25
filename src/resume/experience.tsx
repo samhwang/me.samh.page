@@ -1,14 +1,14 @@
 import { useExperienceData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
 
-interface JobDescriptionProps {
+type JobDescriptionProps = {
   title: string;
   companyName: string;
   description: string[];
   duration: string;
   techIcons: string[];
   technologies: string[];
-}
+};
 
 function JobDescription({ title, companyName, description, duration, techIcons, technologies }: JobDescriptionProps) {
   return (

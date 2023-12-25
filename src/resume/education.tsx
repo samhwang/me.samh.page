@@ -1,11 +1,11 @@
 import { useEducationData } from '../../metadata/use-metadata';
 
-interface SchoolProps {
+type SchoolProps = {
   institute: string;
   degree: string;
   major: string;
   duration: string;
-}
+};
 
 function School({ institute, degree, major, duration }: SchoolProps) {
   return (

@@ -1,10 +1,10 @@
 import { useSkillsData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
 
-interface SkillProps {
+type SkillProps = {
   title: string;
   description: string[];
-}
+};
 
 function Skill({ title, description }: SkillProps) {
   return (

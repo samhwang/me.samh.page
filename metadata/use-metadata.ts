@@ -37,7 +37,7 @@ export function useExperienceData() {
   return experience;
 }
 
-interface Projects {
+type Projects = {
   title: string;
   description: string;
   url?: string;

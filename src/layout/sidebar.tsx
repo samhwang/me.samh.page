@@ -3,10 +3,10 @@ import { useSidebarData } from '../../metadata/use-metadata';
 import avatarJPG from '../assets/img/avatar.jpg';
 import avatarWebP from '../assets/img/avatar.webp';
 
-interface Tab {
+type Tab = {
   content: string;
   href: string;
-}
+};
 
 export default function Sidebar() {
   const { firstName, lastName } = useSidebarData();
