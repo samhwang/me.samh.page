@@ -6,31 +6,35 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 
           2022
            
           <a
+            class="_link_044294"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
+            class="_link_044294"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
+            class="_link_044294"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
+            class="_link_044294"
             href="https://reactjs.org/"
           >
             React
@@ -42,31 +46,35 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="resume-section p-3 p-lg-5 d-flex align-items-center"
+      class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
     >
       <p>
         © 
         2022
          
         <a
+          class="_link_044294"
           href="https://github.com/samhwang"
         >
           Sam Huynh
         </a>
         . Hosted on 
         <a
+          class="_link_044294"
           href="https://app.netlify.com"
         >
           Netlify
         </a>
         . Built with 
         <a
+          class="_link_044294"
           href="https://www.vitejs.dev/"
         >
           Vite
         </a>
          and 
         <a
+          class="_link_044294"
           href="https://reactjs.org/"
         >
           React

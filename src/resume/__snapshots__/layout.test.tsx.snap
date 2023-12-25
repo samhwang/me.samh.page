@@ -6,14 +6,13 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="main-body"
+        class="_mainBody_bfda06"
       >
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-          id="sideNav"
+          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
         >
           <a
-            class="navbar-brand"
+            class="navbar-brand _navbarBrand_afdb38"
             href="#page-top"
           >
             <span
@@ -26,17 +25,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             >
               <picture>
                 <source
-                  srcset="/src/assets/img/avatar.webp"
+                  srcset="/src/img/avatar.webp"
                   type="image/webp"
                 />
                 <source
-                  srcset="/src/assets/img/avatar.jpg"
+                  srcset="/src/img/avatar.jpg"
                   type="image/jpeg"
                 />
                 <img
                   alt="First Last Avatar"
-                  class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                  src="/src/assets/img/avatar.jpg"
+                  class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
+                  src="/src/img/avatar.jpg"
                 />
               </picture>
             </span>
@@ -45,7 +44,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler collapsed"
+            class="navbar-toggler _navbarToggler_afdb38 collapsed"
             data-target="#navbarSupportedContent"
             data-toggle="collapse"
             type="button"
@@ -55,58 +54,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             />
           </button>
           <div
-            class="collapse navbar-collapse "
+            class="navbar-collapse collapse _navbarCollapse_afdb38 show"
             id="navbarSupportedContent"
           >
             <div
-              class="navbar-nav"
+              class="navbar-nav _navbarNav_afdb38"
             >
               <ul>
                 <li
-                  class="nav-item"
+                  class="_navItem_afdb38"
                 >
                   <a
-                    class="nav-link"
+                    class="nav-link _navLink_afdb38"
                     href="#about"
                   >
                     About
                   </a>
                 </li>
                 <li
-                  class="nav-item"
+                  class="_navItem_afdb38"
                 >
                   <a
-                    class="nav-link"
+                    class="nav-link _navLink_afdb38"
                     href="#experience"
                   >
                     Experience
                   </a>
                 </li>
                 <li
-                  class="nav-item"
+                  class="_navItem_afdb38"
                 >
                   <a
-                    class="nav-link"
+                    class="nav-link _navLink_afdb38"
                     href="#education"
                   >
                     Education
                   </a>
                 </li>
                 <li
-                  class="nav-item"
+                  class="_navItem_afdb38"
                 >
                   <a
-                    class="nav-link"
+                    class="nav-link _navLink_afdb38"
                     href="#skills"
                   >
                     Skills
                   </a>
                 </li>
                 <li
-                  class="nav-item"
+                  class="_navItem_afdb38"
                 >
                   <a
-                    class="nav-link"
+                    class="nav-link _navLink_afdb38"
                     href="#projects"
                   >
                     Projects
@@ -124,31 +123,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </h1>
         </div>
         <section
-          class="resume-section p-3 p-lg-5 d-flex align-items-center"
+          class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
         >
           <p>
             © 
             2022
              
             <a
+              class="_link_044294"
               href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             . Hosted on 
             <a
+              class="_link_044294"
               href="https://app.netlify.com"
             >
               Netlify
             </a>
             . Built with 
             <a
+              class="_link_044294"
               href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
+              class="_link_044294"
               href="https://reactjs.org/"
             >
               React
@@ -161,14 +164,13 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="main-body"
+      class="_mainBody_bfda06"
     >
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-        id="sideNav"
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
       >
         <a
-          class="navbar-brand"
+          class="navbar-brand _navbarBrand_afdb38"
           href="#page-top"
         >
           <span
@@ -181,17 +183,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           >
             <picture>
               <source
-                srcset="/src/assets/img/avatar.webp"
+                srcset="/src/img/avatar.webp"
                 type="image/webp"
               />
               <source
-                srcset="/src/assets/img/avatar.jpg"
+                srcset="/src/img/avatar.jpg"
                 type="image/jpeg"
               />
               <img
                 alt="First Last Avatar"
-                class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                src="/src/assets/img/avatar.jpg"
+                class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
+                src="/src/img/avatar.jpg"
               />
             </picture>
           </span>
@@ -200,7 +202,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler collapsed"
+          class="navbar-toggler _navbarToggler_afdb38 collapsed"
           data-target="#navbarSupportedContent"
           data-toggle="collapse"
           type="button"
@@ -210,58 +212,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           />
         </button>
         <div
-          class="collapse navbar-collapse "
+          class="navbar-collapse collapse _navbarCollapse_afdb38 show"
           id="navbarSupportedContent"
         >
           <div
-            class="navbar-nav"
+            class="navbar-nav _navbarNav_afdb38"
           >
             <ul>
               <li
-                class="nav-item"
+                class="_navItem_afdb38"
               >
                 <a
-                  class="nav-link"
+                  class="nav-link _navLink_afdb38"
                   href="#about"
                 >
                   About
                 </a>
               </li>
               <li
-                class="nav-item"
+                class="_navItem_afdb38"
               >
                 <a
-                  class="nav-link"
+                  class="nav-link _navLink_afdb38"
                   href="#experience"
                 >
                   Experience
                 </a>
               </li>
               <li
-                class="nav-item"
+                class="_navItem_afdb38"
               >
                 <a
-                  class="nav-link"
+                  class="nav-link _navLink_afdb38"
                   href="#education"
                 >
                   Education
                 </a>
               </li>
               <li
-                class="nav-item"
+                class="_navItem_afdb38"
               >
                 <a
-                  class="nav-link"
+                  class="nav-link _navLink_afdb38"
                   href="#skills"
                 >
                   Skills
                 </a>
               </li>
               <li
-                class="nav-item"
+                class="_navItem_afdb38"
               >
                 <a
-                  class="nav-link"
+                  class="nav-link _navLink_afdb38"
                   href="#projects"
                 >
                   Projects
@@ -279,31 +281,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         </h1>
       </div>
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 
           2022
            
           <a
+            class="_link_044294"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
+            class="_link_044294"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
+            class="_link_044294"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
+            class="_link_044294"
             href="https://reactjs.org/"
           >
             React

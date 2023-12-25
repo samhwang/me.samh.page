@@ -1,0 +1,71 @@
+@import "./variables.module.scss";
+
+.sideNav {
+  @media (min-width: 992px) {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: $sidebar-base-width;
+    height: 100vh;
+  }
+}
+
+.navbarToggler {
+  &:focus {
+    outline-color: lighten($primary, 15%);
+  }
+}
+
+.navLink {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
+.navItem {
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
+.imgProfile {
+  @media (min-width: 992px) {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid fade-out($white, 0.8);
+  }
+}
+
+.navbarBrand {
+  @media (min-width: 992px) {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+}
+
+.navbarCollapse {
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+}
+
+.navbarNav {
+  @media (min-width: 992px) {
+    flex-direction: column !important;
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import SEO, { SEOProps } from './seo';
+import SEO, { SEOProps } from '.';
 
 describe('SEO Rendering', () => {
   it('Should match snapshot', () => {

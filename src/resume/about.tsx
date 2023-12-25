@@ -1,24 +1,28 @@
+import clsx from 'clsx';
 import { useAboutData } from '../../metadata/use-metadata';
+import iconClasses from '../icons/icon.module.scss';
 import SocialIcon from '../icons/social-icon';
+import commonClasses from './common.module.scss';
+import typographyClasses from './typography.module.scss';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();
 
   return (
-    <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <>
       <div className="w-100">
-        <h1 className="mb-0">
+        <h1 className={clsx('mb-0', typographyClasses.h1)}>
           {firstName}
-          <span className="text-primary">{lastName}</span>
+          <span className={clsx(commonClasses.textPrimary)}>{lastName}</span>
         </h1>
-        <div className="subheading mb-5">{address}</div>
-        <p className="lead mb-5">{bio}</p>
-        <div className="social-icons">
+        <div className={clsx('mb-5', typographyClasses.subheading)}>{address}</div>
+        <p className={clsx('mb-5', typographyClasses.lead)}>{bio}</p>
+        <div className={clsx(iconClasses.socialIcons)}>
           {socialLinks.map(({ icon, name, url }) => (
             <SocialIcon key={name} icon={icon} url={url} />
           ))}
         </div>
       </div>
-    </section>
+    </>
   );
 }

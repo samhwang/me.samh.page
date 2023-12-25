@@ -79,7 +79,7 @@ export const manifest: Partial<ManifestOptions> = {
   display: 'standalone',
   icons: [
     {
-      src: 'src/assets/img/website-icon.png',
+      src: 'src/img/website-icon.png',
     },
   ],
 };

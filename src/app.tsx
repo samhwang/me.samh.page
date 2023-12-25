@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './404';
-import Layout from './layout/layout';
+import Layout from './resume/layout';
 import ResumePage from './resume/page';
 
 const router = createBrowserRouter([

@@ -5,60 +5,6 @@ exports[`Project section rendering > Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="projects"
-      >
-        <div
-          class="w-100"
-        >
-          <h2
-            class="mb-5"
-          >
-            Projects
-          </h2>
-          <ul
-            class="fa-ul mb-0"
-          >
-            <li>
-              <i
-                class="fa-li fa fa-tasks text-warning"
-              />
-              <p>
-                <a
-                  aria-label="Project Test Title URL"
-                  href="http://test url"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <strong>
-                    Test Title:
-                  </strong>
-                </a>
-                 Test Description
-              </p>
-            </li>
-            <li>
-              <i
-                class="fa-li fa fa-tasks text-warning"
-              />
-              <p>
-                <strong>
-                  Test Title 2:
-                </strong>
-                 Test Description 2
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </body>,
-  "container": <div>
-    <section
-      class="resume-section p-3 p-lg-5 d-flex align-items-center"
-      id="projects"
-    >
       <div
         class="w-100"
       >
@@ -77,6 +23,7 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             <p>
               <a
                 aria-label="Project Test Title URL"
+                class="_link_044294"
                 href="http://test url"
                 rel="noreferrer"
                 target="_blank"
@@ -101,7 +48,52 @@ exports[`Project section rendering > Should match snapshot 1`] = `
           </li>
         </ul>
       </div>
-    </section>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-100"
+    >
+      <h2
+        class="mb-5"
+      >
+        Projects
+      </h2>
+      <ul
+        class="fa-ul mb-0"
+      >
+        <li>
+          <i
+            class="fa-li fa fa-tasks text-warning"
+          />
+          <p>
+            <a
+              aria-label="Project Test Title URL"
+              class="_link_044294"
+              href="http://test url"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <strong>
+                Test Title:
+              </strong>
+            </a>
+             Test Description
+          </p>
+        </li>
+        <li>
+          <i
+            class="fa-li fa fa-tasks text-warning"
+          />
+          <p>
+            <strong>
+              Test Title 2:
+            </strong>
+             Test Description 2
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

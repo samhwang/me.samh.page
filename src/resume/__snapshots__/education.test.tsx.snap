@@ -5,57 +5,6 @@ exports[`Education section render > Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
-        <div
-          class="w-100"
-        >
-          <h2
-            class="mb-5"
-          >
-            Education
-          </h2>
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div
-              class="resume-content"
-            >
-              <h3
-                class="mb-0"
-              >
-                Test
-              </h3>
-              <div
-                class="subheading mb-3"
-              >
-                Test
-              </div>
-              <div>
-                Test
-              </div>
-            </div>
-            <div
-              class="resume-date text-md-right"
-            >
-              <span
-                class="text-primary"
-              >
-                2020 - 2021
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>,
-  "container": <div>
-    <section
-      class="resume-section p-3 p-lg-5 d-flex align-items-center"
-      id="education"
-    >
       <div
         class="w-100"
       >
@@ -65,18 +14,16 @@ exports[`Education section render > Should match snapshot 1`] = `
           Education
         </h2>
         <div
-          class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
         >
-          <div
-            class="resume-content"
-          >
+          <div>
             <h3
               class="mb-0"
             >
               Test
             </h3>
             <div
-              class="subheading mb-3"
+              class="mb-3 _subheading_bfda06"
             >
               Test
             </div>
@@ -85,17 +32,56 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="resume-date text-md-right"
+            class="_date_044294 text-md-right"
           >
             <span
-              class="text-primary"
+              class="_textPrimary_044294"
             >
               2020 - 2021
             </span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-100"
+    >
+      <h2
+        class="mb-5"
+      >
+        Education
+      </h2>
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between mb-5"
+      >
+        <div>
+          <h3
+            class="mb-0"
+          >
+            Test
+          </h3>
+          <div
+            class="mb-3 _subheading_bfda06"
+          >
+            Test
+          </div>
+          <div>
+            Test
+          </div>
+        </div>
+        <div
+          class="_date_044294 text-md-right"
+        >
+          <span
+            class="_textPrimary_044294"
+          >
+            2020 - 2021
+          </span>
+        </div>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
