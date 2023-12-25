@@ -1,8 +1,8 @@
 import { useToggle } from '@react-hookz/web';
 import clsx from 'clsx';
 import { useSidebarData } from '../../metadata/use-metadata';
-import avatarJPG from '../assets/img/avatar.jpg';
-import avatarWebP from '../assets/img/avatar.webp';
+import avatarJPG from '../img/avatar.jpg';
+import avatarWebP from '../img/avatar.webp';
 import commonClasses from './common.module.scss';
 import sidebarClasses from './sidebar.module.scss';
 

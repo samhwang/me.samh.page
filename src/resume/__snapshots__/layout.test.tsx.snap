@@ -25,17 +25,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             >
               <picture>
                 <source
-                  srcset="/src/assets/img/avatar.webp"
+                  srcset="/src/img/avatar.webp"
                   type="image/webp"
                 />
                 <source
-                  srcset="/src/assets/img/avatar.jpg"
+                  srcset="/src/img/avatar.jpg"
                   type="image/jpeg"
                 />
                 <img
                   alt="First Last Avatar"
                   class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
-                  src="/src/assets/img/avatar.jpg"
+                  src="/src/img/avatar.jpg"
                 />
               </picture>
             </span>
@@ -183,17 +183,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           >
             <picture>
               <source
-                srcset="/src/assets/img/avatar.webp"
+                srcset="/src/img/avatar.webp"
                 type="image/webp"
               />
               <source
-                srcset="/src/assets/img/avatar.jpg"
+                srcset="/src/img/avatar.jpg"
                 type="image/jpeg"
               />
               <img
                 alt="First Last Avatar"
                 class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
-                src="/src/assets/img/avatar.jpg"
+                src="/src/img/avatar.jpg"
               />
             </picture>
           </span>
