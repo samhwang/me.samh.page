@@ -7,10 +7,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
     <div>
       <div>
         <nav
-          class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
+          class="navbar navbar-expand-lg navbar-dark fixed-top [@media_(min-width:_992px)]:text_center [@media_(min-width:_992px)]:pos_fixed [@media_(min-width:_992px)]:top_0 [@media_(min-width:_992px)]:left_0 [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:flex_column [@media_(min-width:_992px)]:w_sidebarWidth [@media_(min-width:_992px)]:h_100vh bg_primary"
         >
           <a
-            class="navbar-brand _navbarBrand_afdb38"
+            class="navbar-brand [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:m_auto_auto_0 [@media_(min-width:_992px)]:p_0.5rem"
             href="#page-top"
           >
             <span
@@ -32,7 +32,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 />
                 <img
                   alt="First Last Avatar"
-                  class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
+                  class="[@media_(min-width:_992px)]:max-w_10rem [@media_(min-width:_992px)]:max-h_10rem [@media_(min-width:_992px)]:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
                   src="/src/img/avatar.jpg"
                 />
               </picture>
@@ -42,7 +42,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler _navbarToggler_afdb38 collapsed"
+            class="navbar-toggler focus:ring_lightBlue collapsed"
             data-target="#navbarSupportedContent"
             data-toggle="collapse"
             type="button"
@@ -52,58 +52,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             />
           </button>
           <div
-            class="navbar-collapse collapse _navbarCollapse_afdb38 show"
+            class="navbar-collapse collapse [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:items_flex-start [@media_(min-width:_992px)]:grow_0 [@media_(min-width:_992px)]:w_100% [@media_(min-width:_992px)]:mb_auto show"
             id="navbarSupportedContent"
           >
             <div
-              class="navbar-nav _navbarNav_afdb38"
+              class="navbar-nav [@media_(min-width:_992px)]:flex_column! [@media_(min-width:_992px)]:w_100%"
             >
               <ul>
                 <li
-                  class="_navItem_afdb38"
+                  class="[@media_(min-width:_992px)]:d_block"
                 >
                   <a
-                    class="nav-link _navLink_afdb38"
+                    class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                     href="#about"
                   >
                     About
                   </a>
                 </li>
                 <li
-                  class="_navItem_afdb38"
+                  class="[@media_(min-width:_992px)]:d_block"
                 >
                   <a
-                    class="nav-link _navLink_afdb38"
+                    class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                     href="#experience"
                   >
                     Experience
                   </a>
                 </li>
                 <li
-                  class="_navItem_afdb38"
+                  class="[@media_(min-width:_992px)]:d_block"
                 >
                   <a
-                    class="nav-link _navLink_afdb38"
+                    class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                     href="#education"
                   >
                     Education
                   </a>
                 </li>
                 <li
-                  class="_navItem_afdb38"
+                  class="[@media_(min-width:_992px)]:d_block"
                 >
                   <a
-                    class="nav-link _navLink_afdb38"
+                    class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                     href="#skills"
                   >
                     Skills
                   </a>
                 </li>
                 <li
-                  class="_navItem_afdb38"
+                  class="[@media_(min-width:_992px)]:d_block"
                 >
                   <a
-                    class="nav-link _navLink_afdb38"
+                    class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                     href="#projects"
                   >
                     Projects
@@ -163,10 +163,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "container": <div>
     <div>
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
+        class="navbar navbar-expand-lg navbar-dark fixed-top [@media_(min-width:_992px)]:text_center [@media_(min-width:_992px)]:pos_fixed [@media_(min-width:_992px)]:top_0 [@media_(min-width:_992px)]:left_0 [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:flex_column [@media_(min-width:_992px)]:w_sidebarWidth [@media_(min-width:_992px)]:h_100vh bg_primary"
       >
         <a
-          class="navbar-brand _navbarBrand_afdb38"
+          class="navbar-brand [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:m_auto_auto_0 [@media_(min-width:_992px)]:p_0.5rem"
           href="#page-top"
         >
           <span
@@ -188,7 +188,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               />
               <img
                 alt="First Last Avatar"
-                class="_imgProfile_afdb38 img-fluid rounded-circle mx-auto mb-2"
+                class="[@media_(min-width:_992px)]:max-w_10rem [@media_(min-width:_992px)]:max-h_10rem [@media_(min-width:_992px)]:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
                 src="/src/img/avatar.jpg"
               />
             </picture>
@@ -198,7 +198,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler _navbarToggler_afdb38 collapsed"
+          class="navbar-toggler focus:ring_lightBlue collapsed"
           data-target="#navbarSupportedContent"
           data-toggle="collapse"
           type="button"
@@ -208,58 +208,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           />
         </button>
         <div
-          class="navbar-collapse collapse _navbarCollapse_afdb38 show"
+          class="navbar-collapse collapse [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:items_flex-start [@media_(min-width:_992px)]:grow_0 [@media_(min-width:_992px)]:w_100% [@media_(min-width:_992px)]:mb_auto show"
           id="navbarSupportedContent"
         >
           <div
-            class="navbar-nav _navbarNav_afdb38"
+            class="navbar-nav [@media_(min-width:_992px)]:flex_column! [@media_(min-width:_992px)]:w_100%"
           >
             <ul>
               <li
-                class="_navItem_afdb38"
+                class="[@media_(min-width:_992px)]:d_block"
               >
                 <a
-                  class="nav-link _navLink_afdb38"
+                  class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                   href="#about"
                 >
                   About
                 </a>
               </li>
               <li
-                class="_navItem_afdb38"
+                class="[@media_(min-width:_992px)]:d_block"
               >
                 <a
-                  class="nav-link _navLink_afdb38"
+                  class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                   href="#experience"
                 >
                   Experience
                 </a>
               </li>
               <li
-                class="_navItem_afdb38"
+                class="[@media_(min-width:_992px)]:d_block"
               >
                 <a
-                  class="nav-link _navLink_afdb38"
+                  class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                   href="#education"
                 >
                   Education
                 </a>
               </li>
               <li
-                class="_navItem_afdb38"
+                class="[@media_(min-width:_992px)]:d_block"
               >
                 <a
-                  class="nav-link _navLink_afdb38"
+                  class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                   href="#skills"
                 >
                   Skills
                 </a>
               </li>
               <li
-                class="_navItem_afdb38"
+                class="[@media_(min-width:_992px)]:d_block"
               >
                 <a
-                  class="nav-link _navLink_afdb38"
+                  class="nav-link font_800 tracking_0.5rem text_uppercase [@media_(min-width:_992px)]:d_block"
                   href="#projects"
                 >
                   Projects

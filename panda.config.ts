@@ -58,6 +58,7 @@ export default defineConfig({
         'gray.700': { value: '#495057' },
         'gray.800': { value: '#343a40' },
         blue: { value: '#007bff' },
+        lightBlue: { value: '#4da3ff' },
         darkBlue: { value: '#0056b3' },
       },
       sizes: {
