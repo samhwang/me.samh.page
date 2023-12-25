@@ -1,3 +1,5 @@
+@import "./variables.module.scss";
+
 .section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -18,5 +20,22 @@
 
   @media (min-width: 768px) {
     min-width: 18rem;
+  }
+}
+
+.bgPrimary {
+  background-color: $primary !important;
+}
+
+.textPrimary {
+  color: $primary !important;
+}
+
+.link {
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
   }
 }

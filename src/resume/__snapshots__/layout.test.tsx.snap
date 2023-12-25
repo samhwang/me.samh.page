@@ -9,7 +9,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         class="main-body"
       >
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38"
+          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
         >
           <a
             class="navbar-brand _navbarBrand_afdb38"
@@ -130,24 +130,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             2022
              
             <a
+              class="_link_044294"
               href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             . Hosted on 
             <a
+              class="_link_044294"
               href="https://app.netlify.com"
             >
               Netlify
             </a>
             . Built with 
             <a
+              class="_link_044294"
               href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
+              class="_link_044294"
               href="https://reactjs.org/"
             >
               React
@@ -163,7 +167,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
       class="main-body"
     >
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38"
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
       >
         <a
           class="navbar-brand _navbarBrand_afdb38"
@@ -284,24 +288,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           2022
            
           <a
+            class="_link_044294"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
+            class="_link_044294"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
+            class="_link_044294"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
+            class="_link_044294"
             href="https://reactjs.org/"
           >
             React

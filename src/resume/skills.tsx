@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useSkillsData } from '../../metadata/use-metadata';
 import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
-import resumeClasses from './common.module.scss';
+import commonClasses from './common.module.scss';
 
 type SkillProps = {
   title: string;
@@ -26,7 +26,7 @@ export default function SkillSection() {
   const { skills, techStack } = useSkillsData();
 
   return (
-    <section className={clsx(resumeClasses.section, 'p-3 p-lg-5 d-flex align-items-center')} id="skills">
+    <>
       <div className="w-100">
         <h2 className="mb-5">Skills and Proficiency</h2>
 
@@ -39,6 +39,6 @@ export default function SkillSection() {
           ))}
         </ul>
       </div>
-    </section>
+    </>
   );
 }

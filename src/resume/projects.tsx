@@ -10,7 +10,7 @@ type ProjectProps = {
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (
-    <a href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
+    <a className={clsx(classes.link)} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
     </a>
   ) : (
@@ -36,7 +36,7 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <section className={clsx(classes.section, 'p-3 p-lg-5 d-flex align-items-center')} id="projects">
+    <>
       <div className="w-100">
         <h2 className="mb-5">Projects</h2>
         <ul className="fa-ul mb-0">
@@ -45,6 +45,6 @@ export default function ProjectSection() {
           ))}
         </ul>
       </div>
-    </section>
+    </>
   );
 }

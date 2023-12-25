@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { useSidebarData } from '../../metadata/use-metadata';
 import avatarJPG from '../assets/img/avatar.jpg';
 import avatarWebP from '../assets/img/avatar.webp';
+import commonClasses from './common.module.scss';
 import sidebarClasses from './sidebar.module.scss';
 
 type Tab = {
@@ -30,7 +31,7 @@ export default function Sidebar() {
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
   return (
-    <nav className={clsx('navbar navbar-expand-lg navbar-dark bg-primary fixed-top', sidebarClasses.sideNav)}>
+    <nav className={clsx('navbar navbar-expand-lg navbar-dark bg-primary fixed-top', sidebarClasses.sideNav, commonClasses.bgPrimary)}>
       <a className={clsx('navbar-brand', sidebarClasses.navbarBrand)} href="#page-top">
         <span className="d-block d-lg-none">{`${firstName} ${lastName}`}</span>
         <span className="d-none d-lg-block">

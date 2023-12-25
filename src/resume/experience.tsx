@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
 import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
-import resumeClasses from './common.module.scss';
+import commonClasses from './common.module.scss';
 
 type JobDescriptionProps = {
   title: string;
@@ -36,8 +36,8 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
           ))}
         </ul>
       </div>
-      <div className={clsx(resumeClasses.date, 'text-md-right')}>
-        <span className="text-primary">{duration}</span>
+      <div className={clsx(commonClasses.date, 'text-md-right')}>
+        <span className={clsx(commonClasses.textPrimary)}>{duration}</span>
       </div>
     </div>
   );
@@ -47,7 +47,7 @@ export default function Experiences() {
   const experience = useExperienceData();
 
   return (
-    <section className={clsx(resumeClasses.section, 'p-3 p-lg-5 d-flex justify-content-center')} id="experience">
+    <>
       <div className="w-100">
         <h2 className="mb-5">Experience</h2>
         {experience.map(({ title, companyName, description, duration, techIcons, technologies }) => (
@@ -62,6 +62,6 @@ export default function Experiences() {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 }

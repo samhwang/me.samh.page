@@ -13,24 +13,28 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
           2022
            
           <a
+            class="_link_044294"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
+            class="_link_044294"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
+            class="_link_044294"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
+            class="_link_044294"
             href="https://reactjs.org/"
           >
             React
@@ -49,24 +53,28 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
         2022
          
         <a
+          class="_link_044294"
           href="https://github.com/samhwang"
         >
           Sam Huynh
         </a>
         . Hosted on 
         <a
+          class="_link_044294"
           href="https://app.netlify.com"
         >
           Netlify
         </a>
         . Built with 
         <a
+          class="_link_044294"
           href="https://www.vitejs.dev/"
         >
           Vite
         </a>
          and 
         <a
+          class="_link_044294"
           href="https://reactjs.org/"
         >
           React
