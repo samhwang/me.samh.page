@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useSkillsData } from '../../metadata/use-metadata';
-import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
+import iconClasses from './icon.module.scss';
 import typographyClasses from './typography.module.scss';
 
 type SkillProps = {

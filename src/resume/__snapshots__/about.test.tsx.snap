@@ -29,7 +29,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
           test test test
         </p>
         <div
-          class="_socialIcons_6abadc"
+          class="_socialIcons_75ebdb"
         >
           <a
             aria-label="test-icon URL"
@@ -70,7 +70,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
         test test test
       </p>
       <div
-        class="_socialIcons_6abadc"
+        class="_socialIcons_75ebdb"
       >
         <a
           aria-label="test-icon URL"

@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
-import iconClasses from '../icons/icon.module.scss';
 import LangIcon from '../icons/lang-icon';
 import commonClasses from './common.module.scss';
+import iconClasses from './icon.module.scss';
 import typographyClasses from './typography.module.scss';
 
 type JobDescriptionProps = {

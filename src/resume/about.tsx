@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { useAboutData } from '../../metadata/use-metadata';
-import iconClasses from '../icons/icon.module.scss';
 import SocialIcon from '../icons/social-icon';
 import commonClasses from './common.module.scss';
+import iconClasses from './icon.module.scss';
 import typographyClasses from './typography.module.scss';
 
 export default function About() {
