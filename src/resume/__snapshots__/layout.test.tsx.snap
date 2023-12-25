@@ -9,7 +9,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         class="_mainBody_bfda06"
       >
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
+          class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
         >
           <a
             class="navbar-brand _navbarBrand_afdb38"
@@ -123,35 +123,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </h1>
         </div>
         <section
-          class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! max-w_75rem [@media_(min-width:_992px)]:pt_3rem! [@media_(min-width:_992px)]:pb_3rem! [@media_(min-width:_768px)]:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
         >
           <p>
             © 
             2022
              
             <a
-              class="_link_044294"
+              class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
               href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             . Hosted on 
             <a
-              class="_link_044294"
+              class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
               href="https://app.netlify.com"
             >
               Netlify
             </a>
             . Built with 
             <a
-              class="_link_044294"
+              class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
               href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
-              class="_link_044294"
+              class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
               href="https://reactjs.org/"
             >
               React
@@ -167,7 +167,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
       class="_mainBody_bfda06"
     >
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top _sideNav_afdb38 _bgPrimary_044294"
+        class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
       >
         <a
           class="navbar-brand _navbarBrand_afdb38"
@@ -281,35 +281,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         </h1>
       </div>
       <section
-        class="_section_044294 p-3 p-lg-5 d-flex align-items-center"
+        class="pt_5rem! pb_5rem! max-w_75rem [@media_(min-width:_992px)]:pt_3rem! [@media_(min-width:_992px)]:pb_3rem! [@media_(min-width:_768px)]:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 
           2022
            
           <a
-            class="_link_044294"
+            class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
-            class="_link_044294"
+            class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
-            class="_link_044294"
+            class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
-            class="_link_044294"
+            class="text_primary hover:text_darkBlue focus:text_darkBlue active:text_darkBlue"
             href="https://reactjs.org/"
           >
             React

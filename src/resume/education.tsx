@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useEducationData } from '../../metadata/use-metadata';
-import commonClasses from './common.module.scss';
+import * as commonStyles from './common.styles';
 import typographyClasses from './typography.module.scss';
 
 type SchoolProps = {
@@ -18,8 +18,8 @@ function School({ institute, degree, major, duration }: SchoolProps) {
         <div className={clsx('mb-3', typographyClasses.subheading)}>{degree}</div>
         <div>{major}</div>
       </div>
-      <div className={clsx(commonClasses.date, 'text-md-right')}>
-        <span className={clsx(commonClasses.textPrimary)}>{duration}</span>
+      <div className={clsx(commonStyles.date, 'text-md-right')}>
+        <span className={clsx(commonStyles.textPrimary)}>{duration}</span>
       </div>
     </div>
   );

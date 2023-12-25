@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
-import commonClasses from './common.module.scss';
+import * as commonStyles from './common.styles';
 import iconClasses from './icon.module.scss';
 import typographyClasses from './typography.module.scss';
 
@@ -37,8 +37,8 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
           ))}
         </ul>
       </div>
-      <div className={clsx(commonClasses.date, 'text-md-right')}>
-        <span className={clsx(commonClasses.textPrimary)}>{duration}</span>
+      <div className={clsx(commonStyles.date, 'text-md-right')}>
+        <span className={clsx(commonStyles.textPrimary)}>{duration}</span>
       </div>
     </div>
   );

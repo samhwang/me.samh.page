@@ -32,10 +32,10 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="_date_044294 text-md-right"
+            class="min-w_unset [@media_(min-width:_768px)]:min-w_8rem text-md-right"
           >
             <span
-              class="_textPrimary_044294"
+              class="text_primary"
             >
               2020 - 2021
             </span>
@@ -72,10 +72,10 @@ exports[`Education section render > Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="_date_044294 text-md-right"
+          class="min-w_unset [@media_(min-width:_768px)]:min-w_8rem text-md-right"
         >
           <span
-            class="_textPrimary_044294"
+            class="text_primary"
           >
             2020 - 2021
           </span>
