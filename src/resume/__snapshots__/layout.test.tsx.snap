@@ -5,9 +5,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="_mainBody_bfda06"
-      >
+      <div>
         <nav
           class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
         >
@@ -163,9 +161,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
     </div>
   </body>,
   "container": <div>
-    <div
-      class="_mainBody_bfda06"
-    >
+    <div>
       <nav
         class="navbar navbar-expand-lg navbar-dark fixed-top _sideNav_afdb38 bg_primary"
       >

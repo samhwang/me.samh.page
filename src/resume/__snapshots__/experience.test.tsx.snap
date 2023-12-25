@@ -23,7 +23,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               Test Title
             </h3>
             <div
-              class="mb-3 _subheading_bfda06"
+              class="mb-3 text_uppercase font_500 fs_1rem font_heading"
             >
               Test Company
             </div>
@@ -84,7 +84,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             Test Title
           </h3>
           <div
-            class="mb-3 _subheading_bfda06"
+            class="mb-3 text_uppercase font_500 fs_1rem font_heading"
           >
             Test Company
           </div>

@@ -10,23 +10,30 @@ const globalCss = defineGlobalStyles({
       pl: '17rem',
     },
   },
-  'h1, h2, h3, h4, h5, h6': {
+  h1: {
     fontFamily: 'heading',
     fontWeight: '700!',
     textTransform: 'uppercase',
-  },
-  h1: {
-    fontSize: '6rem',
+    fontSize: '6rem!',
     lineHeight: '5.5rem',
   },
   h2: {
-    fontSize: '3.5rem',
+    fontFamily: 'heading',
+    fontWeight: '700!',
+    textTransform: 'uppercase',
+    fontSize: '3.5rem!',
   },
   h3: {
-    fontSize: '2rem',
+    fontFamily: 'heading',
+    fontWeight: '700!',
+    textTransform: 'uppercase',
+    fontSize: '2rem!',
   },
   'h4, h5, h6': {
-    fontSize: '1.5rem',
+    fontFamily: 'heading',
+    fontWeight: '700!',
+    textTransform: 'uppercase',
+    fontSize: '1.5rem!',
   },
 });
 
@@ -69,10 +76,10 @@ export default defineConfig({
       },
       fonts: {
         body: {
-          value: '"Mulish", {fonts.base}',
+          value: '"Mulish", {fonts.system}',
         },
         heading: {
-          value: '"Saira Extra Condensed", {fonts.base}',
+          value: '"Saira Extra Condensed", {fonts.system}',
         },
       },
     },

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useSkillsData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
 import iconClasses from './icon.module.scss';
-import typographyClasses from './typography.module.scss';
+import * as typographyStyles from './typography.styles';
 
 type SkillProps = {
   title: string;
@@ -12,7 +12,7 @@ type SkillProps = {
 function Skill({ title, description }: SkillProps) {
   return (
     <>
-      <div className={clsx('mb-3', typographyClasses.subheading)}>{title}</div>
+      <div className={clsx('mb-3', typographyStyles.subheading)}>{title}</div>
       <ul>
         {description.map((line) => (
           <li key={line}>{line}</li>
