@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import { useAboutData } from '../../metadata/use-metadata';
 import SocialIcon from '../icons/social-icon';
-import commonClasses from './common.module.scss';
-import iconClasses from './icon.module.scss';
-import typographyClasses from './typography.module.scss';
+import * as commonStyles from './common.styles';
+import * as iconStyles from './icon.styles';
+import * as typographyStyles from './typography.styles';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();
@@ -11,13 +11,13 @@ export default function About() {
   return (
     <>
       <div className="w-100">
-        <h1 className={clsx('mb-0', typographyClasses.h1)}>
+        <h1 className="mb-0">
           {firstName}
-          <span className={clsx(commonClasses.textPrimary)}>{lastName}</span>
+          <span className={clsx(commonStyles.textPrimary)}>{lastName}</span>
         </h1>
-        <div className={clsx('mb-5', typographyClasses.subheading)}>{address}</div>
-        <p className={clsx('mb-5', typographyClasses.lead)}>{bio}</p>
-        <div className={clsx(iconClasses.socialIcons)}>
+        <div className={clsx('mb-5', typographyStyles.subheading)}>{address}</div>
+        <p className={clsx('mb-5', typographyStyles.lead)}>{bio}</p>
+        <div className={clsx(iconStyles.socialIcons)}>
           {socialLinks.map(({ icon, name, url }) => (
             <SocialIcon key={name} icon={icon} url={url} />
           ))}

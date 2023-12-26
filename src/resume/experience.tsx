@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
 import LangIcon from '../icons/lang-icon';
-import commonClasses from './common.module.scss';
-import iconClasses from './icon.module.scss';
-import typographyClasses from './typography.module.scss';
+import * as commonStyles from './common.styles';
+import * as iconStyles from './icon.styles';
+import * as typographyStyles from './typography.styles';
 
 type JobDescriptionProps = {
   title: string;
@@ -19,7 +19,7 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
     <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div>
         <h3 className="mb-0">{title}</h3>
-        <div className={clsx('mb-3', typographyClasses.subheading)}>{companyName}</div>
+        <div className={clsx('mb-3', typographyStyles.subheading)}>{companyName}</div>
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>
@@ -31,14 +31,14 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
             <li key={tech}>{tech}</li>
           ))}
         </ul>
-        <ul className={clsx('list-inline', iconClasses.devIcons)}>
+        <ul className={clsx('list-inline', iconStyles.devIcons)}>
           {techIcons.map((icon) => (
             <LangIcon name={icon} key={icon} />
           ))}
         </ul>
       </div>
-      <div className={clsx(commonClasses.date, 'text-md-right')}>
-        <span className={clsx(commonClasses.textPrimary)}>{duration}</span>
+      <div className={clsx(commonStyles.date, 'text-md-right')}>
+        <span className={clsx(commonStyles.textPrimary)}>{duration}</span>
       </div>
     </div>
   );

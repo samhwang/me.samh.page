@@ -23,7 +23,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               Test Title
             </h3>
             <div
-              class="mb-3 _subheading_bfda06"
+              class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
             >
               Test Company
             </div>
@@ -41,7 +41,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               </li>
             </ul>
             <ul
-              class="list-inline _devIcons_75ebdb"
+              class="list-inline fs_3rem"
             >
               <li
                 class="list-inline-item"
@@ -53,10 +53,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </ul>
           </div>
           <div
-            class="_date_044294 text-md-right"
+            class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
           >
             <span
-              class="_textPrimary_044294"
+              class="text_primary"
             >
               Oct 2019 - Present
             </span>
@@ -84,7 +84,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             Test Title
           </h3>
           <div
-            class="mb-3 _subheading_bfda06"
+            class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
           >
             Test Company
           </div>
@@ -102,7 +102,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </li>
           </ul>
           <ul
-            class="list-inline _devIcons_75ebdb"
+            class="list-inline fs_3rem"
           >
             <li
               class="list-inline-item"
@@ -114,10 +114,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </ul>
         </div>
         <div
-          class="_date_044294 text-md-right"
+          class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
         >
           <span
-            class="_textPrimary_044294"
+            class="text_primary"
           >
             Oct 2019 - Present
           </span>

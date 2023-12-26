@@ -23,7 +23,7 @@ exports[`Education section render > Should match snapshot 1`] = `
               Test
             </h3>
             <div
-              class="mb-3 _subheading_bfda06"
+              class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
             >
               Test
             </div>
@@ -32,10 +32,10 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="_date_044294 text-md-right"
+            class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
           >
             <span
-              class="_textPrimary_044294"
+              class="text_primary"
             >
               2020 - 2021
             </span>
@@ -63,7 +63,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             Test
           </h3>
           <div
-            class="mb-3 _subheading_bfda06"
+            class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
           >
             Test
           </div>
@@ -72,10 +72,10 @@ exports[`Education section render > Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="_date_044294 text-md-right"
+          class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
         >
           <span
-            class="_textPrimary_044294"
+            class="text_primary"
           >
             2020 - 2021
           </span>
