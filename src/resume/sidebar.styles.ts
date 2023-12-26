@@ -15,7 +15,7 @@ export const sideNav = css({
 
 export const navbarToggler = css({
   _focus: {
-    outlineColor: 'lightblue',
+    outlineColor: 'blue.500',
   },
 });
 

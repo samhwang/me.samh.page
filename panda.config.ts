@@ -58,22 +58,8 @@ export default defineConfig({
   theme: {
     extend: {
       tokens: {
-        colors: {
-          white: { value: '#fff' },
-          'gray.600': { value: '#868e96' },
-          'gray.700': { value: '#495057' },
-          'gray.800': { value: '#343a40' },
-          blue: { value: '#007bff' },
-          lightblue: { value: '#4da3ff' },
-          darkblue: { value: '#0056b3' },
-        },
         sizes: {
           sidebarWidth: { value: '17rem' },
-        },
-      },
-      semanticTokens: {
-        colors: {
-          primary: { value: '{colors.blue}' },
         },
         fonts: {
           body: {
