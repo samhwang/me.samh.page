@@ -29,6 +29,8 @@
     "@fontsource/mulish": "^5.0.16",
     "@fontsource/roboto": "^5.0.8",
     "@fontsource/saira-extra-condensed": "^5.0.18",
+    "@pandacss/preset-base": "^0.23.0",
+    "@pandacss/preset-panda": "^0.23.0",
     "@popperjs/core": "^2.11.8",
     "@react-hookz/web": "^24.0.2",
     "bootstrap": "^5.3.2",

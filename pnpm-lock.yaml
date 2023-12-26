@@ -14,6 +14,12 @@ dependencies:
   '@fontsource/saira-extra-condensed':
     specifier: ^5.0.18
     version: 5.0.18
+  '@pandacss/preset-base':
+    specifier: ^0.23.0
+    version: 0.23.0
+  '@pandacss/preset-panda':
+    specifier: ^0.23.0
+    version: 0.23.0
   '@popperjs/core':
     specifier: ^2.11.8
     version: 2.11.8
@@ -3777,13 +3783,11 @@ packages:
     resolution: {integrity: sha512-I9iqO87pMWRplJC3jAXcCcBqBG5lajyCUsgOodZydtPIP3hXqMO7VSG3y8xLkdY09QNLB+t5oyu3jd4xxdt8Lw==}
     dependencies:
       '@pandacss/types': 0.23.0
-    dev: true
 
   /@pandacss/preset-panda@0.23.0:
     resolution: {integrity: sha512-VdzjaL/fdbAvSjWjXRePHoTlNUd/IJNQpWEvdslCpb50UhKKyOjs5M788FQ8o4wwiVH+WK0GihmAwyyxTw+yDA==}
     dependencies:
       '@pandacss/types': 0.23.0
-    dev: true
 
   /@pandacss/shared@0.23.0:
     resolution: {integrity: sha512-YuF+E1zN2MixH1JCtqSYldDewG7Pd+DDHwn3PyVaKc4W+4ISR1jz5ce3q69QNuD+J6SyJ575Ih7rk8JYdDqOyQ==}
@@ -3799,7 +3803,6 @@ packages:
 
   /@pandacss/types@0.23.0:
     resolution: {integrity: sha512-Y5UQMTsWh5wxYBtRX3zpf5xZkRcwtqequt+F3vKeZa2eXIu5l/4pDeQ+BT/ldFNS38XIYgQpDcnkrGejWXJF1w==}
-    dev: true
 
   /@parcel/watcher-android-arm64@2.3.0:
     resolution: {integrity: sha512-f4o9eA3dgk0XRT3XhB0UWpWpLnKgrh1IwNJKJ7UJek7eTYccQ8LR7XUWFKqw6aEq5KUNlCcGvSzKqSX/vtWVVA==}
