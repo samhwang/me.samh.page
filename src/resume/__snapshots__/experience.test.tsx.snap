@@ -53,10 +53,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </ul>
           </div>
           <div
-            class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
+            class="md:min-w_8rem text-md-right"
           >
             <span
-              class="text_primary"
+              class="text_blue.600"
             >
               Oct 2019 - Present
             </span>
@@ -114,10 +114,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </ul>
         </div>
         <div
-          class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
+          class="md:min-w_8rem text-md-right"
         >
           <span
-            class="text_primary"
+            class="text_blue.600"
           >
             Oct 2019 - Present
           </span>

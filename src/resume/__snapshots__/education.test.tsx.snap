@@ -32,10 +32,10 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
+            class="md:min-w_8rem text-md-right"
           >
             <span
-              class="text_primary"
+              class="text_blue.600"
             >
               2020 - 2021
             </span>
@@ -72,10 +72,10 @@ exports[`Education section render > Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
+          class="md:min-w_8rem text-md-right"
         >
           <span
-            class="text_primary"
+            class="text_blue.600"
           >
             2020 - 2021
           </span>

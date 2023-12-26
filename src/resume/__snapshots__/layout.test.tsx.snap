@@ -7,10 +7,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
     <div>
       <div>
         <nav
-          class="navbar navbar-expand-lg navbar-dark fixed-top [@media_(min-width:_992px)]:text_center [@media_(min-width:_992px)]:pos_fixed [@media_(min-width:_992px)]:top_0 [@media_(min-width:_992px)]:left_0 [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:flex_column [@media_(min-width:_992px)]:w_sidebarWidth [@media_(min-width:_992px)]:h_100vh bg_primary"
+          class="navbar navbar-expand-lg navbar-dark fixed-top lg:text_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex_column lg:w_sidebarWidth lg:h_100vh bg_blue.600"
         >
           <a
-            class="navbar-brand [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:m_auto_auto_0 [@media_(min-width:_992px)]:p_0.5rem"
+            class="navbar-brand lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
             href="#page-top"
           >
             <span
@@ -32,7 +32,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 />
                 <img
                   alt="First Last Avatar"
-                  class="[@media_(min-width:_992px)]:max-w_10rem [@media_(min-width:_992px)]:max-h_10rem [@media_(min-width:_992px)]:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
+                  class="lg:max-w_10rem lg:max-h_10rem lg:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
                   src="/src/img/avatar.jpg"
                 />
               </picture>
@@ -42,7 +42,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler focus:ring_lightblue collapsed"
+            class="navbar-toggler focus:ring_blue.500 collapsed"
             data-target="#navbarSupportedContent"
             data-toggle="collapse"
             type="button"
@@ -52,58 +52,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             />
           </button>
           <div
-            class="navbar-collapse collapse [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:items_flex-start [@media_(min-width:_992px)]:grow_0! [@media_(min-width:_992px)]:w_100% [@media_(min-width:_992px)]:mb_auto show"
+            class="navbar-collapse collapse lg:d_flex lg:items_flex-start lg:grow_0! lg:w_100% lg:mb_auto show"
             id="navbarSupportedContent"
           >
             <div
-              class="navbar-nav [@media_(min-width:_992px)]:flex_column! [@media_(min-width:_992px)]:w_100%"
+              class="navbar-nav lg:flex_column! lg:w_100%"
             >
               <ul>
                 <li
-                  class="[@media_(min-width:_992px)]:d_block"
+                  class="lg:d_block"
                 >
                   <a
-                    class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                    class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                     href="#about"
                   >
                     About
                   </a>
                 </li>
                 <li
-                  class="[@media_(min-width:_992px)]:d_block"
+                  class="lg:d_block"
                 >
                   <a
-                    class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                    class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                     href="#experience"
                   >
                     Experience
                   </a>
                 </li>
                 <li
-                  class="[@media_(min-width:_992px)]:d_block"
+                  class="lg:d_block"
                 >
                   <a
-                    class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                    class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                     href="#education"
                   >
                     Education
                   </a>
                 </li>
                 <li
-                  class="[@media_(min-width:_992px)]:d_block"
+                  class="lg:d_block"
                 >
                   <a
-                    class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                    class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                     href="#skills"
                   >
                     Skills
                   </a>
                 </li>
                 <li
-                  class="[@media_(min-width:_992px)]:d_block"
+                  class="lg:d_block"
                 >
                   <a
-                    class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                    class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                     href="#projects"
                   >
                     Projects
@@ -121,35 +121,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </h1>
         </div>
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem [@media_(min-width:_992px)]:pt_3rem! [@media_(min-width:_992px)]:pb_3rem! [@media_(min-width:_768px)]:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
         >
           <p>
             © 
             2022
              
             <a
-              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+              class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
               href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             . Hosted on 
             <a
-              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+              class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
               href="https://app.netlify.com"
             >
               Netlify
             </a>
             . Built with 
             <a
-              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+              class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
               href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
-              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+              class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
               href="https://reactjs.org/"
             >
               React
@@ -163,10 +163,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "container": <div>
     <div>
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top [@media_(min-width:_992px)]:text_center [@media_(min-width:_992px)]:pos_fixed [@media_(min-width:_992px)]:top_0 [@media_(min-width:_992px)]:left_0 [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:flex_column [@media_(min-width:_992px)]:w_sidebarWidth [@media_(min-width:_992px)]:h_100vh bg_primary"
+        class="navbar navbar-expand-lg navbar-dark fixed-top lg:text_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex_column lg:w_sidebarWidth lg:h_100vh bg_blue.600"
       >
         <a
-          class="navbar-brand [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:m_auto_auto_0 [@media_(min-width:_992px)]:p_0.5rem"
+          class="navbar-brand lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
           href="#page-top"
         >
           <span
@@ -188,7 +188,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               />
               <img
                 alt="First Last Avatar"
-                class="[@media_(min-width:_992px)]:max-w_10rem [@media_(min-width:_992px)]:max-h_10rem [@media_(min-width:_992px)]:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
+                class="lg:max-w_10rem lg:max-h_10rem lg:border_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
                 src="/src/img/avatar.jpg"
               />
             </picture>
@@ -198,7 +198,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler focus:ring_lightblue collapsed"
+          class="navbar-toggler focus:ring_blue.500 collapsed"
           data-target="#navbarSupportedContent"
           data-toggle="collapse"
           type="button"
@@ -208,58 +208,58 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           />
         </button>
         <div
-          class="navbar-collapse collapse [@media_(min-width:_992px)]:d_flex [@media_(min-width:_992px)]:items_flex-start [@media_(min-width:_992px)]:grow_0! [@media_(min-width:_992px)]:w_100% [@media_(min-width:_992px)]:mb_auto show"
+          class="navbar-collapse collapse lg:d_flex lg:items_flex-start lg:grow_0! lg:w_100% lg:mb_auto show"
           id="navbarSupportedContent"
         >
           <div
-            class="navbar-nav [@media_(min-width:_992px)]:flex_column! [@media_(min-width:_992px)]:w_100%"
+            class="navbar-nav lg:flex_column! lg:w_100%"
           >
             <ul>
               <li
-                class="[@media_(min-width:_992px)]:d_block"
+                class="lg:d_block"
               >
                 <a
-                  class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                  class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                   href="#about"
                 >
                   About
                 </a>
               </li>
               <li
-                class="[@media_(min-width:_992px)]:d_block"
+                class="lg:d_block"
               >
                 <a
-                  class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                  class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                   href="#experience"
                 >
                   Experience
                 </a>
               </li>
               <li
-                class="[@media_(min-width:_992px)]:d_block"
+                class="lg:d_block"
               >
                 <a
-                  class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                  class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                   href="#education"
                 >
                   Education
                 </a>
               </li>
               <li
-                class="[@media_(min-width:_992px)]:d_block"
+                class="lg:d_block"
               >
                 <a
-                  class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                  class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                   href="#skills"
                 >
                   Skills
                 </a>
               </li>
               <li
-                class="[@media_(min-width:_992px)]:d_block"
+                class="lg:d_block"
               >
                 <a
-                  class="nav-link font_800! tracking_0.05rem text_uppercase [@media_(min-width:_992px)]:d_block"
+                  class="nav-link font_800! tracking_0.05rem text_uppercase lg:d_block"
                   href="#projects"
                 >
                   Projects
@@ -277,35 +277,35 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         </h1>
       </div>
       <section
-        class="pt_5rem! pb_5rem! max-w_75rem [@media_(min-width:_992px)]:pt_3rem! [@media_(min-width:_992px)]:pb_3rem! [@media_(min-width:_768px)]:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+        class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
       >
         <p>
           © 
           2022
            
           <a
-            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
-            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
-            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
-            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
+            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
             href="https://reactjs.org/"
           >
             React
