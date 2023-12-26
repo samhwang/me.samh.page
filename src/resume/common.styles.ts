@@ -30,12 +30,12 @@ export const textPrimary = css({
 export const link = css({
   color: 'primary!',
   _hover: {
-    color: 'darkBlue!',
+    color: 'darkblue!',
   },
   _focus: {
-    color: 'darkBlue!',
+    color: 'darkblue!',
   },
   _active: {
-    color: 'darkBlue!',
+    color: 'darkblue!',
   },
 });

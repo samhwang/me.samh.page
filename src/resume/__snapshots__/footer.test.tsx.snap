@@ -13,28 +13,28 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
           2022
            
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://reactjs.org/"
           >
             React
@@ -53,28 +53,28 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
         2022
          
         <a
-          class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+          class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
           href="https://github.com/samhwang"
         >
           Sam Huynh
         </a>
         . Hosted on 
         <a
-          class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+          class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
           href="https://app.netlify.com"
         >
           Netlify
         </a>
         . Built with 
         <a
-          class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+          class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
           href="https://www.vitejs.dev/"
         >
           Vite
         </a>
          and 
         <a
-          class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+          class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
           href="https://reactjs.org/"
         >
           React

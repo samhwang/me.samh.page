@@ -42,7 +42,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler focus:ring_lightBlue collapsed"
+            class="navbar-toggler focus:ring_lightblue collapsed"
             data-target="#navbarSupportedContent"
             data-toggle="collapse"
             type="button"
@@ -128,28 +128,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             2022
              
             <a
-              class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
               href="https://github.com/samhwang"
             >
               Sam Huynh
             </a>
             . Hosted on 
             <a
-              class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
               href="https://app.netlify.com"
             >
               Netlify
             </a>
             . Built with 
             <a
-              class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
               href="https://www.vitejs.dev/"
             >
               Vite
             </a>
              and 
             <a
-              class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+              class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
               href="https://reactjs.org/"
             >
               React
@@ -198,7 +198,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler focus:ring_lightBlue collapsed"
+          class="navbar-toggler focus:ring_lightblue collapsed"
           data-target="#navbarSupportedContent"
           data-toggle="collapse"
           type="button"
@@ -284,28 +284,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           2022
            
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://github.com/samhwang"
           >
             Sam Huynh
           </a>
           . Hosted on 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://app.netlify.com"
           >
             Netlify
           </a>
           . Built with 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://www.vitejs.dev/"
           >
             Vite
           </a>
            and 
           <a
-            class="text_primary! hover:text_darkBlue! focus:text_darkBlue! active:text_darkBlue!"
+            class="text_primary! hover:text_darkblue! focus:text_darkblue! active:text_darkblue!"
             href="https://reactjs.org/"
           >
             React
