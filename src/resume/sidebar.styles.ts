@@ -20,8 +20,8 @@ export const navbarToggler = css({
 });
 
 export const navLink = css({
-  fontWeight: 800,
-  letterSpacing: '0.5rem',
+  fontWeight: '800!',
+  letterSpacing: '0.05rem',
   textTransform: 'uppercase',
   '@media (min-width: 992px)': {
     display: 'block',
@@ -54,7 +54,7 @@ export const navbarCollapse = css({
   '@media (min-width: 992px)': {
     display: 'flex',
     alignItems: 'flex-start',
-    flexGrow: 0,
+    flexGrow: '0!',
     width: '100%',
     marginBottom: 'auto',
   },

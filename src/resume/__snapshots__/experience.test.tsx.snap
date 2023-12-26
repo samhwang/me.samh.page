@@ -23,7 +23,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               Test Title
             </h3>
             <div
-              class="mb-3 text_uppercase font_500 fs_1rem font_heading"
+              class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
             >
               Test Company
             </div>
@@ -53,7 +53,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </ul>
           </div>
           <div
-            class="min-w_unset [@media_(min-width:_768px)]:min-w_8rem text-md-right"
+            class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
           >
             <span
               class="text_primary"
@@ -84,7 +84,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             Test Title
           </h3>
           <div
-            class="mb-3 text_uppercase font_500 fs_1rem font_heading"
+            class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
           >
             Test Company
           </div>
@@ -114,7 +114,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </ul>
         </div>
         <div
-          class="min-w_unset [@media_(min-width:_768px)]:min-w_8rem text-md-right"
+          class="[@media_(min-width:_768px)]:min-w_8rem text-md-right"
         >
           <span
             class="text_primary"

@@ -14,7 +14,6 @@ export const section = css({
 });
 
 export const date = css({
-  minW: 'unset',
   '@media (min-width: 768px)': {
     minW: '8rem',
   },

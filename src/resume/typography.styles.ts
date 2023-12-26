@@ -8,6 +8,6 @@ export const lead = css({
 export const subheading = css({
   textTransform: 'uppercase',
   fontWeight: 500,
-  fontSize: '1rem',
+  fontSize: '1.5rem',
   fontFamily: 'heading',
 });

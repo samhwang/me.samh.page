@@ -3,8 +3,8 @@ import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
 const globalCss = defineGlobalStyles({
   body: {
     pt: '54px',
-    color: 'gray.600',
-    fontFamily: 'body',
+    color: 'gray.600!',
+    fontFamily: 'body!',
     '@media (min-width: 992px)': {
       pt: 0,
       pl: '17rem',
@@ -35,6 +35,12 @@ const globalCss = defineGlobalStyles({
     textTransform: 'uppercase',
     fontSize: '1.5rem!',
   },
+  ul: {
+    listStyleType: 'disc',
+  },
+  li: {
+    display: 'list-item',
+  }
 });
 
 export default defineConfig({
