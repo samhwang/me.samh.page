@@ -5,7 +5,7 @@ const globalCss = defineGlobalStyles({
     pt: '54px',
     color: 'gray.600!',
     fontFamily: 'body!',
-    '@media (min-width: 992px)': {
+    lg: {
       pt: 0,
       pl: '17rem',
     },

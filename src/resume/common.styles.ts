@@ -4,17 +4,17 @@ export const section = css({
   pt: '5rem!',
   pb: '5rem!',
   maxW: '75rem',
-  '@media (min-width: 992px)': {
+  lg: {
     pt: '3rem!',
     pb: '3rem!',
   },
-  '@media (min-width: 768px)': {
+  md: {
     minH: '100vh',
   },
 });
 
 export const date = css({
-  '@media (min-width: 768px)': {
+  md: {
     minW: '8rem',
   },
 });

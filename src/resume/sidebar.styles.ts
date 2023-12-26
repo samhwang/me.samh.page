@@ -1,7 +1,7 @@
 import { css } from '../../styled-system/css';
 
 export const sideNav = css({
-  '@media (min-width: 992px)': {
+  lg: {
     textAlign: 'center',
     position: 'fixed',
     top: 0,
@@ -23,19 +23,19 @@ export const navLink = css({
   fontWeight: '800!',
   letterSpacing: '0.05rem',
   textTransform: 'uppercase',
-  '@media (min-width: 992px)': {
+  lg: {
     display: 'block',
   },
 });
 
 export const navItem = css({
-  '@media (min-width: 992px)': {
+  lg: {
     display: 'block',
   },
 });
 
 export const imgProfile = css({
-  '@media (min-width: 992px)': {
+  lg: {
     maxW: '10rem',
     maxH: '10rem',
     border: '0.5rem solid fade-out(white, 0.8)',
@@ -43,7 +43,7 @@ export const imgProfile = css({
 });
 
 export const navbarBrand = css({
-  '@media (min-width: 992px)': {
+  lg: {
     display: 'flex',
     margin: 'auto auto 0',
     padding: '0.5rem',
@@ -51,7 +51,7 @@ export const navbarBrand = css({
 });
 
 export const navbarCollapse = css({
-  '@media (min-width: 992px)': {
+  lg: {
     display: 'flex',
     alignItems: 'flex-start',
     flexGrow: '0!',
@@ -61,7 +61,7 @@ export const navbarCollapse = css({
 });
 
 export const navbarNav = css({
-  '@media (min-width: 992px)': {
+  lg: {
     flexDirection: 'column !important',
     width: '100%',
   },
