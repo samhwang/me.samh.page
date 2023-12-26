@@ -3,9 +3,8 @@
 import { defineConfig } from 'vite';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
-import purgeCss from '@mojojoejo/vite-plugin-purgecss';
 import { VitePWA } from 'vite-plugin-pwa';
-import { manifest, iconClasses } from './metadata/metadata';
+import { manifest } from './metadata/metadata';
 
 const useSwc = true;
 const react = useSwc ? reactSwc : reactBabel;
@@ -22,9 +21,6 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest,
     }),
-    purgeCss({
-      safelist: [...iconClasses],
-    })
   ],
   test: {
     globals: true,
