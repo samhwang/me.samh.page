@@ -1,8 +1,8 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { manifest } from './metadata/metadata';
 
@@ -29,6 +29,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       enabled: !!process.env.CI,
+      exclude: ['styled-system', '**/*.config.*', '**/*.d.ts'],
     },
   },
 });
