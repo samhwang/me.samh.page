@@ -14,9 +14,10 @@ Vite
 Node
 React
 Netlify
+PandaCSS
 
 /* SITE */
 Last update: 2022/07/07
-Standards: JavaScript, TypeScript, React, AirBnB
+Standards: JavaScript, TypeScript, React
 Components: humans-generator
-Softwares: IntelliJ IDEA, Webstorm
+Softwares: Visual Studio Code
