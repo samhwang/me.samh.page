@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { useExperienceData } from '../../metadata/use-metadata';
+import { cx } from '../../styled-system/css';
 import LangIcon from '../icons/lang-icon';
 import * as commonStyles from './common.styles';
 import * as iconStyles from './icon.styles';
@@ -19,7 +19,7 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
     <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div>
         <h3 className="mb-0">{title}</h3>
-        <div className={clsx('mb-3', typographyStyles.subheading)}>{companyName}</div>
+        <div className={cx('mb-3', typographyStyles.subheading)}>{companyName}</div>
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>
@@ -31,14 +31,14 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
             <li key={tech}>{tech}</li>
           ))}
         </ul>
-        <ul className={clsx('list-inline', iconStyles.devIcons)}>
+        <ul className={cx('list-inline', iconStyles.devIcons)}>
           {techIcons.map((icon) => (
             <LangIcon name={icon} key={icon} />
           ))}
         </ul>
       </div>
-      <div className={clsx(commonStyles.date, 'text-md-right')}>
-        <span className={clsx(commonStyles.textPrimary)}>{duration}</span>
+      <div className={cx(commonStyles.date, 'text-md-right')}>
+        <span className={cx(commonStyles.textPrimary)}>{duration}</span>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { useSkillsData } from '../../metadata/use-metadata';
+import { cx } from '../../styled-system/css';
 import LangIcon from '../icons/lang-icon';
 import * as iconStyles from './icon.styles';
 import * as typographyStyles from './typography.styles';
@@ -12,7 +12,7 @@ type SkillProps = {
 function Skill({ title, description }: SkillProps) {
   return (
     <>
-      <div className={clsx('mb-3', typographyStyles.subheading)}>{title}</div>
+      <div className={cx('mb-3', typographyStyles.subheading)}>{title}</div>
       <ul>
         {description.map((line) => (
           <li key={line}>{line}</li>
@@ -33,7 +33,7 @@ export default function SkillSection() {
         {skills.map(({ title, description }) => (
           <Skill title={title} description={description} key={title} />
         ))}
-        <ul className={clsx('list-inline', iconStyles.devIcons)}>
+        <ul className={cx('list-inline', iconStyles.devIcons)}>
           {techStack.map((language) => (
             <LangIcon name={language} key={language} />
           ))}

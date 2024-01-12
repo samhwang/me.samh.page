@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { Link } from 'react-router-dom';
+import { cx } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
 
 interface FooterLinkProps {
@@ -9,7 +9,7 @@ interface FooterLinkProps {
 
 function FooterLink({ children, to }: FooterLinkProps) {
   return (
-    <Link className={clsx(commonStyles.link)} to={to}>
+    <Link className={cx(commonStyles.link)} to={to}>
       {children}
     </Link>
   );
@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <section className={clsx(commonStyles.section, 'p-3 p-lg-5 d-flex align-items-center')}>
+    <section className={cx(commonStyles.section, 'p-3 p-lg-5 d-flex align-items-center')}>
       <p>
         © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.netlify}. Built with {LINKS.vite} and {LINKS.react}.
       </p>

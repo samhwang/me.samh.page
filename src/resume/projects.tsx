@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { useProjectsData } from '../../metadata/use-metadata';
+import { cx } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
 
 type ProjectProps = {
@@ -10,7 +10,7 @@ type ProjectProps = {
 
 function Project({ title, description, url }: ProjectProps) {
   const titleText = url ? (
-    <a className={clsx(commonStyles.link)} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
+    <a className={cx(commonStyles.link)} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
     </a>
   ) : (
