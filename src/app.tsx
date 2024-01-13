@@ -1,24 +1,11 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import ErrorPage from './404';
-import Layout from './resume/layout';
+import { RouterProvider } from '@tanstack/react-router';
 import ResumePage from './resume/page';
+import { createRouter } from './route';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <ResumePage />,
-      },
-    ],
-  },
-]);
+const appRouter = createRouter(ResumePage);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={appRouter} />;
 }
 
 export default App;

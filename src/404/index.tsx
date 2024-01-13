@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
 import { cx } from '../../styled-system/css';
 import * as commonStyles from '../resume/common.styles';
 import SEO from '../seo';

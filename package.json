@@ -45,12 +45,13 @@
     "@pandacss/preset-panda": "^0.26.2",
     "@popperjs/core": "^2.11.8",
     "@react-hookz/web": "^24.0.2",
+    "@tanstack/react-router": "^1.4.2",
+    "@tanstack/router-devtools": "^1.4.2",
     "bootstrap": "^5.3.2",
     "devicon": "^2.15.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.21.2"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.1",
