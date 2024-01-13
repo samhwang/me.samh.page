@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
+import RenderWrapper from '../test-utils/render-wrapper';
 import LangIcon from './lang-icon';
 import SocialIcon from './social-icon';
 
@@ -13,11 +13,7 @@ describe('Lang Icon', () => {
 
 describe('Social Icon', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = render(
-      <BrowserRouter>
-        <SocialIcon icon="github-plain" url="https://github.com/samhwang" />
-      </BrowserRouter>
-    );
+    const tree = render(<SocialIcon icon="github-plain" url="https://github.com/samhwang" />, { wrapper: RenderWrapper });
     expect(tree).toMatchSnapshot();
   });
 });

@@ -81,31 +81,9 @@ exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <a
-        aria-label="github-plain URL"
-        href="https://github.com/samhwang"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <i
-          class="devicon-github-plain"
-        />
-      </a>
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <a
-      aria-label="github-plain URL"
-      href="https://github.com/samhwang"
-      rel="noreferrer"
-      target="_blank"
-    >
-      <i
-        class="devicon-github-plain"
-      />
-    </a>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

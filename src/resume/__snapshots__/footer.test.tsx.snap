@@ -4,85 +4,9 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <section
-        class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
-      >
-        <p>
-          © 
-          2022
-           
-          <a
-            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-            href="https://github.com/samhwang"
-          >
-            Sam Huynh
-          </a>
-          . Hosted on 
-          <a
-            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-            href="https://app.netlify.com"
-          >
-            Netlify
-          </a>
-          . Built with 
-          <a
-            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-            href="https://www.vitejs.dev/"
-          >
-            Vite
-          </a>
-           and 
-          <a
-            class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-            href="https://reactjs.org/"
-          >
-            React
-          </a>
-          .
-        </p>
-      </section>
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <section
-      class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
-    >
-      <p>
-        © 
-        2022
-         
-        <a
-          class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-          href="https://github.com/samhwang"
-        >
-          Sam Huynh
-        </a>
-        . Hosted on 
-        <a
-          class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-          href="https://app.netlify.com"
-        >
-          Netlify
-        </a>
-        . Built with 
-        <a
-          class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-          href="https://www.vitejs.dev/"
-        >
-          Vite
-        </a>
-         and 
-        <a
-          class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
-          href="https://reactjs.org/"
-        >
-          React
-        </a>
-        .
-      </p>
-    </section>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
