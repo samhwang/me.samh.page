@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import RenderWrapper from '../test-utils/render-wrapper';
 import LangIcon from './lang-icon';
 import SocialIcon from './social-icon';
 
@@ -13,7 +12,7 @@ describe('Lang Icon', () => {
 
 describe('Social Icon', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = render(<SocialIcon icon="github-plain" url="https://github.com/samhwang" />, { wrapper: RenderWrapper });
+    const tree = render(<SocialIcon icon="github-plain" url="https://github.com/samhwang" />);
     expect(tree).toMatchSnapshot();
   });
 });
