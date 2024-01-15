@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useEducationData } from '../../metadata/use-metadata';
-import RenderWrapper from '../test-utils/render-wrapper';
 import Education from './education';
 
 vi.mock('../../metadata/use-metadata');
@@ -19,7 +18,7 @@ describe('Education section render', () => {
     ];
     mockHook.mockReturnValueOnce(mockEducation);
 
-    const tree = render(<Education />, { wrapper: RenderWrapper });
+    const tree = render(<Education />);
     expect(tree).toMatchSnapshot();
   });
 });

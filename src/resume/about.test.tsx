@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useAboutData } from '../../metadata/use-metadata';
-import RenderWrapper from '../test-utils/render-wrapper';
 import About from './about';
 
 vi.mock('../../metadata/use-metadata');
@@ -24,7 +23,7 @@ describe('Render About Data', () => {
     };
     mockHook.mockReturnValueOnce(mockAbout);
 
-    const tree = render(<About />, { wrapper: RenderWrapper });
+    const tree = render(<About />);
     expect(tree).toMatchSnapshot();
   });
 });

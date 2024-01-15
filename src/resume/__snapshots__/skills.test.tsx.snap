@@ -4,9 +4,71 @@ exports[`Skill Section Component > Should render without crashing and match snap
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div />
+    <div>
+      <div
+        class="w-100"
+      >
+        <h2
+          class="mb-5"
+        >
+          Skills and Proficiency
+        </h2>
+        <div
+          class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+        >
+          test title
+        </div>
+        <ul>
+          <li>
+            test description
+          </li>
+        </ul>
+        <ul
+          class="list-inline fs_3rem"
+        >
+          <li
+            class="list-inline-item"
+          >
+            <i
+              class="devicon-javascript-plain"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>,
-  "container": <div />,
+  "container": <div>
+    <div
+      class="w-100"
+    >
+      <h2
+        class="mb-5"
+      >
+        Skills and Proficiency
+      </h2>
+      <div
+        class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+      >
+        test title
+      </div>
+      <ul>
+        <li>
+          test description
+        </li>
+      </ul>
+      <ul
+        class="list-inline fs_3rem"
+      >
+        <li
+          class="list-inline-item"
+        >
+          <i
+            class="devicon-javascript-plain"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useSkillsData } from '../../metadata/use-metadata';
-import RenderWrapper from '../test-utils/render-wrapper';
 import SkillSection from './skills';
 
 vi.mock('../../metadata/use-metadata');
@@ -20,7 +19,7 @@ describe('Skill Section Component', () => {
     };
     mockHook.mockReturnValueOnce(mockSkills);
 
-    const tree = render(<SkillSection />, { wrapper: RenderWrapper });
+    const tree = render(<SkillSection />);
     expect(tree).toMatchSnapshot();
   });
 });

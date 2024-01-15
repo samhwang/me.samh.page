@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useExperienceData } from '../../metadata/use-metadata';
-import RenderWrapper from '../test-utils/render-wrapper';
 import Experiences from './experience';
 
 vi.mock('../../metadata/use-metadata');
@@ -21,7 +20,7 @@ describe('Experience Component', () => {
     ];
     mockHook.mockReturnValueOnce(mockExperience);
 
-    const tree = render(<Experiences />, { wrapper: RenderWrapper });
+    const tree = render(<Experiences />);
     expect(tree).toMatchSnapshot();
   });
 });

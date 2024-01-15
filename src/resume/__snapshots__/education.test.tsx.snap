@@ -4,9 +4,85 @@ exports[`Education section render > Should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div />
+    <div>
+      <div
+        class="w-100"
+      >
+        <h2
+          class="mb-5"
+        >
+          Education
+        </h2>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div>
+            <h3
+              class="mb-0"
+            >
+              Test
+            </h3>
+            <div
+              class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+            >
+              Test
+            </div>
+            <div>
+              Test
+            </div>
+          </div>
+          <div
+            class="md:min-w_8rem text-md-right"
+          >
+            <span
+              class="text_blue.600"
+            >
+              2020 - 2021
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>,
-  "container": <div />,
+  "container": <div>
+    <div
+      class="w-100"
+    >
+      <h2
+        class="mb-5"
+      >
+        Education
+      </h2>
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between mb-5"
+      >
+        <div>
+          <h3
+            class="mb-0"
+          >
+            Test
+          </h3>
+          <div
+            class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+          >
+            Test
+          </div>
+          <div>
+            Test
+          </div>
+        </div>
+        <div
+          class="md:min-w_8rem text-md-right"
+        >
+          <span
+            class="text_blue.600"
+          >
+            2020 - 2021
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

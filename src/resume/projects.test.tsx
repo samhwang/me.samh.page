@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { useProjectsData } from '../../metadata/use-metadata';
-import RenderWrapper from '../test-utils/render-wrapper';
 import ProjectSection from './projects';
 
 vi.mock('../../metadata/use-metadata');
@@ -22,7 +21,7 @@ describe('Project section rendering', () => {
     ];
     mockHook.mockReturnValueOnce(mockProjects);
 
-    const tree = render(<ProjectSection />, { wrapper: RenderWrapper });
+    const tree = render(<ProjectSection />);
     expect(tree).toMatchSnapshot();
   });
 });
