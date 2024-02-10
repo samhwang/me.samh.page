@@ -20,13 +20,8 @@ and hosted on [Netlify](https://app.netlify.com/).
 
 ## Built with
 
-### Language
-
 - TypeScript and React
-- SASS pre-processor for CSS
-
-### Tools
-
+- PandaCSS for styling
 - Vite build tool
 - Vitest for testing
 - Netlify for static site hosting and CI/CD
