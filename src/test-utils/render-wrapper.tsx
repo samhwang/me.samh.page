@@ -1,4 +1,4 @@
-import { Outlet, RootRoute, Route, RouteComponent, Router, RouterProvider, createMemoryHistory } from '@tanstack/react-router';
+import { Outlet, RouteComponent, RouterProvider, createMemoryHistory, createRootRoute, createRoute, createRouter } from '@tanstack/react-router';
 import { ReactNode } from 'react';
 
 type TestWrapperProps = {
@@ -6,11 +6,11 @@ type TestWrapperProps = {
 };
 
 function createTestRouter(component: RouteComponent) {
-  const rootRoute = new RootRoute({
+  const rootRoute = createRootRoute({
     component: () => <Outlet />,
   });
 
-  const indexRoute = new Route({
+  const indexRoute = createRoute({
     getParentRoute: () => rootRoute,
     path: '/',
     component,
@@ -18,7 +18,7 @@ function createTestRouter(component: RouteComponent) {
 
   const routeTree = rootRoute.addChildren([indexRoute]);
 
-  const router = new Router({
+  const router = createRouter({
     routeTree,
     history: createMemoryHistory(),
   });
