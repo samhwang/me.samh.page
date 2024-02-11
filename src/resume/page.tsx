@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import { cx } from '../../styled-system/css';
-import SEO from '../seo';
 import About from './about';
 import * as commonStyles from './common.styles';
 import Education from './education';
 import Experiences from './experience';
 import ProjectSection from './projects';
+import SEO from './seo';
 import SkillSection from './skills';
 
 export default function ResumePage() {

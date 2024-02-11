@@ -54,6 +54,8 @@
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
     "@pandacss/dev": "^0.30.2",
+    "@tanstack/router-cli": "^1.16.1",
+    "@tanstack/router-vite-plugin": "^1.16.1",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",

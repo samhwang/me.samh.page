@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 
+import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
@@ -16,6 +17,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    TanStackRouterVite(),
     VitePWA({
       injectRegister: 'auto',
       registerType: 'autoUpdate',
