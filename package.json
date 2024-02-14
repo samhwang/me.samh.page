@@ -10,7 +10,7 @@
     "node": "^20.0.0",
     "pnpm": "^8.0.0"
   },
-  "packageManager": "pnpm@8.15.1",
+  "packageManager": "pnpm@8.15.2",
   "scripts": {
     "prepare": "panda codegen",
     "dev": "vite",
@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
-    "@pandacss/dev": "^0.30.2",
+    "@pandacss/dev": "^0.31.0",
     "@tanstack/router-cli": "^1.16.1",
     "@tanstack/router-vite-plugin": "^1.16.1",
     "@testing-library/dom": "^9.3.4",
@@ -70,12 +70,12 @@
     "@vitest/ui": "^1.2.2",
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
-    "netlify-cli": "^17.16.1",
+    "netlify-cli": "^17.16.2",
     "simple-git-hooks": "^2.9.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "vite": "^5.1.1",
-    "vite-plugin-pwa": "^0.18.0",
+    "vite-plugin-pwa": "^0.18.1",
     "vitest": "^1.2.2"
   }
 }
