@@ -17,7 +17,7 @@ export const socialIcons = css({
       mr: 0,
     },
     _hover: {
-      bgColor: 'primary',
+      bgColor: 'primary!',
     },
   },
 });

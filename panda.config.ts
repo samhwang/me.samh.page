@@ -70,6 +70,16 @@ export default defineConfig({
           },
         },
       },
+      semanticTokens: {
+        colors: {
+          primary: {
+            value: '{colors.green.800}',
+          },
+          slightlyDarker: {
+            value: '{colors.green.900}',
+          },
+        },
+      },
     },
   },
 

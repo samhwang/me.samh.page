@@ -20,22 +20,22 @@ export const date = css({
 });
 
 export const bgPrimary = css({
-  bgColor: 'green.800',
+  bgColor: 'primary',
 });
 
 export const textPrimary = css({
-  color: 'green.800',
+  color: 'primary',
 });
 
 export const link = css({
-  color: 'green.800!',
+  color: 'primary!',
   _hover: {
-    color: 'green.900',
+    color: 'slightlyDarker!',
   },
   _focus: {
-    color: 'green.900!',
+    color: 'slightlyDarker!',
   },
   _active: {
-    color: 'green.900!',
+    color: 'slightlyDarker!',
   },
 });

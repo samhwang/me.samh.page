@@ -35,7 +35,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             class="md:min-w_8rem text-md-right"
           >
             <span
-              class="text_green.800"
+              class="text_primary"
             >
               2020 - 2021
             </span>
@@ -75,7 +75,7 @@ exports[`Education section render > Should match snapshot 1`] = `
           class="md:min-w_8rem text-md-right"
         >
           <span
-            class="text_green.800"
+            class="text_primary"
           >
             2020 - 2021
           </span>
