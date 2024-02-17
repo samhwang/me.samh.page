@@ -13,7 +13,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
         >
           test
           <span
-            class="text_blue.600"
+            class="text_green.800"
           >
             test
           </span>
@@ -54,7 +54,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
       >
         test
         <span
-          class="text_blue.600"
+          class="text_green.800"
         >
           test
         </span>

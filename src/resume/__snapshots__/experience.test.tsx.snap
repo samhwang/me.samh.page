@@ -56,7 +56,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             class="md:min-w_8rem text-md-right"
           >
             <span
-              class="text_blue.600"
+              class="text_green.800"
             >
               Oct 2019 - Present
             </span>
@@ -117,7 +117,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           class="md:min-w_8rem text-md-right"
         >
           <span
-            class="text_blue.600"
+            class="text_green.800"
           >
             Oct 2019 - Present
           </span>

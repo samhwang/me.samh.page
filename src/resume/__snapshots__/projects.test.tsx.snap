@@ -23,7 +23,7 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             <p>
               <a
                 aria-label="Project Test Title URL"
-                class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
+                class="text_green.800! hover:text_green.900 focus:text_green.900! active:text_green.900!"
                 href="http://test url"
                 rel="noreferrer"
                 target="_blank"
@@ -69,7 +69,7 @@ exports[`Project section rendering > Should match snapshot 1`] = `
           <p>
             <a
               aria-label="Project Test Title URL"
-              class="text_blue.600! hover:text_blue.700 focus:text_blue.700! active:text_blue.700!"
+              class="text_green.800! hover:text_green.900 focus:text_green.900! active:text_green.900!"
               href="http://test url"
               rel="noreferrer"
               target="_blank"
