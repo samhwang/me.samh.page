@@ -32,6 +32,7 @@ export default defineConfig({
       provider: 'v8',
       enabled: !!process.env.CI,
       exclude: ['styled-system', '**/*.config.*', '**/*.d.ts'],
+      include: ['src/resume/**', 'src/icons/**'],
     },
   },
 });
