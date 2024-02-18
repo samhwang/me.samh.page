@@ -7,7 +7,7 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { manifest } from './metadata/metadata';
 
-const useSwc = true;
+const useSwc = false;
 const react = useSwc ? reactSwc : reactBabel;
 
 // https://vitejs.dev/config/
