@@ -34,5 +34,8 @@ export default defineConfig({
       exclude: ['styled-system', '**/*.config.*', '**/*.d.ts'],
       include: ['src/resume/**', 'src/icons/**'],
     },
+    typecheck: {
+      enabled: true,
+    },
   },
 });
