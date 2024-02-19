@@ -2,7 +2,7 @@ import { ManifestOptions } from 'vite-plugin-pwa';
 
 // Icons List. See https://devicon.dev/
 const ICONS = {
-  ANGULAR: 'angular-plain',
+  ANGULAR: 'angularjs-plain',
   ASTRO: 'astro-plain',
   AWS: 'amazonwebservices-original',
   AZURE: 'azure-plain',
@@ -492,6 +492,7 @@ const metadata = {
       ICONS.MONGOOSE,
       ICONS.MYSQL,
       ICONS.POSTGRES,
+      ICONS.DYNAMODB,
       ICONS.DOCKER,
       ICONS.AWS,
       ICONS.DIGITALOCEAN,
