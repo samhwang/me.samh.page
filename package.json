@@ -12,7 +12,9 @@
   },
   "packageManager": "pnpm@8.15.3",
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "npm run git-hooks:init && npm run panda:codegen",
+    "git-hooks:init": "npx simple-git-hooks",
+    "panda:codegen": "panda codegen",
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc",
