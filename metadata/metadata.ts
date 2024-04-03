@@ -12,6 +12,8 @@ const ICONS = {
   BOOTSTRAP: 'bootstrap-plain',
   BUN: 'bun-plain',
   CIRCLECI: 'circleci-plain',
+  CLOUDFLARE: 'cloudflare-plain',
+  CLOUDFLARE_WORKER: 'cloudflareworkers-plain',
   CODEIGNITER: 'codeigniter-plain',
   COMPOSER: 'composer-plain',
   CONFLUENCE: 'confluence-original',
@@ -406,7 +408,7 @@ const metadata = {
       },
       {
         title: 'My Resume page',
-        description: "The page you're viewing right now! Hosted on Netlify, built with the Vite & React.",
+        description: "The page you're viewing right now! Hosted on Cloudflare Pages, built with the Vite & React.",
         url: 'https://me.samh.page',
       },
       {
@@ -496,6 +498,9 @@ const metadata = {
       ICONS.DOCKER,
       ICONS.AWS,
       ICONS.DIGITALOCEAN,
+      ICONS.NETLIFY,
+      ICONS.CLOUDFLARE,
+      ICONS.CLOUDFLARE_WORKER,
       ICONS.KAFKA,
       ICONS.SOCKETIO,
       ICONS.GIT,

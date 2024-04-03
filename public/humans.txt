@@ -13,7 +13,7 @@ GitHub: samhwang
 Vite
 Node
 React
-Netlify
+CloudFlare
 PandaCSS
 
 /* SITE */
