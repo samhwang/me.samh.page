@@ -14,7 +14,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
           Skills and Proficiency
         </h2>
         <div
-          class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+          class="mb-3 text-transform_uppercase fw_500 fs_1.5rem font_heading"
         >
           test title
         </div>
@@ -47,7 +47,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
         Skills and Proficiency
       </h2>
       <div
-        class="mb-3 text_uppercase font_500 fs_1.5rem font_heading"
+        class="mb-3 text-transform_uppercase fw_500 fs_1.5rem font_heading"
       >
         test title
       </div>
