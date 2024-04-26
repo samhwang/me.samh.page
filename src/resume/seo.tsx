@@ -10,7 +10,7 @@ export type SEOProps = {
   meta?: MetaEl[] | MetaEl;
 };
 
-export default function SEO({ title, description, meta }: SEOProps) {
+export default function SEO({ title, description = '', meta = [] }: SEOProps) {
   const defaultFallback = useSiteMetadata();
   const siteTitle = defaultFallback.title;
   const metaDescription = description || defaultFallback.description;
@@ -53,8 +53,3 @@ export default function SEO({ title, description, meta }: SEOProps) {
     </Helmet>
   );
 }
-
-SEO.defaultProps = {
-  meta: [],
-  description: '',
-};

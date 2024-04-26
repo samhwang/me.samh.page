@@ -8,7 +8,7 @@ type ProjectProps = {
   url?: string;
 };
 
-function Project({ title, description, url }: ProjectProps) {
+function Project({ title, description, url = '' }: ProjectProps) {
   const titleText = url ? (
     <a className={cx(commonStyles.link)} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
@@ -27,10 +27,6 @@ function Project({ title, description, url }: ProjectProps) {
     </li>
   );
 }
-
-Project.defaultProps = {
-  url: '',
-};
 
 export default function ProjectSection() {
   const projects = useProjectsData();
