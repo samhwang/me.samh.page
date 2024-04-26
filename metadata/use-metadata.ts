@@ -41,7 +41,7 @@ type Projects = {
   title: string;
   description: string;
   url?: string;
-}
+};
 
 export function useProjectsData(): Projects[] {
   const { projects } = metadata.personalInformation;

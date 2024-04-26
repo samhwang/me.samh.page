@@ -4,7 +4,7 @@
     "enabled": true
   },
   "files": {
-    "include": ["*.setup.*", "*.config.*", "src/**", "**/*.json", "**/*.md", "**/*.yaml", "**/*.yml"],
+    "include": ["*.setup.*", "*.config.*", "src/**", "metadata/*", "**/*.json", "**/*.md", "**/*.yaml", "**/*.yml"],
     "ignore": ["src/routeTree.gen.ts", "src/**/__snapshots__", "node_modules", "dist", "coverage", "styled-system"]
   },
   "linter": {

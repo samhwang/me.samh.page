@@ -1,4 +1,4 @@
-import { ManifestOptions } from 'vite-plugin-pwa';
+import type { ManifestOptions } from 'vite-plugin-pwa';
 
 // Icons List. See https://devicon.dev/
 const ICONS = {
@@ -133,22 +133,23 @@ const metadata = {
         duration: 'Jun 2023 - Present',
         description: [
           'Build and maintain the Lyka Frontend projects monorepo including but not limited to Vue utilities, AWS CDK infrastructure and GitHub Actions CI/CD pipeline to streamline frontend projects development.',
-          "Maintain Lyka's main website, journal and ordering pages and backend API as part of the Customer Acquisitions squad",
-          'Build and maintain backend infrastructure stacks & internal tooling for Lyka’s microservices using AWS CDK and CloudFormation as part of the Operations squad',
-          'Integrate Segment as a customer data analytics platform',
-          'Participate in on-call duties to maintain 99.99% service uptime over busy periods.',
+          "Maintain Lyka's main website, journal and ordering pages and backend API as part of the Acquisitions squad",
+          'Integrate Segment into frontend projects as the customer data platform to collect customer events and transfer into data warehouse destinations for further analysis',
+          'Supported day-to-day fulfillment issues as part of the Operations squad',
+          'Spearheaded the rebuild of integrating NetSuite ERP platform into Lyka Backend Systems',
+          'Participate in on-call duties to maintain 99.99% service uptime',
         ],
         technologies: [
-          'Front-end: TypeScript, Vue, Nuxt, TailwindCSS',
-          'Back-end: PHP 8 (Laravel)',
-          'Testing: Vitest, PHPUnit, Playwright, Artillery',
-          'Database: MySQL, DynamoDB',
+          'Front-end: Vue, Nuxt, SASS, TailwindCSS',
+          'Back-end: PHP 8 (Laravel), JavaScript/TypeScript, NodeJS',
+          'Testing: PHPUnit, Vitest, Playwright, Artillery',
+          'Database: MySQL/MariaDB, AWS DynamoDB',
           'AWS (Lambda, S3, SQS, EventBridge, SNS, ECS, ELB, CloudFront, Route 53, CloudFormation)',
           'Data analytics integration with Twillio Segments & Customer.io',
           'Monorepo Management with Turborepo',
           'Ran, built and maintained CI/CD pipeline with Bitbucket Pipeline & Github Actions',
           'Deploy Infrastructure as Code using AWS Cloud Development Kit (CDK) and CloudFormation',
-          'Error and Metrics reporting with Sentry, Logz.io and Honeycomb',
+          'Observability, logs & metric reporting with Logz.io, Sentry & Honeycomb',
         ],
         techIcons: [
           ICONS.JS,
