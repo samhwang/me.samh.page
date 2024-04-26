@@ -1,5 +1,5 @@
-import { Outlet, RouteComponent, RouterProvider, createMemoryHistory, createRootRoute, createRoute, createRouter } from '@tanstack/react-router';
-import { ReactNode } from 'react';
+import { Outlet, type RouteComponent, RouterProvider, createMemoryHistory, createRootRoute, createRoute, createRouter } from '@tanstack/react-router';
+import type { ReactNode } from 'react';
 
 type TestWrapperProps = {
   children: ReactNode;
