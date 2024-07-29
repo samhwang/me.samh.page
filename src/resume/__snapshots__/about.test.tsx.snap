@@ -13,13 +13,13 @@ exports[`Render About Data > Should match snapshot 1`] = `
         >
           test
           <span
-            class="text_primary"
+            class="c_primary"
           >
             test
           </span>
         </h1>
         <div
-          class="mb-5 text-transform_uppercase fw_500 fs_1.5rem font_heading"
+          class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           123 Test Drive
         </div>
@@ -29,7 +29,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
           test test test
         </p>
         <div
-          class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg_gray.700 [&_>_a]:text_white! [&_>_a]:rounded_100% [&_>_a]:text-align_center [&_>_a]:fs_1.5rem [&_>_a]:leading_3.5rem [&_>_a]:mr_1rem [&_>_a]:text-decor_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg_primary!"
+          class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
         >
           <a
             aria-label="test-icon URL"
@@ -54,13 +54,13 @@ exports[`Render About Data > Should match snapshot 1`] = `
       >
         test
         <span
-          class="text_primary"
+          class="c_primary"
         >
           test
         </span>
       </h1>
       <div
-        class="mb-5 text-transform_uppercase fw_500 fs_1.5rem font_heading"
+        class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
       >
         123 Test Drive
       </div>
@@ -70,7 +70,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
         test test test
       </p>
       <div
-        class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg_gray.700 [&_>_a]:text_white! [&_>_a]:rounded_100% [&_>_a]:text-align_center [&_>_a]:fs_1.5rem [&_>_a]:leading_3.5rem [&_>_a]:mr_1rem [&_>_a]:text-decor_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg_primary!"
+        class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
       >
         <a
           aria-label="test-icon URL"
