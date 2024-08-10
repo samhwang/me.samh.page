@@ -11,34 +11,34 @@ exports[`Render About Data > Should match snapshot 1`] = `
         <h1
           class="mb-0"
         >
-          test
+          First Name
           <span
             class="c_primary"
           >
-            test
+            Last Name
           </span>
         </h1>
         <div
           class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
-          123 Test Drive
+          123 Fake street
         </div>
         <p
           class="mb-5 fs_1.15rem fw_400"
         >
-          test test test
+          Blah
         </p>
         <div
           class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
         >
           <a
-            aria-label="test-icon URL"
-            href="test social URL"
+            aria-label="github-original URL"
+            href="https://github.com/testusername"
             rel="noreferrer"
             target="_blank"
           >
             <i
-              class="devicon-test-icon"
+              class="devicon-github-original"
             />
           </a>
         </div>
@@ -52,34 +52,34 @@ exports[`Render About Data > Should match snapshot 1`] = `
       <h1
         class="mb-0"
       >
-        test
+        First Name
         <span
           class="c_primary"
         >
-          test
+          Last Name
         </span>
       </h1>
       <div
         class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
       >
-        123 Test Drive
+        123 Fake street
       </div>
       <p
         class="mb-5 fs_1.15rem fw_400"
       >
-        test test test
+        Blah
       </p>
       <div
         class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
       >
         <a
-          aria-label="test-icon URL"
-          href="test social URL"
+          aria-label="github-original URL"
+          href="https://github.com/testusername"
           rel="noreferrer"
           target="_blank"
         >
           <i
-            class="devicon-test-icon"
+            class="devicon-github-original"
           />
         </a>
       </div>

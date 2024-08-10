@@ -20,16 +20,16 @@ exports[`Experience Component > Should render without crashing and match snapsho
             <h3
               class="mb-0"
             >
-              Test Title
+              Software Engineer
             </h3>
             <div
               class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
-              Test Company
+              Bruh Industries
             </div>
             <ul>
               <li>
-                Test Job duty
+                blah
               </li>
             </ul>
             <h4>
@@ -37,7 +37,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </h4>
             <ul>
               <li>
-                JavaScript
+                github
               </li>
             </ul>
             <ul
@@ -47,7 +47,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
                 class="list-inline-item"
               >
                 <i
-                  class="devicon-javascript-plain"
+                  class="devicon-github-original"
                 />
               </li>
             </ul>
@@ -58,7 +58,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             <span
               class="c_primary"
             >
-              Oct 2019 - Present
+              Oct 2022 - Oct 2023
             </span>
           </div>
         </div>
@@ -81,16 +81,16 @@ exports[`Experience Component > Should render without crashing and match snapsho
           <h3
             class="mb-0"
           >
-            Test Title
+            Software Engineer
           </h3>
           <div
             class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
-            Test Company
+            Bruh Industries
           </div>
           <ul>
             <li>
-              Test Job duty
+              blah
             </li>
           </ul>
           <h4>
@@ -98,7 +98,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </h4>
           <ul>
             <li>
-              JavaScript
+              github
             </li>
           </ul>
           <ul
@@ -108,7 +108,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               class="list-inline-item"
             >
               <i
-                class="devicon-javascript-plain"
+                class="devicon-github-original"
               />
             </li>
           </ul>
@@ -119,7 +119,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           <span
             class="c_primary"
           >
-            Oct 2019 - Present
+            Oct 2022 - Oct 2023
           </span>
         </div>
       </div>

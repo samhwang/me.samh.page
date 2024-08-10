@@ -21,29 +21,10 @@ exports[`Project section rendering > Should match snapshot 1`] = `
               class="fa-li fa fa-tasks text-warning"
             />
             <p>
-              <a
-                aria-label="Project Test Title URL"
-                class="c_primary! hover:c_slightlyDarker! focus:c_slightlyDarker! active:c_slightlyDarker!"
-                href="http://test url"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <strong>
-                  Test Title:
-                </strong>
-              </a>
-               Test Description
-            </p>
-          </li>
-          <li>
-            <i
-              class="fa-li fa fa-tasks text-warning"
-            />
-            <p>
               <strong>
-                Test Title 2:
+                Test Project:
               </strong>
-               Test Description 2
+               Test Description
             </p>
           </li>
         </ul>
@@ -67,29 +48,10 @@ exports[`Project section rendering > Should match snapshot 1`] = `
             class="fa-li fa fa-tasks text-warning"
           />
           <p>
-            <a
-              aria-label="Project Test Title URL"
-              class="c_primary! hover:c_slightlyDarker! focus:c_slightlyDarker! active:c_slightlyDarker!"
-              href="http://test url"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <strong>
-                Test Title:
-              </strong>
-            </a>
-             Test Description
-          </p>
-        </li>
-        <li>
-          <i
-            class="fa-li fa fa-tasks text-warning"
-          />
-          <p>
             <strong>
-              Test Title 2:
+              Test Project:
             </strong>
-             Test Description 2
+             Test Description
           </p>
         </li>
       </ul>

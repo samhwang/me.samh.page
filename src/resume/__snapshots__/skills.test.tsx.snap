@@ -20,7 +20,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
         </div>
         <ul>
           <li>
-            test description
+            test desc
           </li>
         </ul>
         <ul
@@ -30,7 +30,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
             class="list-inline-item"
           >
             <i
-              class="devicon-javascript-plain"
+              class="devicon-github-original"
             />
           </li>
         </ul>
@@ -53,7 +53,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
       </div>
       <ul>
         <li>
-          test description
+          test desc
         </li>
       </ul>
       <ul
@@ -63,7 +63,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
           class="list-inline-item"
         >
           <i
-            class="devicon-javascript-plain"
+            class="devicon-github-original"
           />
         </li>
       </ul>
