@@ -2,10 +2,10 @@ import { Link } from '@tanstack/react-router';
 import { cx } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
 
-interface FooterLinkProps {
+type FooterLinkProps = {
   to: string;
   children: React.ReactNode;
-}
+};
 
 function FooterLink({ children, to }: FooterLinkProps) {
   return (

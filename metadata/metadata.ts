@@ -105,11 +105,72 @@ export const manifest: Partial<ManifestOptions> = {
   ],
 };
 
-const metadata = {
-  siteTitle: 'Sam Huynh',
-  siteUrl: 'https://me.samh.page',
-  siteDescription: 'Online profile of Sam Huynh.',
-  manifest,
+export type SiteMetadata = {
+  title: string;
+  url: string;
+  description: string;
+  manifest: Partial<ManifestOptions>;
+};
+
+export type SocialLink = {
+  icon: string;
+  name: string;
+  url: string;
+};
+
+export type Job = {
+  title: string;
+  companyName: string;
+  duration: string;
+  description: string[];
+  technologies: string[];
+  techIcons: string[];
+};
+
+export type School = {
+  institute: string;
+  degree: string;
+  major: string;
+  duration: string;
+};
+
+export type Project = {
+  title: string;
+  description: string;
+  url?: string;
+};
+
+export type Skill = {
+  title: string;
+  description: string[];
+};
+
+export type PersonalInformation = {
+  firstName: string;
+  lastName: string;
+  bio: string;
+  socialLinks: SocialLink[];
+  email: string;
+  address: string;
+  experience: Job[];
+  education: School[];
+  projects: Project[];
+  skills: Skill[];
+  techStack: string[];
+};
+
+export type Metadata = {
+  site: SiteMetadata;
+  personalInformation: PersonalInformation;
+};
+
+const metadata: Metadata = {
+  site: {
+    title: 'Sam Huynh',
+    url: 'https://me.samh.page',
+    description: 'Online profile of Sam Huynh.',
+    manifest,
+  },
   personalInformation: {
     firstName: 'Sam',
     lastName: 'Huynh',

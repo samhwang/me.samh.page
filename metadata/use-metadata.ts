@@ -1,14 +1,23 @@
 import metadata from './metadata';
+import type { Job, SiteMetadata as Metadata, PersonalInformation, Project, School, Skill, SocialLink } from './metadata';
 
-export function useSiteMetadata() {
-  const { siteTitle, siteDescription } = metadata;
+type SiteMetadata = {
+  title: Metadata['title'];
+  description: Metadata['description'];
+};
+export function useSiteMetadata(): SiteMetadata {
+  const { title, description } = metadata.site;
   return {
-    title: siteTitle,
-    description: siteDescription,
+    title,
+    description,
   };
 }
 
-export function useSidebarData() {
+type SidebarData = {
+  firstName: PersonalInformation['firstName'];
+  lastName: PersonalInformation['lastName'];
+};
+export function useSidebarData(): SidebarData {
   const { firstName, lastName } = metadata.personalInformation;
   return {
     firstName,
@@ -16,7 +25,12 @@ export function useSidebarData() {
   };
 }
 
-export function useAboutData() {
+type AboutData = SidebarData & {
+  address: PersonalInformation['address'];
+  bio: PersonalInformation['bio'];
+  socialLinks: SocialLink[];
+};
+export function useAboutData(): AboutData {
   const { firstName, lastName, bio, address, socialLinks } = metadata.personalInformation;
   return {
     firstName,
@@ -27,28 +41,29 @@ export function useAboutData() {
   };
 }
 
-export function useEducationData() {
+type EducationData = School[];
+export function useEducationData(): EducationData {
   const { education } = metadata.personalInformation;
   return education;
 }
 
-export function useExperienceData() {
+type ExperienceData = Job[];
+export function useExperienceData(): ExperienceData {
   const { experience } = metadata.personalInformation;
   return experience;
 }
 
-type Projects = {
-  title: string;
-  description: string;
-  url?: string;
-};
-
-export function useProjectsData(): Projects[] {
+type ProjectsData = Project[];
+export function useProjectsData(): ProjectsData {
   const { projects } = metadata.personalInformation;
   return projects;
 }
 
-export function useSkillsData() {
+type SkillsData = {
+  skills: Skill[];
+  techStack: string[];
+};
+export function useSkillsData(): SkillsData {
   const { skills, techStack } = metadata.personalInformation;
   return { skills, techStack };
 }
