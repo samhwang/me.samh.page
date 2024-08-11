@@ -8,9 +8,10 @@ import 'devicon/devicon.min.css';
 import Footer from './footer';
 import Sidebar from './sidebar';
 
-const RouterDevTools = import.meta.env.PROD
-  ? () => null // Render nothing in production
-  : TanStackRouterDevtools;
+const RouterDevTools =
+  import.meta.env.DEV || import.meta.env.TEST
+    ? () => null // Render nothing in production & test
+    : TanStackRouterDevtools;
 
 export default function Layout() {
   return (
