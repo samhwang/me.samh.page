@@ -1,7 +1,7 @@
 import metadata from './metadata';
 import type { Job, SiteMetadata as Metadata, PersonalInformation, Project, School, Skill, SocialLink } from './metadata';
 
-type SiteMetadata = {
+export type SiteMetadata = {
   title: Metadata['title'];
   description: Metadata['description'];
 };
@@ -13,7 +13,7 @@ export function useSiteMetadata(): SiteMetadata {
   };
 }
 
-type SidebarData = {
+export type SidebarData = {
   firstName: PersonalInformation['firstName'];
   lastName: PersonalInformation['lastName'];
 };
@@ -25,7 +25,7 @@ export function useSidebarData(): SidebarData {
   };
 }
 
-type AboutData = SidebarData & {
+export type AboutData = SidebarData & {
   address: PersonalInformation['address'];
   bio: PersonalInformation['bio'];
   socialLinks: SocialLink[];
@@ -41,25 +41,25 @@ export function useAboutData(): AboutData {
   };
 }
 
-type EducationData = School[];
+export type EducationData = School[];
 export function useEducationData(): EducationData {
   const { education } = metadata.personalInformation;
   return education;
 }
 
-type ExperienceData = Job[];
+export type ExperienceData = Job[];
 export function useExperienceData(): ExperienceData {
   const { experience } = metadata.personalInformation;
   return experience;
 }
 
-type ProjectsData = Project[];
+export type ProjectsData = Project[];
 export function useProjectsData(): ProjectsData {
   const { projects } = metadata.personalInformation;
   return projects;
 }
 
-type SkillsData = {
+export type SkillsData = {
   skills: Skill[];
   techStack: string[];
 };

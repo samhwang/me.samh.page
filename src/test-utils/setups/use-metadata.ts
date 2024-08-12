@@ -8,75 +8,27 @@ import {
   useSiteMetadata,
   useSkillsData,
 } from '../../../metadata/use-metadata';
+import { aboutData, educationData, experienceData, projectsData, sidebarData, siteMetadata, skillsData } from '../mock-metadata';
 
 vi.mock('../../../metadata/use-metadata');
 
-const GITHUB_ICON = 'github-original';
-
 const mockUseSiteMetadata = vi.mocked(useSiteMetadata);
-mockUseSiteMetadata.mockReturnValue({
-  title: 'Test Title',
-  description: 'Test Description',
-});
+mockUseSiteMetadata.mockReturnValue(siteMetadata);
 
 const mockUseSidebarData = vi.mocked(useSidebarData);
-mockUseSidebarData.mockReturnValue({
-  firstName: 'First Name',
-  lastName: 'Last Name',
-});
+mockUseSidebarData.mockReturnValue(sidebarData);
 
 const mockUseAboutData = vi.mocked(useAboutData);
-mockUseAboutData.mockReturnValue({
-  firstName: 'First Name',
-  lastName: 'Last Name',
-  address: '123 Fake street',
-  bio: 'Blah',
-  socialLinks: [
-    {
-      icon: 'github-original',
-      name: 'Github',
-      url: 'https://github.com/testusername',
-    },
-  ],
-});
+mockUseAboutData.mockReturnValue(aboutData);
 
 const mockUseEducationData = vi.mocked(useEducationData);
-mockUseEducationData.mockReturnValue([
-  {
-    institute: 'Bruh University',
-    degree: 'Bachelor of Bruh',
-    duration: 'Oct 2022 - Oct 2023',
-    major: 'blah blah',
-  },
-]);
+mockUseEducationData.mockReturnValue(educationData);
 
 const mockUseExperienceData = vi.mocked(useExperienceData);
-mockUseExperienceData.mockReturnValue([
-  {
-    title: 'Software Engineer',
-    companyName: 'Bruh Industries',
-    duration: 'Oct 2022 - Oct 2023',
-    description: ['blah'],
-    techIcons: [GITHUB_ICON],
-    technologies: ['github'],
-  },
-]);
+mockUseExperienceData.mockReturnValue(experienceData);
 
 const mockUseProjectsData = vi.mocked(useProjectsData);
-mockUseProjectsData.mockReturnValue([
-  {
-    title: 'Test Project',
-    description: 'Test Description',
-  },
-]);
+mockUseProjectsData.mockReturnValue(projectsData);
 
 const mockUseSkillsData = vi.mocked(useSkillsData);
-mockUseSkillsData.mockReturnValue({
-  skills: [
-    {
-      title: 'test title',
-      description: ['test desc'],
-    },
-  ],
-  techStack: [GITHUB_ICON],
-});
+mockUseSkillsData.mockReturnValue(skillsData);
