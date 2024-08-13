@@ -48,6 +48,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
               >
                 <i
                   class="devicon-github-original"
+                  data-testid="language-icon-github-original"
                 />
               </li>
             </ul>
@@ -109,6 +110,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             >
               <i
                 class="devicon-github-original"
+                data-testid="language-icon-github-original"
               />
             </li>
           </ul>

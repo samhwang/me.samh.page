@@ -1,75 +1,29 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Skill Section Component > Should render without crashing and match snapshot 1`] = `
+exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="w-100"
+      <li
+        class="list-inline-item"
       >
-        <h2
-          class="mb-5"
-        >
-          Skills and Proficiency
-        </h2>
-        <div
-          class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
-        >
-          test title
-        </div>
-        <ul>
-          <li>
-            test desc
-          </li>
-        </ul>
-        <ul
-          class="list-inline fs_3rem"
-        >
-          <li
-            class="list-inline-item"
-          >
-            <i
-              class="devicon-github-original"
-              data-testid="language-icon-github-original"
-            />
-          </li>
-        </ul>
-      </div>
+        <i
+          class="devicon-php-plain"
+          data-testid="language-icon-php-plain"
+        />
+      </li>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="w-100"
+    <li
+      class="list-inline-item"
     >
-      <h2
-        class="mb-5"
-      >
-        Skills and Proficiency
-      </h2>
-      <div
-        class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
-      >
-        test title
-      </div>
-      <ul>
-        <li>
-          test desc
-        </li>
-      </ul>
-      <ul
-        class="list-inline fs_3rem"
-      >
-        <li
-          class="list-inline-item"
-        >
-          <i
-            class="devicon-github-original"
-            data-testid="language-icon-github-original"
-          />
-        </li>
-      </ul>
-    </div>
+      <i
+        class="devicon-php-plain"
+        data-testid="language-icon-php-plain"
+      />
+    </li>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

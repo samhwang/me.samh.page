@@ -10,7 +10,7 @@ export default function LangIcon({ name }: LangIconProps) {
 
   return (
     <li className="list-inline-item">
-      <i className={currentIconClass} onMouseEnter={onMouseHandler} onMouseLeave={onMouseHandler} />
+      <i data-testid={`language-icon-${name}`} className={currentIconClass} onMouseEnter={onMouseHandler} onMouseLeave={onMouseHandler} />
     </li>
   );
 }

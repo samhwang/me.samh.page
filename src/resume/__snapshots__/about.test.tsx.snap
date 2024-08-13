@@ -39,6 +39,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
           >
             <i
               class="devicon-github-original"
+              data-testid="social-icon-github-original"
             />
           </a>
         </div>
@@ -80,6 +81,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
         >
           <i
             class="devicon-github-original"
+            data-testid="social-icon-github-original"
           />
         </a>
       </div>

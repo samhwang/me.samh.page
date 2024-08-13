@@ -154,6 +154,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
                 >
                   <i
                     class="devicon-github-original"
+                    data-testid="social-icon-github-original"
                   />
                 </a>
               </div>
@@ -209,6 +210,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
                     >
                       <i
                         class="devicon-github-original"
+                        data-testid="language-icon-github-original"
                       />
                     </li>
                   </ul>
@@ -303,6 +305,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
                 >
                   <i
                     class="devicon-github-original"
+                    data-testid="language-icon-github-original"
                   />
                 </li>
               </ul>
@@ -534,6 +537,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
               >
                 <i
                   class="devicon-github-original"
+                  data-testid="social-icon-github-original"
                 />
               </a>
             </div>
@@ -589,6 +593,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
                   >
                     <i
                       class="devicon-github-original"
+                      data-testid="language-icon-github-original"
                     />
                   </li>
                 </ul>
@@ -683,6 +688,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
               >
                 <i
                   class="devicon-github-original"
+                  data-testid="language-icon-github-original"
                 />
               </li>
             </ul>
