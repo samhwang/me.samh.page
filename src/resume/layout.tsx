@@ -4,7 +4,7 @@ import Footer from './footer';
 import Sidebar from './sidebar';
 
 const RouterDevTools =
-  import.meta.env.DEV || import.meta.env.TEST
+  import.meta.env.PROD || import.meta.env.TEST
     ? () => null // Render nothing in production & test
     : TanStackRouterDevtools;
 
