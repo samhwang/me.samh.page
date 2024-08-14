@@ -1,1 +1,8 @@
-@layer reset, base, tokens, recipes, utilities;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import '@fontsource/mulish/index.css' layer(font-mullish);
+@import '@fontsource/roboto/index.css' layer(font-roboto);
+@import '@fontsource/saira-extra-condensed/index.css' layer(font-saira);
+@import 'devicon/devicon.min.css' layer(font-devicons);
+
+@layer font-mullish, font-roboto, font-saira, font-devicons, reset, base, tokens, recipes, utilities;
