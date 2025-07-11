@@ -34,7 +34,6 @@
     "@react-hookz/web": "^25.1.1",
     "@tanstack/react-router": "^1.127.2",
     "@tanstack/react-router-devtools": "^1.127.2",
-    "@tanstack/router-devtools": "^1.127.2",
     "devicon": "^2.16.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
