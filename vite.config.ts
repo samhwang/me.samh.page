@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
+import { tanstackRouter } from '@tanstack/router-plugin/esbuild';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -12,8 +12,11 @@ export default defineConfig({
     manifest: true,
   },
   plugins: [
+    tanstackRouter({
+      target: 'react',
+      autoCodeSplitting: true,
+    }),
     react(),
-    TanStackRouterVite(),
     VitePWA({
       injectRegister: 'auto',
       registerType: 'autoUpdate',
