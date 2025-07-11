@@ -6,24 +6,24 @@ exports[`Experience Component > Should render without crashing and match snapsho
   "baseElement": <body>
     <div>
       <div
-        class="w-100"
+        class="w_100%"
       >
         <h2
-          class="mb-5"
+          class="mb_3rem"
         >
           Experience
         </h2>
         <div
-          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
         >
           <div>
             <h3
-              class="mb-0"
+              class="mb_0"
             >
               Software Engineer
             </h3>
             <div
-              class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               Bruh Industries
             </div>
@@ -41,10 +41,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
               </li>
             </ul>
             <ul
-              class="list-inline fs_3rem"
+              class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
             >
               <li
-                class="list-inline-item"
+                class="d_inline-block"
               >
                 <i
                   class="devicon-github-original"
@@ -54,7 +54,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </ul>
           </div>
           <div
-            class="md:min-w_8rem text-md-right"
+            class="md:min-w_8rem md:ta_right"
           >
             <span
               class="c_primary"
@@ -68,24 +68,24 @@ exports[`Experience Component > Should render without crashing and match snapsho
   </body>,
   "container": <div>
     <div
-      class="w-100"
+      class="w_100%"
     >
       <h2
-        class="mb-5"
+        class="mb_3rem"
       >
         Experience
       </h2>
       <div
-        class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
       >
         <div>
           <h3
-            class="mb-0"
+            class="mb_0"
           >
             Software Engineer
           </h3>
           <div
-            class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             Bruh Industries
           </div>
@@ -103,10 +103,10 @@ exports[`Experience Component > Should render without crashing and match snapsho
             </li>
           </ul>
           <ul
-            class="list-inline fs_3rem"
+            class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
           >
             <li
-              class="list-inline-item"
+              class="d_inline-block"
             >
               <i
                 class="devicon-github-original"
@@ -116,7 +116,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </ul>
         </div>
         <div
-          class="md:min-w_8rem text-md-right"
+          class="md:min-w_8rem md:ta_right"
         >
           <span
             class="c_primary"

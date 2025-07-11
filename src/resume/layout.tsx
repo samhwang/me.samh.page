@@ -1,22 +1,19 @@
 import { Outlet } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/router-devtools';
-import Footer from './footer';
-import Sidebar from './sidebar';
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 
-const RouterDevTools =
-  import.meta.env.PROD || import.meta.env.TEST
-    ? () => null // Render nothing in production & test
-    : TanStackRouterDevtools;
+import Footer from './footer';
+import * as layoutStyles from './layout.styles';
+import Sidebar from './sidebar';
 
 export default function Layout() {
   return (
     <div>
       <Sidebar />
-      <div className="container-fluid p-0">
+      <div className={layoutStyles.containerFluidNoPadding}>
         <Outlet />
       </div>
       <Footer />
-      <RouterDevTools />
+      <TanStackRouterDevtools />
     </div>
   );
 }

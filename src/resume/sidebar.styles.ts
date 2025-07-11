@@ -23,8 +23,12 @@ export const navLink = css({
   fontWeight: '800!',
   letterSpacing: '0.05rem',
   textTransform: 'uppercase',
+  color: 'white!',
   lg: {
     display: 'block',
+  },
+  '&:hover': {
+    color: 'rgba(255, 255, 255, 0.75)!',
   },
 });
 
@@ -43,6 +47,7 @@ export const imgProfile = css({
 });
 
 export const navbarBrand = css({
+  color: 'white!',
   lg: {
     display: 'flex',
     margin: 'auto auto 0',

@@ -7,19 +7,19 @@ exports[`Layout rendering > Should match snapshot 1`] = `
     <div>
       <div>
         <nav
-          class="navbar navbar-expand-lg navbar-dark fixed-top lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
+          class="pos_relative d_flex flex-wrap_wrap ai_center jc_space-between py_0.5rem px_1rem lg:flex-flow_row_nowrap lg:jc_flex-start [&_.navbar-brand]:c_white! [&_.navbar-nav_.nav-link]:c_white! [&_.navbar-nav_.nav-link:hover]:c_rgba(255,_255,_255,_0.75)! [&_.navbar-nav_.nav-link.active]:c_white! [&_.navbar-toggler]:c_rgba(255,_255,_255,_0.55) [&_.navbar-toggler]:bd-c_rgba(255,_255,_255,_0.1) [&_span]:c_white! [&_a]:c_white! [&_ul]:c_white! [&_li]:c_white! pos_fixed top_0 right_0 left_0 z_1030 lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
         >
           <a
-            class="navbar-brand lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
+            class="py_0.3125rem mr_1rem fs_1.25rem td_none white-space_nowrap c_white! lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
             href="#page-top"
           >
             <span
-              class="d-block d-lg-none"
+              class="d_block lg:d_none"
             >
               First Name Last Name
             </span>
             <span
-              class="d-none d-lg-block"
+              class="d_none lg:d_block"
             >
               <picture>
                 <source
@@ -32,7 +32,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 />
                 <img
                   alt="First Name Last Name Avatar"
-                  class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
+                  class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) max-w_100% h_auto bdr_50% mx_auto mb_0.5rem"
                   src="/src/img/avatar.jpg"
                 />
               </picture>
@@ -42,28 +42,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler focus:ring-c_blue.500 collapsed"
+            class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:bx-sh_0_0_0_0.25rem focus:ring-c_blue.500 [&:not(.show)]:d_none"
             data-target="#navbarSupportedContent"
             data-toggle="collapse"
             type="button"
           >
             <span
-              class="navbar-toggler-icon"
+              class="d_inline-block w_1.5em h_1.5em va_middle bg-i_url("data:image/svg+xml,%3csvg_xmlns='http://www.w3.org/2000/svg'_viewBox='0_0_30_30'%3e%3cpath_stroke='rgba%2833,_37,_41,_0.75%29'_stroke-linecap='round'_stroke-miterlimit='10'_stroke-width='2'_d='M4_7h22M4_15h22M4_23h22'/%3e%3c/svg%3e") bg-r_no-repeat bg-p_center bg-s_100%"
             />
           </button>
           <div
-            class="navbar-collapse collapse lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto show"
+            class="flex-g_1 ai_center d_none [&.show]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto"
             id="navbarSupportedContent"
           >
             <div
-              class="navbar-nav lg:flex-d_column! lg:w_100%"
+              class="d_flex flex-d_column pl_0 mb_0 li-s_none lg:flex-d_row lg:flex-d_column! lg:w_100%"
             >
               <ul>
                 <li
                   class="lg:d_block"
                 >
                   <a
-                    class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                    class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                     href="#about"
                   >
                     About
@@ -73,7 +73,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   class="lg:d_block"
                 >
                   <a
-                    class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                    class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                     href="#experience"
                   >
                     Experience
@@ -83,7 +83,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   class="lg:d_block"
                 >
                   <a
-                    class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                    class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                     href="#education"
                   >
                     Education
@@ -93,7 +93,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   class="lg:d_block"
                 >
                   <a
-                    class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                    class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                     href="#skills"
                   >
                     Skills
@@ -103,7 +103,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   class="lg:d_block"
                 >
                   <a
-                    class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                    class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                     href="#projects"
                   >
                     Projects
@@ -114,17 +114,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </nav>
         <div
-          class="container-fluid p-0"
+          class="w_100% p_0"
         >
           <section
-            class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+            class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
             id="about"
           >
             <div
-              class="w-100"
+              class="w_100%"
             >
               <h1
-                class="mb-0"
+                class="mb_0"
               >
                 First Name
                 <span
@@ -134,12 +134,12 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 </span>
               </h1>
               <div
-                class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
               >
                 123 Fake street
               </div>
               <p
-                class="mb-5 fs_1.15rem fw_400"
+                class="mb_3rem fs_1.15rem fw_400"
               >
                 Blah
               </p>
@@ -161,31 +161,31 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             </div>
           </section>
           <hr
-            class="m-0"
+            class="m_0"
           />
           <section
-            class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+            class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
             id="experience"
           >
             <div
-              class="w-100"
+              class="w_100%"
             >
               <h2
-                class="mb-5"
+                class="mb_3rem"
               >
                 Experience
               </h2>
               <div
-                class="d-flex flex-column flex-md-row justify-content-between mb-5"
+                class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
               >
                 <div>
                   <h3
-                    class="mb-0"
+                    class="mb_0"
                   >
                     Software Engineer
                   </h3>
                   <div
-                    class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                    class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
                   >
                     Bruh Industries
                   </div>
@@ -203,10 +203,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                     </li>
                   </ul>
                   <ul
-                    class="list-inline fs_3rem"
+                    class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
                   >
                     <li
-                      class="list-inline-item"
+                      class="d_inline-block"
                     >
                       <i
                         class="devicon-github-original"
@@ -216,7 +216,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   </ul>
                 </div>
                 <div
-                  class="md:min-w_8rem text-md-right"
+                  class="md:min-w_8rem md:ta_right"
                 >
                   <span
                     class="c_primary"
@@ -228,31 +228,31 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             </div>
           </section>
           <hr
-            class="m-0"
+            class="m_0"
           />
           <section
-            class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+            class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
             id="education"
           >
             <div
-              class="w-100"
+              class="w_100%"
             >
               <h2
-                class="mb-5"
+                class="mb_3rem"
               >
                 Education
               </h2>
               <div
-                class="d-flex flex-column flex-md-row justify-content-between mb-5"
+                class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
               >
                 <div>
                   <h3
-                    class="mb-0"
+                    class="mb_0"
                   >
                     Bruh University
                   </h3>
                   <div
-                    class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                    class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
                   >
                     Bachelor of Bruh
                   </div>
@@ -261,7 +261,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="md:min-w_8rem text-md-right"
+                  class="md:min-w_8rem md:ta_right"
                 >
                   <span
                     class="c_primary"
@@ -273,22 +273,22 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             </div>
           </section>
           <hr
-            class="m-0"
+            class="m_0"
           />
           <section
-            class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+            class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
             id="skills"
           >
             <div
-              class="w-100"
+              class="w_100%"
             >
               <h2
-                class="mb-5"
+                class="mb_3rem"
               >
                 Skills and Proficiency
               </h2>
               <div
-                class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
               >
                 test title
               </div>
@@ -298,10 +298,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 </li>
               </ul>
               <ul
-                class="list-inline fs_3rem"
+                class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
               >
                 <li
-                  class="list-inline-item"
+                  class="d_inline-block"
                 >
                   <i
                     class="devicon-github-original"
@@ -312,22 +312,22 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             </div>
           </section>
           <hr
-            class="m-0"
+            class="m_0"
           />
           <section
-            class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+            class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
             id="projects"
           >
             <div
-              class="w-100"
+              class="w_100%"
             >
               <h2
-                class="mb-5"
+                class="mb_3rem"
               >
                 Projects
               </h2>
               <ul
-                class="fa-ul mb-0"
+                class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
               >
                 <li>
                   <i
@@ -344,11 +344,11 @@ exports[`Layout rendering > Should match snapshot 1`] = `
             </div>
           </section>
           <hr
-            class="m-0"
+            class="m_0"
           />
         </div>
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
         >
           <p>
             © 
@@ -390,19 +390,19 @@ exports[`Layout rendering > Should match snapshot 1`] = `
   "container": <div>
     <div>
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
+        class="pos_relative d_flex flex-wrap_wrap ai_center jc_space-between py_0.5rem px_1rem lg:flex-flow_row_nowrap lg:jc_flex-start [&_.navbar-brand]:c_white! [&_.navbar-nav_.nav-link]:c_white! [&_.navbar-nav_.nav-link:hover]:c_rgba(255,_255,_255,_0.75)! [&_.navbar-nav_.nav-link.active]:c_white! [&_.navbar-toggler]:c_rgba(255,_255,_255,_0.55) [&_.navbar-toggler]:bd-c_rgba(255,_255,_255,_0.1) [&_span]:c_white! [&_a]:c_white! [&_ul]:c_white! [&_li]:c_white! pos_fixed top_0 right_0 left_0 z_1030 lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
       >
         <a
-          class="navbar-brand lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
+          class="py_0.3125rem mr_1rem fs_1.25rem td_none white-space_nowrap c_white! lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
           href="#page-top"
         >
           <span
-            class="d-block d-lg-none"
+            class="d_block lg:d_none"
           >
             First Name Last Name
           </span>
           <span
-            class="d-none d-lg-block"
+            class="d_none lg:d_block"
           >
             <picture>
               <source
@@ -415,7 +415,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               />
               <img
                 alt="First Name Last Name Avatar"
-                class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) img-fluid rounded-circle mx-auto mb-2"
+                class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) max-w_100% h_auto bdr_50% mx_auto mb_0.5rem"
                 src="/src/img/avatar.jpg"
               />
             </picture>
@@ -425,28 +425,28 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler focus:ring-c_blue.500 collapsed"
+          class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:bx-sh_0_0_0_0.25rem focus:ring-c_blue.500 [&:not(.show)]:d_none"
           data-target="#navbarSupportedContent"
           data-toggle="collapse"
           type="button"
         >
           <span
-            class="navbar-toggler-icon"
+            class="d_inline-block w_1.5em h_1.5em va_middle bg-i_url("data:image/svg+xml,%3csvg_xmlns='http://www.w3.org/2000/svg'_viewBox='0_0_30_30'%3e%3cpath_stroke='rgba%2833,_37,_41,_0.75%29'_stroke-linecap='round'_stroke-miterlimit='10'_stroke-width='2'_d='M4_7h22M4_15h22M4_23h22'/%3e%3c/svg%3e") bg-r_no-repeat bg-p_center bg-s_100%"
           />
         </button>
         <div
-          class="navbar-collapse collapse lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto show"
+          class="flex-g_1 ai_center d_none [&.show]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto"
           id="navbarSupportedContent"
         >
           <div
-            class="navbar-nav lg:flex-d_column! lg:w_100%"
+            class="d_flex flex-d_column pl_0 mb_0 li-s_none lg:flex-d_row lg:flex-d_column! lg:w_100%"
           >
             <ul>
               <li
                 class="lg:d_block"
               >
                 <a
-                  class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                   href="#about"
                 >
                   About
@@ -456,7 +456,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 class="lg:d_block"
               >
                 <a
-                  class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                   href="#experience"
                 >
                   Experience
@@ -466,7 +466,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 class="lg:d_block"
               >
                 <a
-                  class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                   href="#education"
                 >
                   Education
@@ -476,7 +476,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 class="lg:d_block"
               >
                 <a
-                  class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                   href="#skills"
                 >
                   Skills
@@ -486,7 +486,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 class="lg:d_block"
               >
                 <a
-                  class="nav-link fw_800! ls_0.05rem tt_uppercase lg:d_block"
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
                   href="#projects"
                 >
                   Projects
@@ -497,17 +497,17 @@ exports[`Layout rendering > Should match snapshot 1`] = `
         </div>
       </nav>
       <div
-        class="container-fluid p-0"
+        class="w_100% p_0"
       >
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
           id="about"
         >
           <div
-            class="w-100"
+            class="w_100%"
           >
             <h1
-              class="mb-0"
+              class="mb_0"
             >
               First Name
               <span
@@ -517,12 +517,12 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               </span>
             </h1>
             <div
-              class="mb-5 tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               123 Fake street
             </div>
             <p
-              class="mb-5 fs_1.15rem fw_400"
+              class="mb_3rem fs_1.15rem fw_400"
             >
               Blah
             </p>
@@ -544,31 +544,31 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </section>
         <hr
-          class="m-0"
+          class="m_0"
         />
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
           id="experience"
         >
           <div
-            class="w-100"
+            class="w_100%"
           >
             <h2
-              class="mb-5"
+              class="mb_3rem"
             >
               Experience
             </h2>
             <div
-              class="d-flex flex-column flex-md-row justify-content-between mb-5"
+              class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
             >
               <div>
                 <h3
-                  class="mb-0"
+                  class="mb_0"
                 >
                   Software Engineer
                 </h3>
                 <div
-                  class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                  class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
                 >
                   Bruh Industries
                 </div>
@@ -586,10 +586,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                   </li>
                 </ul>
                 <ul
-                  class="list-inline fs_3rem"
+                  class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
                 >
                   <li
-                    class="list-inline-item"
+                    class="d_inline-block"
                   >
                     <i
                       class="devicon-github-original"
@@ -599,7 +599,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 </ul>
               </div>
               <div
-                class="md:min-w_8rem text-md-right"
+                class="md:min-w_8rem md:ta_right"
               >
                 <span
                   class="c_primary"
@@ -611,31 +611,31 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </section>
         <hr
-          class="m-0"
+          class="m_0"
         />
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
           id="education"
         >
           <div
-            class="w-100"
+            class="w_100%"
           >
             <h2
-              class="mb-5"
+              class="mb_3rem"
             >
               Education
             </h2>
             <div
-              class="d-flex flex-column flex-md-row justify-content-between mb-5"
+              class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
             >
               <div>
                 <h3
-                  class="mb-0"
+                  class="mb_0"
                 >
                   Bruh University
                 </h3>
                 <div
-                  class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+                  class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
                 >
                   Bachelor of Bruh
                 </div>
@@ -644,7 +644,7 @@ exports[`Layout rendering > Should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="md:min-w_8rem text-md-right"
+                class="md:min-w_8rem md:ta_right"
               >
                 <span
                   class="c_primary"
@@ -656,22 +656,22 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </section>
         <hr
-          class="m-0"
+          class="m_0"
         />
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
           id="skills"
         >
           <div
-            class="w-100"
+            class="w_100%"
           >
             <h2
-              class="mb-5"
+              class="mb_3rem"
             >
               Skills and Proficiency
             </h2>
             <div
-              class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               test title
             </div>
@@ -681,10 +681,10 @@ exports[`Layout rendering > Should match snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="list-inline fs_3rem"
+              class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
             >
               <li
-                class="list-inline-item"
+                class="d_inline-block"
               >
                 <i
                   class="devicon-github-original"
@@ -695,22 +695,22 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </section>
         <hr
-          class="m-0"
+          class="m_0"
         />
         <section
-          class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+          class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
           id="projects"
         >
           <div
-            class="w-100"
+            class="w_100%"
           >
             <h2
-              class="mb-5"
+              class="mb_3rem"
             >
               Projects
             </h2>
             <ul
-              class="fa-ul mb-0"
+              class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
             >
               <li>
                 <i
@@ -727,11 +727,11 @@ exports[`Layout rendering > Should match snapshot 1`] = `
           </div>
         </section>
         <hr
-          class="m-0"
+          class="m_0"
         />
       </div>
       <section
-        class="pt_5rem! pb_5rem! max-w_75rem lg:pt_3rem! lg:pb_3rem! md:min-h_100vh p-3 p-lg-5 d-flex align-items-center"
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
       >
         <p>
           © 

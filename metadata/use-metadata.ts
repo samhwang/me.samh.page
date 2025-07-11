@@ -1,5 +1,5 @@
-import metadata from './metadata';
 import type { Job, SiteMetadata as Metadata, PersonalInformation, Project, School, Skill, SocialLink } from './metadata';
+import metadata from './metadata';
 
 export type SiteMetadata = {
   title: Metadata['title'];

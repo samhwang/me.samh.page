@@ -6,15 +6,15 @@ exports[`Skill Section Component > Should render without crashing and match snap
   "baseElement": <body>
     <div>
       <div
-        class="w-100"
+        class="w_100%"
       >
         <h2
-          class="mb-5"
+          class="mb_3rem"
         >
           Skills and Proficiency
         </h2>
         <div
-          class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           test title
         </div>
@@ -24,10 +24,10 @@ exports[`Skill Section Component > Should render without crashing and match snap
           </li>
         </ul>
         <ul
-          class="list-inline fs_3rem"
+          class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
         >
           <li
-            class="list-inline-item"
+            class="d_inline-block"
           >
             <i
               class="devicon-github-original"
@@ -40,15 +40,15 @@ exports[`Skill Section Component > Should render without crashing and match snap
   </body>,
   "container": <div>
     <div
-      class="w-100"
+      class="w_100%"
     >
       <h2
-        class="mb-5"
+        class="mb_3rem"
       >
         Skills and Proficiency
       </h2>
       <div
-        class="mb-3 tt_uppercase fw_500 fs_1.5rem ff_heading"
+        class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
       >
         test title
       </div>
@@ -58,10 +58,10 @@ exports[`Skill Section Component > Should render without crashing and match snap
         </li>
       </ul>
       <ul
-        class="list-inline fs_3rem"
+        class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
       >
         <li
-          class="list-inline-item"
+          class="d_inline-block"
         >
           <i
             class="devicon-github-original"
