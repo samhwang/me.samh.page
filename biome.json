@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "ignore": ["src/route-tree.gen.ts", "src/**/__snapshots__", "node_modules", "dist", "coverage", "styled-system"],
+    "includes": ["**", "!**/src/route-tree.gen.ts", "!**/src/**/__snapshots__", "!**/node_modules", "!**/dist", "!**/coverage", "!**/styled-system"],
     "ignoreUnknown": true
   },
   "linter": {
@@ -18,9 +18,7 @@
     "lineWidth": 160,
     "useEditorconfig": true
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "javascript": {
     "formatter": {
       "trailingCommas": "es5",
