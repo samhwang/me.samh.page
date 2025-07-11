@@ -32,6 +32,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
             <i
               class="devicon-github-original"
               data-testid="language-icon-github-original"
+              role="img"
             />
           </li>
         </ul>
@@ -66,6 +67,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
           <i
             class="devicon-github-original"
             data-testid="language-icon-github-original"
+            role="img"
           />
         </li>
       </ul>
