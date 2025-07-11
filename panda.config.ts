@@ -37,9 +37,12 @@ const globalCss = defineGlobalStyles({
   },
   ul: {
     listStyleType: 'disc',
+    paddingLeft: '2rem',
+    marginBottom: '1rem',
   },
   li: {
     display: 'list-item',
+    marginBottom: '0.5rem',
   },
 });
 

@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router';
 import { cx } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
+import * as layoutStyles from './layout.styles';
 
 type FooterLinkProps = {
   to: string;
@@ -9,7 +10,7 @@ type FooterLinkProps = {
 
 function FooterLink({ children, to }: FooterLinkProps) {
   return (
-    <Link className={cx(commonStyles.link)} to={to}>
+    <Link className={commonStyles.link} to={to}>
       {children}
     </Link>
   );
@@ -24,7 +25,7 @@ export default function Footer() {
   };
 
   return (
-    <section className={cx(commonStyles.section, 'p-3 p-lg-5 d-flex align-items-center')}>
+    <section className={cx(commonStyles.section, layoutStyles.p3, layoutStyles.pLg5, commonStyles.dFlex, commonStyles.alignItemsCenter)}>
       <p>
         © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
       </p>

@@ -4,6 +4,8 @@ import { cx } from '../../styled-system/css';
 import avatarJPG from '../img/avatar.jpg';
 import avatarWebP from '../img/avatar.webp';
 import * as commonStyles from './common.styles';
+import * as layoutStyles from './layout.styles';
+import * as navbarStyles from './navbar.styles';
 import * as sidebarStyles from './sidebar.styles';
 
 type Tab = {
@@ -31,19 +33,32 @@ export default function Sidebar() {
   const [isCollapsed, toggleCollapsed] = useToggle(true);
 
   return (
-    <nav className={cx('navbar navbar-expand-lg navbar-dark fixed-top', sidebarStyles.sideNav, commonStyles.bgPrimary)}>
-      <a className={cx('navbar-brand', sidebarStyles.navbarBrand)} href="#page-top">
-        <span className="d-block d-lg-none">{`${firstName} ${lastName}`}</span>
-        <span className="d-none d-lg-block">
+    <nav
+      className={cx(
+        navbarStyles.navbar,
+        navbarStyles.navbarExpandLg,
+        navbarStyles.navbarDark,
+        navbarStyles.fixedTop,
+        sidebarStyles.sideNav,
+        commonStyles.bgPrimary
+      )}
+    >
+      <a className={cx(navbarStyles.navbarBrand, sidebarStyles.navbarBrand)} href="#page-top">
+        <span className={cx(layoutStyles.dBlock, layoutStyles.dLgNone)}>{`${firstName} ${lastName}`}</span>
+        <span className={cx(layoutStyles.dNone, layoutStyles.dLgBlock)}>
           <picture>
             <source type="image/webp" srcSet={avatarWebP} />
             <source type="image/jpeg" srcSet={avatarJPG} />
-            <img className={cx(sidebarStyles.imgProfile, 'img-fluid rounded-circle mx-auto mb-2')} src={avatarJPG} alt={`${firstName} ${lastName} Avatar`} />
+            <img
+              className={cx(sidebarStyles.imgProfile, layoutStyles.imgFluid, layoutStyles.roundedCircle, layoutStyles.mxAuto, layoutStyles.mb2)}
+              src={avatarJPG}
+              alt={`${firstName} ${lastName} Avatar`}
+            />
           </picture>
         </span>
       </a>
       <button
-        className={cx('navbar-toggler', sidebarStyles.navbarToggler, isCollapsed && 'collapsed')}
+        className={cx(navbarStyles.navbarToggler, sidebarStyles.navbarToggler, isCollapsed && navbarStyles.collapsed)}
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -52,14 +67,17 @@ export default function Sidebar() {
         aria-label="Toggle navigation"
         onClick={toggleCollapsed}
       >
-        <span className="navbar-toggler-icon" />
+        <span className={navbarStyles.navbarTogglerIcon} />
       </button>
-      <div className={cx('navbar-collapse collapse', sidebarStyles.navbarCollapse, isCollapsed && 'show')} id="navbarSupportedContent">
-        <div className={cx('navbar-nav', sidebarStyles.navbarNav)}>
+      <div
+        className={cx(navbarStyles.navbarCollapse, navbarStyles.collapse, sidebarStyles.navbarCollapse, !isCollapsed && navbarStyles.show)}
+        id="navbarSupportedContent"
+      >
+        <div className={cx(navbarStyles.navbarNav, sidebarStyles.navbarNav)}>
           <ul>
             {tabs.map(({ href, content }) => (
-              <li className={cx(sidebarStyles.navItem)} key={href}>
-                <a className={cx('nav-link', sidebarStyles.navLink)} href={`#${href}`}>
+              <li className={sidebarStyles.navItem} key={href}>
+                <a className={cx(navbarStyles.navLink, sidebarStyles.navLink)} href={`#${href}`}>
                   {content}
                 </a>
               </li>

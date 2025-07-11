@@ -6,15 +6,15 @@ exports[`Project section rendering > Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="w-100"
+        class="w_100%"
       >
         <h2
-          class="mb-5"
+          class="mb_3rem"
         >
           Projects
         </h2>
         <ul
-          class="fa-ul mb-0"
+          class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
         >
           <li>
             <i
@@ -33,15 +33,15 @@ exports[`Project section rendering > Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="w-100"
+      class="w_100%"
     >
       <h2
-        class="mb-5"
+        class="mb_3rem"
       >
         Projects
       </h2>
       <ul
-        class="fa-ul mb-0"
+        class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
       >
         <li>
           <i

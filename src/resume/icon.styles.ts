@@ -24,4 +24,9 @@ export const socialIcons = css({
 
 export const devIcons = css({
   fontSize: '3rem',
+  '& li': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

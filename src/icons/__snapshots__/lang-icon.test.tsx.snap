@@ -6,7 +6,7 @@ exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <li
-        class="list-inline-item"
+        class="d_inline-block"
       >
         <i
           class="devicon-php-plain"
@@ -17,7 +17,7 @@ exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <li
-      class="list-inline-item"
+      class="d_inline-block"
     >
       <i
         class="devicon-php-plain"
