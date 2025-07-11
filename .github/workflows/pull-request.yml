@@ -1,0 +1,55 @@
+name: "Pull Request Action: Test & Lint"
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up project
+        uses: ./.github/actions/setup-node-deps
+
+      - name: Run linting
+        run: pnpm lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up project
+        uses: ./.github/actions/setup-node-deps
+
+      - name: Run tests
+        run: pnpm test
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up project
+        uses: ./.github/actions/setup-node-deps
+
+      - name: Run typecheck
+        run: pnpm typecheck
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up project
+        uses: ./.github/actions/setup-node-deps
+
+      - name: Run build
+        run: pnpm build
