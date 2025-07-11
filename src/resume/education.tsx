@@ -30,13 +30,11 @@ export default function Education() {
   const education = useEducationData();
 
   return (
-    <>
-      <div className={commonStyles.w100}>
-        <h2 className={commonStyles.mb5}>Education</h2>
-        {education.map(({ institute, degree, major, duration }) => (
-          <School institute={institute} degree={degree} major={major} duration={duration} key={institute} />
-        ))}
-      </div>
-    </>
+    <div className={commonStyles.w100}>
+      <h2 className={commonStyles.mb5}>Education</h2>
+      {education.map(({ institute, degree, major, duration }) => (
+        <School institute={institute} degree={degree} major={major} duration={duration} key={institute} />
+      ))}
+    </div>
   );
 }

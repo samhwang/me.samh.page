@@ -33,15 +33,13 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <>
-      <div className={commonStyles.w100}>
-        <h2 className={commonStyles.mb5}>Projects</h2>
-        <ul className={cx(layoutStyles.faUl, commonStyles.mb0)}>
-          {projects.map(({ title, description, url }) => (
-            <Project key={title} title={title} description={description} url={url} />
-          ))}
-        </ul>
-      </div>
-    </>
+    <div className={commonStyles.w100}>
+      <h2 className={commonStyles.mb5}>Projects</h2>
+      <ul className={cx(layoutStyles.faUl, commonStyles.mb0)}>
+        {projects.map(({ title, description, url }) => (
+          <Project key={title} title={title} description={description} url={url} />
+        ))}
+      </ul>
+    </div>
   );
 }

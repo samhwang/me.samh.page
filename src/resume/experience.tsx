@@ -1,5 +1,5 @@
 import { useExperienceData } from '../../metadata/use-metadata';
-import { css, cx } from '../../styled-system/css';
+import { cx } from '../../styled-system/css';
 import LangIcon from '../icons/lang-icon';
 import * as commonStyles from './common.styles';
 import * as iconStyles from './icon.styles';
@@ -49,21 +49,19 @@ export default function Experiences() {
   const experience = useExperienceData();
 
   return (
-    <>
-      <div className={commonStyles.w100}>
-        <h2 className={commonStyles.mb5}>Experience</h2>
-        {experience.map(({ title, companyName, description, duration, techIcons, technologies }) => (
-          <JobDescription
-            key={companyName}
-            title={title}
-            companyName={companyName}
-            description={description}
-            duration={duration}
-            techIcons={techIcons}
-            technologies={technologies}
-          />
-        ))}
-      </div>
-    </>
+    <div className={commonStyles.w100}>
+      <h2 className={commonStyles.mb5}>Experience</h2>
+      {experience.map(({ title, companyName, description, duration, techIcons, technologies }) => (
+        <JobDescription
+          key={companyName}
+          title={title}
+          companyName={companyName}
+          description={description}
+          duration={duration}
+          techIcons={techIcons}
+          technologies={technologies}
+        />
+      ))}
+    </div>
   );
 }
