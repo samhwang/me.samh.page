@@ -198,10 +198,9 @@ const metadata: Metadata = {
           "Migrated the backend system's NetSuite ERP integration from a batch-based approach to an event-driven architecture, reducing the amount of event loss from 20% to under 1%, enabling on-time monthly/quarterly reports for the Finance team.",
           "Implemented Segments analytics integration for customer metadata capture pipeline into Lyka's backend API, creating automated data flow to warehouse destinations, contributing to the organisational data-driven initiative that now powers monthly stakeholder reports and reduces manual data processing by over 80%.",
           'Implemented and maintained Orders, Products, Fulfilments management and Courier and Printer Integration microservices as part of the legacy monolith to event-driven microservices migration while participating in on-call, maintaining 99.99% uptime across all services, supporting the platform that is now processing $140M revenue through orders and subscriptions.',
-        ],
-        technologies: [
           'Tech stack: PHP (Laravel), TypeScript (Vue, Nuxt, Node, NestJS), Postgres, MySQL, AWS (EventBridge, SQS, DynamoDB, Lambda, CDK, ECS), GitHub Actions, LaunchDarkly, OpenTelemetry',
         ],
+        technologies: [],
         techIcons: [
           ICONS.JS,
           ICONS.TS,
@@ -244,6 +243,7 @@ const metadata: Metadata = {
           'Spearheaded the migration from the legacy monolith (PHP/Drupal/Angular) into event-driven microservices architecture, improving development velocity and reducing system downtime by 70%.',
           'Built and maintained the internal React UI Components Library based on the Design System, reducing frontend development time by 40% and eliminating design inconsistency across 10 applications.',
           'Maintained 99.99% service uptime over weekends and holiday seasons, directly supporting peak traffic of up to 2000 requests per second.',
+          'Tech stack: JavaScript/TypeScript (Node, Express, Fastify, Serverless Framework, React, Angular), PHP (Drupal), Apache Kafka, AWS (Lambda, AWS Aurora, SQS, ECS, CDK, Cognito, CodeArtifact), BuildKite',
         ],
         techIcons: [
           ICONS.JS,
@@ -280,9 +280,7 @@ const metadata: Metadata = {
           ICONS.JIRA,
           ICONS.CONFLUENCE,
         ],
-        technologies: [
-          'Tech stack: JavaScript/TypeScript (Node, Express, Fastify, Serverless Framework, React, Angular), PHP (Drupal), Apache Kafka, AWS (Lambda, AWS Aurora, SQS, ECS, CDK, Cognito, CodeArtifact), BuildKite',
-        ],
+        technologies: [],
       },
       {
         title: 'Full Stack Software Developer',
@@ -292,6 +290,7 @@ const metadata: Metadata = {
           "Led the migration of the Flexicar's website from the external design studio's hosting to Hertz's internal infrastructure through containerization and an automated deployment pipeline, keeping deployment time under 15 minutes overall and enabling continuous delivery.",
           'Rebuilt the customer portal for past journey information for Hertz and the real-time shuttle bus tracking and booking portal for Ace and Firefly brands, reducing the number of customer service calls needed for day-to-day operations.',
           "Implemented a multitude of Hertz's booking API integrations with insurance partners and franchisees, error monitoring system, rental analytics reports and tracking systems and dashboards, reducing the amount of manual work needed for Hertz's admin team to contact the partners manually for incidents.",
+          'Tech stack: JavaScript (React, Redux, Node, Express, EJS, Serverless Framework, Socket.IO), GraphQL (Apollo), MongoDB, GitHub Actions, AWS (Lambda, Elastic Beanstalk, SQS)',
         ],
         techIcons: [
           ICONS.JS,
@@ -324,9 +323,7 @@ const metadata: Metadata = {
           ICONS.JIRA,
           ICONS.CONFLUENCE,
         ],
-        technologies: [
-          'Tech stack: JavaScript (React, Redux, Node, Express, EJS, Serverless Framework, Socket.IO), GraphQL (Apollo), MongoDB, GitHub Actions, AWS (Lambda, Elastic Beanstalk, SQS)',
-        ],
+        technologies: [],
       },
       {
         title: 'Web Application Developer',
@@ -335,9 +332,10 @@ const metadata: Metadata = {
         description: [
           'Introduced an internal version control system, a package repository and a project scaffolding process to reduce project setup time from 1 hour of manual work into a 5-minute script, eliminating code inconsistencies across future projects.',
           'Provided technical support for existing high-value clients (Royal Derby Hotel, Optical Alliance, …), ensuring 100% client retention.',
+          'Tech stack: PHP (CodeIgniter, Composer, Packagist), Apache, MySQL, Docker',
         ],
         techIcons: [ICONS.PHP, ICONS.COMPOSER, ICONS.JS, ICONS.BOOTSTRAP, ICONS.CSS3, ICONS.LESS, ICONS.SASS, ICONS.MYSQL, ICONS.DOCKER, ICONS.GITLAB],
-        technologies: ['Tech stack: PHP (CodeIgniter, Composer, Packagist), Apache, MySQL, Docker'],
+        technologies: [],
       },
       {
         title: 'Software Developer',
@@ -345,6 +343,7 @@ const metadata: Metadata = {
         duration: 'January 2019 - April 2019',
         description: [
           'Collaborated on feature development and cross-browser compatibility testing for education platform, contributing to 100% on-time fortnightly deployments throughout contract period.',
+          'Tech stack: JavaScript (mainly Node, Express, Meteor, Mocha & CucumberJS), MongoDB, Azure DevOps, CircleCI',
         ],
         techIcons: [
           ICONS.JS,
@@ -359,20 +358,18 @@ const metadata: Metadata = {
           ICONS.NPM,
           ICONS.AZURE,
         ],
-        technologies: ['Tech stack: JavaScript (mainly Node, Express, Meteor, Mocha & CucumberJS), MongoDB, Azure DevOps, CircleCI'],
+        technologies: [],
       },
       {
         title: 'PHP Developer Intern',
         companyName: 'Psych Press',
         duration: 'Jun 2017 - Sep 2017',
-        description: ['Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.'],
-        techIcons: [ICONS.PHP, ICONS.LARAVEL, ICONS.JS, ICONS.JQUERY, ICONS.D3JS, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.AWS, ICONS.BITBUCKET],
-        technologies: [
-          'PHP 7, using CodeIgniter, Laravel and Moodle framework.',
-          'JavaScript (AJAX, jQuery, Bootstrap, D3js and ChartJS) and CSS (MaterializeCSS)',
-          'Microsoft SQL Server Database',
-          'Migration from Microsoft servers to Amazon Web Services EC2 Linux instances',
+        description: [
+          'Collaborated on building three inhouse projects for Psych Press closely with the psychology team on a weekly basis.',
+          'Tech stack: PHP 7 (CodeIgniter, Laravel, Moodle), JavaScript (jQuery, Bootstrap, D3js, ChartJS), CSS (MaterializeCSS), Microsoft SQL Server, AWS EC2',
         ],
+        techIcons: [ICONS.PHP, ICONS.LARAVEL, ICONS.JS, ICONS.JQUERY, ICONS.D3JS, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.AWS, ICONS.BITBUCKET],
+        technologies: [],
       },
       {
         title: 'Web Developer',
@@ -381,23 +378,21 @@ const metadata: Metadata = {
         description: [
           'Designed and built the e-commerce site for Mint and Co. Accessories from the ground up.',
           'Provided regular maintenance to ensure 99.9% site availability.',
+          'Tech stack: PHP (WordPress, WooCommerce), JavaScript (jQuery, Bootstrap), MySQL, CPanel/Apache, PayPal Gateway API',
         ],
         techIcons: [ICONS.PHP, ICONS.WORDPRESS, ICONS.WOOCOMMERCE, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.MYSQL],
-        technologies: [
-          'CPanel hosting control panel for Apache server',
-          'PHP using the Wordpress framework and WooCommerce e-commerce plugin',
-          'MySQL database',
-          'JavaScript (jQuery, Bootstrap)',
-          'Paypal Gateway API',
-        ],
+        technologies: [],
       },
       {
         title: 'PHP Developer',
         companyName: 'Right Left Communication',
         duration: 'Sep 2014 - Feb 2015',
-        description: ['Developed, supported, monitored and maintained 4 websites for different clients from various industries.'],
+        description: [
+          'Developed, supported, monitored and maintained 4 websites for different clients from various industries.',
+          'Tech stack: PHP (Joomla), JavaScript (jQuery, Bootstrap), MySQL, CPanel/Apache',
+        ],
         techIcons: [ICONS.PHP, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.JQUERY, ICONS.MYSQL],
-        technologies: ['CPanel hosting control panel for Apache server', 'PHP using the Joomla framework', 'JavaScript (jQuery, Bootstrap)', 'MySQL database'],
+        technologies: [],
       },
     ],
     education: [

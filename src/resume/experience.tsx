@@ -12,10 +12,9 @@ type JobDescriptionProps = {
   description: string[];
   duration: string;
   techIcons: string[];
-  technologies: string[];
 };
 
-function JobDescription({ title, companyName, description, duration, techIcons, technologies }: JobDescriptionProps) {
+function JobDescription({ title, companyName, description, duration, techIcons }: JobDescriptionProps) {
   return (
     <div className={cx(commonStyles.dFlex, layoutStyles.flexColumn, layoutStyles.flexMdRow, layoutStyles.justifyContentBetween, commonStyles.mb5)}>
       <div>
@@ -24,12 +23,6 @@ function JobDescription({ title, companyName, description, duration, techIcons, 
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>
-          ))}
-        </ul>
-        <h4>Technologies involved:</h4>
-        <ul>
-          {technologies.map((tech) => (
-            <li key={tech}>{tech}</li>
           ))}
         </ul>
         <ul className={cx(commonStyles.listInline, iconStyles.devIcons)}>
@@ -51,16 +44,8 @@ export default function Experiences() {
   return (
     <div className={commonStyles.w100}>
       <h2 className={commonStyles.mb5}>Experience</h2>
-      {experience.map(({ title, companyName, description, duration, techIcons, technologies }) => (
-        <JobDescription
-          key={companyName}
-          title={title}
-          companyName={companyName}
-          description={description}
-          duration={duration}
-          techIcons={techIcons}
-          technologies={technologies}
-        />
+      {experience.map(({ title, companyName, description, duration, techIcons }) => (
+        <JobDescription key={companyName} title={title} companyName={companyName} description={description} duration={duration} techIcons={techIcons} />
       ))}
     </div>
   );
