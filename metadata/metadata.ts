@@ -123,7 +123,6 @@ export type Job = {
   companyName: string;
   duration: string;
   description: string[];
-  technologies: string[];
   techIcons: string[];
 };
 
@@ -200,7 +199,6 @@ const metadata: Metadata = {
           'Implemented and maintained Orders, Products, Fulfilments management and Courier and Printer Integration microservices as part of the legacy monolith to event-driven microservices migration while participating in on-call, maintaining 99.99% uptime across all services, supporting the platform that is now processing $140M revenue through orders and subscriptions.',
           'Tech stack: PHP (Laravel), TypeScript (Vue, Nuxt, Node, NestJS), Postgres, MySQL, AWS (EventBridge, SQS, DynamoDB, Lambda, CDK, ECS), GitHub Actions, LaunchDarkly, OpenTelemetry',
         ],
-        technologies: [],
         techIcons: [
           ICONS.JS,
           ICONS.TS,
@@ -280,7 +278,6 @@ const metadata: Metadata = {
           ICONS.JIRA,
           ICONS.CONFLUENCE,
         ],
-        technologies: [],
       },
       {
         title: 'Full Stack Software Developer',
@@ -323,7 +320,6 @@ const metadata: Metadata = {
           ICONS.JIRA,
           ICONS.CONFLUENCE,
         ],
-        technologies: [],
       },
       {
         title: 'Web Application Developer',
@@ -335,7 +331,6 @@ const metadata: Metadata = {
           'Tech stack: PHP (CodeIgniter, Composer, Packagist), Apache, MySQL, Docker',
         ],
         techIcons: [ICONS.PHP, ICONS.COMPOSER, ICONS.JS, ICONS.BOOTSTRAP, ICONS.CSS3, ICONS.LESS, ICONS.SASS, ICONS.MYSQL, ICONS.DOCKER, ICONS.GITLAB],
-        technologies: [],
       },
       {
         title: 'Software Developer',
@@ -358,7 +353,6 @@ const metadata: Metadata = {
           ICONS.NPM,
           ICONS.AZURE,
         ],
-        technologies: [],
       },
       {
         title: 'PHP Developer Intern',
@@ -369,7 +363,6 @@ const metadata: Metadata = {
           'Tech stack: PHP 7 (CodeIgniter, Laravel, Moodle), JavaScript (jQuery, Bootstrap, D3js, ChartJS), CSS (MaterializeCSS), Microsoft SQL Server, AWS EC2',
         ],
         techIcons: [ICONS.PHP, ICONS.LARAVEL, ICONS.JS, ICONS.JQUERY, ICONS.D3JS, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.AWS, ICONS.BITBUCKET],
-        technologies: [],
       },
       {
         title: 'Web Developer',
@@ -381,7 +374,6 @@ const metadata: Metadata = {
           'Tech stack: PHP (WordPress, WooCommerce), JavaScript (jQuery, Bootstrap), MySQL, CPanel/Apache, PayPal Gateway API',
         ],
         techIcons: [ICONS.PHP, ICONS.WORDPRESS, ICONS.WOOCOMMERCE, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.MYSQL],
-        technologies: [],
       },
       {
         title: 'PHP Developer',
@@ -392,7 +384,6 @@ const metadata: Metadata = {
           'Tech stack: PHP (Joomla), JavaScript (jQuery, Bootstrap), MySQL, CPanel/Apache',
         ],
         techIcons: [ICONS.PHP, ICONS.BOOTSTRAP, ICONS.HTML5, ICONS.CSS3, ICONS.JS, ICONS.JQUERY, ICONS.MYSQL],
-        technologies: [],
       },
     ],
     education: [
