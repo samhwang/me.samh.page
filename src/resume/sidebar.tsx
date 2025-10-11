@@ -1,4 +1,5 @@
 import { useToggle } from '@react-hookz/web';
+import { useId } from 'react';
 import { useSidebarData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
 import avatarJPG from '../img/avatar.jpg';
@@ -31,6 +32,7 @@ export default function Sidebar() {
   ];
 
   const [isCollapsed, toggleCollapsed] = useToggle(true);
+  const navbarId = useId();
 
   return (
     <nav
@@ -61,18 +63,15 @@ export default function Sidebar() {
         className={cx(navbarStyles.navbarToggler, sidebarStyles.navbarToggler, isCollapsed && navbarStyles.collapsed)}
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-target={`#${navbarId}`}
+        aria-controls={navbarId}
         aria-expanded="false"
         aria-label="Toggle navigation"
         onClick={toggleCollapsed}
       >
         <span className={navbarStyles.navbarTogglerIcon} />
       </button>
-      <div
-        className={cx(navbarStyles.navbarCollapse, navbarStyles.collapse, sidebarStyles.navbarCollapse, !isCollapsed && navbarStyles.show)}
-        id="navbarSupportedContent"
-      >
+      <div className={cx(navbarStyles.navbarCollapse, navbarStyles.collapse, sidebarStyles.navbarCollapse, !isCollapsed && navbarStyles.show)} id={navbarId}>
         <div className={cx(navbarStyles.navbarNav, sidebarStyles.navbarNav)}>
           <ul>
             {tabs.map(({ href, content }) => (
