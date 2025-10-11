@@ -192,7 +192,7 @@ const metadata: Metadata = {
       {
         title: 'Senior Full Stack Software Engineer',
         companyName: 'Lyka Pet Food',
-        duration: 'Jun 2023 - Current',
+        duration: 'Jun 2023 - Sep 2025',
         description: [
           "Migrated the backend system's NetSuite ERP integration from a batch-based approach to an event-driven architecture, reducing the amount of event loss from 20% to under 1%, enabling on-time monthly/quarterly reports for the Finance team.",
           "Implemented Segments analytics integration for customer metadata capture pipeline into Lyka's backend API, creating automated data flow to warehouse destinations, contributing to the organisational data-driven initiative that now powers monthly stakeholder reports and reduces manual data processing by over 80%.",
