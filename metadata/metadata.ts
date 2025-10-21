@@ -26,6 +26,7 @@ const ICONS = {
   DRUPAL: 'drupal-plain',
   DYNAMODB: 'dynamodb-plain',
   ESLINT: 'eslint-plain',
+  EXPO: 'expo-original',
   EXPRESS: 'express-original',
   FASTIFY: 'fastify-plain',
   GATSBY: 'gatsby-plain',
@@ -189,6 +190,13 @@ const metadata: Metadata = {
     email: 'samhwang2112.dev@gmail.com',
     address: 'Melbourne, Victoria, Australia',
     experience: [
+      {
+        title: 'Senior Full Stack Software Engineer',
+        companyName: 'Rosterfy',
+        duration: 'Sep 2025 - Current',
+        description: [],
+        techIcons: [ICONS.JS, ICONS.TS, ICONS.REACT, ICONS.EXPO, ICONS.PHP, ICONS.LARAVEL, ICONS.MYSQL, ICONS.AWS],
+      },
       {
         title: 'Senior Full Stack Software Engineer',
         companyName: 'Lyka Pet Food',
