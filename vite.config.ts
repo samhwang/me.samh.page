@@ -1,3 +1,4 @@
+import { cloudflare } from '@cloudflare/vite-plugin';
 import { tanstackRouter } from '@tanstack/router-plugin/esbuild';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
@@ -24,6 +25,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest,
     }),
+    cloudflare(),
   ],
   test: {
     globals: true,

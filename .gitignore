@@ -9,3 +9,6 @@ coverage
 
 # Generated from PandaCSS
 styled-system
+
+# Wrangler cache
+.wrangler

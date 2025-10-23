@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
+    "@cloudflare/vite-plugin": "^1.13.14",
     "@pandacss/dev": "^1.4.3",
     "@tanstack/router-cli": "^1.133.20",
     "@tanstack/router-plugin": "^1.133.22",
