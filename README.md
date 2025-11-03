@@ -10,7 +10,7 @@ Originally created to be a page where I can learn about static sites, it
 has grown to be my main resume page.
 
 This project was bootstrapped with [Vite](https://vitejs.dev/) and [Vite Starter Template](https://github.com/samhwang/vite-starter-template)
-and hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
+and hosted on [Cloudflare Worker](https://workers.cloudflare.com/).
 
 ## Using this as a resume template
 
@@ -23,4 +23,4 @@ and hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
 - PandaCSS for styling
 - Vite build tool
 - Vitest for testing
-- Cloudflare Pages for static site hosting and CI/CD
+- Cloudflare Workers for static site hosting and CI/CD
