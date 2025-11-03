@@ -41,7 +41,6 @@ export const experienceData: ExperienceData = [
     duration: 'Oct 2022 - Oct 2023',
     description: ['blah'],
     techIcons: [GITHUB_ICON],
-    technologies: ['github'],
   },
 ];
 
