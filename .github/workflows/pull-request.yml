@@ -6,8 +6,22 @@ on:
       - master
 
 jobs:
-  lint:
+  ci-checks:
+    name: CI Check (${{ matrix.name }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: lint
+            command: ci
+          - name: test
+            command: test:run
+          - name: typecheck
+            command: typecheck
+          - name: build
+            command: build
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -15,41 +29,5 @@ jobs:
       - name: Set up project
         uses: ./.github/actions/setup-node-deps
 
-      - name: Run linting
-        run: pnpm lint
-
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up project
-        uses: ./.github/actions/setup-node-deps
-
-      - name: Run tests
-        run: pnpm test
-
-  typecheck:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up project
-        uses: ./.github/actions/setup-node-deps
-
-      - name: Run typecheck
-        run: pnpm typecheck
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up project
-        uses: ./.github/actions/setup-node-deps
-
-      - name: Run build
-        run: pnpm build
+      - name: Run ${{ matrix.name }}
+        run: pnpm run ${{ matrix.command }}
