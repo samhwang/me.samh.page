@@ -20,4 +20,4 @@ PandaCSS
 Last update: 2022/07/07
 Standards: JavaScript, TypeScript, React
 Components: humans-generator
-Softwares: Visual Studio Code
+Softwares: Zed, OpenCode
