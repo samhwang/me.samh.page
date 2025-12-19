@@ -61,15 +61,7 @@ export const link = css({
   color: 'primary',
   textDecoration: 'none',
 
-  '&:hover': {
-    color: 'slightlyDarker',
-  },
-
-  '&:focus': {
-    color: 'slightlyDarker',
-  },
-
-  '&:active': {
+  '&:hover, &:focus, &:active': {
     color: 'slightlyDarker',
   },
 });
