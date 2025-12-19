@@ -71,30 +71,30 @@ describe('Sidebar', () => {
     const navCollapse = container.querySelector(`#${navbarId}`);
     expect(navCollapse).toBeInTheDocument();
 
-    // Get the initial class list
-    const initialClasses = navCollapse?.className || '';
-    const initialButtonClasses = toggleButton.className;
+    // Get the initial data attributes
+    const initialVisible = navCollapse?.getAttribute('data-visible');
+    const initialCollapsed = toggleButton.getAttribute('data-collapsed');
 
     // Click to expand
     await user.click(toggleButton);
 
-    // After click, check if classes changed (indicating state change)
-    const expandedClasses = navCollapse?.className || '';
-    const expandedButtonClasses = toggleButton.className;
+    // After click, check if data attributes changed (indicating state change)
+    const expandedVisible = navCollapse?.getAttribute('data-visible');
+    const expandedCollapsed = toggleButton.getAttribute('data-collapsed');
 
-    // Classes should be different after toggle
-    expect(expandedClasses).not.toEqual(initialClasses);
-    expect(expandedButtonClasses).not.toEqual(initialButtonClasses);
+    // Data attributes should be different after toggle
+    expect(expandedVisible).not.toEqual(initialVisible);
+    expect(expandedCollapsed).not.toEqual(initialCollapsed);
 
     // Click again to collapse
     await user.click(toggleButton);
 
-    // Classes should return to initial state
-    const collapsedAgainClasses = navCollapse?.className || '';
-    const collapsedAgainButtonClasses = toggleButton.className;
+    // Data attributes should return to initial state
+    const collapsedAgainVisible = navCollapse?.getAttribute('data-visible');
+    const collapsedAgainCollapsed = toggleButton.getAttribute('data-collapsed');
 
-    expect(collapsedAgainClasses).toEqual(initialClasses);
-    expect(collapsedAgainButtonClasses).toEqual(initialButtonClasses);
+    expect(collapsedAgainVisible).toEqual(initialVisible);
+    expect(collapsedAgainCollapsed).toEqual(initialCollapsed);
   });
 
   it('toggle button has correct ARIA attributes', () => {
