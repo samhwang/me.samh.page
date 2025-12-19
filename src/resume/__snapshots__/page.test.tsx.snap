@@ -6,7 +6,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="about"
       >
         <div
@@ -23,12 +23,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </span>
           </h1>
           <div
-            class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             123 Fake street
           </div>
           <p
-            class="mb_3rem fs_1.15rem fw_400"
+            class="mb_headingMargin fs_1.15rem fw_400"
           >
             Blah
           </p>
@@ -53,19 +53,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="experience"
       >
         <div
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Experience
           </h2>
           <div
-            class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+            class="entryContainer entryContainer--responsive_row"
           >
             <div>
               <h3
@@ -74,7 +74,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
                 Software Engineer
               </h3>
               <div
-                class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+                class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
               >
                 Bruh Industries
               </div>
@@ -84,7 +84,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
                 </li>
               </ul>
               <ul
-                class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+                class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
               >
                 <li
                   class="d_inline-block"
@@ -98,7 +98,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
               </ul>
             </div>
             <div
-              class="md:min-w_8rem md:ta_right"
+              class="dateDisplay dateDisplay--alignment_right"
             >
               <span
                 class="c_primary"
@@ -113,19 +113,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="education"
       >
         <div
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Education
           </h2>
           <div
-            class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+            class="entryContainer entryContainer--responsive_row"
           >
             <div>
               <h3
@@ -134,7 +134,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
                 Bruh University
               </h3>
               <div
-                class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+                class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
               >
                 Bachelor of Bruh
               </div>
@@ -143,7 +143,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="md:min-w_8rem md:ta_right"
+              class="dateDisplay dateDisplay--alignment_right"
             >
               <span
                 class="c_primary"
@@ -158,19 +158,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="skills"
       >
         <div
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Skills and Proficiency
           </h2>
           <div
-            class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             test title
           </div>
@@ -180,7 +180,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </li>
           </ul>
           <ul
-            class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+            class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
           >
             <li
               class="d_inline-block"
@@ -198,24 +198,23 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="projects"
       >
         <div
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Projects
           </h2>
           <ul
-            class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+            class="li-s_none ml_2.5em pl_0 mb_0"
           >
-            <li>
-              <i
-                class="fa-li fa fa-tasks text-warning"
-              />
+            <li
+              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+            >
               <p>
                 <strong>
                   Test Project:
@@ -233,7 +232,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="about"
     >
       <div
@@ -250,12 +249,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           </span>
         </h1>
         <div
-          class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           123 Fake street
         </div>
         <p
-          class="mb_3rem fs_1.15rem fw_400"
+          class="mb_headingMargin fs_1.15rem fw_400"
         >
           Blah
         </p>
@@ -280,19 +279,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="experience"
     >
       <div
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Experience
         </h2>
         <div
-          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+          class="entryContainer entryContainer--responsive_row"
         >
           <div>
             <h3
@@ -301,7 +300,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
               Software Engineer
             </h3>
             <div
-              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               Bruh Industries
             </div>
@@ -311,7 +310,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+              class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
             >
               <li
                 class="d_inline-block"
@@ -325,7 +324,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </ul>
           </div>
           <div
-            class="md:min-w_8rem md:ta_right"
+            class="dateDisplay dateDisplay--alignment_right"
           >
             <span
               class="c_primary"
@@ -340,19 +339,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="education"
     >
       <div
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Education
         </h2>
         <div
-          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+          class="entryContainer entryContainer--responsive_row"
         >
           <div>
             <h3
@@ -361,7 +360,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
               Bruh University
             </h3>
             <div
-              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               Bachelor of Bruh
             </div>
@@ -370,7 +369,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="md:min-w_8rem md:ta_right"
+            class="dateDisplay dateDisplay--alignment_right"
           >
             <span
               class="c_primary"
@@ -385,19 +384,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="skills"
     >
       <div
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Skills and Proficiency
         </h2>
         <div
-          class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           test title
         </div>
@@ -407,7 +406,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           </li>
         </ul>
         <ul
-          class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+          class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
         >
           <li
             class="d_inline-block"
@@ -425,24 +424,23 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="projects"
     >
       <div
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Projects
         </h2>
         <ul
-          class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+          class="li-s_none ml_2.5em pl_0 mb_0"
         >
-          <li>
-            <i
-              class="fa-li fa fa-tasks text-warning"
-            />
+          <li
+            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+          >
             <p>
               <strong>
                 Test Project:

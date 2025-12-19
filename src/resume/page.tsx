@@ -1,10 +1,9 @@
 import { Fragment } from 'react';
-import { cx } from '../../styled-system/css';
+import { css } from '../../styled-system/css';
 import About from './about';
 import * as commonStyles from './common.styles';
 import Education from './education';
 import Experiences from './experience';
-import * as layoutStyles from './layout.styles';
 import ProjectSection from './projects';
 import SkillSection from './skills';
 
@@ -19,10 +18,10 @@ export default function ResumePage() {
 
   return sections.map(({ id, content }) => (
     <Fragment key={id}>
-      <section className={cx(commonStyles.section, layoutStyles.p3, layoutStyles.pLg5, commonStyles.dFlex, commonStyles.alignItemsCenter)} id={id}>
+      <section className={commonStyles.section} id={id}>
         {content}
       </section>
-      <hr className={layoutStyles.m0} />
+      <hr className={css({ margin: 0 })} />
     </Fragment>
   ));
 }

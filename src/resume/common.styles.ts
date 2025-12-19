@@ -1,84 +1,77 @@
 import { css } from '../../styled-system/css';
 
+/**
+ * Common semantic styles shared across multiple resume components
+ * These are reusable patterns, not Bootstrap-style utilities
+ */
+
+// === LAYOUT PATTERNS ===
+
+// Standard section container (used in Footer, Page, 404)
 export const section = css({
-  pt: '5rem!',
-  pb: '5rem!',
-  pl: '2rem',
-  maxW: '75rem',
+  display: 'flex',
+  alignItems: 'center',
+  padding: 'sectionPadding',
+  paddingTop: 'sectionVertical',
+  paddingBottom: 'sectionVertical',
+  paddingLeft: '2rem',
+  maxWidth: 'contentMaxWidth',
+
   lg: {
-    pt: '3rem!',
-    pb: '3rem!',
-    pl: '3rem',
+    padding: 'sectionPaddingLg',
+    paddingTop: '3rem',
+    paddingBottom: '3rem',
   },
+
   md: {
-    minH: '100vh',
+    minHeight: '100vh',
   },
 });
 
-export const date = css({
-  md: {
-    minW: '8rem',
+// Section content container (100% width)
+export const container = css({
+  width: '100%',
+});
+
+// === TYPOGRAPHY PATTERNS ===
+
+// Section heading (h2) with standard margin
+export const heading = css({
+  marginBottom: 'headingMargin',
+});
+
+// Subheading style (used for degree, company, skill titles)
+export const subheading = css({
+  marginBottom: 'subheadingMargin',
+  textTransform: 'uppercase',
+  fontWeight: 500,
+  fontSize: '1.5rem',
+  fontFamily: 'heading',
+});
+
+// Title with no bottom margin (h3 typically)
+export const title = css({
+  marginBottom: 0,
+});
+
+// === COLOR PATTERNS ===
+
+// Standard link styling (used in Footer, Projects, 404)
+export const link = css({
+  color: 'primary',
+  textDecoration: 'none',
+
+  '&:hover, &:focus, &:active': {
+    color: 'slightlyDarker',
   },
 });
 
-export const bgPrimary = css({
-  bgColor: 'primary',
-});
-
+// Primary text color
 export const textPrimary = css({
   color: 'primary',
 });
 
-export const link = css({
-  color: 'primary!',
-  _hover: {
-    color: 'slightlyDarker!',
-  },
-  _focus: {
-    color: 'slightlyDarker!',
-  },
-  _active: {
-    color: 'slightlyDarker!',
-  },
-});
-
-// Common utility classes
-export const w100 = css({
-  width: '100%',
-});
-
-export const mb0 = css({
-  marginBottom: 0,
-});
-
-export const mb3 = css({
-  marginBottom: '1rem',
-});
-
-export const mb5 = css({
-  marginBottom: '3rem',
-});
-
-export const dFlex = css({
-  display: 'flex',
-});
-
-export const alignItemsCenter = css({
-  alignItems: 'center',
-});
-
-export const listInline = css({
-  display: 'flex',
-  flexWrap: 'wrap',
-  listStyle: 'none',
-  padding: 0,
-  paddingLeft: '2rem',
-  margin: 0,
-  marginTop: '1rem',
-  gap: '1.5rem',
-  rowGap: '1rem',
-});
-
-export const listInlineItem = css({
-  display: 'inline-block',
+// Primary background color
+export const bgPrimary = css({
+  backgroundColor: 'primary',
 });

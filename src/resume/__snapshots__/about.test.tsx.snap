@@ -19,12 +19,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
           </span>
         </h1>
         <div
-          class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           123 Fake street
         </div>
         <p
-          class="mb_3rem fs_1.15rem fw_400"
+          class="mb_headingMargin fs_1.15rem fw_400"
         >
           Blah
         </p>
@@ -61,12 +61,12 @@ exports[`Render About Data > Should match snapshot 1`] = `
         </span>
       </h1>
       <div
-        class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
       >
         123 Fake street
       </div>
       <p
-        class="mb_3rem fs_1.15rem fw_400"
+        class="mb_headingMargin fs_1.15rem fw_400"
       >
         Blah
       </p>

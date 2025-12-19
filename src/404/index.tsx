@@ -1,17 +1,15 @@
 import { Link } from '@tanstack/react-router';
-import { cx } from '../../styled-system/css';
-import * as commonStyles from '../resume/common.styles';
-import * as layoutStyles from '../resume/layout.styles';
+import { link, section } from '../resume/common.styles';
 
 export default function ErrorPage() {
   return (
-    <section className={cx(commonStyles.section, layoutStyles.p3, layoutStyles.pLg5, commonStyles.dFlex, commonStyles.alignItemsCenter)}>
+    <section className={section}>
       <header>
         <h2>Error 404: Page not found.</h2>
         <h3>It seems like you&apos;ve hit a dead end. There&apos;s nothing to see here.</h3>
         <h4>
           Please go back to the{' '}
-          <Link className={commonStyles.link} to="/">
+          <Link className={link} to="/">
             Home page.
           </Link>
         </h4>

@@ -63,6 +63,16 @@ export default defineConfig({
       tokens: {
         sizes: {
           sidebarWidth: { value: '17rem' },
+          contentMaxWidth: { value: '75rem' },
+        },
+        spacing: {
+          sectionVertical: { value: '5rem' },
+          sectionPadding: { value: '0.75rem' },
+          sectionPaddingLg: { value: '3rem' },
+          entryMargin: { value: '3rem' },
+          headingMargin: { value: '3rem' },
+          subheadingMargin: { value: '1rem' },
+          dateMinWidth: { value: '8rem' },
         },
         fonts: {
           body: {
@@ -80,6 +90,73 @@ export default defineConfig({
           },
           slightlyDarker: {
             value: '{colors.green.900}',
+          },
+          warning: {
+            value: '{colors.orange.500}',
+          },
+        },
+      },
+      recipes: {
+        entryContainer: {
+          base: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            marginBottom: 'entryMargin',
+          },
+          variants: {
+            responsive: {
+              row: {
+                md: { flexDirection: 'row' },
+              },
+              column: {
+                flexDirection: 'column',
+              },
+            },
+          },
+          defaultVariants: {
+            responsive: 'row',
+          },
+        },
+        dateDisplay: {
+          base: {
+            color: 'primary',
+          },
+          variants: {
+            alignment: {
+              right: {
+                md: {
+                  textAlign: 'right',
+                  minWidth: 'dateMinWidth',
+                },
+              },
+              left: {
+                textAlign: 'left',
+              },
+            },
+          },
+          defaultVariants: {
+            alignment: 'right',
+          },
+        },
+        inlineList: {
+          base: {
+            display: 'flex',
+            flexWrap: 'wrap',
+            listStyle: 'none',
+            padding: 0,
+            margin: 0,
+            marginTop: '1rem',
+          },
+          variants: {
+            gap: {
+              small: { gap: '0.5rem' },
+              medium: { gap: '1rem' },
+              large: { gap: '1.5rem', rowGap: '1rem' },
+            },
+          },
+          defaultVariants: {
+            gap: 'large',
           },
         },
       },

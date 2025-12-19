@@ -280,41 +280,125 @@ export const Component = () => (
 );
 ```
 
-#### Reusable Styles Files
+#### Component Styling Architecture
 
-Define styles in `*.styles.ts`:
+**Pattern: Common styles in `common.styles.ts`, component-specific styles inline**
+
+**Use shared patterns from `common.styles.ts`:**
 
 ```typescript
-// component.styles.ts
-import { css } from '../../styled-system/css';
+// component.tsx
+import * as commonStyles from './common.styles';
 
-export const containerStyle = css({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-  lg: {
-    flexDirection: 'row',
-    gap: '2rem',
-  }
+export const Component = () => (
+  <div className={commonStyles.container}>
+    <h2 className={commonStyles.heading}>Title</h2>
+    <p className={commonStyles.textPrimary}>Description</p>
+  </div>
+);
+```
+
+**Define component-specific styles inline with `css()`:**
+
+For styles used **multiple times** within the same component, define a constant:
+
+```typescript
+// component.tsx
+import { css } from '../../styled-system/css';
+import * as commonStyles from './common.styles';
+
+// Used multiple times in this component
+const bioStyle = css({
+  fontSize: '1.15rem',
+  fontWeight: 400,
+  lineHeight: 1.6,
 });
 
-export const headingStyle = css({
+export const Component = () => (
+  <div className={commonStyles.container}>
+    <p className={bioStyle}>First paragraph</p>
+    <p className={bioStyle}>Second paragraph</p>
+  </div>
+);
+```
+
+For styles used **only once**, inline them directly:
+
+```typescript
+// component.tsx
+import { css } from '../../styled-system/css';
+import * as commonStyles from './common.styles';
+
+export const Component = () => (
+  <div className={commonStyles.container}>
+    <p
+      className={css({
+        fontSize: '1.15rem',
+        fontWeight: 400,
+        lineHeight: 1.6,
+      })}
+    >
+      Unique one-time content
+    </p>
+  </div>
+);
+```
+
+**✅ Good: Common patterns in shared file**
+```typescript
+// common.styles.ts
+export const heading = css({
   fontFamily: 'heading',
   color: 'primary',
   fontSize: '2rem',
 });
+
+// Multiple components import this
+import * as commonStyles from './common.styles';
 ```
 
+**✅ Good: Style constant for multiple uses**
 ```typescript
-// component.tsx
-import { containerStyle, headingStyle } from './component.styles';
-
-export const Component = () => (
-  <div className={containerStyle}>
-    <h2 className={headingStyle}>Title</h2>
-  </div>
-);
+// about.tsx - Used 3+ times in component
+const bioStyle = css({ fontSize: '1.15rem' });
+<p className={bioStyle}>First</p>
+<p className={bioStyle}>Second</p>
 ```
+
+**✅ Good: Inline for single use**
+```typescript
+// page.tsx - Used only once
+<hr className={css({ margin: 0 })} />
+```
+
+**❌ Bad: Separate file just to re-export common styles**
+```typescript
+// component.styles.ts (DON'T DO THIS)
+export { heading, container } from './common.styles';
+
+// component.tsx
+import { heading } from './component.styles'; // Unnecessary layer
+```
+
+**❌ Bad: Duplicating common patterns**
+```typescript
+// component.tsx (DON'T DO THIS)
+const heading = css({ 
+  fontFamily: 'heading',
+  color: 'primary',
+  fontSize: '2rem',
+}); // Should use commonStyles.heading instead
+```
+
+**When to create separate `.styles.ts` files:**
+- Complex components with many styles (e.g., `sidebar.styles.ts`)
+- Icon-specific patterns (e.g., `icon.styles.ts`)
+- Truly reusable patterns shared by 3+ components
+
+**When NOT to create `.styles.ts` files:**
+- Single component with 1-3 unique styles → Define inline (constant or directly in JSX)
+- Just re-exporting from `common.styles.ts` → Import directly
+- Style used only once in component → Inline directly in JSX with `css()`
 
 #### Dynamic Styles
 

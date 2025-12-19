@@ -9,12 +9,12 @@ exports[`Education section render > Should match snapshot 1`] = `
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Education
         </h2>
         <div
-          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+          class="entryContainer entryContainer--responsive_row"
         >
           <div>
             <h3
@@ -23,7 +23,7 @@ exports[`Education section render > Should match snapshot 1`] = `
               Bruh University
             </h3>
             <div
-              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+              class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
             >
               Bachelor of Bruh
             </div>
@@ -32,7 +32,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="md:min-w_8rem md:ta_right"
+            class="dateDisplay dateDisplay--alignment_right"
           >
             <span
               class="c_primary"
@@ -49,12 +49,12 @@ exports[`Education section render > Should match snapshot 1`] = `
       class="w_100%"
     >
       <h2
-        class="mb_3rem"
+        class="mb_headingMargin"
       >
         Education
       </h2>
       <div
-        class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+        class="entryContainer entryContainer--responsive_row"
       >
         <div>
           <h3
@@ -63,7 +63,7 @@ exports[`Education section render > Should match snapshot 1`] = `
             Bruh University
           </h3>
           <div
-            class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             Bachelor of Bruh
           </div>
@@ -72,7 +72,7 @@ exports[`Education section render > Should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="md:min-w_8rem md:ta_right"
+          class="dateDisplay dateDisplay--alignment_right"
         >
           <span
             class="c_primary"

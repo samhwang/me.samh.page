@@ -1,7 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { cx } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
-import * as layoutStyles from './layout.styles';
 
 type FooterLinkProps = {
   to: string;
@@ -25,7 +23,7 @@ export default function Footer() {
   };
 
   return (
-    <section className={cx(commonStyles.section, layoutStyles.p3, layoutStyles.pLg5, commonStyles.dFlex, commonStyles.alignItemsCenter)}>
+    <section className={commonStyles.section}>
       <p>
         © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
       </p>
