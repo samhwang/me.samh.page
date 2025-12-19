@@ -88,7 +88,7 @@ export const avatar = css({
   },
 });
 
-// Mobile menu toggle button
+// Mobile menu toggle button (hidden on desktop)
 export const menuToggle = css({
   padding: '0.25rem 0.75rem',
   fontSize: '1.25rem',
@@ -111,10 +111,9 @@ export const menuToggle = css({
     boxShadow: '0 0 0 0.25rem',
   },
 
-  '&[data-collapsed="true"]': {
-    '& ~ div': {
-      display: 'none',
-    },
+  // Hide button on desktop
+  lg: {
+    display: 'none',
   },
 });
 
@@ -130,7 +129,7 @@ export const menuIcon = css({
   backgroundSize: '100%',
 });
 
-// Collapsible navigation menu
+// Collapsible navigation menu (mobile: toggleable, desktop: always visible)
 export const menu = css({
   display: 'none',
   flexGrow: 1,
@@ -140,8 +139,9 @@ export const menu = css({
     display: 'block',
   },
 
+  // Always visible on desktop
   lg: {
-    display: 'flex',
+    display: 'flex !important',
     alignItems: 'flex-start',
     flexGrow: '0',
     width: '100%',

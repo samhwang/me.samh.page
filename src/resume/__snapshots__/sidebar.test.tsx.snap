@@ -41,7 +41,7 @@ exports[`Sidebar > renders without crashing and matches snapshot 1`] = `
           aria-controls="_r_0_"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem bd-c_rgba(255,_255,_255,_0.1) c_rgba(255,_255,_255,_0.55) trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:ring-c_blue.500 [&:focus]:bx-sh_0_0_0_0.25rem [&[data-collapsed="true"]]:[&_~_div]:d_none"
+          class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem bd-c_rgba(255,_255,_255,_0.1) c_rgba(255,_255,_255,_0.55) trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:ring-c_blue.500 [&:focus]:bx-sh_0_0_0_0.25rem lg:d_none"
           data-collapsed="true"
           data-target="#_r_0_"
           data-toggle="collapse"
@@ -52,7 +52,7 @@ exports[`Sidebar > renders without crashing and matches snapshot 1`] = `
           />
         </button>
         <div
-          class="d_none flex-g_1 ai_center [&[data-visible="true"]]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0 lg:w_100% lg:mb_auto"
+          class="d_none flex-g_1 ai_center [&[data-visible="true"]]:d_block lg:d_flex! lg:ai_flex-start lg:flex-g_0 lg:w_100% lg:mb_auto"
           data-visible="false"
           id="_r_0_"
         >
@@ -155,7 +155,7 @@ exports[`Sidebar > renders without crashing and matches snapshot 1`] = `
         aria-controls="_r_0_"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem bd-c_rgba(255,_255,_255,_0.1) c_rgba(255,_255,_255,_0.55) trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:ring-c_blue.500 [&:focus]:bx-sh_0_0_0_0.25rem [&[data-collapsed="true"]]:[&_~_div]:d_none"
+        class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem bd-c_rgba(255,_255,_255,_0.1) c_rgba(255,_255,_255,_0.55) trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:ring-c_blue.500 [&:focus]:bx-sh_0_0_0_0.25rem lg:d_none"
         data-collapsed="true"
         data-target="#_r_0_"
         data-toggle="collapse"
@@ -166,7 +166,7 @@ exports[`Sidebar > renders without crashing and matches snapshot 1`] = `
         />
       </button>
       <div
-        class="d_none flex-g_1 ai_center [&[data-visible="true"]]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0 lg:w_100% lg:mb_auto"
+        class="d_none flex-g_1 ai_center [&[data-visible="true"]]:d_block lg:d_flex! lg:ai_flex-start lg:flex-g_0 lg:w_100% lg:mb_auto"
         data-visible="false"
         id="_r_0_"
       >
