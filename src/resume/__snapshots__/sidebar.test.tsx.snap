@@ -1,0 +1,278 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sidebar > renders without crashing and matches snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <nav
+        class="pos_relative d_flex flex-wrap_wrap ai_center jc_space-between py_0.5rem px_1rem lg:flex-flow_row_nowrap lg:jc_flex-start [&_.navbar-brand]:c_white! [&_.navbar-nav_.nav-link]:c_white! [&_.navbar-nav_.nav-link:hover]:c_rgba(255,_255,_255,_0.75)! [&_.navbar-nav_.nav-link.active]:c_white! [&_.navbar-toggler]:c_rgba(255,_255,_255,_0.55) [&_.navbar-toggler]:bd-c_rgba(255,_255,_255,_0.1) [&_span]:c_white! [&_a]:c_white! [&_ul]:c_white! [&_li]:c_white! pos_fixed top_0 right_0 left_0 z_1030 lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
+      >
+        <a
+          class="py_0.3125rem mr_1rem fs_1.25rem td_none white-space_nowrap c_white! lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
+          href="#page-top"
+        >
+          <span
+            class="d_block lg:d_none"
+          >
+            First Name Last Name
+          </span>
+          <span
+            class="d_none lg:d_block"
+          >
+            <picture>
+              <source
+                srcset="/src/img/avatar.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="/src/img/avatar.jpg"
+                type="image/jpeg"
+              />
+              <img
+                alt="First Name Last Name Avatar"
+                class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) max-w_100% h_auto bdr_50% mx_auto mb_0.5rem"
+                src="/src/img/avatar.jpg"
+              />
+            </picture>
+          </span>
+        </a>
+        <button
+          aria-controls="_r_0_"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:bx-sh_0_0_0_0.25rem focus:ring-c_blue.500 [&:not(.show)]:d_none"
+          data-target="#_r_0_"
+          data-toggle="collapse"
+          type="button"
+        >
+          <span
+            class="d_inline-block w_1.5em h_1.5em va_middle bg-i_url("data:image/svg+xml,%3csvg_xmlns='http://www.w3.org/2000/svg'_viewBox='0_0_30_30'%3e%3cpath_stroke='rgba%2833,_37,_41,_0.75%29'_stroke-linecap='round'_stroke-miterlimit='10'_stroke-width='2'_d='M4_7h22M4_15h22M4_23h22'/%3e%3c/svg%3e") bg-r_no-repeat bg-p_center bg-s_100%"
+          />
+        </button>
+        <div
+          class="flex-g_1 ai_center d_none [&.show]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto"
+          id="_r_0_"
+        >
+          <div
+            class="d_flex flex-d_column pl_0 mb_0 li-s_none lg:flex-d_row lg:flex-d_column! lg:w_100%"
+          >
+            <ul>
+              <li
+                class="lg:d_block"
+              >
+                <a
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="lg:d_block"
+              >
+                <a
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                  href="#experience"
+                >
+                  Experience
+                </a>
+              </li>
+              <li
+                class="lg:d_block"
+              >
+                <a
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                  href="#education"
+                >
+                  Education
+                </a>
+              </li>
+              <li
+                class="lg:d_block"
+              >
+                <a
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                  href="#skills"
+                >
+                  Skills
+                </a>
+              </li>
+              <li
+                class="lg:d_block"
+              >
+                <a
+                  class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                  href="#projects"
+                >
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <nav
+      class="pos_relative d_flex flex-wrap_wrap ai_center jc_space-between py_0.5rem px_1rem lg:flex-flow_row_nowrap lg:jc_flex-start [&_.navbar-brand]:c_white! [&_.navbar-nav_.nav-link]:c_white! [&_.navbar-nav_.nav-link:hover]:c_rgba(255,_255,_255,_0.75)! [&_.navbar-nav_.nav-link.active]:c_white! [&_.navbar-toggler]:c_rgba(255,_255,_255,_0.55) [&_.navbar-toggler]:bd-c_rgba(255,_255,_255,_0.1) [&_span]:c_white! [&_a]:c_white! [&_ul]:c_white! [&_li]:c_white! pos_fixed top_0 right_0 left_0 z_1030 lg:ta_center lg:pos_fixed lg:top_0 lg:left_0 lg:d_flex lg:flex-d_column lg:w_sidebarWidth lg:h_100vh bg-c_primary"
+    >
+      <a
+        class="py_0.3125rem mr_1rem fs_1.25rem td_none white-space_nowrap c_white! lg:d_flex lg:m_auto_auto_0 lg:p_0.5rem"
+        href="#page-top"
+      >
+        <span
+          class="d_block lg:d_none"
+        >
+          First Name Last Name
+        </span>
+        <span
+          class="d_none lg:d_block"
+        >
+          <picture>
+            <source
+              srcset="/src/img/avatar.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="/src/img/avatar.jpg"
+              type="image/jpeg"
+            />
+            <img
+              alt="First Name Last Name Avatar"
+              class="lg:max-w_10rem lg:max-h_10rem lg:bd_0.5rem_solid_fade-out(white,_0.8) max-w_100% h_auto bdr_50% mx_auto mb_0.5rem"
+              src="/src/img/avatar.jpg"
+            />
+          </picture>
+        </span>
+      </a>
+      <button
+        aria-controls="_r_0_"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="p_0.25rem_0.75rem fs_1.25rem lh_1 bg-c_transparent bd_1px_solid_transparent bdr_0.25rem trs_box-shadow_0.15s_ease-in-out [&:hover]:td_none [&:focus]:td_none [&:focus]:ring_0 [&:focus]:bx-sh_0_0_0_0.25rem focus:ring-c_blue.500 [&:not(.show)]:d_none"
+        data-target="#_r_0_"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span
+          class="d_inline-block w_1.5em h_1.5em va_middle bg-i_url("data:image/svg+xml,%3csvg_xmlns='http://www.w3.org/2000/svg'_viewBox='0_0_30_30'%3e%3cpath_stroke='rgba%2833,_37,_41,_0.75%29'_stroke-linecap='round'_stroke-miterlimit='10'_stroke-width='2'_d='M4_7h22M4_15h22M4_23h22'/%3e%3c/svg%3e") bg-r_no-repeat bg-p_center bg-s_100%"
+        />
+      </button>
+      <div
+        class="flex-g_1 ai_center d_none [&.show]:d_block lg:d_flex lg:ai_flex-start lg:flex-g_0! lg:w_100% lg:mb_auto"
+        id="_r_0_"
+      >
+        <div
+          class="d_flex flex-d_column pl_0 mb_0 li-s_none lg:flex-d_row lg:flex-d_column! lg:w_100%"
+        >
+          <ul>
+            <li
+              class="lg:d_block"
+            >
+              <a
+                class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="lg:d_block"
+            >
+              <a
+                class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                href="#experience"
+              >
+                Experience
+              </a>
+            </li>
+            <li
+              class="lg:d_block"
+            >
+              <a
+                class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                href="#education"
+              >
+                Education
+              </a>
+            </li>
+            <li
+              class="lg:d_block"
+            >
+              <a
+                class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                href="#skills"
+              >
+                Skills
+              </a>
+            </li>
+            <li
+              class="lg:d_block"
+            >
+              <a
+                class="d_block p_0.5rem_1rem c_white! td_none trs_color_0.15s_ease-in-out,_background-color_0.15s_ease-in-out,_border-color_0.15s_ease-in-out [&:hover]:c_rgba(255,_255,_255,_0.75)! [&:focus]:c_rgba(255,_255,_255,_0.75)! fw_800! ls_0.05rem tt_uppercase c_white! lg:d_block [&:hover]:c_rgba(255,_255,_255,_0.75)!"
+                href="#projects"
+              >
+                Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
