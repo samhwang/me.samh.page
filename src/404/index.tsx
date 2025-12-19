@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { link, section } from '../resume/shared.styles';
+import { link, section } from '../resume/common.styles';
 
 export default function ErrorPage() {
   return (

@@ -1,2 +1,2 @@
-// Footer uses shared section and link styles
-export { link, section } from './shared.styles';
+// Footer uses common section and link styles
+export { link, section } from './common.styles';

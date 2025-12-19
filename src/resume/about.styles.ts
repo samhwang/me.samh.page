@@ -1,30 +1,9 @@
 import { css } from '../../styled-system/css';
 
-// Container for the entire about section
-export const container = css({
-  width: '100%',
-});
+// Re-export common styles
+export { container, subheading as address, textPrimary as lastName, title as name } from './common.styles';
 
-// Main heading (name)
-export const name = css({
-  marginBottom: 0,
-});
-
-// Last name with primary color
-export const lastName = css({
-  color: 'primary',
-});
-
-// Address line with subheading styling
-export const address = css({
-  marginBottom: 'headingMargin',
-  textTransform: 'uppercase',
-  fontWeight: 500,
-  fontSize: '1.5rem',
-  fontFamily: 'heading',
-});
-
-// Bio paragraph
+// Unique bio paragraph styling (not in common)
 export const bio = css({
   marginBottom: 'headingMargin',
   fontSize: '1.15rem',

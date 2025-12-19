@@ -1,7 +1,7 @@
 import { css } from '../../styled-system/css';
 
-// Re-export shared section style
-export { section } from './shared.styles';
+// Re-export common section style
+export { section } from './common.styles';
 
 // Horizontal separator between sections
 export const separator = css({

@@ -1,17 +1,7 @@
 import { css } from '../../styled-system/css';
 
-// Re-export shared link style as projectLink
-export { link as projectLink } from './shared.styles';
-
-// Container for the entire projects section
-export const container = css({
-  width: '100%',
-});
-
-// Section heading styling
-export const heading = css({
-  marginBottom: 'headingMargin',
-});
+// Re-export common styles
+export { container, heading, link as projectLink } from './common.styles';
 
 // Custom list with checkmark markers (replacing FontAwesome)
 export const projectList = css({

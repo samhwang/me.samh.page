@@ -23,7 +23,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </span>
           </h1>
           <div
-            class="mb_headingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             123 Fake street
           </div>
@@ -249,7 +249,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           </span>
         </h1>
         <div
-          class="mb_headingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           123 Fake street
         </div>
