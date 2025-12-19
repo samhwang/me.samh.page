@@ -165,12 +165,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Skills and Proficiency
           </h2>
           <div
-            class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
             test title
           </div>
@@ -180,7 +180,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </li>
           </ul>
           <ul
-            class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+            class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
           >
             <li
               class="d_inline-block"
@@ -391,12 +391,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Skills and Proficiency
         </h2>
         <div
-          class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
         >
           test title
         </div>
@@ -406,7 +406,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           </li>
         </ul>
         <ul
-          class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+          class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
         >
           <li
             class="d_inline-block"
