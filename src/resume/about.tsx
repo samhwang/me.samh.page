@@ -4,13 +4,6 @@ import SocialIcon from '../icons/social-icon';
 import * as commonStyles from './common.styles';
 import * as iconStyles from './icon.styles';
 
-// Component-specific style
-const bioStyle = css({
-  marginBottom: 'headingMargin',
-  fontSize: '1.15rem',
-  fontWeight: 400,
-});
-
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();
 
@@ -21,7 +14,15 @@ export default function About() {
         <span className={commonStyles.textPrimary}>{lastName}</span>
       </h1>
       <div className={commonStyles.subheading}>{address}</div>
-      <p className={bioStyle}>{bio}</p>
+      <p
+        className={css({
+          marginBottom: 'headingMargin',
+          fontSize: '1.15rem',
+          fontWeight: 400,
+        })}
+      >
+        {bio}
+      </p>
       <div className={iconStyles.socialIcons}>
         {socialLinks.map(({ icon, name, url }) => (
           <SocialIcon key={name} icon={icon} url={url} />

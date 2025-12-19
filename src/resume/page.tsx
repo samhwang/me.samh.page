@@ -7,11 +7,6 @@ import Experiences from './experience';
 import ProjectSection from './projects';
 import SkillSection from './skills';
 
-// Component-specific style
-const separator = css({
-  margin: 0,
-});
-
 export default function ResumePage() {
   const sections = [
     { id: 'about', content: <About /> },
@@ -26,7 +21,7 @@ export default function ResumePage() {
       <section className={commonStyles.section} id={id}>
         {content}
       </section>
-      <hr className={separator} />
+      <hr className={css({ margin: 0 })} />
     </Fragment>
   ));
 }
