@@ -6,7 +6,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
   "baseElement": <body>
     <div>
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="about"
       >
         <div
@@ -53,7 +53,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="experience"
       >
         <div
@@ -113,7 +113,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="education"
       >
         <div
@@ -158,7 +158,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="skills"
       >
         <div
@@ -198,7 +198,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="m_0"
       />
       <section
-        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
         id="projects"
       >
         <div
@@ -232,7 +232,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
   </body>,
   "container": <div>
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="about"
     >
       <div
@@ -279,7 +279,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="experience"
     >
       <div
@@ -339,7 +339,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="education"
     >
       <div
@@ -384,7 +384,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="skills"
     >
       <div
@@ -424,7 +424,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       class="m_0"
     />
     <section
-      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
       id="projects"
     >
       <div
