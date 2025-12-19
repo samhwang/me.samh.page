@@ -17,7 +17,7 @@ function FooterLink({ children, to }: FooterLinkProps) {
 export default function Footer() {
   const LINKS = {
     github: <FooterLink to="https://github.com/samhwang">Sam Huynh</FooterLink>,
-    cloudflare: <FooterLink to="https://pages.cloudflare.com/">Cloudflare Pages</FooterLink>,
+    cloudflare: <FooterLink to="https://workers.cloudflare.com/">Cloudflare Worker</FooterLink>,
     vite: <FooterLink to="https://www.vitejs.dev/">Vite</FooterLink>,
     react: <FooterLink to="https://reactjs.org/">React</FooterLink>,
   };

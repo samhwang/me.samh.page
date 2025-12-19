@@ -33,8 +33,8 @@ describe('Footer', () => {
     expect(githubLink).toHaveAttribute('href', 'https://github.com/samhwang');
 
     // Test Cloudflare Pages link
-    const cloudflareLink = screen.getByRole('link', { name: 'Cloudflare Pages' });
-    expect(cloudflareLink).toHaveAttribute('href', 'https://pages.cloudflare.com/');
+    const cloudflareLink = screen.getByRole('link', { name: 'Cloudflare Worker' });
+    expect(cloudflareLink).toHaveAttribute('href', 'https://workers.cloudflare.com/');
 
     // Test Vite link
     const viteLink = screen.getByRole('link', { name: 'Vite' });
