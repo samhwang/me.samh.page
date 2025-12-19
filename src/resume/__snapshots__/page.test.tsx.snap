@@ -1,0 +1,512 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        id="about"
+      >
+        <div
+          class="w_100%"
+        >
+          <h1
+            class="mb_0"
+          >
+            First Name
+            <span
+              class="c_primary"
+            >
+              Last Name
+            </span>
+          </h1>
+          <div
+            class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          >
+            123 Fake street
+          </div>
+          <p
+            class="mb_3rem fs_1.15rem fw_400"
+          >
+            Blah
+          </p>
+          <div
+            class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+          >
+            <a
+              aria-label="github-original URL"
+              href="https://github.com/testusername"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i
+                class="devicon-github-original"
+                data-testid="social-icon-github-original"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        id="experience"
+      >
+        <div
+          class="w_100%"
+        >
+          <h2
+            class="mb_3rem"
+          >
+            Experience
+          </h2>
+          <div
+            class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+          >
+            <div>
+              <h3
+                class="mb_0"
+              >
+                Software Engineer
+              </h3>
+              <div
+                class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+              >
+                Bruh Industries
+              </div>
+              <ul>
+                <li>
+                  blah
+                </li>
+              </ul>
+              <ul
+                class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+              >
+                <li
+                  class="d_inline-block"
+                >
+                  <i
+                    class="devicon-github-original"
+                    data-testid="language-icon-github-original"
+                    role="img"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="md:min-w_8rem md:ta_right"
+            >
+              <span
+                class="c_primary"
+              >
+                Oct 2022 - Oct 2023
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        id="education"
+      >
+        <div
+          class="w_100%"
+        >
+          <h2
+            class="mb_3rem"
+          >
+            Education
+          </h2>
+          <div
+            class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+          >
+            <div>
+              <h3
+                class="mb_0"
+              >
+                Bruh University
+              </h3>
+              <div
+                class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+              >
+                Bachelor of Bruh
+              </div>
+              <div>
+                blah blah
+              </div>
+            </div>
+            <div
+              class="md:min-w_8rem md:ta_right"
+            >
+              <span
+                class="c_primary"
+              >
+                Oct 2022 - Oct 2023
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        id="skills"
+      >
+        <div
+          class="w_100%"
+        >
+          <h2
+            class="mb_3rem"
+          >
+            Skills and Proficiency
+          </h2>
+          <div
+            class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+          >
+            test title
+          </div>
+          <ul>
+            <li>
+              test desc
+            </li>
+          </ul>
+          <ul
+            class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+          >
+            <li
+              class="d_inline-block"
+            >
+              <i
+                class="devicon-github-original"
+                data-testid="language-icon-github-original"
+                role="img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+        id="projects"
+      >
+        <div
+          class="w_100%"
+        >
+          <h2
+            class="mb_3rem"
+          >
+            Projects
+          </h2>
+          <ul
+            class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+          >
+            <li>
+              <i
+                class="fa-li fa fa-tasks text-warning"
+              />
+              <p>
+                <strong>
+                  Test Project:
+                </strong>
+                 Test Description
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      id="about"
+    >
+      <div
+        class="w_100%"
+      >
+        <h1
+          class="mb_0"
+        >
+          First Name
+          <span
+            class="c_primary"
+          >
+            Last Name
+          </span>
+        </h1>
+        <div
+          class="mb_3rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+        >
+          123 Fake street
+        </div>
+        <p
+          class="mb_3rem fs_1.15rem fw_400"
+        >
+          Blah
+        </p>
+        <div
+          class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+        >
+          <a
+            aria-label="github-original URL"
+            href="https://github.com/testusername"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i
+              class="devicon-github-original"
+              data-testid="social-icon-github-original"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr
+      class="m_0"
+    />
+    <section
+      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      id="experience"
+    >
+      <div
+        class="w_100%"
+      >
+        <h2
+          class="mb_3rem"
+        >
+          Experience
+        </h2>
+        <div
+          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+        >
+          <div>
+            <h3
+              class="mb_0"
+            >
+              Software Engineer
+            </h3>
+            <div
+              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            >
+              Bruh Industries
+            </div>
+            <ul>
+              <li>
+                blah
+              </li>
+            </ul>
+            <ul
+              class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+            >
+              <li
+                class="d_inline-block"
+              >
+                <i
+                  class="devicon-github-original"
+                  data-testid="language-icon-github-original"
+                  role="img"
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="md:min-w_8rem md:ta_right"
+          >
+            <span
+              class="c_primary"
+            >
+              Oct 2022 - Oct 2023
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr
+      class="m_0"
+    />
+    <section
+      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      id="education"
+    >
+      <div
+        class="w_100%"
+      >
+        <h2
+          class="mb_3rem"
+        >
+          Education
+        </h2>
+        <div
+          class="d_flex flex-d_column md:flex-d_row jc_space-between mb_3rem"
+        >
+          <div>
+            <h3
+              class="mb_0"
+            >
+              Bruh University
+            </h3>
+            <div
+              class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+            >
+              Bachelor of Bruh
+            </div>
+            <div>
+              blah blah
+            </div>
+          </div>
+          <div
+            class="md:min-w_8rem md:ta_right"
+          >
+            <span
+              class="c_primary"
+            >
+              Oct 2022 - Oct 2023
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr
+      class="m_0"
+    />
+    <section
+      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      id="skills"
+    >
+      <div
+        class="w_100%"
+      >
+        <h2
+          class="mb_3rem"
+        >
+          Skills and Proficiency
+        </h2>
+        <div
+          class="mb_1rem tt_uppercase fw_500 fs_1.5rem ff_heading"
+        >
+          test title
+        </div>
+        <ul>
+          <li>
+            test desc
+          </li>
+        </ul>
+        <ul
+          class="d_flex flex-wrap_wrap li-s_none p_0 pl_2rem m_0 mt_1rem gap_1.5rem rg_1rem fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+        >
+          <li
+            class="d_inline-block"
+          >
+            <i
+              class="devicon-github-original"
+              data-testid="language-icon-github-original"
+              role="img"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr
+      class="m_0"
+    />
+    <section
+      class="pt_5rem! pb_5rem! pl_2rem max-w_75rem lg:pt_3rem! lg:pb_3rem! lg:pl_3rem md:min-h_100vh p_0.75rem lg:p_3rem d_flex ai_center"
+      id="projects"
+    >
+      <div
+        class="w_100%"
+      >
+        <h2
+          class="mb_3rem"
+        >
+          Projects
+        </h2>
+        <ul
+          class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+        >
+          <li>
+            <i
+              class="fa-li fa fa-tasks text-warning"
+            />
+            <p>
+              <strong>
+                Test Project:
+              </strong>
+               Test Description
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr
+      class="m_0"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
