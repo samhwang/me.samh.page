@@ -1,42 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { css } from '../../styled-system/css';
-
-const section = css({
-  display: 'flex',
-  alignItems: 'center',
-  padding: 'sectionPadding',
-  paddingTop: 'sectionVertical',
-  paddingBottom: 'sectionVertical',
-  paddingLeft: '2rem',
-  maxWidth: 'contentMaxWidth',
-
-  lg: {
-    padding: 'sectionPaddingLg',
-    paddingTop: '3rem',
-    paddingBottom: '3rem',
-  },
-
-  md: {
-    minHeight: '100vh',
-  },
-});
-
-const link = css({
-  color: 'primary',
-  textDecoration: 'none',
-
-  '&:hover': {
-    color: 'slightlyDarker',
-  },
-
-  '&:focus': {
-    color: 'slightlyDarker',
-  },
-
-  '&:active': {
-    color: 'slightlyDarker',
-  },
-});
+import { link, section } from '../resume/shared.styles';
 
 export default function ErrorPage() {
   return (

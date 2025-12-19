@@ -1,5 +1,8 @@
 import { css } from '../../styled-system/css';
 
+// Re-export shared link style as projectLink
+export { link as projectLink } from './shared.styles';
+
 // Container for the entire projects section
 export const container = css({
   width: '100%',
@@ -33,23 +36,5 @@ export const projectItem = css({
     color: 'warning',
     fontSize: '1.2em',
     fontWeight: 'bold',
-  },
-});
-
-// Project link styling
-export const projectLink = css({
-  color: 'primary',
-  textDecoration: 'none',
-
-  '&:hover': {
-    color: 'slightlyDarker',
-  },
-
-  '&:focus': {
-    color: 'slightlyDarker',
-  },
-
-  '&:active': {
-    color: 'slightlyDarker',
   },
 });
