@@ -2,8 +2,8 @@ import { useSkillsData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
 import { inlineList } from '../../styled-system/recipes';
 import LangIcon from '../icons/lang-icon';
+import * as commonStyles from './common.styles';
 import * as iconStyles from './icon.styles';
-import * as styles from './skills.styles';
 
 type SkillProps = {
   title: string;
@@ -13,7 +13,7 @@ type SkillProps = {
 function Skill({ title, description }: SkillProps) {
   return (
     <>
-      <div className={styles.skillTitle}>{title}</div>
+      <div className={commonStyles.subheading}>{title}</div>
       <ul>
         {description.map((line) => (
           <li key={line}>{line}</li>
@@ -27,8 +27,8 @@ export default function SkillSection() {
   const { skills, techStack } = useSkillsData();
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.heading}>Skills and Proficiency</h2>
+    <div className={commonStyles.container}>
+      <h2 className={commonStyles.heading}>Skills and Proficiency</h2>
 
       {skills.map(({ title, description }) => (
         <Skill title={title} description={description} key={title} />

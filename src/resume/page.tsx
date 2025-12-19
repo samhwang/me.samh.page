@@ -1,10 +1,16 @@
 import { Fragment } from 'react';
+import { css } from '../../styled-system/css';
 import About from './about';
+import * as commonStyles from './common.styles';
 import Education from './education';
 import Experiences from './experience';
-import * as styles from './page.styles';
 import ProjectSection from './projects';
 import SkillSection from './skills';
+
+// Component-specific style
+const separator = css({
+  margin: 0,
+});
 
 export default function ResumePage() {
   const sections = [
@@ -17,10 +23,10 @@ export default function ResumePage() {
 
   return sections.map(({ id, content }) => (
     <Fragment key={id}>
-      <section className={styles.section} id={id}>
+      <section className={commonStyles.section} id={id}>
         {content}
       </section>
-      <hr className={styles.separator} />
+      <hr className={separator} />
     </Fragment>
   ));
 }

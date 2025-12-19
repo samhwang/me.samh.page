@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import * as styles from './footer.styles';
+import * as commonStyles from './common.styles';
 
 type FooterLinkProps = {
   to: string;
@@ -8,7 +8,7 @@ type FooterLinkProps = {
 
 function FooterLink({ children, to }: FooterLinkProps) {
   return (
-    <Link className={styles.link} to={to}>
+    <Link className={commonStyles.link} to={to}>
       {children}
     </Link>
   );
@@ -23,7 +23,7 @@ export default function Footer() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={commonStyles.section}>
       <p>
         © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
       </p>

@@ -2,7 +2,7 @@ import { useExperienceData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
 import { dateDisplay, entryContainer, inlineList } from '../../styled-system/recipes';
 import LangIcon from '../icons/lang-icon';
-import * as styles from './experience.styles';
+import * as commonStyles from './common.styles';
 import * as iconStyles from './icon.styles';
 
 type JobDescriptionProps = {
@@ -17,8 +17,8 @@ function JobDescription({ title, companyName, description, duration, techIcons }
   return (
     <div className={entryContainer()}>
       <div>
-        <h3 className={styles.jobTitle}>{title}</h3>
-        <div className={styles.companyName}>{companyName}</div>
+        <h3 className={commonStyles.title}>{title}</h3>
+        <div className={commonStyles.subheading}>{companyName}</div>
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>
@@ -31,7 +31,7 @@ function JobDescription({ title, companyName, description, duration, techIcons }
         </ul>
       </div>
       <div className={dateDisplay()}>
-        <span className={styles.dateText}>{duration}</span>
+        <span className={commonStyles.textPrimary}>{duration}</span>
       </div>
     </div>
   );
@@ -41,8 +41,8 @@ export default function Experiences() {
   const experience = useExperienceData();
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.heading}>Experience</h2>
+    <div className={commonStyles.container}>
+      <h2 className={commonStyles.heading}>Experience</h2>
       {experience.map(({ title, companyName, description, duration, techIcons }) => (
         <JobDescription key={companyName} title={title} companyName={companyName} description={description} duration={duration} techIcons={techIcons} />
       ))}

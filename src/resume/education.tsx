@@ -1,6 +1,6 @@
 import { useEducationData } from '../../metadata/use-metadata';
 import { dateDisplay, entryContainer } from '../../styled-system/recipes';
-import * as styles from './education.styles';
+import * as styles from './common.styles';
 
 type SchoolProps = {
   institute: string;
@@ -13,12 +13,12 @@ function School({ institute, degree, major, duration }: SchoolProps) {
   return (
     <div className={entryContainer()}>
       <div>
-        <h3 className={styles.instituteName}>{institute}</h3>
-        <div className={styles.degree}>{degree}</div>
+        <h3 className={styles.title}>{institute}</h3>
+        <div className={styles.subheading}>{degree}</div>
         <div>{major}</div>
       </div>
       <div className={dateDisplay()}>
-        <span className={styles.dateText}>{duration}</span>
+        <span className={styles.textPrimary}>{duration}</span>
       </div>
     </div>
   );
