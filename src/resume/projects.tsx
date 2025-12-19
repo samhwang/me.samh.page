@@ -1,7 +1,5 @@
 import { useProjectsData } from '../../metadata/use-metadata';
-import { cx } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
-import * as layoutStyles from './layout.styles';
+import * as styles from './projects.styles';
 
 type ProjectProps = {
   title: string;
@@ -11,7 +9,7 @@ type ProjectProps = {
 
 function Project({ title, description, url = '' }: ProjectProps) {
   const titleText = url ? (
-    <a className={commonStyles.link} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
+    <a className={styles.projectLink} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
     </a>
   ) : (
@@ -19,8 +17,7 @@ function Project({ title, description, url = '' }: ProjectProps) {
   );
 
   return (
-    <li>
-      <i className="fa-li fa fa-tasks text-warning" />
+    <li className={styles.projectItem}>
       <p>
         {titleText}
         {` ${description}`}
@@ -33,9 +30,9 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <div className={commonStyles.w100}>
-      <h2 className={commonStyles.mb5}>Projects</h2>
-      <ul className={cx(layoutStyles.faUl, commonStyles.mb0)}>
+    <div className={styles.container}>
+      <h2 className={styles.heading}>Projects</h2>
+      <ul className={styles.projectList}>
         {projects.map(({ title, description, url }) => (
           <Project key={title} title={title} description={description} url={url} />
         ))}

@@ -205,17 +205,16 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           class="w_100%"
         >
           <h2
-            class="mb_3rem"
+            class="mb_headingMargin"
           >
             Projects
           </h2>
           <ul
-            class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+            class="li-s_none ml_2.5em pl_0 mb_0"
           >
-            <li>
-              <i
-                class="fa-li fa fa-tasks text-warning"
-              />
+            <li
+              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+            >
               <p>
                 <strong>
                   Test Project:
@@ -432,17 +431,16 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         class="w_100%"
       >
         <h2
-          class="mb_3rem"
+          class="mb_headingMargin"
         >
           Projects
         </h2>
         <ul
-          class="li-s_none ml_2.5em pl_0 [&_li]:pos_relative [&_.fa-li]:pos_absolute [&_.fa-li]:left_-2em [&_.fa-li]:w_2em [&_.fa-li]:top_0.14285714em [&_.fa-li]:ta_center mb_0"
+          class="li-s_none ml_2.5em pl_0 mb_0"
         >
-          <li>
-            <i
-              class="fa-li fa fa-tasks text-warning"
-            />
+          <li
+            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+          >
             <p>
               <strong>
                 Test Project:
