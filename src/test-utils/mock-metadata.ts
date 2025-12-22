@@ -46,8 +46,13 @@ export const experienceData: ExperienceData = [
 
 export const projectsData: ProjectsData = [
   {
-    title: 'Test Project',
-    description: 'Test Description',
+    title: 'Test Project 1',
+    description: 'Test Description 1',
+  },
+  {
+    title: 'Test Project 2',
+    description: 'Test Description 2',
+    url: 'https://testproject2.com',
   },
 ];
 

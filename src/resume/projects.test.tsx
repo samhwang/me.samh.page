@@ -30,26 +30,26 @@ describe('Project section rendering', () => {
   });
 
   it('renders project with URL as link', () => {
-    // We need to test this with the actual component behavior
-    // Since mock data doesn't have URL, we'll render and check if links work when URL exists
     render(<ProjectSection />);
 
-    // Get all list items
+    // Get the project with URL (second project in mock data)
+    const projectData = mockProjectsData[1];
+
+    // Find the list item containing this project
     const listItems = screen.getAllByRole('listitem');
-    expect(listItems.length).toBeGreaterThan(0);
+    const projectItem = listItems.find((item) => item.textContent?.includes(projectData.title));
+    expect(projectItem).toBeDefined();
 
-    // Check that project without URL is rendered as strong text (not a link)
-    const projectData = mockProjectsData[0];
-    const titleElement = screen.getByText(`${projectData.title}:`, { exact: false });
-    expect(titleElement).toBeInTheDocument();
+    if (projectItem) {
+      // Verify there's a link for this project
+      const link = within(projectItem).getByRole('link');
+      expect(link).toBeInTheDocument();
+      expect(link).toHaveAttribute('href', projectData.url);
 
-    // Verify it's a <strong> tag, not inside an <a> tag
-    const strongElement = titleElement.closest('strong');
-    expect(strongElement).toBeInTheDocument();
-
-    // Verify the strong element is not inside a link
-    const parentParagraph = strongElement?.parentElement;
-    expect(parentParagraph?.tagName).toBe('P');
+      // Verify the title is inside the link
+      const titleElement = within(link).getByText(`${projectData.title}:`, { exact: false });
+      expect(titleElement).toBeInTheDocument();
+    }
   });
 
   it('renders project without URL as plain text', () => {

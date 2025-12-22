@@ -217,9 +217,27 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             >
               <p>
                 <strong>
-                  Test Project:
+                  Test Project 1:
                 </strong>
-                 Test Description
+                 Test Description 1
+              </p>
+            </li>
+            <li
+              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+            >
+              <p>
+                <a
+                  aria-label="Project Test Project 2 URL"
+                  class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
+                  href="https://testproject2.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <strong>
+                    Test Project 2:
+                  </strong>
+                </a>
+                 Test Description 2
               </p>
             </li>
           </ul>
@@ -443,9 +461,27 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           >
             <p>
               <strong>
-                Test Project:
+                Test Project 1:
               </strong>
-               Test Description
+               Test Description 1
+            </p>
+          </li>
+          <li
+            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+          >
+            <p>
+              <a
+                aria-label="Project Test Project 2 URL"
+                class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
+                href="https://testproject2.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <strong>
+                  Test Project 2:
+                </strong>
+              </a>
+               Test Description 2
             </p>
           </li>
         </ul>
