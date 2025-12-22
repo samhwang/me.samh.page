@@ -5,8 +5,8 @@ import ProjectSection from './projects';
 
 describe('Project section rendering', () => {
   it('Should match snapshot', () => {
-    const tree = render(<ProjectSection />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<ProjectSection />);
+    expect(container).toMatchSnapshot();
   });
 
   it('displays the section heading', () => {

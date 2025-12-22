@@ -5,7 +5,7 @@ import ErrorPage from './index';
 
 describe('ErrorPage', () => {
   it('renders without crashing and matches snapshot', () => {
-    const tree = render(<ErrorPage />, { wrapper: RenderWrapper });
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<ErrorPage />, { wrapper: RenderWrapper });
+    expect(container).toMatchSnapshot();
   });
 });

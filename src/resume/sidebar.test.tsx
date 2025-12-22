@@ -6,8 +6,8 @@ import Sidebar from './sidebar';
 
 describe('Sidebar', () => {
   it('renders without crashing and matches snapshot', () => {
-    const tree = render(<Sidebar />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Sidebar />);
+    expect(container).toMatchSnapshot();
   });
 
   it('displays user name in mobile view', () => {

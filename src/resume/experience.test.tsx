@@ -5,8 +5,8 @@ import Experiences from './experience';
 
 describe('Experience Component', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = render(<Experiences />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Experiences />);
+    expect(container).toMatchSnapshot();
   });
 
   it('displays the section heading', () => {

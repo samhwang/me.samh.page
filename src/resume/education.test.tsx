@@ -5,8 +5,8 @@ import Education from './education';
 
 describe('Education section render', () => {
   it('Should match snapshot', () => {
-    const tree = render(<Education />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Education />);
+    expect(container).toMatchSnapshot();
   });
 
   it('displays the section heading', () => {

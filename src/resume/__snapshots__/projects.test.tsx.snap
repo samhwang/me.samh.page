@@ -1,146 +1,47 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Project section rendering > Should match snapshot 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="w_100%"
-      >
-        <h2
-          class="mb_headingMargin"
-        >
-          Projects
-        </h2>
-        <ul
-          class="li-s_none ml_2.5em pl_0 mb_0"
-        >
-          <li
-            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-          >
-            <p>
-              <strong>
-                Test Project 1:
-              </strong>
-               Test Description 1
-            </p>
-          </li>
-          <li
-            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-          >
-            <p>
-              <a
-                aria-label="Project Test Project 2 URL"
-                class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
-                href="https://testproject2.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <strong>
-                  Test Project 2:
-                </strong>
-              </a>
-               Test Description 2
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="w_100%"
+<div>
+  <div
+    class="w_100%"
+  >
+    <h2
+      class="mb_headingMargin"
     >
-      <h2
-        class="mb_headingMargin"
+      Projects
+    </h2>
+    <ul
+      class="li-s_none ml_2.5em pl_0 mb_0"
+    >
+      <li
+        class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
       >
-        Projects
-      </h2>
-      <ul
-        class="li-s_none ml_2.5em pl_0 mb_0"
+        <p>
+          <strong>
+            Test Project 1:
+          </strong>
+           Test Description 1
+        </p>
+      </li>
+      <li
+        class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
       >
-        <li
-          class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-        >
-          <p>
+        <p>
+          <a
+            aria-label="Project Test Project 2 URL"
+            class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
+            href="https://testproject2.com"
+            rel="noreferrer"
+            target="_blank"
+          >
             <strong>
-              Test Project 1:
+              Test Project 2:
             </strong>
-             Test Description 1
-          </p>
-        </li>
-        <li
-          class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-        >
-          <p>
-            <a
-              aria-label="Project Test Project 2 URL"
-              class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
-              href="https://testproject2.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <strong>
-                Test Project 2:
-              </strong>
-            </a>
-             Test Description 2
-          </p>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+          </a>
+           Test Description 2
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
 `;
