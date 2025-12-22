@@ -5,8 +5,8 @@ import Layout from './layout';
 
 describe('Layout', () => {
   it('renders without crashing and matches snapshot', () => {
-    const tree = render(<Layout />, { wrapper: RenderWrapper });
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<Layout />, { wrapper: RenderWrapper });
+    expect(container).toMatchSnapshot();
   });
 
   it('renders Sidebar component', () => {

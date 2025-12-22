@@ -1,182 +1,83 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <section
-        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-        id="about"
+<div>
+  <section
+    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    id="about"
+  >
+    <div
+      class="w_100%"
+    >
+      <h1
+        class="mb_0"
       >
-        <div
-          class="w_100%"
+        First Name
+        <span
+          class="c_primary"
         >
-          <h1
+          Last Name
+        </span>
+      </h1>
+      <div
+        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+      >
+        123 Fake street
+      </div>
+      <p
+        class="mb_headingMargin fs_1.15rem fw_400"
+      >
+        Blah
+      </p>
+      <div
+        class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+      >
+        <a
+          aria-label="github-original URL"
+          href="https://github.com/testusername"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <i
+            class="devicon-github-original"
+            data-testid="social-icon-github-original"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+  <hr
+    class="m_0"
+  />
+  <section
+    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    id="experience"
+  >
+    <div
+      class="w_100%"
+    >
+      <h2
+        class="mb_headingMargin"
+      >
+        Experience
+      </h2>
+      <div
+        class="entryContainer entryContainer--responsive_row"
+      >
+        <div>
+          <h3
             class="mb_0"
           >
-            First Name
-            <span
-              class="c_primary"
-            >
-              Last Name
-            </span>
-          </h1>
+            Software Engineer
+          </h3>
           <div
             class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
-            123 Fake street
-          </div>
-          <p
-            class="mb_headingMargin fs_1.15rem fw_400"
-          >
-            Blah
-          </p>
-          <div
-            class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
-          >
-            <a
-              aria-label="github-original URL"
-              href="https://github.com/testusername"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <i
-                class="devicon-github-original"
-                data-testid="social-icon-github-original"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="m_0"
-      />
-      <section
-        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-        id="experience"
-      >
-        <div
-          class="w_100%"
-        >
-          <h2
-            class="mb_headingMargin"
-          >
-            Experience
-          </h2>
-          <div
-            class="entryContainer entryContainer--responsive_row"
-          >
-            <div>
-              <h3
-                class="mb_0"
-              >
-                Software Engineer
-              </h3>
-              <div
-                class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-              >
-                Bruh Industries
-              </div>
-              <ul>
-                <li>
-                  blah
-                </li>
-              </ul>
-              <ul
-                class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
-              >
-                <li
-                  class="d_inline-block"
-                >
-                  <i
-                    class="devicon-github-original"
-                    data-testid="language-icon-github-original"
-                    role="img"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div
-              class="dateDisplay dateDisplay--alignment_right"
-            >
-              <span
-                class="c_primary"
-              >
-                Oct 2022 - Oct 2023
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="m_0"
-      />
-      <section
-        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-        id="education"
-      >
-        <div
-          class="w_100%"
-        >
-          <h2
-            class="mb_headingMargin"
-          >
-            Education
-          </h2>
-          <div
-            class="entryContainer entryContainer--responsive_row"
-          >
-            <div>
-              <h3
-                class="mb_0"
-              >
-                Bruh University
-              </h3>
-              <div
-                class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-              >
-                Bachelor of Bruh
-              </div>
-              <div>
-                blah blah
-              </div>
-            </div>
-            <div
-              class="dateDisplay dateDisplay--alignment_right"
-            >
-              <span
-                class="c_primary"
-              >
-                Oct 2022 - Oct 2023
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr
-        class="m_0"
-      />
-      <section
-        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-        id="skills"
-      >
-        <div
-          class="w_100%"
-        >
-          <h2
-            class="mb_headingMargin"
-          >
-            Skills and Proficiency
-          </h2>
-          <div
-            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-          >
-            test title
+            Bruh Industries
           </div>
           <ul>
             <li>
-              test desc
+              blah
             </li>
           </ul>
           <ul
@@ -193,354 +94,154 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </li>
           </ul>
         </div>
-      </section>
-      <hr
-        class="m_0"
-      />
-      <section
-        class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-        id="projects"
-      >
         <div
-          class="w_100%"
+          class="dateDisplay dateDisplay--alignment_right"
         >
-          <h2
-            class="mb_headingMargin"
-          >
-            Projects
-          </h2>
-          <ul
-            class="li-s_none ml_2.5em pl_0 mb_0"
-          >
-            <li
-              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-            >
-              <p>
-                <strong>
-                  Test Project 1:
-                </strong>
-                 Test Description 1
-              </p>
-            </li>
-            <li
-              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-            >
-              <p>
-                <a
-                  aria-label="Project Test Project 2 URL"
-                  class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
-                  href="https://testproject2.com"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <strong>
-                    Test Project 2:
-                  </strong>
-                </a>
-                 Test Description 2
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr
-        class="m_0"
-      />
-    </div>
-  </body>,
-  "container": <div>
-    <section
-      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-      id="about"
-    >
-      <div
-        class="w_100%"
-      >
-        <h1
-          class="mb_0"
-        >
-          First Name
           <span
             class="c_primary"
           >
-            Last Name
+            Oct 2022 - Oct 2023
           </span>
-        </h1>
-        <div
-          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-        >
-          123 Fake street
-        </div>
-        <p
-          class="mb_headingMargin fs_1.15rem fw_400"
-        >
-          Blah
-        </p>
-        <div
-          class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
-        >
-          <a
-            aria-label="github-original URL"
-            href="https://github.com/testusername"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i
-              class="devicon-github-original"
-              data-testid="social-icon-github-original"
-            />
-          </a>
         </div>
       </div>
-    </section>
-    <hr
-      class="m_0"
-    />
-    <section
-      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-      id="experience"
+    </div>
+  </section>
+  <hr
+    class="m_0"
+  />
+  <section
+    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    id="education"
+  >
+    <div
+      class="w_100%"
     >
-      <div
-        class="w_100%"
+      <h2
+        class="mb_headingMargin"
       >
-        <h2
-          class="mb_headingMargin"
-        >
-          Experience
-        </h2>
-        <div
-          class="entryContainer entryContainer--responsive_row"
-        >
-          <div>
-            <h3
-              class="mb_0"
-            >
-              Software Engineer
-            </h3>
-            <div
-              class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-            >
-              Bruh Industries
-            </div>
-            <ul>
-              <li>
-                blah
-              </li>
-            </ul>
-            <ul
-              class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
-            >
-              <li
-                class="d_inline-block"
-              >
-                <i
-                  class="devicon-github-original"
-                  data-testid="language-icon-github-original"
-                  role="img"
-                />
-              </li>
-            </ul>
-          </div>
+        Education
+      </h2>
+      <div
+        class="entryContainer entryContainer--responsive_row"
+      >
+        <div>
+          <h3
+            class="mb_0"
+          >
+            Bruh University
+          </h3>
           <div
-            class="dateDisplay dateDisplay--alignment_right"
+            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
           >
-            <span
-              class="c_primary"
-            >
-              Oct 2022 - Oct 2023
-            </span>
+            Bachelor of Bruh
           </div>
-        </div>
-      </div>
-    </section>
-    <hr
-      class="m_0"
-    />
-    <section
-      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-      id="education"
-    >
-      <div
-        class="w_100%"
-      >
-        <h2
-          class="mb_headingMargin"
-        >
-          Education
-        </h2>
-        <div
-          class="entryContainer entryContainer--responsive_row"
-        >
           <div>
-            <h3
-              class="mb_0"
-            >
-              Bruh University
-            </h3>
-            <div
-              class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-            >
-              Bachelor of Bruh
-            </div>
-            <div>
-              blah blah
-            </div>
-          </div>
-          <div
-            class="dateDisplay dateDisplay--alignment_right"
-          >
-            <span
-              class="c_primary"
-            >
-              Oct 2022 - Oct 2023
-            </span>
+            blah blah
           </div>
         </div>
-      </div>
-    </section>
-    <hr
-      class="m_0"
-    />
-    <section
-      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-      id="skills"
-    >
-      <div
-        class="w_100%"
-      >
-        <h2
-          class="mb_headingMargin"
-        >
-          Skills and Proficiency
-        </h2>
         <div
-          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="dateDisplay dateDisplay--alignment_right"
         >
-          test title
+          <span
+            class="c_primary"
+          >
+            Oct 2022 - Oct 2023
+          </span>
         </div>
-        <ul>
-          <li>
-            test desc
-          </li>
-        </ul>
-        <ul
-          class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
-        >
-          <li
-            class="d_inline-block"
-          >
-            <i
-              class="devicon-github-original"
-              data-testid="language-icon-github-original"
-              role="img"
-            />
-          </li>
-        </ul>
       </div>
-    </section>
-    <hr
-      class="m_0"
-    />
-    <section
-      class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
-      id="projects"
+    </div>
+  </section>
+  <hr
+    class="m_0"
+  />
+  <section
+    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    id="skills"
+  >
+    <div
+      class="w_100%"
     >
-      <div
-        class="w_100%"
+      <h2
+        class="mb_headingMargin"
       >
-        <h2
-          class="mb_headingMargin"
+        Skills and Proficiency
+      </h2>
+      <div
+        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+      >
+        test title
+      </div>
+      <ul>
+        <li>
+          test desc
+        </li>
+      </ul>
+      <ul
+        class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+      >
+        <li
+          class="d_inline-block"
         >
-          Projects
-        </h2>
-        <ul
-          class="li-s_none ml_2.5em pl_0 mb_0"
+          <i
+            class="devicon-github-original"
+            data-testid="language-icon-github-original"
+            role="img"
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr
+    class="m_0"
+  />
+  <section
+    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    id="projects"
+  >
+    <div
+      class="w_100%"
+    >
+      <h2
+        class="mb_headingMargin"
+      >
+        Projects
+      </h2>
+      <ul
+        class="li-s_none ml_2.5em pl_0 mb_0"
+      >
+        <li
+          class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
         >
-          <li
-            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-          >
-            <p>
+          <p>
+            <strong>
+              Test Project 1:
+            </strong>
+             Test Description 1
+          </p>
+        </li>
+        <li
+          class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+        >
+          <p>
+            <a
+              aria-label="Project Test Project 2 URL"
+              class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
+              href="https://testproject2.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               <strong>
-                Test Project 1:
+                Test Project 2:
               </strong>
-               Test Description 1
-            </p>
-          </li>
-          <li
-            class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
-          >
-            <p>
-              <a
-                aria-label="Project Test Project 2 URL"
-                class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
-                href="https://testproject2.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <strong>
-                  Test Project 2:
-                </strong>
-              </a>
-               Test Description 2
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <hr
-      class="m_0"
-    />
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+            </a>
+             Test Description 2
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr
+    class="m_0"
+  />
+</div>
 `;

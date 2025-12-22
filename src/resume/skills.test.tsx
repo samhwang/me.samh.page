@@ -5,8 +5,8 @@ import SkillSection from './skills';
 
 describe('Skill Section Component', () => {
   it('Should render without crashing and match snapshot', () => {
-    const tree = render(<SkillSection />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<SkillSection />);
+    expect(container).toMatchSnapshot();
   });
 
   it('displays the section heading', () => {

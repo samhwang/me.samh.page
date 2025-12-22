@@ -4,8 +4,8 @@ import ResumePage from './page';
 
 describe('ResumePage', () => {
   it('renders without crashing and matches snapshot', () => {
-    const tree = render(<ResumePage />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<ResumePage />);
+    expect(container).toMatchSnapshot();
   });
 
   it('renders all section headings', () => {

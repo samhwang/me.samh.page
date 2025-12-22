@@ -81,10 +81,11 @@ it('displays user name when provided', () => {
 
 ## Component Testing
 
-### Basic Rendering
+### Standard Pattern: render() + screen
 
+**Always use this pattern:**
 ```typescript
-import { render, screen } from '../test-utils/render-wrapper';
+import { render, screen } from '@testing-library/react';
 import { Button } from './button';
 
 describe('Button', () => {
@@ -95,6 +96,11 @@ describe('Button', () => {
   });
 });
 ```
+
+**Key points:**
+- Call `render()` without destructuring (unless you need `container` for snapshots)
+- Use `screen` to query elements
+- Use `const { container } = render()` only for snapshot tests
 
 ### Testing Props
 
@@ -189,7 +195,7 @@ describe('Form', () => {
 ### Creating Snapshots
 
 ```typescript
-import { render } from '../test-utils/render-wrapper';
+import { render } from '@testing-library/react';
 
 describe('Component', () => {
   it('matches snapshot', () => {
@@ -203,6 +209,8 @@ describe('Component', () => {
   });
 });
 ```
+
+**Note:** Destructure `{ container }` from `render()` for snapshot tests only.
 
 ### Updating Snapshots
 
@@ -224,6 +232,8 @@ pnpm test:run -- -u    # Update all snapshots
 ### Testing via Component
 
 ```typescript
+import { render, screen } from '@testing-library/react';
+
 const TestComponent = () => {
   const iconClass = useIconClass('react');
   return <div data-testid="icon-class">{iconClass}</div>;
@@ -562,14 +572,24 @@ Located in `src/test-utils/render-wrapper.tsx`:
 - Wraps components with necessary providers
 - Includes TanStack Router context
 - Includes metadata context
-- Use instead of raw `render` from `@testing-library/react`
+- Use when components need router or metadata context
 
 ```typescript
-import { render } from '../test-utils/render-wrapper';
+import { render, screen } from '@testing-library/react';
+import RenderWrapper from '../test-utils/render-wrapper';
 
-// Automatically wrapped with providers
-render(<Component />);
+// For components needing router/metadata context
+render(<Component />, { wrapper: RenderWrapper });
+
+// Query with screen
+expect(screen.getByText('Hello')).toBeInTheDocument();
 ```
+
+**Standard pattern:**
+- Import `render` and `screen` from `@testing-library/react`
+- Call `render()` without destructuring
+- Use `screen` for all queries
+- Only destructure `{ container }` for snapshot tests
 
 ### Mock Data
 

@@ -1,142 +1,45 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Render About Data > Should match snapshot 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="w_100%"
-      >
-        <h1
-          class="mb_0"
-        >
-          First Name
-          <span
-            class="c_primary"
-          >
-            Last Name
-          </span>
-        </h1>
-        <div
-          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-        >
-          123 Fake street
-        </div>
-        <p
-          class="mb_headingMargin fs_1.15rem fw_400"
-        >
-          Blah
-        </p>
-        <div
-          class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
-        >
-          <a
-            aria-label="github-original URL"
-            href="https://github.com/testusername"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i
-              class="devicon-github-original"
-              data-testid="social-icon-github-original"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="w_100%"
+<div>
+  <div
+    class="w_100%"
+  >
+    <h1
+      class="mb_0"
     >
-      <h1
-        class="mb_0"
+      First Name
+      <span
+        class="c_primary"
       >
-        First Name
-        <span
-          class="c_primary"
-        >
-          Last Name
-        </span>
-      </h1>
-      <div
-        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
-      >
-        123 Fake street
-      </div>
-      <p
-        class="mb_headingMargin fs_1.15rem fw_400"
-      >
-        Blah
-      </p>
-      <div
-        class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
-      >
-        <a
-          aria-label="github-original URL"
-          href="https://github.com/testusername"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <i
-            class="devicon-github-original"
-            data-testid="social-icon-github-original"
-          />
-        </a>
-      </div>
+        Last Name
+      </span>
+    </h1>
+    <div
+      class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+    >
+      123 Fake street
     </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+    <p
+      class="mb_headingMargin fs_1.15rem fw_400"
+    >
+      Blah
+    </p>
+    <div
+      class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+    >
+      <a
+        aria-label="github-original URL"
+        href="https://github.com/testusername"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i
+          class="devicon-github-original"
+          data-testid="social-icon-github-original"
+        />
+      </a>
+    </div>
+  </div>
+</div>
 `;
