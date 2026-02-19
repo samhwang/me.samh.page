@@ -368,7 +368,7 @@ const metadata: Metadata = {
       {
         title: 'Software Developer',
         companyName: 'ClassCom',
-        duration: 'January 2019 - April 2019',
+        duration: 'Jan 2019 - Apr 2019',
         description: [
           'Collaborated on feature development and cross-browser compatibility testing for education platform, contributing to 100% on-time fortnightly deployments throughout contract period.',
           'Tech stack: JavaScript (mainly Node, Express, Meteor, Mocha & CucumberJS), MongoDB, Azure DevOps, CircleCI',
