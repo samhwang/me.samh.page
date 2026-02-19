@@ -41,4 +41,30 @@ describe('Skill Section Component', () => {
       expect(icon).toHaveClass(`devicon-${techIcon}`);
     }
   });
+
+  it('renders all skill entries with title and description', () => {
+    render(<SkillSection />);
+
+    // Test each skill entry in the data
+    for (const skill of mockSkillsData.skills) {
+      const skillTitle = screen.getByText(skill.title);
+      expect(skillTitle).toBeInTheDocument();
+
+      for (const descLine of skill.description) {
+        const descItem = screen.getByText(descLine);
+        expect(descItem).toBeInTheDocument();
+      }
+    }
+  });
+
+  it('renders tech stack icons with correct classes', () => {
+    render(<SkillSection />);
+
+    // Each tech icon should be rendered with proper classes
+    for (const techIcon of mockSkillsData.techStack) {
+      const icon = screen.getByTestId(`language-icon-${techIcon}`);
+      expect(icon).toHaveClass(`devicon-${techIcon}`);
+      expect(icon).toHaveAttribute('role', 'img');
+    }
+  });
 });
