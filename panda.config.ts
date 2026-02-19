@@ -128,6 +128,7 @@ export default defineConfig({
                 md: {
                   textAlign: 'right',
                   minWidth: 'dateMinWidth',
+                  flexShrink: 0,
                 },
               },
               left: {
