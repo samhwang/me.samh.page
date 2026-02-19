@@ -476,7 +476,7 @@ const metadata: Metadata = {
           'Server & Hosting configuration: Apache, NGINX, Vercel',
           'Scripting: Bash',
           'Container orchestration: Docker, Docker Compose & AWS ECS',
-          'Package management and build tools: Composer, NPM (AWS CodeArtifact), Yarn, Babel, Webpack, Vite, SWC, ESBuild',
+          'Package management and build tools: Composer, NPM (AWS CodeArtifact, GitHub Packages), Yarn, Babel, Webpack, Vite, SWC, ESBuild',
           'Version control with Git and collaboration: GitHub, BitBucket and AWS CodeCommit',
           'Continuous Integration and Continuous Delivery: CircleCI, BuildKite, GitHub Actions',
           'Amazon Web Services tools: EC2, Lambda, Elastic Beanstalk, Elastic Load Balancer, SQS, SES, SNS, CloudWatch, S3, CloudFront, RDS, Aurora',
