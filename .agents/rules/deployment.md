@@ -8,7 +8,6 @@ Deployment to Cloudflare Workers with automated builds.
 
 - **Cloudflare Workers**: Static site hosting on global edge network
 - **Auto-deployment**: Triggered automatically by GitHub pushes
-- **Preview deployments**: Automatic for all branches
 - **Production**: Deploys from main branch
 
 ### Benefits
@@ -63,20 +62,6 @@ Cloudflare respects the `engines` field in `package.json`.
 6. Site live within 1-3 minutes
 
 **No manual steps required.**
-
-#### Preview (feature branches)
-
-1. Create and push feature branch to GitHub
-2. Cloudflare Workers builds branch automatically
-3. Generates unique preview URL (e.g., `branch-name.pages.dev`)
-4. Preview URL available immediately after build
-5. Test changes before merging to main
-
-**Benefits:**
-- Test in production-like environment
-- Share work-in-progress with others
-- Visual regression testing
-- Client/stakeholder preview
 
 ### Manual Verification
 
@@ -241,30 +226,6 @@ If build fails on Cloudflare:
 
 All traffic automatically uses HTTPS.
 
-## Preview Deployments
-
-### Branch Previews
-
-Every branch push gets a unique preview URL:
-- Format: `branch-name.your-project.pages.dev`
-- Full production build (identical environment)
-- Independent of production
-- Automatically deleted when branch is deleted
-
-### Use Cases
-
-- **Feature testing**: Test new features in production-like environment
-- **Share work**: Send preview URL to stakeholders
-- **Visual regression**: Compare before/after
-- **Client preview**: Get feedback before merging
-
-### PR Integration
-
-Preview URLs can appear in:
-- Pull request comments (if GitHub integration configured)
-- Cloudflare Workers dashboard
-- GitHub Checks status
-
 ## Monitoring & Analytics
 
 ### Cloudflare Analytics
@@ -402,3 +363,5 @@ const apiKey = import.meta.env.VITE_API_KEY;
 ```
 
 **Note**: This project currently doesn't use environment variables, but this is how to add them if needed.
+
+**Important**: Environment variables are only available during **development** (`pnpm dev`) and at **build time** (`pnpm build`). They are statically replaced by Vite during the build process. They will **not** be available at runtime in production.
