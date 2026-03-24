@@ -1,6 +1,11 @@
-import { RouterProvider } from '@tanstack/react-router';
-import { appRouter } from '../router';
+import { createMemoryHistory, createRouter, RouterProvider } from '@tanstack/react-router';
+import { routeTree } from '../route-tree.gen';
+
+const testRouter = createRouter({
+  routeTree,
+  history: createMemoryHistory({ initialEntries: ['/'] }),
+});
 
 export default function RenderWrapper() {
-  return <RouterProvider router={appRouter} />;
+  return <RouterProvider router={testRouter} />;
 }
