@@ -4,7 +4,7 @@ Get the project running locally in a few minutes.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org) 22.x (specified in `package.json` engines)
+- [Node.js](https://nodejs.org) 24.x (specified in `package.json` engines)
 - [pnpm](https://pnpm.io) 10.x (specified in `package.json` engines)
 
 Check versions:

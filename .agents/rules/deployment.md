@@ -43,7 +43,7 @@ This triggers:
 
 ### Build Environment
 
-- **Node version**: 22.x (specified in `package.json` engines)
+- **Node version**: 24.x (specified in `package.json` engines)
 - **Package manager**: pnpm 10.x
 - **Environment**: Linux (Cloudflare Workers builder)
 
@@ -120,7 +120,7 @@ Defines Node/pnpm versions:
 
 ```json
 "engines": {
-  "node": "^22.0.0",
+  "node": "^24.0.0",
   "pnpm": "^10.0.0"
 }
 ```

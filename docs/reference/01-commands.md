@@ -37,7 +37,7 @@ Configured in `.lint-prepushrc.json`:
 
 ## Environment Requirements
 
-- [Node.js](https://nodejs.org) 22.x (specified in `package.json` engines)
+- [Node.js](https://nodejs.org) 24.x (specified in `package.json` engines)
 - [pnpm](https://pnpm.io) 10.x (specified in `package.json` engines)
 
 ## Troubleshooting

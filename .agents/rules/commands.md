@@ -180,7 +180,7 @@ pnpm test:run -- -u   # Update all snapshots
 
 ## Environment Requirements
 
-- **Node**: 22.x (specified in package.json)
+- **Node**: 24.x (specified in package.json)
 - **pnpm**: 10.x (specified in package.json)
 
 Check versions:

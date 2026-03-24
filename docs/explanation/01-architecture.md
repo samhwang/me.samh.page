@@ -66,7 +66,7 @@ The site is hosted on [Cloudflare Workers](https://developers.cloudflare.com/wor
 
 1. Push to GitHub (main branch)
 2. Cloudflare Workers detects the push
-3. Runs `pnpm build` with Node 22.x
+3. Runs `pnpm build` with Node 24.x
 4. Deploys `dist/` to global edge network
 5. Site live within 1-3 minutes
 
