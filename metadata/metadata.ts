@@ -444,7 +444,7 @@ const metadata: Metadata = {
       },
       {
         title: 'My Resume page',
-        description: "The page you're viewing right now! Hosted on Cloudflare Pages, built with the Vite & React.",
+        description: "The page you're viewing right now! Hosted on Cloudflare Workers, built with the Vite & React.",
         url: 'https://me.samh.page',
       },
       {

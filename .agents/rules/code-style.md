@@ -223,7 +223,7 @@ Code should be self-documenting through:
 
 **✅ Good:**
 ```typescript
-// Cloudflare Pages requires trailing slashes for proper routing
+// Cloudflare Workers requires trailing slashes for proper routing
 const normalizedPath = path.endsWith('/') ? path : `${path}/`;
 
 // User preferences are cached for 24 hours to reduce API calls

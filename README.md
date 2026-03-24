@@ -1,26 +1,37 @@
-# My GitHub Page
+# me.samh.page
 
 ![GitHub](https://img.shields.io/github/license/samhwang/samhwang.github.io?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samhwang/samhwang.github.io?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/samhwang/samhwang.github.io?style=for-the-badge)
 
-## What this is
+Personal portfolio and resume website, hosted on [Cloudflare Workers](https://developers.cloudflare.com/workers/).
 
-Originally created to be a page where I can learn about static sites, it
-has grown to be my main resume page.
+## Quick Start
 
-This project was bootstrapped with [Vite](https://vitejs.dev/) and [Vite Starter Template](https://github.com/samhwang/vite-starter-template)
-and hosted on [Cloudflare Worker](https://workers.cloudflare.com/).
+```bash
+pnpm install
+pnpm dev
+```
 
-## Using this as a resume template
+See [docs/how-to/01-quick-start.md](docs/how-to/01-quick-start.md) for full setup instructions.
 
-- Clone this repo.
-- Update the metadata in `metadata/metadata.ts`, and it will be reflected in the resume components of the site.
+## Built With
 
-## Built with
+- [React 19](https://react.dev) with [React Compiler](https://react.dev/learn/react-compiler)
+- [TypeScript](https://www.typescriptlang.org/) (strict mode)
+- [TanStack Router](https://tanstack.com/router) (file-based routing)
+- [PandaCSS](https://panda-css.com) (zero-runtime CSS-in-JS)
+- [Vite](https://vite.dev) with [Rolldown](https://rolldown.rs) bundler
+- [Vitest](https://vitest.dev) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Biome](https://biomejs.dev) (linting and formatting)
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/) (hosting and CI/CD)
 
-- TypeScript and React
-- PandaCSS for styling
-- Vite build tool
-- Vitest for testing
-- Cloudflare Workers for static site hosting and CI/CD
+## Using as a Resume Template
+
+1. Clone this repo
+2. Update the metadata in `src/resume/` components
+3. Push to GitHub with Cloudflare Workers connected for automatic deployment
+
+## Documentation
+
+Detailed documentation is in [`docs/`](docs/index.md), organized following the [Diataxis](https://diataxis.fr/) framework.

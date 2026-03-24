@@ -47,12 +47,24 @@ This allows easy navigation to specific code locations.
 
 ### External Links
 
-Link to official documentation when referencing libraries:
-- [React Documentation](https://react.dev)
+Every mention of an external tool, framework, pattern, or standard must include a hyperlink on first mention per document. This applies to technology names, methodologies, external tools, specifications, and design patterns.
+
+Common project URLs:
+- [React](https://react.dev)
+- [React Compiler](https://react.dev/learn/react-compiler)
+- [TypeScript](https://www.typescriptlang.org/)
 - [TanStack Router](https://tanstack.com/router)
 - [PandaCSS](https://panda-css.com)
+- [Vite](https://vite.dev)
+- [Rolldown](https://rolldown.rs)
 - [Vitest](https://vitest.dev)
-- [Cloudflare Pages](https://developers.cloudflare.com/pages/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/)
+- [Biome](https://biomejs.dev)
+- [Husky](https://typicode.github.io/husky/)
+- [pnpm](https://pnpm.io)
+- [Diataxis](https://diataxis.fr/)
+- [Conventional Commits](https://www.conventionalcommits.org/)
 
 Prefer official docs over blog posts or tutorials.
 
@@ -186,7 +198,7 @@ converted to devicon class names. Now handles cases like
 
 **Documentation:**
 ```
-docs: update deployment guide for Cloudflare Pages
+docs: update deployment guide for Cloudflare Workers
 ```
 
 **Refactoring:**
@@ -244,7 +256,7 @@ See `code-style.md` for detailed comment guidelines.
 
 **✅ Good comment:**
 ```typescript
-// Cloudflare Pages requires trailing slashes for SPAs
+// Cloudflare Workers requires trailing slashes for SPAs
 const normalizedPath = ensureTrailingSlash(path);
 ```
 
@@ -429,37 +441,37 @@ Stay technical and factual:
 
 Be specific and measurable.
 
-## Documentation Types
+## Documentation Requirements
 
-Follow Diátaxis framework:
+### Mandatory: Diataxis Framework
 
-### 1. Tutorials (Learning-oriented)
+All developer-facing documentation MUST follow the [Diataxis](https://diataxis.fr/) framework and live in `docs/`:
 
-- Step-by-step lessons
-- For beginners
-- Hand-holding approach
-- Example: "Building your first component"
+| Type | Directory | Purpose | Question It Answers |
+|------|-----------|---------|---------------------|
+| **How-to guide** | `docs/how-to/` | Goal-oriented steps | "How do I...?" |
+| **Reference** | `docs/reference/` | Information-oriented lookup | "What is...?" |
+| **Explanation** | `docs/explanation/` | Understanding-oriented discussion | "Why...?" |
+| **Tutorial** | `docs/tutorials/` | Learning-oriented guided experience | "Can you teach me...?" |
 
-### 2. How-to Guides (Task-oriented)
+Each document serves ONE Diataxis purpose. Do not mix content types (no how-to steps in reference docs, no reference tables in explanation docs).
 
-- Solve specific problems
-- For intermediate users
-- Practical steps
-- Example: "How to add a new route"
+### Mandatory: Documentation for Every Feature
 
-### 3. Reference (Information-oriented)
+Every new feature MUST include documentation updates. Use the [update-docs](.agents/skills/update-docs/SKILL.md) skill to audit and update docs after changes.
 
-- Technical descriptions
-- For lookup
-- Comprehensive and accurate
-- Example: "API reference", "Available commands"
+### Documentation Layers
 
-### 4. Explanation (Understanding-oriented)
+- **`docs/`** — Developer-facing documentation (Diataxis framework). See `docs/index.md` for the full listing.
+- **`.agents/rules/`** — Agent-specific constraints and guardrails for AI agent behavior.
 
-- Clarify and illuminate
-- Discuss concepts
-- Provide context
-- Example: "Why we use PandaCSS"
+### External Linking Rule
+
+Every mention of an external tool, framework, pattern, or standard must include a hyperlink on first mention per document. When adding a new feature that introduces a new technology, add its URL to the external links list in this file.
+
+### Maintaining docs/index.md
+
+When adding new documentation files to `docs/`, update `docs/index.md` with a link and description.
 
 ## Best Practices Summary
 

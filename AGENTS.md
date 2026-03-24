@@ -19,7 +19,7 @@ This is a personal portfolio and resume website. The project focuses on:
 - **Owner**: Personal project (single developer)
 - **Tech Stack**: React 19, TypeScript, TanStack Router, Vite (Rolldown), Vitest, PandaCSS
 - **Architecture**: Static site with client-side routing, optimized for performance
-- **Deployment**: Cloudflare Pages with automatic deployments
+- **Deployment**: Cloudflare Workers with automatic deployments
 
 ## Change Management Philosophy
 
@@ -30,21 +30,27 @@ All changes must be:
 - **Tested**: Qualitative high coverage on core modules (`src/resume/**`, `src/icons/**`)
 - **Linted**: Must pass `pnpm lint` and `pnpm typecheck` before commit
 - **Documented**: Clear commit messages following Conventional Commits pattern
-- **Delivered**: Pushed to main branch, automatically deployed to Cloudflare Pages
+- **Delivered**: Pushed to main branch, automatically deployed to Cloudflare Workers
 
 ## Project Structure
 
 ```
+docs/                   # Developer-facing documentation (Diataxis framework)
+├── index.md            # Hub page linking to all docs
+├── how-to/             # Goal-oriented guides
+├── reference/          # Information-oriented lookup
+└── explanation/        # Understanding-oriented discussion
+
 .agents/
-├── rules/              # Domain-specific guidelines and constraints
+├── rules/              # Agent-specific guidelines and constraints
 │   ├── commands.md     # Development workflow commands
 │   ├── code-style.md   # Formatting, naming, file organization
 │   ├── patterns.md     # React, TanStack Router, PandaCSS patterns
 │   ├── testing.md      # Vitest, React Testing Library best practices
-│   ├── deployment.md   # Cloudflare Pages deployment process
+│   ├── deployment.md   # Cloudflare Workers deployment process
 │   └── communication.md # Commit messages, docs, writing style
-└── skills/             # Task-specific toolkits (future)
-    └── .gitkeep
+└── skills/             # Task-specific toolkits
+    └── update-docs/    # Documentation audit and update workflow
 ```
 
 ## Execution Protocol
@@ -57,7 +63,7 @@ All changes must be:
    - Located in `.agents/rules/[rule-name].md`
    - Treat these as required context: preload them before drafting any response
 
-3. **Skills** (future):
+3. **Skills**:
    - Skills are task-specific toolkits with proven workflows
    - Load a skill only if its trigger condition matches the task
    - Once loaded, follow the process and output format defined in the skill
@@ -76,32 +82,29 @@ Load these rules when working on relevant domains:
 - **[code-style.md](.agents/rules/code-style.md)** - Code formatting, TypeScript conventions, naming, file organization, comment philosophy
 - **[patterns.md](.agents/rules/patterns.md)** - React 19 patterns, TanStack Router usage, PandaCSS styling, testing patterns
 - **[testing.md](.agents/rules/testing.md)** - Vitest setup, React Testing Library, snapshot tests, coverage expectations
-- **[deployment.md](.agents/rules/deployment.md)** - Cloudflare Pages deployment, build process, troubleshooting
+- **[deployment.md](.agents/rules/deployment.md)** - Cloudflare Workers deployment, build process, troubleshooting
 - **[communication.md](.agents/rules/communication.md)** - Commit messages, documentation style, American English, writing conventions
 
 ## Available Skills
 
-Skills will be added as needed for specific task types.
+Load these skills when their trigger conditions match the task:
 
-**Currently**: No skills defined yet. Future skills might include:
-- Component creation templates
-- Route creation workflows
-- Test writing patterns
-- Performance audit checklists
+- **[update-docs](.agents/skills/update-docs/SKILL.md)** - Audit and update documentation after code changes. **Trigger**: after adding a new feature, changing dependencies, or modifying project structure. Every new feature MUST include documentation updates.
 
-Add skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
+Add new skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
 
 ## Quick Reference
 
 ### Tech Stack
 
-- **React 19** with React Compiler
-- **TypeScript** (strict mode)
-- **TanStack Router** (file-based routing)
-- **PandaCSS** (utility-first CSS-in-JS)
-- **Vitest** + React Testing Library
-- **Vite** (with Rolldown bundler)
-- **Cloudflare Pages** (hosting)
+- **[React 19](https://react.dev)** with [React Compiler](https://react.dev/learn/react-compiler)
+- **[TypeScript](https://www.typescriptlang.org/)** (strict mode)
+- **[TanStack Router](https://tanstack.com/router)** (file-based routing)
+- **[PandaCSS](https://panda-css.com)** (zero-runtime CSS-in-JS)
+- **[Vitest](https://vitest.dev)** + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- **[Vite](https://vite.dev)** (with [Rolldown](https://rolldown.rs) bundler)
+- **[Cloudflare Workers](https://developers.cloudflare.com/workers/)** (hosting)
+- **[Biome](https://biomejs.dev)** (linting and formatting)
 
 ### Essential Commands
 
@@ -158,7 +161,7 @@ Run all checks before pushing to main.
 ### Deployment
 
 1. Push to GitHub (main branch)
-2. Cloudflare Pages automatically builds and deploys
+2. Cloudflare Workers automatically builds and deploys
 3. Preview deployments for feature branches
 
 ## Extending the Manifest
@@ -167,10 +170,19 @@ Run all checks before pushing to main.
 - Additional **skills** can be added under `.agents/skills/` for specific task types
 - Keep this file updated so future agents know when to load each artifact and how to combine them safely
 
+## Documentation
+
+The project uses two documentation layers:
+
+- **`docs/`** — Developer-facing documentation following the [Diataxis](https://diataxis.fr/) framework. Contains how-to guides, reference material, and architecture explanation. See `docs/index.md` for the full listing.
+- **`.agents/rules/`** — Agent-specific constraints and guardrails. These guide AI agent behavior and enforce coding standards.
+
+Every new feature MUST include documentation updates. Use the [update-docs](.agents/skills/update-docs/SKILL.md) skill to audit and update docs after changes. Every mention of an external tool, framework, or standard must include a hyperlink on first mention per document.
+
 ## Project Context
 
 - **Personal project**: Single developer, no team coordination needed
-- **Production deployment**: Cloudflare Pages with automatic deployments
+- **Production deployment**: Cloudflare Workers with automatic deployments
 - **Focus areas**: Resume components (`src/resume/**`) and icon components (`src/icons/**`)
 - **Optimization targets**: Fast load times, high Lighthouse scores, accessible markup
 - **Code quality**: Biome for linting/formatting, TypeScript strict mode, comprehensive tests

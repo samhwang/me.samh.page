@@ -99,7 +99,7 @@ Serves the `dist/` directory on local server.
 ### Deployment Process
 
 1. Push to GitHub (main branch)
-2. Cloudflare Pages auto-deploys
+2. Cloudflare Workers auto-deploys
 3. Preview deployments for all branches
 
 **Note**: No manual deployment commands needed. Cloudflare handles everything automatically.

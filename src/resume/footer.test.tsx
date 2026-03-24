@@ -32,7 +32,7 @@ describe('Footer', () => {
     const githubLink = screen.getByRole('link', { name: 'Sam Huynh' });
     expect(githubLink).toHaveAttribute('href', 'https://github.com/samhwang');
 
-    // Test Cloudflare Pages link
+    // Test Cloudflare Workers link
     const cloudflareLink = screen.getByRole('link', { name: 'Cloudflare Worker' });
     expect(cloudflareLink).toHaveAttribute('href', 'https://workers.cloudflare.com/');
 

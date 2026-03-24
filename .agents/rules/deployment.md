@@ -1,12 +1,12 @@
 # Rule: Deployment
 
-Deployment to Cloudflare Pages with automated builds.
+Deployment to Cloudflare Workers with automated builds.
 
 ## Deployment Target
 
 ### Platform
 
-- **Cloudflare Pages**: Static site hosting on global edge network
+- **Cloudflare Workers**: Static site hosting on global edge network
 - **Auto-deployment**: Triggered automatically by GitHub pushes
 - **Preview deployments**: Automatic for all branches
 - **Production**: Deploys from main branch
@@ -24,7 +24,7 @@ Deployment to Cloudflare Pages with automated builds.
 
 ### Build Command
 
-Cloudflare Pages runs:
+Cloudflare Workers runs:
 
 ```bash
 pnpm build
@@ -45,7 +45,7 @@ This triggers:
 
 - **Node version**: 22.x (specified in `package.json` engines)
 - **Package manager**: pnpm 10.x
-- **Environment**: Linux (Cloudflare Pages builder)
+- **Environment**: Linux (Cloudflare Workers builder)
 
 Cloudflare respects the `engines` field in `package.json`.
 
@@ -57,7 +57,7 @@ Cloudflare respects the `engines` field in `package.json`.
 
 1. Commit changes to main branch
 2. Push to GitHub
-3. Cloudflare Pages detects push automatically
+3. Cloudflare Workers detects push automatically
 4. Runs `pnpm build` command
 5. Deploys to production domain
 6. Site live within 1-3 minutes
@@ -67,7 +67,7 @@ Cloudflare respects the `engines` field in `package.json`.
 #### Preview (feature branches)
 
 1. Create and push feature branch to GitHub
-2. Cloudflare Pages builds branch automatically
+2. Cloudflare Workers builds branch automatically
 3. Generates unique preview URL (e.g., `branch-name.pages.dev`)
 4. Preview URL available immediately after build
 5. Test changes before merging to main
@@ -105,7 +105,7 @@ Pre-commit and pre-push hooks handle some checks automatically, but manual verif
 
 ### wrangler.toml
 
-Cloudflare Pages configuration file:
+Cloudflare Workers configuration file:
 - Site name and project settings
 - Build command and output directory
 - Environment variables (if any)
@@ -125,7 +125,7 @@ Defines Node/pnpm versions:
 }
 ```
 
-Cloudflare Pages respects these versions when building.
+Cloudflare Workers respects these versions when building.
 
 ## Public Assets
 
@@ -194,7 +194,7 @@ Cloudflare provides Web Analytics for tracking these metrics.
 
 If deployment has issues:
 
-1. Go to Cloudflare Pages dashboard
+1. Go to Cloudflare Workers dashboard
 2. Navigate to Deployments tab
 3. Find previous working deployment
 4. Click "Rollback to this deployment"
@@ -209,7 +209,7 @@ If deployment has issues:
 
 If build fails on Cloudflare:
 
-1. **Check build logs** in Cloudflare Pages dashboard
+1. **Check build logs** in Cloudflare Workers dashboard
 2. **Verify build succeeds locally**: `pnpm build`
 3. **Check Node/pnpm versions** match `package.json`
 4. **Verify dependencies** are in `package.json` and `pnpm-lock.yaml` is committed
@@ -225,7 +225,7 @@ If build fails on Cloudflare:
 
 ### Setup
 
-1. Go to Cloudflare Pages dashboard
+1. Go to Cloudflare Workers dashboard
 2. Navigate to Custom Domains section
 3. Add your domain
 4. Add DNS records (provided by Cloudflare)
@@ -262,7 +262,7 @@ Every branch push gets a unique preview URL:
 
 Preview URLs can appear in:
 - Pull request comments (if GitHub integration configured)
-- Cloudflare Pages dashboard
+- Cloudflare Workers dashboard
 - GitHub Checks status
 
 ## Monitoring & Analytics
@@ -335,7 +335,7 @@ Pre-push hooks handle some of these automatically.
 - File path casing issues (macOS vs Linux)
 
 **Solutions:**
-1. Check build logs in Cloudflare Pages dashboard
+1. Check build logs in Cloudflare Workers dashboard
 2. Verify `engines` in `package.json`
 3. Ensure `pnpm-lock.yaml` is committed
 4. Test in Linux environment if on macOS/Windows
@@ -346,7 +346,7 @@ Pre-push hooks handle some of these automatically.
 **Symptom**: Push to GitHub doesn't trigger build
 
 **Solutions:**
-1. Check Cloudflare Pages GitHub integration is active
+1. Check Cloudflare Workers GitHub integration is active
 2. Verify branch is configured for deployment
 3. Check for pending Cloudflare incidents (status.cloudflare.com)
 4. Manually trigger build from Cloudflare dashboard
@@ -382,7 +382,7 @@ Pre-push hooks handle some of these automatically.
 
 ## Resources
 
-- [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
+- [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Vite Build Documentation](https://vitejs.dev/guide/build.html)
 - [Wrangler CLI Documentation](https://developers.cloudflare.com/workers/wrangler/)
 - [Cloudflare Web Analytics](https://developers.cloudflare.com/analytics/web-analytics/)
@@ -391,7 +391,7 @@ Pre-push hooks handle some of these automatically.
 
 If you need environment variables:
 
-1. Add to Cloudflare Pages dashboard (Settings → Environment Variables)
+1. Add to Cloudflare Workers dashboard (Settings → Environment Variables)
 2. Prefix with `VITE_` to expose to client-side code
 3. Access via `import.meta.env.VITE_*`
 4. Never commit sensitive values to Git
