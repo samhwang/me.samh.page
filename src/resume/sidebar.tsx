@@ -1,5 +1,6 @@
 import { useToggle } from '@react-hookz/web';
 import { useId } from 'react';
+
 import { useSidebarData } from '../../metadata/use-metadata';
 import avatarJPG from '../img/avatar.jpg';
 import avatarWebP from '../img/avatar.webp';

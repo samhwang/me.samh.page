@@ -1,4 +1,5 @@
 import { createRootRoute, HeadContent } from '@tanstack/react-router';
+
 import { useSiteMetadata } from '../../metadata/use-metadata';
 import ErrorPage from '../404';
 import Layout from '../resume/layout';
