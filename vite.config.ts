@@ -1,6 +1,7 @@
 import { cloudflare } from '@cloudflare/vite-plugin';
+import babel from '@rolldown/plugin-babel';
 import { tanstackRouter } from '@tanstack/router-plugin/esbuild';
-import react from '@vitejs/plugin-react';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { manifest } from './metadata/metadata';
@@ -15,10 +16,9 @@ export default defineConfig({
       target: 'react',
       autoCodeSplitting: true,
     }),
-    react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
+    react(),
+    babel({
+      presets: [reactCompilerPreset()],
     }),
     VitePWA({
       injectRegister: 'auto',
