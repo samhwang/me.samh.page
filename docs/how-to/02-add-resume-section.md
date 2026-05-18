@@ -2,57 +2,126 @@
 
 How to add a new section to the resume page, following the existing component patterns.
 
-## 1. Create the component file
+## 1. Add metadata types and data
+
+Add the new data type to `metadata/metadata.ts`:
+
+```typescript
+export type Certifications = {
+  name: string;
+  issuer: string;
+  date: string;
+};
+```
+
+Add the new data field to `PersonalInformation` in `metadata/metadata.ts`:
+
+```typescript
+export type PersonalInformation = {
+  // ... existing fields
+  certifications: Certifications[];
+};
+```
+
+Add the actual data to the `personalInformation` object in `metadata/metadata.ts`:
+
+```typescript
+personalInformation: {
+  // ... existing fields
+  certifications: [
+    {
+      name: 'AWS Solutions Architect',
+      issuer: 'Amazon Web Services',
+      date: 'Jan 2024',
+    },
+  ],
+},
+```
+
+## 2. Create a data hook
+
+Add a hook in `metadata/use-metadata.ts` to expose the data:
+
+```typescript
+import type { Certifications } from './metadata';
+
+export type CertificationsData = Certifications[];
+export function useCertificationsData(): CertificationsData {
+  const { certifications } = metadata.personalInformation;
+  return certifications;
+}
+```
+
+## 3. Add mock data for tests
+
+Add mock data to `src/test-utils/mock-metadata.ts`:
+
+```typescript
+import type { CertificationsData } from '../../metadata/use-metadata';
+
+export const certificationsData: CertificationsData = [
+  {
+    name: 'Test Certification',
+    issuer: 'Test Issuer',
+    date: 'Jan 2024',
+  },
+];
+```
+
+## 4. Create the component file
 
 Add a new file in `src/resume/` using kebab-case naming:
 
 ```bash
-src/resume/projects.tsx
+src/resume/certifications.tsx
 ```
 
-Use a functional component with a props interface:
+Use a functional component with a default export. Fetch data via the hook pattern:
 
 ```typescript
+import { useCertificationsData } from '../../metadata/use-metadata';
+import { css } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
 
-interface ProjectsSectionProps {
-  projects: Project[];
+function Certification({ name, issuer, date }: CertificationProps) {
+  return (
+    <li className={css({ marginBottom: '0.5rem' })}>
+      <strong>{name}</strong> — {issuer} ({date})
+    </li>
+  );
 }
 
-export const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
-  if (projects.length === 0) return null;
+export default function CertificationsSection() {
+  const certifications = useCertificationsData();
+
+  if (certifications.length === 0) return null;
 
   return (
-    <section>
-      <h2 className={commonStyles.heading}>Projects</h2>
-      <div className={commonStyles.container}>
-        {projects.map((project) => (
-          <div key={project.name}>
-            <h3>{project.name}</h3>
-            <p className={commonStyles.textPrimary}>{project.description}</p>
-          </div>
+    <div className={commonStyles.container}>
+      <h2 className={commonStyles.heading}>Certifications</h2>
+      <ul className={css({ listStyle: 'none', paddingLeft: 0, marginBottom: 0 })}>
+        {certifications.map(({ name, issuer, date }) => (
+          <Certification key={name} name={name} issuer={issuer} date={date} />
         ))}
-      </div>
-    </section>
+      </ul>
+    </div>
   );
-};
+}
 ```
 
 Key patterns:
 - Import shared styles from `common.styles.ts` for headings, containers, and text
 - Use [PandaCSS](https://panda-css.com) `css()` for component-specific styles (inline for single use, constant for repeated use)
-- Define a `Props` interface with the component name prefix (e.g., `ProjectsSectionProps`)
-- Use early returns for empty or loading states
+- Use the hook pattern (`useXxxData()`) to fetch data from metadata — do not pass data as props
+- Use default exports for components
+- Use early returns for empty states
 
-## 2. Add component-specific styles
+## 5. Add component-specific styles
 
 For styles used multiple times within the component, define a constant:
 
 ```typescript
-import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
-
-const projectCardStyle = css({
+const cardStyle = css({
   padding: '1rem',
   borderBottom: '1px solid',
   borderColor: 'gray.200',
@@ -60,17 +129,6 @@ const projectCardStyle = css({
     padding: '1.5rem',
   },
 });
-
-export const ProjectsSection = ({ projects }: ProjectsSectionProps) => (
-  <section>
-    <h2 className={commonStyles.heading}>Projects</h2>
-    {projects.map((project) => (
-      <div key={project.name} className={projectCardStyle}>
-        {project.name}
-      </div>
-    ))}
-  </section>
-);
 ```
 
 For styles used only once, inline them directly:
@@ -81,63 +139,62 @@ For styles used only once, inline them directly:
 
 Only create a separate `.styles.ts` file if the component has many styles (like `sidebar.styles.ts`). See [Design Tokens](../reference/03-design-tokens.md) for available colors, fonts, and breakpoints.
 
-## 3. Write tests
+## 6. Write tests
 
 Create a test file alongside the component:
 
 ```bash
-src/resume/projects.test.tsx
+src/resume/certifications.test.tsx
 ```
 
-Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) with the project's render wrapper:
+Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) directly (not via a render wrapper). Import mock data from `test-utils/mock-metadata`:
 
 ```typescript
-import { render, screen } from '../test-utils/render-wrapper';
-import { ProjectsSection } from './projects';
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
+import { certificationsData as mockData } from '../test-utils/mock-metadata';
+import CertificationsSection from './certifications';
 
-const mockProjects = [
-  { name: 'Project A', description: 'Description A' },
-  { name: 'Project B', description: 'Description B' },
-];
-
-describe('ProjectsSection', () => {
-  it('renders project names', () => {
-    render(<ProjectsSection projects={mockProjects} />);
-
-    expect(screen.getByText('Project A')).toBeInTheDocument();
-    expect(screen.getByText('Project B')).toBeInTheDocument();
-  });
-
-  it('renders nothing when no projects', () => {
-    const { container } = render(<ProjectsSection projects={[]} />);
-
-    expect(container.innerHTML).toBe('');
-  });
-
-  it('matches snapshot', () => {
-    const { container } = render(<ProjectsSection projects={mockProjects} />);
-
+describe('CertificationsSection', () => {
+  it('should match snapshot', () => {
+    const { container } = render(<CertificationsSection />);
     expect(container).toMatchSnapshot();
+  });
+
+  it('displays the section heading', () => {
+    render(<CertificationsSection />);
+    const heading = screen.getByRole('heading', { name: 'Certifications', level: 2 });
+    expect(heading).toBeInTheDocument();
+  });
+
+  it('displays certification information', () => {
+    render(<CertificationsSection />);
+
+    const item = mockData[0];
+    expect(screen.getByText(item.name)).toBeInTheDocument();
+    expect(screen.getByText(item.issuer)).toBeInTheDocument();
   });
 });
 ```
 
-Use the `render` import from `test-utils/render-wrapper` (not directly from `@testing-library/react`) to get routing and metadata providers automatically.
+## 7. Integrate into the resume page
 
-## 4. Integrate into the layout
-
-Add the new section to the resume layout in `src/resume/layout.tsx`:
+Add the new section to `src/resume/page.tsx`:
 
 ```typescript
-import { ProjectsSection } from './projects';
+import CertificationsSection from './certifications';
 
-// Add within the layout JSX, in the desired position
-<ProjectsSection projects={metadata.projects} />
+// Add to the sections array in the desired position
+const sections = [
+  { id: 'about', content: <About /> },
+  { id: 'experience', content: <Experiences /> },
+  { id: 'certifications', content: <CertificationsSection /> },
+  { id: 'education', content: <Education /> },
+  // ...
+];
 ```
 
-Resume data comes from the metadata module. Add the new data shape to the metadata types and data files as needed.
-
-## 5. Verify
+## 8. Verify
 
 ```bash
 pnpm typecheck        # Types compile
