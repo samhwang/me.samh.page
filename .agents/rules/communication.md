@@ -40,6 +40,7 @@ Standards for documentation, commit messages, and communication style.
 ### Code References
 
 Reference files with paths and line numbers:
+
 - **Format**: `filename.tsx:123`
 - **Example**: "The icon rendering logic is in `src/icons/lang-icon.tsx:45`"
 
@@ -50,6 +51,7 @@ This allows easy navigation to specific code locations.
 Every mention of an external tool, framework, pattern, or standard must include a hyperlink on first mention per document. This applies to technology names, methodologies, external tools, specifications, and design patterns.
 
 Common project URLs:
+
 - [React](https://react.dev)
 - [React Compiler](https://react.dev/learn/react-compiler)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -60,7 +62,7 @@ Common project URLs:
 - [Vitest](https://vitest.dev)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/)
-- [Biome](https://biomejs.dev)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter)
 - [Husky](https://typicode.github.io/husky/)
 - [pnpm](https://pnpm.io)
 - [Diataxis](https://diataxis.fr/)
@@ -73,30 +75,36 @@ Prefer official docs over blog posts or tutorials.
 ### Language
 
 **American English spelling**:
+
 - ✅ color, optimize, center, behavior, license
 - ❌ colour, optimise, centre, behaviour, licence
 
 ### Punctuation
 
 **Use commas for separating clauses**:
+
 - ✅ "The component renders the user profile, and it handles loading states"
 - ❌ "The component renders the user profile — and it handles loading states"
 
 **Em dashes (—)**: Avoid in technical documentation
+
 - Use commas or parentheses instead
 - Em dashes acceptable in creative writing only
 
-**Semicolons**: 
-- Use in TypeScript/JavaScript code (enforced by Biome)
+**Semicolons**:
+
+- Use in TypeScript/JavaScript code (enforced by Oxfmt)
 - Avoid in prose (use periods or commas instead)
 
 ### Voice
 
 **Active voice preferred**:
+
 - ✅ "The component renders the profile"
 - ❌ "The profile is rendered by the component"
 
 **Second person for instructions**:
+
 - ✅ "Run `pnpm build` to create a production build"
 - ❌ "One should run `pnpm build` to create a production build"
 
@@ -115,6 +123,7 @@ Prefer official docs over blog posts or tutorials.
 - Keep formatting consistent
 
 **Example:**
+
 ```markdown
 - Install dependencies with `pnpm install`
 - Run the dev server with `pnpm dev`
@@ -149,6 +158,7 @@ Optional footer with breaking changes or issue refs.
 ### Scope
 
 Optional, indicates area of change:
+
 - `resume`: Resume page components
 - `icons`: Icon components
 - `router`: Routing logic
@@ -174,11 +184,13 @@ Optional, indicates area of change:
 ### Examples
 
 **Simple change:**
+
 ```
 feat(resume): add projects section component
 ```
 
 **With body:**
+
 ```
 feat(resume): add projects section component
 
@@ -188,6 +200,7 @@ tech stack badges, and links to live demos and source code.
 ```
 
 **Bug fix:**
+
 ```
 fix(icons): correct devicon class generation
 
@@ -197,11 +210,13 @@ converted to devicon class names. Now handles cases like
 ```
 
 **Documentation:**
+
 ```
 docs: update deployment guide for Cloudflare Workers
 ```
 
 **Refactoring:**
+
 ```
 refactor(resume): extract reusable section layout component
 
@@ -211,11 +226,13 @@ maintainability.
 ```
 
 **Testing:**
+
 ```
 test(icons): add tests for social icon component
 ```
 
 **Chore:**
+
 ```
 chore(deps): update dependencies to latest versions
 ```
@@ -255,12 +272,14 @@ See `code-style.md` for detailed comment guidelines.
 ### Examples
 
 **✅ Good comment:**
+
 ```typescript
 // Cloudflare Workers requires trailing slashes for SPAs
 const normalizedPath = ensureTrailingSlash(path);
 ```
 
 **❌ Bad comment:**
+
 ```typescript
 // Normalize the path
 const normalizedPath = ensureTrailingSlash(path);
@@ -273,10 +292,12 @@ const normalizedPath = ensureTrailingSlash(path);
 If using GitHub Issues, structure with:
 
 **Title**: Clear, concise description
+
 - "Fix: Icon not rendering on mobile"
 - "Feature: Add dark mode toggle"
 
 **Description**:
+
 - **Problem**: What's wrong or what's needed
 - **Steps to reproduce**: For bugs
 - **Expected behavior**: What should happen
@@ -287,6 +308,7 @@ If using GitHub Issues, structure with:
 ### Labels
 
 Common labels:
+
 - `bug`: Something isn't working
 - `enhancement`: New feature or improvement
 - `documentation`: Documentation improvements
@@ -298,29 +320,36 @@ Common labels:
 ### PR Structure
 
 **Title**: Like commit message
+
 - "feat(resume): add projects section"
 - "fix(icons): correct rendering bug"
 
 **Description**:
+
 ```markdown
 ## Summary
+
 Brief description of changes
 
 ## Changes
+
 - Specific change 1
 - Specific change 2
 - Specific change 3
 
 ## Testing
+
 How these changes were tested
 
 ## Screenshots
+
 (if UI changes)
 ```
 
 ### Checklist
 
 Include in PR description:
+
 ```markdown
 - [ ] Tests added/updated
 - [ ] Types checked (`pnpm typecheck`)
@@ -333,18 +362,21 @@ Include in PR description:
 ### Pre-commit Hooks
 
 Husky runs automatically on commit:
-- **Lint-staged**: Formats changed files with Biome
+
+- **Lint-staged**: Formats changed files with Oxfmt
 - **Type check**: Optional (if configured)
 
 ### Pre-push Checks
 
 Configured in `.lint-prepushrc.json`:
+
 - Runs linting on push
 - Prevents problematic code from reaching remote
 
 ### Branch Naming
 
 Use descriptive names:
+
 - `feature/project-section`
 - `fix/icon-rendering`
 - `refactor/resume-layout`
@@ -369,17 +401,21 @@ When AI agents (like Claude, Copilot, etc.) respond:
 
 ```markdown
 ## Analysis
+
 [Brief analysis of the situation]
 
 ## Recommendations
+
 - Specific actionable item 1
 - Specific actionable item 2
 - Specific actionable item 3
 
 ## Implementation
+
 [Code examples or detailed steps]
 
 ## Considerations
+
 [Potential issues, tradeoffs, or important notes]
 ```
 
@@ -399,6 +435,7 @@ When AI agents (like Claude, Copilot, etc.) respond:
 ### Risk Awareness
 
 Call out potential issues:
+
 - Performance implications
 - Breaking changes
 - Migration requirements
@@ -409,6 +446,7 @@ Call out potential issues:
 Use standard frontend vocabulary:
 
 **Preferred terms:**
+
 - **Component**: React components (not "widget")
 - **Props**: Component properties
 - **State**: React state
@@ -419,6 +457,7 @@ Use standard frontend vocabulary:
 - **Chunk**: Code-split chunks
 
 **Avoid:**
+
 - "Widget" (use "component")
 - "Element" (unless referring to DOM element specifically)
 - "Properties" (use "props" in React context)
@@ -428,12 +467,14 @@ Use standard frontend vocabulary:
 Stay technical and factual:
 
 **❌ Avoid:**
+
 - "Amazing performance boost"
 - "Super easy refactor"
 - "Blazingly fast"
 - "Game-changing improvement"
 
 **✅ Prefer:**
+
 - "Reduces bundle size by 30%"
 - "Simplifies component structure"
 - "Improves load time by 200ms"
@@ -447,12 +488,12 @@ Be specific and measurable.
 
 All developer-facing documentation MUST follow the [Diataxis](https://diataxis.fr/) framework and live in `docs/`:
 
-| Type | Directory | Purpose | Question It Answers |
-|------|-----------|---------|---------------------|
-| **How-to guide** | `docs/how-to/` | Goal-oriented steps | "How do I...?" |
-| **Reference** | `docs/reference/` | Information-oriented lookup | "What is...?" |
-| **Explanation** | `docs/explanation/` | Understanding-oriented discussion | "Why...?" |
-| **Tutorial** | `docs/tutorials/` | Learning-oriented guided experience | "Can you teach me...?" |
+| Type             | Directory           | Purpose                             | Question It Answers    |
+| ---------------- | ------------------- | ----------------------------------- | ---------------------- |
+| **How-to guide** | `docs/how-to/`      | Goal-oriented steps                 | "How do I...?"         |
+| **Reference**    | `docs/reference/`   | Information-oriented lookup         | "What is...?"          |
+| **Explanation**  | `docs/explanation/` | Understanding-oriented discussion   | "Why...?"              |
+| **Tutorial**     | `docs/tutorials/`   | Learning-oriented guided experience | "Can you teach me...?" |
 
 Each document serves ONE Diataxis purpose. Do not mix content types (no how-to steps in reference docs, no reference tables in explanation docs).
 

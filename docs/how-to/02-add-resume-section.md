@@ -110,6 +110,7 @@ export default function CertificationsSection() {
 ```
 
 Key patterns:
+
 - Import shared styles from `common.styles.ts` for headings, containers, and text
 - Use [PandaCSS](https://panda-css.com) `css()` for component-specific styles (inline for single use, constant for repeated use)
 - Use the hook pattern (`useXxxData()`) to fetch data from metadata — do not pass data as props

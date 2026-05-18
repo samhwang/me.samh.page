@@ -12,6 +12,7 @@ Create a complete resume section following the established patterns: metadata ty
 ## Trigger Condition
 
 When user asks to:
+
 - Add a new resume section
 - Add a new section to the resume page
 - Create a new resume component
@@ -21,6 +22,7 @@ When user asks to:
 ### Step 1: Gather Section Details
 
 Ask the user for:
+
 - **Section name** (e.g., "Certifications", "Awards", "Publications")
 - **Data shape** (what fields each item has, e.g., name, issuer, date)
 - **Position** in the resume (order among existing sections)
@@ -121,6 +123,7 @@ export default function SectionNameSection() {
 ```
 
 **Patterns to follow:**
+
 - Default export for the main component
 - Hook pattern for data (`useXxxData()`)
 - Early return for empty state
@@ -159,6 +162,7 @@ describe('SectionNameSection', () => {
 ```
 
 **Test patterns:**
+
 - Import `render` and `screen` from `@testing-library/react` directly
 - Import mock data from `../test-utils/mock-metadata`
 - Include snapshot test

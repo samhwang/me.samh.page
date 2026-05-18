@@ -54,11 +54,13 @@ Tests use [Vitest](https://vitest.dev) and [React Testing Library](https://testi
 
 ```bash
 pnpm typecheck     # TypeScript type checking
-pnpm lint          # Lint with Biome (read-only)
+pnpm lint          # Lint with Oxlint (read-only)
 pnpm lint:fix      # Auto-fix safe issues
+pnpm format        # Check formatting
+pnpm format:fix    # Auto-format files
 ```
 
-[Biome](https://biomejs.dev) handles both linting and formatting. No separate prettier or eslint needed.
+[Oxlint](https://oxc.rs/docs/guide/usage/linter) handles linting and [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) handles formatting. No separate prettier or eslint needed.
 
 ### Build for production
 

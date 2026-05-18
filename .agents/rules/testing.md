@@ -5,6 +5,7 @@ Frontend testing patterns using Vitest and React Testing Library.
 ## Testing Philosophy
 
 Write tests that:
+
 1. Give confidence code works as expected
 2. Are maintainable and easy to understand
 3. Test behavior, not implementation details
@@ -41,6 +42,7 @@ Write tests that:
 ### Configuration
 
 Tests configured in:
+
 - `vitest.config.ts`: Vitest settings
 - `src/setup-tests.ts`: Global test setup
 
@@ -70,10 +72,10 @@ it('displays user name when provided', () => {
   // Arrange: Setup test data and render component
   const userName = 'John Doe';
   render(<UserProfile name={userName} />);
-  
+
   // Act: Perform action (if needed)
   // (No action needed for this test)
-  
+
   // Assert: Verify expected behavior
   expect(screen.getByText(userName)).toBeInTheDocument();
 });
@@ -84,6 +86,7 @@ it('displays user name when provided', () => {
 ### Standard Pattern: render() + screen
 
 **Always use this pattern:**
+
 ```typescript
 import { render, screen } from '@testing-library/react';
 import { Button } from './button';
@@ -91,13 +94,14 @@ import { Button } from './button';
 describe('Button', () => {
   it('renders with label', () => {
     render(<Button label="Click me" onClick={() => {}} />);
-    
+
     expect(screen.getByRole('button')).toHaveTextContent('Click me');
   });
 });
 ```
 
 **Key points:**
+
 - Call `render()` without destructuring (unless you need `container` for snapshots)
 - Use `screen` to query elements
 - Use `const { container } = render()` only for snapshot tests
@@ -108,7 +112,7 @@ describe('Button', () => {
 it('applies variant styles', () => {
   const { rerender } = render(<Button variant="primary" />);
   expect(screen.getByRole('button')).toHaveClass('primary');
-  
+
   rerender(<Button variant="secondary" />);
   expect(screen.getByRole('button')).toHaveClass('secondary');
 });
@@ -123,11 +127,11 @@ import userEvent from '@testing-library/user-event';
 it('toggles visibility on click', async () => {
   const user = userEvent.setup();
   render(<ToggleComponent />);
-  
+
   expect(screen.queryByText('Hidden content')).not.toBeInTheDocument();
-  
+
   await user.click(screen.getByRole('button'));
-  
+
   expect(screen.getByText('Hidden content')).toBeInTheDocument();
 });
 ```
@@ -148,7 +152,7 @@ it('shows error state', () => {
 it('shows user data when loaded', () => {
   const user = { name: 'John', email: 'john@example.com' };
   render(<UserProfile user={user} />);
-  
+
   expect(screen.getByText('John')).toBeInTheDocument();
   expect(screen.getByText('john@example.com')).toBeInTheDocument();
 });
@@ -163,21 +167,21 @@ describe('Form', () => {
   it('handles text input', async () => {
     const user = userEvent.setup();
     render(<Form />);
-    
+
     const input = screen.getByLabelText('Name');
     await user.type(input, 'John Doe');
-    
+
     expect(input).toHaveValue('John Doe');
   });
-  
+
   it('submits form', async () => {
     const user = userEvent.setup();
     const handleSubmit = vi.fn();
     render(<Form onSubmit={handleSubmit} />);
-    
+
     await user.type(screen.getByLabelText('Name'), 'John');
     await user.click(screen.getByRole('button', { name: 'Submit' }));
-    
+
     expect(handleSubmit).toHaveBeenCalledWith({ name: 'John' });
   });
 });
@@ -202,7 +206,7 @@ describe('Component', () => {
     const { container } = render(<Component />);
     expect(container).toMatchSnapshot();
   });
-  
+
   it('matches snapshot with props', () => {
     const { container } = render(<Component variant="primary" />);
     expect(container).toMatchSnapshot();
@@ -221,6 +225,7 @@ pnpm test:run -- -u    # Update all snapshots
 ```
 
 **⚠️ Important:**
+
 - Review snapshot diffs carefully before updating
 - Snapshots are stored in `__snapshots__/` (auto-generated)
 - **Never manually edit `.snap` files**
@@ -255,15 +260,12 @@ describe('useIconClass', () => {
     const { result } = renderHook(() => useIconClass('react'));
     expect(result.current).toBe('devicon-react');
   });
-  
+
   it('updates when parameter changes', () => {
-    const { result, rerender } = renderHook(
-      ({ type }) => useIconClass(type),
-      { initialProps: { type: 'react' } }
-    );
-    
+    const { result, rerender } = renderHook(({ type }) => useIconClass(type), { initialProps: { type: 'react' } });
+
     expect(result.current).toBe('devicon-react');
-    
+
     rerender({ type: 'typescript' });
     expect(result.current).toBe('devicon-typescript');
   });
@@ -311,19 +313,20 @@ For async operations:
 ```typescript
 it('loads and displays data', async () => {
   render(<AsyncComponent />);
-  
+
   // Initially shows loading
   expect(screen.getByText('Loading...')).toBeInTheDocument();
-  
+
   // Wait for data to load
   expect(await screen.findByText('Loaded data')).toBeInTheDocument();
-  
+
   // Loading indicator should be gone
   expect(screen.queryByText('Loading...')).not.toBeInTheDocument();
 });
 ```
 
 **Async utilities:**
+
 - **`findBy*`**: Wait for element to appear (default timeout: 1000ms)
 - **`waitFor`**: Wait for assertion to pass
 - **`waitForElementToBeRemoved`**: Wait for element to disappear
@@ -350,9 +353,9 @@ const handleClick = vi.fn();
 it('calls handler on click', async () => {
   const user = userEvent.setup();
   render(<Button onClick={handleClick} />);
-  
+
   await user.click(screen.getByRole('button'));
-  
+
   expect(handleClick).toHaveBeenCalledTimes(1);
 });
 ```
@@ -368,6 +371,7 @@ mockFetch.mockRejectedValue(new Error('Failed'));
 #### Mock Modules
 
 Use utilities in `src/test-utils/` for common mocks:
+
 - `mock-metadata.ts`: Mock metadata hook
 - `setups/use-metadata.ts`: Setup metadata mocking
 
@@ -384,6 +388,7 @@ beforeEach(() => {
 Vitest and React Testing Library handle cleanup automatically.
 
 **Manual cleanup** (rarely needed):
+
 ```typescript
 afterEach(() => {
   vi.clearAllMocks();
@@ -406,6 +411,7 @@ pnpm test:run --coverage
 ```
 
 Coverage reports show:
+
 - Line coverage
 - Branch coverage
 - Function coverage
@@ -442,9 +448,13 @@ describe('Component', () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
-  
-  it('test 1', () => { /* ... */ });
-  it('test 2', () => { /* ... */ });
+
+  it('test 1', () => {
+    /* ... */
+  });
+  it('test 2', () => {
+    /* ... */
+  });
 });
 ```
 
@@ -453,17 +463,27 @@ describe('Component', () => {
 ```typescript
 describe('Button', () => {
   describe('variants', () => {
-    it('renders primary variant', () => { /* ... */ });
-    it('renders secondary variant', () => { /* ... */ });
+    it('renders primary variant', () => {
+      /* ... */
+    });
+    it('renders secondary variant', () => {
+      /* ... */
+    });
   });
-  
+
   describe('disabled state', () => {
-    it('disables interaction', () => { /* ... */ });
-    it('applies disabled styles', () => { /* ... */ });
+    it('disables interaction', () => {
+      /* ... */
+    });
+    it('applies disabled styles', () => {
+      /* ... */
+    });
   });
-  
+
   describe('accessibility', () => {
-    it('has correct ARIA attributes', () => { /* ... */ });
+    it('has correct ARIA attributes', () => {
+      /* ... */
+    });
   });
 });
 ```
@@ -490,13 +510,13 @@ it('renders error boundary fallback', () => {
   const ThrowError = () => {
     throw new Error('Test error');
   };
-  
+
   render(
     <ErrorBoundary>
       <ThrowError />
     </ErrorBoundary>
   );
-  
+
   expect(screen.getByText('Something went wrong')).toBeInTheDocument();
 });
 ```
@@ -535,13 +555,13 @@ pnpm test src/resume/        # Run tests in directory
 ```typescript
 it('debugging test', () => {
   render(<Component />);
-  
+
   // Print current DOM
   screen.debug();
-  
+
   // Print specific element
   screen.debug(screen.getByRole('button'));
-  
+
   // Regular console.log
   console.log('Debug info:', someValue);
 });
@@ -552,10 +572,10 @@ it('debugging test', () => {
 ```typescript
 it('find queries', () => {
   render(<Component />);
-  
+
   // Logs URL to Testing Playground
   screen.logTestingPlaygroundURL();
-  
+
   // Open URL to get query suggestions
 });
 ```
@@ -569,6 +589,7 @@ Set breakpoints in test files and use VS Code's debugger with Vitest.
 ### Render Wrapper
 
 Located in `src/test-utils/render-wrapper.tsx`:
+
 - Wraps components with necessary providers
 - Includes TanStack Router context
 - Includes metadata context
@@ -586,6 +607,7 @@ expect(screen.getByText('Hello')).toBeInTheDocument();
 ```
 
 **Standard pattern:**
+
 - Import `render` and `screen` from `@testing-library/react`
 - Call `render()` without destructuring
 - Use `screen` for all queries
@@ -602,7 +624,7 @@ const mockUser = {
   email: 'john@example.com',
 };
 
-const mockUsers = [mockUser, /* ... */];
+const mockUsers = [mockUser /* ... */];
 ```
 
 ## Accessibility Testing
@@ -612,7 +634,7 @@ const mockUsers = [mockUser, /* ... */];
 ```typescript
 it('has accessible button', () => {
   render(<Button>Click me</Button>);
-  
+
   const button = screen.getByRole('button', { name: 'Click me' });
   expect(button).toBeInTheDocument();
 });
@@ -624,7 +646,7 @@ it('has accessible form input', () => {
       <input id="email" type="email" />
     </label>
   );
-  
+
   expect(screen.getByLabelText('Email')).toBeInTheDocument();
 });
 ```
@@ -634,7 +656,7 @@ it('has accessible form input', () => {
 ```typescript
 it('has correct ARIA attributes', () => {
   render(<Dialog isOpen={true} />);
-  
+
   expect(screen.getByRole('dialog')).toHaveAttribute('aria-modal', 'true');
 });
 ```
