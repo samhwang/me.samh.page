@@ -15,7 +15,14 @@ export default function LangIcon({ name }: LangIconProps) {
 
   return (
     <li className={listItem}>
-      <i role="img" data-testid={`language-icon-${name}`} className={currentIconClass} onMouseEnter={onMouseHandler} onMouseLeave={onMouseHandler} />
+      <span
+        role="img"
+        aria-label={name}
+        data-testid={`language-icon-${name}`}
+        className={currentIconClass}
+        onMouseEnter={onMouseHandler}
+        onMouseLeave={onMouseHandler}
+      />
     </li>
   );
 }
