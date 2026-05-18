@@ -5,7 +5,8 @@ exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
   <li
     class="d_inline-block"
   >
-    <i
+    <span
+      aria-label="php-plain"
       class="devicon-php-plain"
       data-testid="language-icon-php-plain"
       role="img"

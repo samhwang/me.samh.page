@@ -86,7 +86,8 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             <li
               class="d_inline-block"
             >
-              <i
+              <span
+                aria-label="github-original"
                 class="devicon-github-original"
                 data-testid="language-icon-github-original"
                 role="img"
@@ -182,7 +183,8 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         <li
           class="d_inline-block"
         >
-          <i
+          <span
+            aria-label="github-original"
             class="devicon-github-original"
             data-testid="language-icon-github-original"
             role="img"
