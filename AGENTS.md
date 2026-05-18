@@ -50,6 +50,7 @@ docs/                   # Developer-facing documentation (Diataxis framework)
 │   ├── deployment.md   # Cloudflare Workers deployment process
 │   └── communication.md # Commit messages, docs, writing style
 └── skills/             # Task-specific toolkits
+    ├── add-resume-section/ # Add a new resume section workflow
     └── update-docs/    # Documentation audit and update workflow
 ```
 
@@ -89,6 +90,7 @@ Load these rules when working on relevant domains:
 
 Load these skills when their trigger conditions match the task:
 
+- **[add-resume-section](.agents/skills/add-resume-section/SKILL.md)** - Add a new section to the resume page with metadata, component, tests, and integration. **Trigger**: when asked to add a new resume section.
 - **[update-docs](.agents/skills/update-docs/SKILL.md)** - Audit and update documentation after code changes. **Trigger**: after adding a new feature, changing dependencies, or modifying project structure. Every new feature MUST include documentation updates.
 
 Add new skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
