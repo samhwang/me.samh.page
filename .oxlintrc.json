@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error"
+  },
+  "plugins": ["react", "jsx-a11y", "typescript", "unicorn", "oxc"],
+  "rules": {
+    "jsx-a11y/prefer-tag-over-role": "off"
+  },
+  "ignorePatterns": ["**/src/route-tree.gen.ts", "**/src/**/__snapshots__/**"]
+}
