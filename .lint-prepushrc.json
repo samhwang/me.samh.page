@@ -2,7 +2,7 @@
   "base": "master",
   "verbose": true,
   "tasks": {
-    "*": ["oxlint --deny-warnings --no-error-on-unmatched-pattern"],
+    "*": ["oxfmt --check --no-error-on-unmatched-pattern", "oxlint --deny-warnings --no-error-on-unmatched-pattern"],
     "*.[js,jsx,ts,tsx]": ["tsc", "vitest run"]
   }
 }
