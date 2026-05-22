@@ -30,6 +30,7 @@ pnpm build
 ```
 
 This triggers:
+
 1. Vite (Rolldown) bundles application
 2. PandaCSS generates `styled-system/` utilities
 3. Optimized output created in `dist/` directory
@@ -91,6 +92,7 @@ Pre-commit and pre-push hooks handle some checks automatically, but manual verif
 ### wrangler.toml
 
 Cloudflare Workers configuration file:
+
 - Site name and project settings
 - Build command and output directory
 - Environment variables (if any)
@@ -117,6 +119,7 @@ Cloudflare Workers respects these versions when building.
 ### Static Files
 
 Files in `public/` directory:
+
 - `favicon.svg`: Site favicon
 - `img192.png`, `img512.png`: PWA icons
 - `robots.txt`: Search engine directives
@@ -126,6 +129,7 @@ Files in `public/` directory:
 These files are **copied as-is** to `dist/` during build and served at the root path.
 
 **Example:**
+
 - `public/favicon.svg` → `https://yoursite.com/favicon.svg`
 - `public/robots.txt` → `https://yoursite.com/robots.txt`
 
@@ -140,6 +144,7 @@ These files are **copied as-is** to `dist/` during build and served at the root 
 ### Bundle Size
 
 Monitor bundle size during builds:
+
 - Vite reports chunk sizes in build output
 - Keep main bundle under reasonable size (~200-300KB gzipped)
 - Use code splitting for large features
@@ -148,6 +153,7 @@ Monitor bundle size during builds:
 ### Optimization Features
 
 Automatic optimizations:
+
 - **Minification**: JavaScript, CSS, HTML
 - **Tree shaking**: Removes unused code
 - **Code splitting**: Automatic for dynamic imports
@@ -157,6 +163,7 @@ Automatic optimizations:
 ### Lighthouse Scores
 
 Target metrics:
+
 - **Performance**: 90+
 - **Accessibility**: 90+
 - **Best Practices**: 90+
@@ -167,6 +174,7 @@ Test with Lighthouse (Chrome DevTools) after deployment.
 ### Core Web Vitals
 
 Monitor:
+
 - **LCP (Largest Contentful Paint)**: < 2.5s
 - **FID (First Input Delay)**: < 100ms
 - **CLS (Cumulative Layout Shift)**: < 0.1
@@ -186,6 +194,7 @@ If deployment has issues:
 5. Site immediately reverts to that version
 
 **Alternative:**
+
 - Revert commit in Git
 - Push to main branch
 - New deployment with previous code
@@ -201,6 +210,7 @@ If build fails on Cloudflare:
 5. **Check for environment-specific code** (e.g., relying on local files)
 
 **Common issues:**
+
 - Missing `pnpm-lock.yaml` commit
 - Node/pnpm version mismatch
 - File path casing issues (macOS case-insensitive vs Linux case-sensitive)
@@ -231,6 +241,7 @@ All traffic automatically uses HTTPS.
 ### Cloudflare Analytics
 
 Available in Cloudflare dashboard:
+
 - **Page views**: Total visits
 - **Bandwidth usage**: Data transferred
 - **Geographic distribution**: Visitor locations
@@ -240,6 +251,7 @@ Available in Cloudflare dashboard:
 ### Web Vitals
 
 Cloudflare provides Core Web Vitals tracking:
+
 - LCP (Largest Contentful Paint)
 - FID (First Input Delay)
 - CLS (Cumulative Layout Shift)
@@ -249,6 +261,7 @@ Monitor performance trends over time.
 ### Error Tracking
 
 Consider adding:
+
 - **Sentry**: Error tracking and monitoring
 - **LogRocket**: Session replay
 - **Google Analytics**: User behavior tracking
@@ -290,12 +303,14 @@ Pre-push hooks handle some of these automatically.
 **Symptom**: Build fails on Cloudflare but works locally
 
 **Possible causes:**
+
 - Node/pnpm version mismatch
 - Missing dependencies (check `pnpm-lock.yaml` committed)
 - Environment-specific code (e.g., `process.env` without defaults)
 - File path casing issues (macOS vs Linux)
 
 **Solutions:**
+
 1. Check build logs in Cloudflare Workers dashboard
 2. Verify `engines` in `package.json`
 3. Ensure `pnpm-lock.yaml` is committed
@@ -307,6 +322,7 @@ Pre-push hooks handle some of these automatically.
 **Symptom**: Push to GitHub doesn't trigger build
 
 **Solutions:**
+
 1. Check Cloudflare Workers GitHub integration is active
 2. Verify branch is configured for deployment
 3. Check for pending Cloudflare incidents (status.cloudflare.com)
@@ -318,11 +334,13 @@ Pre-push hooks handle some of these automatically.
 **Symptom**: Deployed but old version still showing
 
 **Possible causes:**
+
 - Browser cache
 - Deployment still in progress
 - Service worker caching old version (if using PWA)
 
 **Solutions:**
+
 1. Hard refresh browser (Ctrl+Shift+R / Cmd+Shift+R)
 2. Check deployment status in Cloudflare dashboard
 3. Wait a few minutes for CDN propagation
@@ -335,6 +353,7 @@ Pre-push hooks handle some of these automatically.
 **Symptom**: Slow page load times
 
 **Solutions:**
+
 1. Run Lighthouse audit to identify bottlenecks
 2. Check bundle size (Vite build output)
 3. Optimize images (convert to WebP, reduce size)
@@ -358,6 +377,7 @@ If you need environment variables:
 4. Never commit sensitive values to Git
 
 **Example:**
+
 ```typescript
 const apiKey = import.meta.env.VITE_API_KEY;
 ```

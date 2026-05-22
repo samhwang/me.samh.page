@@ -1,5 +1,6 @@
 import { act, renderHook } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
+
 import useIconClass from './use-icon-class';
 
 const ICON_NAME = 'docker-plain';

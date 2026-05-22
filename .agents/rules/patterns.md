@@ -13,13 +13,13 @@ Use functional components with hooks exclusively:
 ```typescript
 export const UserProfile = ({ userId }: UserProfileProps) => {
   const [user, setUser] = useState<User | null>(null);
-  
+
   useEffect(() => {
     fetchUser(userId).then(setUser);
   }, [userId]);
-  
+
   if (!user) return <LoadingSpinner />;
-  
+
   return <div>{user.name}</div>;
 };
 ```
@@ -36,11 +36,11 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-export const Button = ({ 
-  label, 
-  onClick, 
-  variant = 'primary', 
-  disabled = false 
+export const Button = ({
+  label,
+  onClick,
+  variant = 'primary',
+  disabled = false
 }: ButtonProps) => {
   return (
     <button onClick={onClick} disabled={disabled}>
@@ -59,6 +59,7 @@ export const Button = ({
 - **Co-locate** with related components when specific to that feature
 
 **Example:**
+
 ```typescript
 // use-icon-class.ts
 export const useIconClass = (iconType: string): string => {
@@ -72,11 +73,11 @@ export const useIconClass = (iconType: string): string => {
 ```typescript
 export const useCustomHook = (param: string) => {
   const [state, setState] = useState();
-  
+
   useEffect(() => {
     // Side effects
   }, [param]);
-  
+
   return { state, setState };
 };
 ```
@@ -86,12 +87,14 @@ export const useCustomHook = (param: string) => {
 Project uses React Compiler (`babel-plugin-react-compiler`).
 
 **Compiler-friendly patterns:**
+
 - Avoid manual memoization (`useMemo`/`useCallback`) unless proven necessary
 - Keep components pure (no side effects in render)
 - Avoid mutating props or state
 - Let the compiler optimize automatically
 
 **When manual optimization is needed:**
+
 - Expensive computations that are measurably slow
 - Functions passed to deeply nested children
 - Large lists or data structures
@@ -112,12 +115,14 @@ const [count, setCount] = useState(0);
 Compute from existing state instead of storing:
 
 **✅ Good:**
+
 ```typescript
 const totalPrice = items.reduce((sum, item) => sum + item.price, 0);
 const hasItems = items.length > 0;
 ```
 
 **❌ Bad:**
+
 ```typescript
 const [totalPrice, setTotalPrice] = useState(0);
 // Manually updating totalPrice when items change
@@ -126,11 +131,13 @@ const [totalPrice, setTotalPrice] = useState(0);
 #### Shared State
 
 For cross-component state, consider:
+
 1. **Lift state up** to common parent
 2. **Context API** for deeply nested components
 3. **Custom hooks** to encapsulate logic (like `useMetadata`)
 
 **Example with Context:**
+
 ```typescript
 const ThemeContext = createContext<Theme>(defaultTheme);
 
@@ -153,11 +160,13 @@ Prefix with `handle`: `handleClick`, `handleSubmit`, `handleChange`
 - **Complex logic**: Declare named handler
 
 **✅ Simple (inline OK):**
+
 ```typescript
 <button onClick={() => setCount(count + 1)}>Increment</button>
 ```
 
 **✅ Complex (declare):**
+
 ```typescript
 const handleFormSubmit = (event: FormEvent) => {
   event.preventDefault();
@@ -190,13 +199,14 @@ if (error) return <ErrorMessage error={error} />;
 ### File-Based Routing
 
 Routes defined in `src/routes/`:
+
 - `__root.tsx`: Root layout, wraps all routes
 - `index.tsx`: Homepage (/)
 - Future routes: `about.tsx` (/about), `blog/index.tsx` (/blog)
 
 ### Route Components
 
-#### Root Layout (__root.tsx)
+#### Root Layout (\_\_root.tsx)
 
 Provides common layout/providers:
 
@@ -245,13 +255,14 @@ import { useNavigate } from '@tanstack/react-router';
 
 const navigate = useNavigate();
 
-navigate({ to: '/about' });  // Type-checked path
-navigate({ to: '/' });       // Also type-checked
+navigate({ to: '/about' }); // Type-checked path
+navigate({ to: '/' }); // Also type-checked
 ```
 
 ### Route Generation
 
 `src/route-tree.gen.ts` is **auto-generated**:
+
 - Happens automatically during dev server
 - Can manually trigger with `pnpm tanstack-router generate`
 - **DO NOT** manually edit this file
@@ -266,11 +277,11 @@ navigate({ to: '/' });       // Also type-checked
 import { css } from '../../styled-system/css';
 
 export const Component = () => (
-  <div className={css({ 
-    color: 'primary', 
+  <div className={css({
+    color: 'primary',
     fontSize: '2rem',
     padding: '1rem',
-    lg: { 
+    lg: {
       fontSize: '3rem',
       padding: '2rem',
     }
@@ -345,6 +356,7 @@ export const Component = () => (
 ```
 
 **✅ Good: Common patterns in shared file**
+
 ```typescript
 // common.styles.ts
 export const heading = css({
@@ -358,6 +370,7 @@ import * as commonStyles from './common.styles';
 ```
 
 **✅ Good: Style constant for multiple uses**
+
 ```typescript
 // about.tsx - Used 3+ times in component
 const bioStyle = css({ fontSize: '1.15rem' });
@@ -366,12 +379,14 @@ const bioStyle = css({ fontSize: '1.15rem' });
 ```
 
 **✅ Good: Inline for single use**
+
 ```typescript
 // page.tsx - Used only once
 <hr className={css({ margin: 0 })} />
 ```
 
 **❌ Bad: Separate file just to re-export common styles**
+
 ```typescript
 // component.styles.ts (DON'T DO THIS)
 export { heading, container } from './common.styles';
@@ -381,9 +396,10 @@ import { heading } from './component.styles'; // Unnecessary layer
 ```
 
 **❌ Bad: Duplicating common patterns**
+
 ```typescript
 // component.tsx (DON'T DO THIS)
-const heading = css({ 
+const heading = css({
   fontFamily: 'heading',
   color: 'primary',
   fontSize: '2rem',
@@ -391,11 +407,13 @@ const heading = css({
 ```
 
 **When to create separate `.styles.ts` files:**
+
 - Complex components with many styles (e.g., `sidebar.styles.ts`)
 - Icon-specific patterns (e.g., `icon.styles.ts`)
 - Truly reusable patterns shared by 3+ components
 
 **When NOT to create `.styles.ts` files:**
+
 - Single component with 1-3 unique styles → Define inline (constant or directly in JSX)
 - Just re-exporting from `common.styles.ts` → Import directly
 - Style used only once in component → Inline directly in JSX with `css()`
@@ -426,12 +444,13 @@ Use tokens from `panda.config.ts`:
 - Standard palette: `gray.600`, `green.800`, etc.
 
 **Usage:**
+
 ```typescript
 css({
   color: 'primary',
   backgroundColor: 'slightlyDarker',
   borderColor: 'gray.600',
-})
+});
 ```
 
 #### Fonts
@@ -440,11 +459,12 @@ css({
 - `heading`: Saira Extra Condensed (for headings)
 
 **Usage:**
+
 ```typescript
 css({
-  fontFamily: 'body',    // Mulish
+  fontFamily: 'body', // Mulish
   fontFamily: 'heading', // Saira Extra Condensed
-})
+});
 ```
 
 #### Sizes
@@ -452,10 +472,11 @@ css({
 - `sidebarWidth`: 17rem
 
 **Usage:**
+
 ```typescript
 css({
   width: 'sidebarWidth',
-})
+});
 ```
 
 ### Responsive Design
@@ -464,47 +485,51 @@ Use breakpoint notation:
 
 ```typescript
 css({
-  fontSize: '1rem',           // Mobile (default)
+  fontSize: '1rem', // Mobile (default)
   md: { fontSize: '1.5rem' }, // Tablet
-  lg: { fontSize: '2rem' }    // Desktop
-})
+  lg: { fontSize: '2rem' }, // Desktop
+});
 ```
 
 **Available breakpoints**: `sm`, `md`, `lg`, `xl`, `2xl`
 
 **Pattern for mobile-first design:**
+
 ```typescript
 css({
   // Mobile defaults
   display: 'block',
   padding: '1rem',
-  
+
   // Tablet and up
   md: {
     padding: '1.5rem',
   },
-  
+
   // Desktop and up
   lg: {
     display: 'flex',
     padding: '2rem',
-  }
-})
+  },
+});
 ```
 
 ### Global Styles
 
 Defined in `panda.config.ts`:
+
 - Applied to HTML elements (body, h1-h6, ul, li)
 - Use for baseline styles only
 - **Avoid overuse** - prefer component-scoped styles
 
 **When to use global styles:**
+
 - Typography defaults (body font, heading fonts)
 - Layout defaults (body padding)
 - List styles (ul, li)
 
 **When to use component styles:**
+
 - Component-specific styling
 - Layout variations
 - Interactive states
@@ -522,13 +547,13 @@ import { UserProfile } from './user-profile';
 describe('UserProfile', () => {
   it('displays user name', () => {
     render(<UserProfile name="John Doe" />);
-    
+
     expect(screen.getByText('John Doe')).toBeInTheDocument();
   });
-  
+
   it('displays loading state', () => {
     render(<UserProfile isLoading={true} />);
-    
+
     expect(screen.getByText('Loading...')).toBeInTheDocument();
   });
 });
@@ -537,11 +562,13 @@ describe('UserProfile', () => {
 ### Testing Utilities
 
 Use `render-wrapper.tsx` for tests needing providers:
+
 - Provides routing context (TanStack Router)
 - Provides metadata context
 - Wraps with necessary providers automatically
 
 **Usage:**
+
 ```typescript
 import { render } from '../test-utils/render-wrapper';
 
@@ -577,11 +604,11 @@ import userEvent from '@testing-library/user-event';
 it('handles click', async () => {
   const user = userEvent.setup();
   const handleClick = vi.fn();
-  
+
   render(<Button onClick={handleClick} />);
-  
+
   await user.click(screen.getByRole('button'));
-  
+
   expect(handleClick).toHaveBeenCalledTimes(1);
 });
 ```
@@ -591,6 +618,7 @@ it('handles click', async () => {
 Test custom hooks via component or directly:
 
 **Via component:**
+
 ```typescript
 const TestComponent = () => {
   const iconClass = useIconClass('react');
@@ -604,6 +632,7 @@ it('returns correct icon class', () => {
 ```
 
 **Directly with renderHook:**
+
 ```typescript
 import { renderHook } from '@testing-library/react';
 
@@ -634,6 +663,7 @@ function App() {
 ```
 
 **When to use lazy loading:**
+
 - Large components not needed on initial render
 - Route-based code splitting
 - Modal dialogs or overlays
@@ -647,6 +677,7 @@ function App() {
 - Lazy load images below the fold
 
 **Example:**
+
 ```typescript
 <picture>
   <source srcSet="/img/avatar.webp" type="image/webp" />
@@ -662,6 +693,7 @@ function App() {
 - React Compiler handles most optimizations automatically
 
 **When to optimize:**
+
 - Measured performance issues
 - Large lists (1000+ items)
 - Complex calculations in render
@@ -676,18 +708,18 @@ const Component = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  
+
   useEffect(() => {
     fetchData()
       .then(setData)
       .catch(setError)
       .finally(() => setIsLoading(false));
   }, []);
-  
+
   if (isLoading) return <LoadingSpinner />;
   if (error) return <ErrorMessage error={error} />;
   if (!data) return <NoData />;
-  
+
   return <DataDisplay data={data} />;
 };
 ```
@@ -697,17 +729,17 @@ const Component = () => {
 ```typescript
 const Form = () => {
   const [formData, setFormData] = useState({ name: '', email: '' });
-  
+
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
     submitForm(formData);
   };
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <input name="name" value={formData.name} onChange={handleChange} />
@@ -723,7 +755,7 @@ const Form = () => {
 ```typescript
 const List = ({ items }: { items: Item[] }) => {
   if (items.length === 0) return <EmptyState />;
-  
+
   return (
     <ul>
       {items.map(item => (

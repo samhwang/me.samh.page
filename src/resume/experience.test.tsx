@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
+
 import { experienceData as mockExperienceData } from '../test-utils/mock-metadata';
 import Experiences from './experience';
 

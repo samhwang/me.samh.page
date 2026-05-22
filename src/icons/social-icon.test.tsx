@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
+
 import SocialIcon from './social-icon';
 
 const ICON_NAME = 'github-plain';

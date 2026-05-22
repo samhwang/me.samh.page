@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
+
 import { aboutData as mockAboutData } from '../test-utils/mock-metadata';
 import About from './about';
 

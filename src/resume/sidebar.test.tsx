@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
+
 import { sidebarData as mockSidebarData } from '../test-utils/mock-metadata';
 import Sidebar from './sidebar';
 

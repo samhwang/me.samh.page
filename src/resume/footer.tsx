@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router';
+
 import * as commonStyles from './common.styles';
 
 type FooterLinkProps = {

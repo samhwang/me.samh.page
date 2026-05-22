@@ -4,34 +4,38 @@ All available [pnpm](https://pnpm.io) scripts for development, testing, and depl
 
 ## Scripts Summary
 
-| Command | Purpose |
-|---------|---------|
-| `pnpm dev` | Development server with HMR ([Vite](https://vite.dev)) |
-| `pnpm build` | Production build to `dist/` |
-| `pnpm preview` | Preview production build locally |
-| `pnpm typecheck` | [TypeScript](https://www.typescriptlang.org/) type checking |
-| `pnpm lint` | Lint check ([Biome](https://biomejs.dev), read-only) |
-| `pnpm lint:fix` | Auto-fix safe linting issues |
-| `pnpm lint:fix:unsafe` | Fix including unsafe transformations |
-| `pnpm ci` | CI mode (strict, no writes) |
-| `pnpm test` | Run tests in watch mode ([Vitest](https://vitest.dev)) |
-| `pnpm test:run` | Run tests once (CI) |
-| `pnpm test:watch` | Explicit watch mode |
-| `pnpm panda:codegen` | Generate [PandaCSS](https://panda-css.com) utilities |
-| `pnpm git-hooks:init` | Initialize [Husky](https://typicode.github.io/husky/) hooks |
-| `pnpm prepare` | Post-install setup (hooks + PandaCSS) |
+| Command                | Purpose                                                                          |
+| ---------------------- | -------------------------------------------------------------------------------- |
+| `pnpm dev`             | Development server with HMR ([Vite](https://vite.dev))                           |
+| `pnpm build`           | Production build to `dist/`                                                      |
+| `pnpm preview`         | Preview production build locally                                                 |
+| `pnpm typecheck`       | [TypeScript](https://www.typescriptlang.org/) type checking                      |
+| `pnpm lint`            | Lint check ([Oxlint](https://oxc.rs/docs/guide/usage/linter), read-only)         |
+| `pnpm lint:fix`        | Auto-fix safe linting issues                                                     |
+| `pnpm lint:fix:unsafe` | Fix including unsafe transformations                                             |
+| `pnpm format`          | Formatting check ([Oxfmt](https://oxc.rs/docs/guide/usage/formatter), read-only) |
+| `pnpm format:fix`      | Auto-format files                                                                |
+| `pnpm ci`              | CI mode (strict, deny warnings)                                                  |
+| `pnpm test`            | Run tests in watch mode ([Vitest](https://vitest.dev))                           |
+| `pnpm test:run`        | Run tests once (CI)                                                              |
+| `pnpm test:watch`      | Explicit watch mode                                                              |
+| `pnpm panda:codegen`   | Generate [PandaCSS](https://panda-css.com) utilities                             |
+| `pnpm git-hooks:init`  | Initialize [Husky](https://typicode.github.io/husky/) hooks                      |
+| `pnpm prepare`         | Post-install setup (hooks + PandaCSS)                                            |
 
 ## Git Hooks
 
 ### Pre-commit
 
 Runs automatically on every commit via [Husky](https://typicode.github.io/husky/) and lint-staged:
-- Formats changed files with [Biome](https://biomejs.dev)
-- Fixes safe linting issues
+
+- Formats changed files with [Oxfmt](https://oxc.rs/docs/guide/usage/formatter)
+- Fixes safe linting issues with [Oxlint](https://oxc.rs/docs/guide/usage/linter)
 
 ### Pre-push
 
 Configured in `.lint-prepushrc.json`:
+
 - Runs linting checks before push
 - Prevents problematic code from reaching remote
 

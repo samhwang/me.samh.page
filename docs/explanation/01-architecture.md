@@ -32,9 +32,9 @@ PandaCSS was chosen over Tailwind CSS for type-safe style definitions and over r
 
 [Vite](https://vite.dev) with [Rolldown](https://rolldown.rs) handles the build pipeline. Vite provides fast HMR during development, and Rolldown bundles the production build with automatic minification, tree shaking, code splitting, and asset hashing.
 
-### Biome
+### Oxlint and Oxfmt
 
-[Biome](https://biomejs.dev) handles both linting and formatting in a single tool, replacing the need for separate ESLint and Prettier configurations. It runs on pre-commit via [Husky](https://typicode.github.io/husky/) and lint-staged.
+[Oxlint](https://oxc.rs/docs/guide/usage/linter) handles linting with a focus on correctness rules. [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) handles code formatting. Both are built on the [Oxc](https://oxc.rs) (Oxidation Compiler) infrastructure for speed. They run on pre-commit via [Husky](https://typicode.github.io/husky/) and lint-staged.
 
 ### Vitest
 
@@ -72,19 +72,20 @@ The site is hosted on [Cloudflare Workers](https://developers.cloudflare.com/wor
 
 ### Performance targets
 
-| Metric | Target |
-|--------|--------|
-| Lighthouse Performance | 90+ |
-| Lighthouse Accessibility | 90+ |
-| Lighthouse Best Practices | 90+ |
-| Lighthouse SEO | 90+ |
-| LCP (Largest Contentful Paint) | < 2.5s |
-| FID (First Input Delay) | < 100ms |
-| CLS (Cumulative Layout Shift) | < 0.1 |
+| Metric                         | Target  |
+| ------------------------------ | ------- |
+| Lighthouse Performance         | 90+     |
+| Lighthouse Accessibility       | 90+     |
+| Lighthouse Best Practices      | 90+     |
+| Lighthouse SEO                 | 90+     |
+| LCP (Largest Contentful Paint) | < 2.5s  |
+| FID (First Input Delay)        | < 100ms |
+| CLS (Cumulative Layout Shift)  | < 0.1   |
 
 ### Rollback
 
 If a deployment has issues:
+
 1. Open the Cloudflare Workers dashboard
 2. Navigate to Deployments
 3. Click "Rollback to this deployment" on a previous build

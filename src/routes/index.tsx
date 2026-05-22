@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
+
 import { useSiteMetadata } from '../../metadata/use-metadata';
 import ResumePage from '../resume/page';
 

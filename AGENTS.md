@@ -106,7 +106,7 @@ Add new skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
 - **[Vitest](https://vitest.dev)** + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - **[Vite](https://vite.dev)** (with [Rolldown](https://rolldown.rs) bundler)
 - **[Cloudflare Workers](https://developers.cloudflare.com/workers/)** (hosting)
-- **[Biome](https://biomejs.dev)** (linting and formatting)
+- **[Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter)** (linting and formatting)
 
 ### Essential Commands
 
@@ -131,12 +131,12 @@ pnpm typecheck     # TypeScript type checking
 
 ## Rules vs. Skills at a Glance
 
-| Aspect | Rules | Skills |
-|--------|-------|--------|
-| Purpose | Written guidelines covering a domain | Full toolkits with templates and workflows |
-| Execution | Agent interprets and implements | Drop-in code, docs, and checklists |
-| Complexity | Describes guardrails and best practices | Encodes proven patterns for specific tasks |
-| Maintenance | Update prose as policies evolve | Refresh package when better solutions emerge |
+| Aspect      | Rules                                   | Skills                                       |
+| ----------- | --------------------------------------- | -------------------------------------------- |
+| Purpose     | Written guidelines covering a domain    | Full toolkits with templates and workflows   |
+| Execution   | Agent interprets and implements         | Drop-in code, docs, and checklists           |
+| Complexity  | Describes guardrails and best practices | Encodes proven patterns for specific tasks   |
+| Maintenance | Update prose as policies evolve         | Refresh package when better solutions emerge |
 
 Think of **rules** as a "manual" that keeps behavior aligned, while **skills** are the "manual + toolbox + demo" bundle for proven solutions.
 

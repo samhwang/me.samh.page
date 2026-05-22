@@ -27,13 +27,13 @@ Also trigger automatically when:
 
 ## Documentation Locations
 
-| Location | Content | Key Sections |
-|----------|---------|-------------|
-| `README.md` | Project overview, tech stack, quick start | Entry point, links to `docs/` |
-| `docs/` | Developer-facing docs ([Diataxis](https://diataxis.fr/) framework) | How-to guides, reference, explanation |
-| `AGENTS.md` | Agent control manifest | Project structure, tech stack, available skills/rules, commands |
-| `.agents/rules/` | Domain-specific guidelines | Code style, patterns, commands, testing, deployment, communication |
-| `.agents/skills/` | Task-specific toolkits | Each skill's SKILL.md |
+| Location          | Content                                                            | Key Sections                                                       |
+| ----------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| `README.md`       | Project overview, tech stack, quick start                          | Entry point, links to `docs/`                                      |
+| `docs/`           | Developer-facing docs ([Diataxis](https://diataxis.fr/) framework) | How-to guides, reference, explanation                              |
+| `AGENTS.md`       | Agent control manifest                                             | Project structure, tech stack, available skills/rules, commands    |
+| `.agents/rules/`  | Domain-specific guidelines                                         | Code style, patterns, commands, testing, deployment, communication |
+| `.agents/skills/` | Task-specific toolkits                                             | Each skill's SKILL.md                                              |
 
 ## Workflow
 
@@ -64,19 +64,19 @@ Group changes by their documentation impact:
 
 For each category, note which documentation locations are affected using the mapping:
 
-| Change Type | Docs to Check |
-|-------------|---------------|
-| New resume section | `docs/how-to/02-add-resume-section.md`, `docs/reference/02-project-structure.md` |
-| New component | `docs/reference/02-project-structure.md` |
-| New dependency | `README.md`, `AGENTS.md` (tech stack), `docs/reference/01-commands.md` |
-| New pnpm script | `docs/reference/01-commands.md`, `.agents/rules/commands.md` |
-| New route | `docs/reference/02-project-structure.md`, `AGENTS.md` |
-| New design token | `docs/reference/03-design-tokens.md` |
-| New skill/rule | `AGENTS.md` (available skills/rules) |
-| Test changes | `.agents/rules/testing.md` |
-| Deployment change | `docs/explanation/01-architecture.md`, `.agents/rules/deployment.md` |
-| Build config change | `docs/reference/01-commands.md`, `.agents/rules/commands.md` |
-| Styling change | `docs/reference/03-design-tokens.md`, `.agents/rules/patterns.md` |
+| Change Type         | Docs to Check                                                                    |
+| ------------------- | -------------------------------------------------------------------------------- |
+| New resume section  | `docs/how-to/02-add-resume-section.md`, `docs/reference/02-project-structure.md` |
+| New component       | `docs/reference/02-project-structure.md`                                         |
+| New dependency      | `README.md`, `AGENTS.md` (tech stack), `docs/reference/01-commands.md`           |
+| New pnpm script     | `docs/reference/01-commands.md`, `.agents/rules/commands.md`                     |
+| New route           | `docs/reference/02-project-structure.md`, `AGENTS.md`                            |
+| New design token    | `docs/reference/03-design-tokens.md`                                             |
+| New skill/rule      | `AGENTS.md` (available skills/rules)                                             |
+| Test changes        | `.agents/rules/testing.md`                                                       |
+| Deployment change   | `docs/explanation/01-architecture.md`, `.agents/rules/deployment.md`             |
+| Build config change | `docs/reference/01-commands.md`, `.agents/rules/commands.md`                     |
+| Styling change      | `docs/reference/03-design-tokens.md`, `.agents/rules/patterns.md`                |
 
 ### Step 3: Audit Each Location
 
@@ -88,6 +88,7 @@ For each affected documentation file:
 4. **Identify removals**: documented features that no longer exist
 
 Pay special attention to:
+
 - pnpm script names (do they match `package.json`?)
 - File paths (do they still exist?)
 - Project structure trees (match actual directory layout?)
@@ -138,12 +139,12 @@ pnpm lint
 
 The `docs/` directory follows the [Diataxis](https://diataxis.fr/) framework. Each document must serve **one** primary purpose:
 
-| Type | Purpose | Question It Answers |
-|------|---------|---------------------|
-| **How-to guide** | Goal-oriented steps | "How do I...?" |
-| **Reference** | Information-oriented lookup | "What is...?" |
-| **Explanation** | Understanding-oriented discussion | "Why...? Can you tell me about...?" |
-| **Tutorial** | Learning-oriented guided experience | "Can you teach me to...?" |
+| Type             | Purpose                             | Question It Answers                 |
+| ---------------- | ----------------------------------- | ----------------------------------- |
+| **How-to guide** | Goal-oriented steps                 | "How do I...?"                      |
+| **Reference**    | Information-oriented lookup         | "What is...?"                       |
+| **Explanation**  | Understanding-oriented discussion   | "Why...? Can you tell me about...?" |
+| **Tutorial**     | Learning-oriented guided experience | "Can you teach me to...?"           |
 
 Current `docs/` structure:
 

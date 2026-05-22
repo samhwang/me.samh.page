@@ -23,7 +23,7 @@ See [docs/how-to/01-quick-start.md](docs/how-to/01-quick-start.md) for full setu
 - [PandaCSS](https://panda-css.com) (zero-runtime CSS-in-JS)
 - [Vite](https://vite.dev) with [Rolldown](https://rolldown.rs) bundler
 - [Vitest](https://vitest.dev) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [Biome](https://biomejs.dev) (linting and formatting)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) (linting and formatting)
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/) (hosting and CI/CD)
 
 ## Using as a Resume Template

@@ -1,5 +1,6 @@
 import { Outlet } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
+
 import { css } from '../../styled-system/css';
 import Footer from './footer';
 import Sidebar from './sidebar';

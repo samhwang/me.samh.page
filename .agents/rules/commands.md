@@ -20,16 +20,18 @@ pnpm typecheck        # Run TypeScript compiler check
 
 ## Code Quality
 
-### Linting & Formatting (Biome)
+### Linting & Formatting (Oxlint + Oxfmt)
 
 ```bash
 pnpm lint             # Check for issues (read-only)
 pnpm lint:fix         # Auto-fix safe issues
 pnpm lint:fix:unsafe # Fix including unsafe transformations
-pnpm ci               # CI mode (strict, no writes)
+pnpm format           # Check formatting (read-only)
+pnpm format:fix       # Auto-format files
+pnpm ci               # CI mode (strict, deny warnings)
 ```
 
-**Note**: Biome handles both linting and formatting. No separate prettier or eslint commands.
+**Note**: [Oxlint](https://oxc.rs/docs/guide/usage/linter) handles linting and [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) handles formatting. No separate prettier or eslint commands.
 
 ## Testing
 
@@ -69,13 +71,15 @@ pnpm prepare          # Setup hooks + generate PandaCSS
 ### Pre-commit Hooks
 
 Automatically runs on commit:
-- Lint-staged: Formats changed files
-- Biome: Fixes linting issues
+
+- Lint-staged: Formats changed files with Oxfmt
+- Oxlint: Fixes safe linting issues
 
 ### Pre-push Hooks
 
 Configured in `.lint-prepushrc.json`:
-- Runs linting checks before push
+
+- Runs Oxlint checks before push
 - Prevents problematic code from reaching remote
 
 ## Deployment
@@ -192,16 +196,16 @@ pnpm --version
 
 ## Scripts Summary
 
-| Command | Purpose |
-|---------|---------|
-| `pnpm dev` | Development server |
-| `pnpm build` | Production build |
-| `pnpm preview` | Preview production build |
-| `pnpm typecheck` | TypeScript check |
-| `pnpm lint` | Lint check |
-| `pnpm lint:fix` | Auto-fix linting |
-| `pnpm test` | Run tests (watch) |
-| `pnpm test:run` | Run tests (once) |
-| `pnpm panda:codegen` | Generate PandaCSS |
-| `pnpm git-hooks:init` | Setup Husky |
-| `pnpm prepare` | Post-install setup |
+| Command               | Purpose                  |
+| --------------------- | ------------------------ |
+| `pnpm dev`            | Development server       |
+| `pnpm build`          | Production build         |
+| `pnpm preview`        | Preview production build |
+| `pnpm typecheck`      | TypeScript check         |
+| `pnpm lint`           | Lint check               |
+| `pnpm lint:fix`       | Auto-fix linting         |
+| `pnpm test`           | Run tests (watch)        |
+| `pnpm test:run`       | Run tests (once)         |
+| `pnpm panda:codegen`  | Generate PandaCSS        |
+| `pnpm git-hooks:init` | Setup Husky              |
+| `pnpm prepare`        | Post-install setup       |
