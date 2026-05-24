@@ -84,7 +84,7 @@ export const sectionNameData: SectionNameData = [
 
 Create `src/resume/section-name.tsx` (kebab-case filename):
 
-```typescript
+```tsx
 import { useSectionNameData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
 import * as commonStyles from './common.styles';
@@ -135,7 +135,7 @@ export default function SectionNameSection() {
 
 Create `src/resume/section-name.test.tsx`:
 
-```typescript
+```tsx
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { sectionNameData as mockData } from '../test-utils/mock-metadata';
