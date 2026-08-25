@@ -38,6 +38,7 @@
     "@cloudflare/vite-plugin": "^1.53.1",
     "@oxc-node/cli": "^0.1.0",
     "@pandacss/dev": "^1.12.0",
+    "@tanstack/devtools-vite": "^0.8.5",
     "@tanstack/router-cli": "^1.167.33",
     "@tanstack/router-plugin": "^1.168.35",
     "@testing-library/dom": "^10.4.1",
