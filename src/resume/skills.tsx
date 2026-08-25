@@ -1,8 +1,8 @@
 import { useSkillsData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
 import { inlineList } from '../../styled-system/recipes';
-import LangIcon from '../icons/lang-icon';
-import * as commonStyles from './common.styles';
+import * as commonStyles from '../ui/common.styles';
+import LangIcon from '../ui/lang-icon';
 import * as iconStyles from './icon.styles';
 
 type SkillProps = {

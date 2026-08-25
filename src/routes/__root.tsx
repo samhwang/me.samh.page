@@ -1,8 +1,8 @@
 import { createRootRoute, HeadContent } from '@tanstack/react-router';
 
 import { useSiteMetadata } from '../../metadata/use-metadata';
-import ErrorPage from '../404';
-import Layout from '../resume/layout';
+import ErrorSection from '../ui/error-section';
+import Layout from '../ui/layout';
 
 export const Route = createRootRoute({
   component: () => (
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
   notFoundComponent: () => (
     <>
       <HeadContent />
-      <ErrorPage />
+      <ErrorSection />
     </>
   ),
   head: () => {

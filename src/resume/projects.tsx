@@ -1,6 +1,6 @@
 import { useProjectsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
+import * as commonStyles from '../ui/common.styles';
 
 type ProjectProps = {
   title: string;

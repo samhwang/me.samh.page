@@ -1,7 +1,7 @@
 import { useAboutData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import SocialIcon from '../icons/social-icon';
-import * as commonStyles from './common.styles';
+import * as commonStyles from '../ui/common.styles';
+import SocialIcon from '../ui/social-icon';
 import * as iconStyles from './icon.styles';
 
 export default function About() {

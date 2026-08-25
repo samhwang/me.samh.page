@@ -1,8 +1,8 @@
 import { Link } from '@tanstack/react-router';
 
-import { link, section } from '../resume/common.styles';
+import { link, section } from '../ui/common.styles';
 
-export default function ErrorPage() {
+export default function ErrorSection() {
   return (
     <section className={section}>
       <header>

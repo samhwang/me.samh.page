@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 
 import { css } from '../../styled-system/css';
+import * as commonStyles from '../ui/common.styles';
 import About from './about';
-import * as commonStyles from './common.styles';
 import Education from './education';
 import Experiences from './experience';
 import ProjectSection from './projects';
