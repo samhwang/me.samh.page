@@ -19,8 +19,8 @@ pnpm --version
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/samhwang/samhwang.github.io.git
-cd samhwang.github.io
+git clone https://github.com/samhwang/me.samh.page.git
+cd me.samh.page
 ```
 
 2. Install dependencies:

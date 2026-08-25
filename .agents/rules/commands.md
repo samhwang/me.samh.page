@@ -47,7 +47,7 @@ pnpm test:watch       # Explicit watch mode
 
 Coverage reports generated automatically with detailed metrics.
 
-**Focus areas**: `src/resume/**` and `src/icons/**`
+**Focus areas**: `src/resume/**` and `src/ui/**`
 
 ## Styling (PandaCSS)
 

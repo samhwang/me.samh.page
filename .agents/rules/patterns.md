@@ -381,7 +381,7 @@ const bioStyle = css({ fontSize: '1.15rem' });
 **✅ Good: Inline for single use**
 
 ```typescript
-// page.tsx - Used only once
+// index.tsx - Used only once
 <hr className={css({ margin: 0 })} />
 ```
 
@@ -439,8 +439,9 @@ Use tokens from `panda.config.ts`:
 
 #### Colors
 
-- `primary`: Green-800
+- `primary`: Blue-800
 - `slightlyDarker`: Green-900
+- `warning`: Orange-500
 - Standard palette: `gray.600`, `green.800`, etc.
 
 **Usage:**

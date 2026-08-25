@@ -400,7 +400,7 @@ afterEach(() => {
 ### Coverage Expectations
 
 - **Qualitative goal**: High coverage on core modules
-- **Focus areas**: `src/resume/**` and `src/icons/**`
+- **Focus areas**: `src/resume/**` and `src/ui/**`
 - Don't obsess over 100% coverage
 - Prioritize meaningful tests over coverage percentage
 

@@ -123,31 +123,32 @@ const handleData = (data: unknown) => {
 
 ```
 src/
-├── resume/           # Resume page components & sections
+├── resume/           # Resume section components
 │   ├── about.tsx
 │   ├── education.tsx
 │   ├── experience.tsx
 │   ├── skills.tsx
 │   ├── projects.tsx
-│   ├── footer.tsx
-│   ├── layout.tsx
-│   ├── sidebar.tsx
-│   ├── *.styles.ts  # PandaCSS styles
+│   ├── icon.styles.ts # Component-specific styles
 │   └── *.test.tsx   # Component tests
-├── icons/            # Icon components & utilities
+├── ui/                # Shared layout, icons & common styles
+│   ├── layout.tsx
+│   ├── sidebar.tsx / sidebar.styles.ts
+│   ├── footer.tsx
+│   ├── error-section.tsx
 │   ├── lang-icon.tsx
 │   ├── social-icon.tsx
 │   ├── use-icon-class.ts
+│   ├── common.styles.ts
 │   └── *.test.tsx
 ├── routes/           # TanStack Router routes
 │   ├── __root.tsx   # Root layout
-│   └── index.tsx    # Homepage route
+│   └── index.tsx    # Homepage route, renders resume sections
 ├── test-utils/       # Testing utilities
 │   ├── setups/      # Test environment setup
 │   ├── mock-metadata.ts
 │   └── render-wrapper.tsx
-├── img/              # Static images
-└── 404/              # 404 page
+└── img/              # Static images
 ```
 
 ### Test Snapshots
@@ -359,7 +360,7 @@ Avoid barrel exports (index.ts files that re-export everything). Import directly
 **❌ Avoid:**
 
 ```typescript
-// icons/index.ts
+// ui/index.ts
 export * from './lang-icon';
 export * from './social-icon';
 ```
@@ -367,8 +368,8 @@ export * from './social-icon';
 **✅ Prefer:**
 
 ```typescript
-import { LangIcon } from './icons/lang-icon';
-import { SocialIcon } from './icons/social-icon';
+import { LangIcon } from './ui/lang-icon';
+import { SocialIcon } from './ui/social-icon';
 ```
 
 ### Function Size

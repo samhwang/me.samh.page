@@ -81,7 +81,7 @@ Use a functional component with a default export. Fetch data via the hook patter
 ```typescript
 import { useCertificationsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
+import * as commonStyles from '../ui/common.styles';
 
 function Certification({ name, issuer, date }: CertificationProps) {
   return (

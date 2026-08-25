@@ -42,7 +42,7 @@ Standards for documentation, commit messages, and communication style.
 Reference files with paths and line numbers:
 
 - **Format**: `filename.tsx:123`
-- **Example**: "The icon rendering logic is in `src/icons/lang-icon.tsx:45`"
+- **Example**: "The icon rendering logic is in `src/ui/lang-icon.tsx:45`"
 
 This allows easy navigation to specific code locations.
 

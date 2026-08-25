@@ -87,7 +87,7 @@ Create `src/resume/section-name.tsx` (kebab-case filename):
 ```tsx
 import { useSectionNameData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
+import * as commonStyles from '../ui/common.styles';
 
 interface ItemProps {
   field1: string;
@@ -171,7 +171,7 @@ describe('SectionNameSection', () => {
 
 ### Step 7: Integrate into Page
 
-Add to `src/resume/page.tsx`:
+Add to `src/routes/index.tsx`:
 
 ```typescript
 import SectionNameSection from './section-name';
@@ -207,7 +207,7 @@ pnpm dev
 - [ ] Component has early return for empty state
 - [ ] Test file created at `src/resume/section-name.test.tsx`
 - [ ] Tests include snapshot, heading, and data assertions
-- [ ] Section added to `src/resume/page.tsx` sections array
+- [ ] Section added to `src/routes/index.tsx` sections array
 - [ ] `pnpm typecheck` passes
 - [ ] `pnpm lint` passes
 - [ ] `pnpm test:run` passes
@@ -216,6 +216,6 @@ pnpm dev
 
 - Section name should be PascalCase in code, kebab-case in filename
 - Hook name follows `useXxxData()` pattern
-- Section ID in page.tsx should be kebab-case
+- Section ID in `src/routes/index.tsx` should be kebab-case
 - Use `commonStyles.heading` for h2, `commonStyles.container` for wrapper
 - If the section needs many unique styles, create a `section-name.styles.ts` file

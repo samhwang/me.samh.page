@@ -27,7 +27,7 @@ All changes must be:
 
 - **Atomic**: The smallest possible and logically complete unit of change
 - **Safe**: Type-checked, linted, and tested before commit
-- **Tested**: Qualitative high coverage on core modules (`src/resume/**`, `src/icons/**`)
+- **Tested**: Qualitative high coverage on core modules (`src/resume/**`, `src/ui/**`)
 - **Linted**: Must pass `pnpm lint` and `pnpm typecheck` before commit
 - **Documented**: Clear commit messages following Conventional Commits pattern
 - **Delivered**: Pushed to main branch, automatically deployed to Cloudflare Workers
@@ -185,8 +185,8 @@ Every new feature MUST include documentation updates. Use the [update-docs](.age
 
 - **Personal project**: Single developer, no team coordination needed
 - **Production deployment**: Cloudflare Workers with automatic deployments
-- **Focus areas**: Resume components (`src/resume/**`) and icon components (`src/icons/**`)
+- **Focus areas**: Resume components (`src/resume/**`) and shared UI components (`src/ui/**`)
 - **Optimization targets**: Fast load times, high Lighthouse scores, accessible markup
-- **Code quality**: Biome for linting/formatting, TypeScript strict mode, comprehensive tests
+- **Code quality**: Oxlint and Oxfmt for linting/formatting, TypeScript strict mode, comprehensive tests
 
 When in doubt, follow existing patterns in the codebase and refer to the relevant rules in `.agents/rules/`.

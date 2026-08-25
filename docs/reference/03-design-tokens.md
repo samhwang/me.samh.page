@@ -6,8 +6,9 @@
 
 | Token            | Value         | Usage                                |
 | ---------------- | ------------- | ------------------------------------ |
-| `primary`        | Green-800     | Primary brand color, headings, links |
+| `primary`        | Blue-800      | Primary brand color, headings, links |
 | `slightlyDarker` | Green-900     | Hover states, emphasis               |
+| `warning`        | Orange-500    | Warning/alert states                 |
 | `gray.600`       | Standard gray | Secondary text, borders              |
 
 ```typescript
@@ -37,9 +38,10 @@ css({
 
 ## Sizes
 
-| Token          | Value | Usage                    |
-| -------------- | ----- | ------------------------ |
-| `sidebarWidth` | 17rem | Sidebar width on desktop |
+| Token             | Value | Usage                     |
+| ----------------- | ----- | ------------------------- |
+| `sidebarWidth`    | 17rem | Sidebar width on desktop  |
+| `contentMaxWidth` | 75rem | Max width of main content |
 
 ```typescript
 css({

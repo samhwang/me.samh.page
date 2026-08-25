@@ -6,32 +6,32 @@ Directory layout, file naming conventions, and import order.
 
 ```
 src/
-├── resume/           # Resume page components and sections
+├── resume/           # Resume section components
 │   ├── about.tsx
 │   ├── education.tsx
 │   ├── experience.tsx
 │   ├── skills.tsx
 │   ├── projects.tsx
-│   ├── footer.tsx
-│   ├── layout.tsx
-│   ├── sidebar.tsx
-│   ├── common.styles.ts   # Shared PandaCSS styles
-│   ├── *.styles.ts        # Component-specific styles
+│   ├── icon.styles.ts     # Component-specific styles
 │   └── *.test.tsx         # Component tests
-├── icons/            # Icon components and utilities
+├── ui/                # Shared layout, icons, and common styles
+│   ├── layout.tsx
+│   ├── sidebar.tsx / sidebar.styles.ts
+│   ├── footer.tsx
+│   ├── error-section.tsx
 │   ├── lang-icon.tsx
 │   ├── social-icon.tsx
 │   ├── use-icon-class.ts
+│   ├── common.styles.ts   # Shared PandaCSS styles
 │   └── *.test.tsx
 ├── routes/           # TanStack Router file-based routes
 │   ├── __root.tsx    # Root layout (wraps all routes)
-│   └── index.tsx     # Homepage route (/)
+│   └── index.tsx     # Homepage route (/), renders resume sections
 ├── test-utils/       # Testing utilities
 │   ├── setups/       # Test environment setup
 │   ├── mock-metadata.ts
 │   └── render-wrapper.tsx
-├── img/              # Static images
-└── 404/              # 404 page
+└── img/              # Static images
 ```
 
 ## File Naming
