@@ -1,5 +1,4 @@
 import { Outlet } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 
 import { css } from '../../styled-system/css';
 import Footer from './footer';
@@ -18,7 +17,6 @@ export default function Layout() {
         <Outlet />
       </div>
       <Footer />
-      <TanStackRouterDevtools />
     </div>
   );
 }

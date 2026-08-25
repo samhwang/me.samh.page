@@ -1,4 +1,6 @@
+import { TanStackDevtools } from '@tanstack/react-devtools';
 import { createRootRoute, HeadContent } from '@tanstack/react-router';
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 
 import { useSiteMetadata } from '../../metadata/use-metadata';
 import ErrorSection from '../ui/error-section';
@@ -9,6 +11,14 @@ export const Route = createRootRoute({
     <>
       <HeadContent />
       <Layout />
+      <TanStackDevtools
+        plugins={[
+          {
+            name: 'TanStack Router',
+            render: <TanStackRouterDevtoolsPanel />,
+          },
+        ]}
+      />
     </>
   ),
   notFoundComponent: () => (
