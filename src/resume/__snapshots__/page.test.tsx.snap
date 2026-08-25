@@ -90,7 +90,8 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
                 aria-label="github-original"
                 class="devicon-github-original"
                 data-testid="language-icon-github-original"
-                role="img"
+                role="button"
+                tabindex="0"
               />
             </li>
           </ul>
@@ -187,7 +188,8 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             aria-label="github-original"
             class="devicon-github-original"
             data-testid="language-icon-github-original"
-            role="img"
+            role="button"
+            tabindex="0"
           />
         </li>
       </ul>

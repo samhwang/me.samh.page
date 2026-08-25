@@ -9,7 +9,8 @@ exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
       aria-label="php-plain"
       class="devicon-php-plain"
       data-testid="language-icon-php-plain"
-      role="img"
+      role="button"
+      tabindex="0"
     />
   </li>
 </div>

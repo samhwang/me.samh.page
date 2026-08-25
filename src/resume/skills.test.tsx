@@ -65,7 +65,7 @@ describe('Skill Section Component', () => {
     for (const techIcon of mockSkillsData.techStack) {
       const icon = screen.getByTestId(`language-icon-${techIcon}`);
       expect(icon).toHaveClass(`devicon-${techIcon}`);
-      expect(icon).toHaveAttribute('role', 'img');
+      expect(icon).toHaveAttribute('role', 'button');
     }
   });
 });
