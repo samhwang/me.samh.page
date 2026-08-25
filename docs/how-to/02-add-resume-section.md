@@ -180,7 +180,7 @@ describe('CertificationsSection', () => {
 
 ## 7. Integrate into the resume page
 
-Add the new section to `src/resume/page.tsx`:
+Add the new section to `src/routes/index.tsx`:
 
 ```typescript
 import CertificationsSection from './certifications';
