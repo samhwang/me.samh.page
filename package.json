@@ -25,7 +25,6 @@
     "@fontsource/mulish": "^5.3.0",
     "@fontsource/roboto": "^5.3.0",
     "@fontsource/saira-extra-condensed": "^5.3.0",
-    "@oxc-node/cli": "^0.1.0",
     "@react-hookz/web": "^26.1.0",
     "@rolldown/plugin-babel": "^0.2.3",
     "@tanstack/react-devtools": "^0.10.12",
@@ -37,6 +36,7 @@
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.53.1",
+    "@oxc-node/cli": "^0.1.0",
     "@pandacss/dev": "^1.12.0",
     "@tanstack/router-cli": "^1.167.33",
     "@tanstack/router-plugin": "^1.168.35",
