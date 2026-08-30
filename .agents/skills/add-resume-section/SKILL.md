@@ -190,7 +190,7 @@ const sections = [
 ```bash
 pnpm typecheck
 pnpm lint
-pnpm test:run
+pnpm test
 pnpm dev
 ```
 
@@ -210,7 +210,7 @@ pnpm dev
 - [ ] Section added to `src/routes/index.tsx` sections array
 - [ ] `pnpm typecheck` passes
 - [ ] `pnpm lint` passes
-- [ ] `pnpm test:run` passes
+- [ ] `pnpm test` passes
 
 ## Notes
 

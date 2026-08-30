@@ -221,7 +221,7 @@ describe('Component', () => {
 When intentional changes occur:
 
 ```bash
-pnpm test:run -- -u    # Update all snapshots
+pnpm test -- -u    # Update all snapshots
 ```
 
 **⚠️ Important:**
@@ -407,7 +407,7 @@ afterEach(() => {
 ### Running Coverage
 
 ```bash
-pnpm test:run --coverage
+pnpm test:coverage
 ```
 
 Coverage reports show:
@@ -526,16 +526,16 @@ it('renders error boundary fallback', () => {
 ### Development
 
 ```bash
-pnpm test              # Watch mode, interactive
-pnpm test:watch        # Explicit watch mode
+pnpm test              # Run tests once
+pnpm test:coverage     # Run tests with coverage reports
 ```
 
-Watch mode automatically re-runs tests when files change.
+Tests run once via Vitest and exit when complete.
 
 ### CI/Production
 
 ```bash
-pnpm test:run          # Single run, exit with code
+pnpm test          # Single run, exit with code
 ```
 
 Use in CI pipelines for automated testing.

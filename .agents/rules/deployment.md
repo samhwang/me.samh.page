@@ -76,7 +76,7 @@ pnpm typecheck
 pnpm lint
 
 # 3. Run tests
-pnpm test:run
+pnpm test
 
 # 4. Build locally
 pnpm build
@@ -270,7 +270,7 @@ Consider adding:
 
 ### Before Deploying
 
-- ✅ All tests passing (`pnpm test:run`)
+- ✅ All tests passing (`pnpm test`)
 - ✅ TypeScript compiles (`pnpm typecheck`)
 - ✅ Linting passes (`pnpm lint`)
 - ✅ Local build succeeds (`pnpm build`)

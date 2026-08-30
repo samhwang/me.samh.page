@@ -200,7 +200,7 @@ const sections = [
 ```bash
 pnpm typecheck        # Types compile
 pnpm lint             # No lint issues
-pnpm test:run         # Tests pass
+pnpm test         # Tests pass
 pnpm dev              # Visual check in browser
 ```
 

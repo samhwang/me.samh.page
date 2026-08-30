@@ -16,7 +16,7 @@ jobs:
           - name: lint
             command: ci
           - name: test
-            command: test:run
+            command: test
           - name: typecheck
             command: typecheck
           - name: build

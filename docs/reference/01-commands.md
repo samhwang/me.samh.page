@@ -4,24 +4,21 @@ All available [pnpm](https://pnpm.io) scripts for development, testing, and depl
 
 ## Scripts Summary
 
-| Command                | Purpose                                                                          |
-| ---------------------- | -------------------------------------------------------------------------------- |
-| `pnpm dev`             | Development server with HMR ([Vite](https://vite.dev))                           |
-| `pnpm build`           | Production build to `dist/`                                                      |
-| `pnpm preview`         | Preview production build locally                                                 |
-| `pnpm typecheck`       | [TypeScript](https://www.typescriptlang.org/) type checking                      |
-| `pnpm lint`            | Lint check ([Oxlint](https://oxc.rs/docs/guide/usage/linter), read-only)         |
-| `pnpm lint:fix`        | Auto-fix safe linting issues                                                     |
-| `pnpm lint:fix:unsafe` | Fix including unsafe transformations                                             |
-| `pnpm format`          | Formatting check ([Oxfmt](https://oxc.rs/docs/guide/usage/formatter), read-only) |
-| `pnpm format:fix`      | Auto-format files                                                                |
-| `pnpm ci`              | CI mode (strict, deny warnings)                                                  |
-| `pnpm test`            | Run tests in watch mode ([Vitest](https://vitest.dev))                           |
-| `pnpm test:run`        | Run tests once (CI)                                                              |
-| `pnpm test:watch`      | Explicit watch mode                                                              |
-| `pnpm panda:codegen`   | Generate [PandaCSS](https://panda-css.com) utilities                             |
-| `pnpm git-hooks:init`  | Initialize [Husky](https://typicode.github.io/husky/) hooks                      |
-| `pnpm prepare`         | Post-install setup (hooks + PandaCSS)                                            |
+| Command                | Purpose                                                                                                                                |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `pnpm dev`             | Development server with HMR ([Vite](https://vite.dev))                                                                                 |
+| `pnpm build`           | Production build to `dist/`                                                                                                            |
+| `pnpm preview`         | Preview production build locally                                                                                                       |
+| `pnpm typecheck`       | [TypeScript](https://www.typescriptlang.org/) type checking                                                                            |
+| `pnpm lint`            | Lint + format check ([Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter), read-only) |
+| `pnpm lint:fix`        | Auto-fix linting issues and format files                                                                                               |
+| `pnpm lint:fix:unsafe` | Fix including unsafe transformations                                                                                                   |
+| `pnpm ci`              | Full check: lint + typecheck + test                                                                                                    |
+| `pnpm test`            | Run tests once ([Vitest](https://vitest.dev))                                                                                          |
+| `pnpm test:coverage`   | Run tests with coverage reports                                                                                                        |
+| `pnpm panda:codegen`   | Generate [PandaCSS](https://panda-css.com) utilities                                                                                   |
+| `pnpm githooks:init`   | Initialize [Husky](https://typicode.github.io/husky/) hooks                                                                            |
+| `pnpm prepare`         | Post-install setup (hooks + PandaCSS)                                                                                                  |
 
 ## Git Hooks
 
@@ -66,9 +63,9 @@ The CLI check is more comprehensive than editor feedback. Trust this output.
 ### Test failures
 
 ```bash
-pnpm test:watch       # Interactive debugging
-pnpm test:run         # See all failures at once
-pnpm test:run -- -u   # Update snapshots (review changes carefully)
+pnpm test              # See all failures at once
+pnpm test:coverage     # Run tests with coverage reports
+pnpm test -- -u        # Update snapshots (review changes carefully)
 ```
 
 ### Clean install

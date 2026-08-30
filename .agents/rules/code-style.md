@@ -18,7 +18,7 @@ Oxfmt handles formatting automatically:
 
 - On save (if editor configured)
 - Pre-commit (via lint-staged)
-- Via `pnpm format:fix`
+- Via `pnpm lint:fix`
 
 ### EditorConfig
 

@@ -23,12 +23,9 @@ pnpm typecheck        # Run TypeScript compiler check
 ### Linting & Formatting (Oxlint + Oxfmt)
 
 ```bash
-pnpm lint             # Check for issues (read-only)
-pnpm lint:fix         # Auto-fix safe issues
+pnpm lint             # Check linting and formatting (read-only)
+pnpm lint:fix         # Auto-fix linting issues and format files
 pnpm lint:fix:unsafe # Fix including unsafe transformations
-pnpm format           # Check formatting (read-only)
-pnpm format:fix       # Auto-format files
-pnpm ci               # CI mode (strict, deny warnings)
 ```
 
 **Note**: [Oxlint](https://oxc.rs/docs/guide/usage/linter) handles linting and [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) handles formatting. No separate prettier or eslint commands.
@@ -38,9 +35,8 @@ pnpm ci               # CI mode (strict, deny warnings)
 ### Test Commands
 
 ```bash
-pnpm test             # Watch mode (interactive)
-pnpm test:run         # Single run (CI)
-pnpm test:watch       # Explicit watch mode
+pnpm test             # Run tests once (single run)
+pnpm test:coverage    # Run tests with coverage reports
 ```
 
 ### Coverage
@@ -62,7 +58,7 @@ Output directory: `styled-system/` (git-ignored)
 ## Git Hooks
 
 ```bash
-pnpm git-hooks:init   # Initialize Husky hooks
+pnpm githooks:init   # Initialize Husky hooks
 pnpm prepare          # Setup hooks + generate PandaCSS
 ```
 
@@ -115,7 +111,7 @@ Serves the `dist/` directory on local server.
 ```bash
 pnpm lint             # Check linting
 pnpm typecheck        # Check types
-pnpm test:run         # Run all tests
+pnpm test             # Run all tests
 ```
 
 Pre-commit hooks handle formatting automatically, but manual checks ensure everything passes.
@@ -123,7 +119,7 @@ Pre-commit hooks handle formatting automatically, but manual checks ensure every
 ### Full Quality Check
 
 ```bash
-pnpm typecheck && pnpm lint && pnpm test:run && pnpm build
+pnpm typecheck && pnpm lint && pnpm test && pnpm build
 ```
 
 Runs all checks in sequence. Use before pushing to main.
@@ -159,11 +155,11 @@ Shows all TypeScript errors. More comprehensive than editor feedback.
 ### Test Failures
 
 ```bash
-pnpm test:watch       # Interactive debugging
-pnpm test:run         # See all failures at once
+pnpm test             # See all failures at once
+pnpm test:coverage    # Run tests with coverage reports
 ```
 
-Use `test:watch` to run specific tests and debug interactively.
+Use `pnpm test:coverage` to run tests and review coverage reports.
 
 ### Clean Install
 
@@ -177,7 +173,7 @@ Nuclear option if dependencies are corrupted.
 ### Update Snapshots
 
 ```bash
-pnpm test:run -- -u   # Update all snapshots
+pnpm test -- -u   # Update all snapshots
 ```
 
 **Warning**: Review snapshot changes carefully before committing.
@@ -196,16 +192,16 @@ pnpm --version
 
 ## Scripts Summary
 
-| Command               | Purpose                  |
-| --------------------- | ------------------------ |
-| `pnpm dev`            | Development server       |
-| `pnpm build`          | Production build         |
-| `pnpm preview`        | Preview production build |
-| `pnpm typecheck`      | TypeScript check         |
-| `pnpm lint`           | Lint check               |
-| `pnpm lint:fix`       | Auto-fix linting         |
-| `pnpm test`           | Run tests (watch)        |
-| `pnpm test:run`       | Run tests (once)         |
-| `pnpm panda:codegen`  | Generate PandaCSS        |
-| `pnpm git-hooks:init` | Setup Husky              |
-| `pnpm prepare`        | Post-install setup       |
+| Command              | Purpose                  |
+| -------------------- | ------------------------ |
+| `pnpm dev`           | Development server       |
+| `pnpm build`         | Production build         |
+| `pnpm preview`       | Preview production build |
+| `pnpm typecheck`     | TypeScript check         |
+| `pnpm lint`          | Lint + format check      |
+| `pnpm lint:fix`      | Auto-fix + format        |
+| `pnpm test`          | Run tests (once)         |
+| `pnpm test:coverage` | Run tests with coverage  |
+| `pnpm panda:codegen` | Generate PandaCSS        |
+| `pnpm githooks:init` | Setup Husky              |
+| `pnpm prepare`       | Post-install setup       |

@@ -44,8 +44,8 @@ Open the URL shown in the terminal (default: `http://localhost:5173`). [Vite](ht
 ### Run tests
 
 ```bash
-pnpm test          # Watch mode (interactive)
-pnpm test:run      # Single run (CI)
+pnpm test          # Run tests once
+pnpm test:coverage # Run tests with coverage reports
 ```
 
 Tests use [Vitest](https://vitest.dev) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
@@ -54,10 +54,8 @@ Tests use [Vitest](https://vitest.dev) and [React Testing Library](https://testi
 
 ```bash
 pnpm typecheck     # TypeScript type checking
-pnpm lint          # Lint with Oxlint (read-only)
-pnpm lint:fix      # Auto-fix safe issues
-pnpm format        # Check formatting
-pnpm format:fix    # Auto-format files
+pnpm lint          # Lint and format check with Oxlint/Oxfmt (read-only)
+pnpm lint:fix      # Auto-fix safe issues and format
 ```
 
 [Oxlint](https://oxc.rs/docs/guide/usage/linter) handles linting and [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) handles formatting. No separate prettier or eslint needed.
@@ -72,7 +70,7 @@ pnpm preview       # Preview the production build locally
 ### Full quality check before pushing
 
 ```bash
-pnpm typecheck && pnpm lint && pnpm test:run && pnpm build
+pnpm typecheck && pnpm lint && pnpm test && pnpm build
 ```
 
 ## What's Next

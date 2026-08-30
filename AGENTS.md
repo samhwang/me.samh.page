@@ -113,8 +113,7 @@ Add new skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
 ```bash
 pnpm dev           # Development server with HMR
 pnpm build         # Production build
-pnpm test          # Run tests (watch mode)
-pnpm test:run      # Run tests (single run)
+pnpm test          # Run tests (single run)
 pnpm lint          # Check code quality
 pnpm lint:fix      # Auto-fix linting issues
 pnpm typecheck     # TypeScript type checking
@@ -147,7 +146,7 @@ Think of **rules** as a "manual" that keeps behavior aligned, while **skills** a
 ```bash
 pnpm typecheck     # Type check
 pnpm lint          # Lint check
-pnpm test:run      # Run all tests
+pnpm test          # Run all tests
 ```
 
 Pre-commit hooks handle formatting automatically.
@@ -155,7 +154,7 @@ Pre-commit hooks handle formatting automatically.
 ### Full Quality Check
 
 ```bash
-pnpm typecheck && pnpm lint && pnpm test:run && pnpm build
+pnpm typecheck && pnpm lint && pnpm test && pnpm build
 ```
 
 Run all checks before pushing to main.
