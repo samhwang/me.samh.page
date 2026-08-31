@@ -3,7 +3,7 @@
 exports[`Experience Component > Should render without crashing and match snapshot 1`] = `
 <div>
   <div
-    class="container"
+    class="fullWidth"
   >
     <h2
       class="heading"

@@ -1,6 +1,6 @@
 import { useSkillsData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
-import { container, devIcons, heading, inlineList, subheading } from '../../styled-system/recipes';
+import { devIcons, fullWidth, heading, inlineList, subheading } from '../../styled-system/recipes';
 import LangIcon from '../ui/lang-icon';
 
 type SkillProps = {
@@ -25,7 +25,7 @@ export default function SkillSection() {
   const { skills, techStack } = useSkillsData();
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Skills and Proficiency</h2>
 
       {skills.map(({ title, description }) => (

@@ -1,6 +1,6 @@
 import { useProjectsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import { container, heading, link } from '../../styled-system/recipes';
+import { fullWidth, heading, link } from '../../styled-system/recipes';
 
 type ProjectProps = {
   title: string;
@@ -48,7 +48,7 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Projects</h2>
       <ul
         className={css({

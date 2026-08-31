@@ -298,10 +298,10 @@ export const Component = () => (
 Reusable semantic patterns are defined as [recipes](https://panda-css.com/docs/concepts/recipes) and registered in `panda.config.ts`. Multi-part components use a [slot recipe](https://panda-css.com/docs/concepts/slot-recipes). Consume them from `styled-system/recipes`:
 
 ```typescript
-import { container, heading, link } from '../../styled-system/recipes';
+import { fullWidth, heading, link } from '../../styled-system/recipes';
 
 export const Component = () => (
-  <div className={container()}>
+  <div className={fullWidth()}>
     <h2 className={heading()}>Title</h2>
     <Link className={link()} to="/">Home</Link>
   </div>
@@ -339,7 +339,7 @@ For styles used **multiple times** within the same component, define a constant:
 ```typescript
 // component.tsx
 import { css } from '../../styled-system/css';
-import { container } from '../../styled-system/recipes';
+import { fullWidth } from '../../styled-system/recipes';
 
 // Used multiple times in this component
 const bioStyle = css({
@@ -349,7 +349,7 @@ const bioStyle = css({
 });
 
 export const Component = () => (
-  <div className={container()}>
+  <div className={fullWidth()}>
     <p className={bioStyle}>First paragraph</p>
     <p className={bioStyle}>Second paragraph</p>
   </div>
@@ -361,10 +361,10 @@ For styles used **only once**, inline them directly:
 ```typescript
 // component.tsx
 import { css } from '../../styled-system/css';
-import { container } from '../../styled-system/recipes';
+import { fullWidth } from '../../styled-system/recipes';
 
 export const Component = () => (
-  <div className={container()}>
+  <div className={fullWidth()}>
     <p
       className={css({
         fontSize: '1.15rem',
@@ -411,7 +411,7 @@ const bioStyle = css({ fontSize: '1.15rem' });
 
 ```typescript
 // component.styles.ts (DON'T DO THIS)
-export { heading, container } from './common.recipes';
+export { heading, fullWidth } from './common.recipes';
 
 // component.tsx
 import { heading } from './component.styles'; // Unnecessary layer

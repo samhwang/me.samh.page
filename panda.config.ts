@@ -1,6 +1,6 @@
 import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
 
-import { container, heading, link, section, subheading, textPrimary, title } from './src/ui/common.recipes';
+import { fullWidth, heading, link, section, subheading, textPrimary, title } from './src/ui/common.recipes';
 import { devIcons, socialIcons } from './src/ui/icon.recipes';
 import { sidebar } from './src/ui/sidebar.recipe';
 
@@ -107,7 +107,7 @@ export default defineConfig({
         section,
         subheading,
         link,
-        container,
+        fullWidth,
         heading,
         title,
         textPrimary,

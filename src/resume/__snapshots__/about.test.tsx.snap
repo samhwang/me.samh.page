@@ -3,7 +3,7 @@
 exports[`Render About Data > Should match snapshot 1`] = `
 <div>
   <div
-    class="container"
+    class="fullWidth"
   >
     <h1
       class="title"

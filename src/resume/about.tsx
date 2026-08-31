@@ -1,13 +1,13 @@
 import { useAboutData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import { container, socialIcons, subheading, textPrimary, title } from '../../styled-system/recipes';
+import { fullWidth, socialIcons, subheading, textPrimary, title } from '../../styled-system/recipes';
 import SocialIcon from '../ui/social-icon';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h1 className={title()}>
         {firstName}
         <span className={textPrimary()}>{lastName}</span>

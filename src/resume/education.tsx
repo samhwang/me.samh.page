@@ -1,5 +1,5 @@
 import { useEducationData } from '../../metadata/use-metadata';
-import { container, dateDisplay, entryContainer, heading, subheading, textPrimary, title } from '../../styled-system/recipes';
+import { dateDisplay, entryContainer, fullWidth, heading, subheading, textPrimary, title } from '../../styled-system/recipes';
 
 type SchoolProps = {
   institute: string;
@@ -27,7 +27,7 @@ export default function Education() {
   const education = useEducationData();
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Education</h2>
       {education.map(({ institute, degree, major, duration }) => (
         <School institute={institute} degree={degree} major={major} duration={duration} key={institute} />

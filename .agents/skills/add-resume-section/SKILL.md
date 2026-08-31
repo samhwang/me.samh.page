@@ -87,7 +87,7 @@ Create `src/resume/section-name.tsx` (kebab-case filename):
 ```tsx
 import { useSectionNameData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import { container, heading } from '../../styled-system/recipes';
+import { fullWidth, heading } from '../../styled-system/recipes';
 
 interface ItemProps {
   field1: string;
@@ -110,7 +110,7 @@ export default function SectionNameSection() {
   if (items.length === 0) return null;
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Section Name</h2>
       <ul className={css({ listStyle: 'none', paddingLeft: 0, marginBottom: 0 })}>
         {items.map((item) => (
@@ -127,7 +127,7 @@ export default function SectionNameSection() {
 - Default export for the main component
 - Hook pattern for data (`useXxxData()`)
 - Early return for empty state
-- Import shared recipes (`container`, `heading`) from `styled-system/recipes`
+- Import shared recipes (`fullWidth`, `heading`) from `styled-system/recipes`
 - Use `css()` from `styled-system/css` for component-specific styles
 - Inline single-use styles, define constants for repeated styles
 
@@ -217,5 +217,5 @@ pnpm dev
 - Section name should be PascalCase in code, kebab-case in filename
 - Hook name follows `useXxxData()` pattern
 - Section ID in `src/routes/index.tsx` should be kebab-case
-- Use `container()` recipe for wrapper, `heading()` recipe for the h2
+- Use `fullWidth()` recipe for wrapper, `heading()` recipe for the h2
 - If the section has many named parts, define a slot recipe in a `section-name.recipe.ts` file registered in `panda.config.ts`

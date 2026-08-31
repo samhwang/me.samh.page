@@ -1,6 +1,6 @@
 import { useExperienceData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
-import { container, dateDisplay, devIcons, entryContainer, heading, inlineList, subheading, textPrimary } from '../../styled-system/recipes';
+import { dateDisplay, devIcons, entryContainer, fullWidth, heading, inlineList, subheading, textPrimary } from '../../styled-system/recipes';
 import { title as titleRecipe } from '../../styled-system/recipes';
 import LangIcon from '../ui/lang-icon';
 
@@ -40,7 +40,7 @@ export default function Experiences() {
   const experience = useExperienceData();
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Experience</h2>
       {experience.map(({ title, companyName, description, duration, techIcons }) => (
         <JobDescription key={companyName} title={title} companyName={companyName} description={description} duration={duration} techIcons={techIcons} />

@@ -7,7 +7,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     id="about"
   >
     <div
-      class="container"
+      class="fullWidth"
     >
       <h1
         class="title"
@@ -54,7 +54,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     id="experience"
   >
     <div
-      class="container"
+      class="fullWidth"
     >
       <h2
         class="heading"
@@ -116,7 +116,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     id="education"
   >
     <div
-      class="container"
+      class="fullWidth"
     >
       <h2
         class="heading"
@@ -161,7 +161,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     id="skills"
   >
     <div
-      class="container"
+      class="fullWidth"
     >
       <h2
         class="heading"
@@ -203,7 +203,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     id="projects"
   >
     <div
-      class="container"
+      class="fullWidth"
     >
       <h2
         class="heading"

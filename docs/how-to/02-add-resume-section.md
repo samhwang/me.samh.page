@@ -81,7 +81,7 @@ Use a functional component with a default export. Fetch data via the hook patter
 ```typescript
 import { useCertificationsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import { container, heading } from '../../styled-system/recipes';
+import { fullWidth, heading } from '../../styled-system/recipes';
 
 function Certification({ name, issuer, date }: CertificationProps) {
   return (
@@ -97,7 +97,7 @@ export default function CertificationsSection() {
   if (certifications.length === 0) return null;
 
   return (
-    <div className={container()}>
+    <div className={fullWidth()}>
       <h2 className={heading()}>Certifications</h2>
       <ul className={css({ listStyle: 'none', paddingLeft: 0, marginBottom: 0 })}>
         {certifications.map(({ name, issuer, date }) => (
@@ -111,7 +111,7 @@ export default function CertificationsSection() {
 
 Key patterns:
 
-- Import shared [PandaCSS recipes](https://panda-css.com/docs/concepts/recipes) (e.g. `container`, `heading`) from `styled-system/recipes` for reusable patterns
+- Import shared [PandaCSS recipes](https://panda-css.com/docs/concepts/recipes) (e.g. `fullWidth`, `heading`) from `styled-system/recipes` for reusable patterns
 - Use [PandaCSS](https://panda-css.com) `css()` for component-specific styles (inline for single use, constant for repeated use)
 - Use the hook pattern (`useXxxData()`) to fetch data from metadata — do not pass data as props
 - Use default exports for components

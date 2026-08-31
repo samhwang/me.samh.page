@@ -3,7 +3,7 @@
 exports[`Education section render > Should match snapshot 1`] = `
 <div>
   <div
-    class="container"
+    class="fullWidth"
   >
     <h2
       class="heading"

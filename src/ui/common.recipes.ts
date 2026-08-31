@@ -43,8 +43,8 @@ export const link = defineRecipe({
   },
 });
 
-export const container = defineRecipe({
-  className: 'container',
+export const fullWidth = defineRecipe({
+  className: 'fullWidth',
   base: {
     width: '100%',
   },
