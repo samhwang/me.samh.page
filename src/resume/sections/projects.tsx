@@ -1,6 +1,6 @@
-import { useProjectsData } from '../../metadata/use-metadata';
-import { css } from '../../styled-system/css';
-import { fullWidth, heading, link } from '../../styled-system/recipes';
+import { useProjectsData } from '../../../metadata/use-metadata';
+import { css } from '../../../styled-system/css';
+import { fullWidth, heading, link } from '../../../styled-system/recipes';
 
 type ProjectProps = {
   title: string;

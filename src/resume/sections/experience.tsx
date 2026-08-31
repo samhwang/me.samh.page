@@ -1,8 +1,8 @@
-import { useExperienceData } from '../../metadata/use-metadata';
-import { cx } from '../../styled-system/css';
-import { dateDisplay, devIcons, entryContainer, fullWidth, heading, inlineList, subheading, textPrimary } from '../../styled-system/recipes';
-import { title as titleRecipe } from '../../styled-system/recipes';
-import LangIcon from '../ui/lang-icon';
+import { useExperienceData } from '../../../metadata/use-metadata';
+import { cx } from '../../../styled-system/css';
+import { dateDisplay, devIcons, entryContainer, fullWidth, heading, inlineList, subheading, textPrimary } from '../../../styled-system/recipes';
+import { title as titleRecipe } from '../../../styled-system/recipes';
+import LangIcon from '../../ui/lang-icon';
 
 type JobDescriptionProps = {
   title: string;

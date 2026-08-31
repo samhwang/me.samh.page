@@ -1,7 +1,7 @@
-import { useAboutData } from '../../metadata/use-metadata';
-import { css } from '../../styled-system/css';
-import { fullWidth, socialIcons, subheading, textPrimary, title } from '../../styled-system/recipes';
-import SocialIcon from '../ui/social-icon';
+import { useAboutData } from '../../../metadata/use-metadata';
+import { css } from '../../../styled-system/css';
+import { fullWidth, socialIcons, subheading, textPrimary, title } from '../../../styled-system/recipes';
+import SocialIcon from '../../ui/social-icon';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();

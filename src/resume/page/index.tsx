@@ -1,12 +1,12 @@
 import { Fragment } from 'react/jsx-runtime';
 
-import { css } from '../../styled-system/css';
-import { section } from '../../styled-system/recipes';
-import About from './about';
-import Education from './education';
-import Experiences from './experience';
-import ProjectSection from './projects';
-import SkillSection from './skills';
+import { css } from '../../../styled-system/css';
+import { section } from '../../../styled-system/recipes';
+import About from '../sections/about';
+import Education from '../sections/education';
+import Experiences from '../sections/experience';
+import ProjectSection from '../sections/projects';
+import SkillSection from '../sections/skills';
 
 export function ResumePage() {
   const sections = [

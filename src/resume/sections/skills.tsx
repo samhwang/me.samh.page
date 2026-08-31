@@ -1,7 +1,7 @@
-import { useSkillsData } from '../../metadata/use-metadata';
-import { cx } from '../../styled-system/css';
-import { devIcons, fullWidth, heading, inlineList, subheading } from '../../styled-system/recipes';
-import LangIcon from '../ui/lang-icon';
+import { useSkillsData } from '../../../metadata/use-metadata';
+import { cx } from '../../../styled-system/css';
+import { devIcons, fullWidth, heading, inlineList, subheading } from '../../../styled-system/recipes';
+import LangIcon from '../../ui/lang-icon';
 
 type SkillProps = {
   title: string;

@@ -1,5 +1,5 @@
-import { useEducationData } from '../../metadata/use-metadata';
-import { dateDisplay, entryContainer, fullWidth, heading, subheading, textPrimary, title } from '../../styled-system/recipes';
+import { useEducationData } from '../../../metadata/use-metadata';
+import { dateDisplay, entryContainer, fullWidth, heading, subheading, textPrimary, title } from '../../../styled-system/recipes';
 
 type SchoolProps = {
   institute: string;

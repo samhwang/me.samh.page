@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import { skillsData as mockSkillsData } from '../test-utils/mock-metadata';
+import { skillsData as mockSkillsData } from '../../test-utils/mock-metadata';
 import SkillSection from './skills';
 
 describe('Skill Section Component', () => {
