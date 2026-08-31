@@ -87,7 +87,7 @@ Create `src/resume/section-name.tsx` (kebab-case filename):
 ```tsx
 import { useSectionNameData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from '../ui/common.styles';
+import { container, heading } from '../../styled-system/recipes';
 
 interface ItemProps {
   field1: string;
@@ -110,8 +110,8 @@ export default function SectionNameSection() {
   if (items.length === 0) return null;
 
   return (
-    <div className={commonStyles.container}>
-      <h2 className={commonStyles.heading}>Section Name</h2>
+    <div className={container()}>
+      <h2 className={heading()}>Section Name</h2>
       <ul className={css({ listStyle: 'none', paddingLeft: 0, marginBottom: 0 })}>
         {items.map((item) => (
           <Item key={item.field1} {...item} />
@@ -127,7 +127,7 @@ export default function SectionNameSection() {
 - Default export for the main component
 - Hook pattern for data (`useXxxData()`)
 - Early return for empty state
-- Import `commonStyles` from `./common.styles`
+- Import shared recipes (`container`, `heading`) from `styled-system/recipes`
 - Use `css()` from `styled-system/css` for component-specific styles
 - Inline single-use styles, define constants for repeated styles
 
@@ -217,5 +217,5 @@ pnpm dev
 - Section name should be PascalCase in code, kebab-case in filename
 - Hook name follows `useXxxData()` pattern
 - Section ID in `src/routes/index.tsx` should be kebab-case
-- Use `commonStyles.heading` for h2, `commonStyles.container` for wrapper
-- If the section needs many unique styles, create a `section-name.styles.ts` file
+- Use `container()` recipe for wrapper, `heading()` recipe for the h2
+- If the section has many named parts, define a slot recipe in a `section-name.recipe.ts` file registered in `panda.config.ts`

@@ -112,10 +112,10 @@ const handleData = (data: unknown) => {
 
 ### Files
 
-- **kebab-case**: `user-profile.tsx`, `use-metadata.ts`, `icon.styles.ts`
+- **kebab-case**: `user-profile.tsx`, `use-metadata.ts`, `icon.recipes.ts`
 - **Test files**: `component-name.test.tsx`
 - **Hooks**: `use-hook-name.ts`
-- **Styles**: `component-name.styles.ts`
+- **Recipes**: `component-name.recipe.ts` / `*.recipes.ts` (PandaCSS recipes)
 
 ## File Organization
 
@@ -129,17 +129,17 @@ src/
 │   ├── experience.tsx
 │   ├── skills.tsx
 │   ├── projects.tsx
-│   ├── icon.styles.ts # Component-specific styles
 │   └── *.test.tsx   # Component tests
-├── ui/                # Shared layout, icons & common styles
+├── ui/                # Shared layout, icons & theme recipes
 │   ├── layout.tsx
-│   ├── sidebar.tsx / sidebar.styles.ts
+│   ├── sidebar.tsx / sidebar.recipe.ts
 │   ├── footer.tsx
 │   ├── error-section.tsx
 │   ├── lang-icon.tsx
 │   ├── social-icon.tsx
 │   ├── use-icon-class.ts
-│   ├── common.styles.ts
+│   ├── common.recipes.ts
+│   ├── icon.recipes.ts
 │   └── *.test.tsx
 ├── routes/           # TanStack Router routes
 │   ├── __root.tsx   # Root layout
@@ -317,7 +317,7 @@ export const formatRelativeTime = (date: Date): string => {
 ### Styling Patterns
 
 - Use PandaCSS utilities via `css()` function
-- Define reusable styles in `*.styles.ts` files
+- Define reusable styles as [recipes](https://panda-css.com/docs/concepts/recipes) in `*.recipes.ts`, registered in `panda.config.ts`
 - Use design tokens from `panda.config.ts`
 - Avoid inline styles (use PandaCSS instead)
 
@@ -325,31 +325,11 @@ export const formatRelativeTime = (date: Date): string => {
 
 ```
 component-name.tsx       # Component logic
-component-name.styles.ts # PandaCSS styles (optional)
+component-name.recipe.ts # PandaCSS slot recipe (optional, multi-part components)
 component-name.test.tsx  # Tests
 ```
 
-### Example Style File
-
-```typescript
-// component.styles.ts
-import { css } from '../../styled-system/css';
-
-export const containerStyle = css({
-  display: 'flex',
-  gap: '1rem',
-  padding: '2rem',
-  lg: {
-    gap: '2rem',
-  },
-});
-
-export const headingStyle = css({
-  fontFamily: 'heading',
-  color: 'primary',
-  fontSize: '2rem',
-});
-```
+Reusable patterns shared across components live in `*.recipes.ts` files (e.g. `common.recipes.ts`) and are consumed via the generated `styled-system/recipes` module. See [patterns.md](patterns.md) for the full architecture.
 
 ## Code Organization
 

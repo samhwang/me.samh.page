@@ -293,20 +293,43 @@ export const Component = () => (
 
 #### Component Styling Architecture
 
-**Pattern: Common styles in `common.styles.ts`, component-specific styles inline**
+**Pattern: Reactive styles in PandaCSS recipes, component-specific styles inline with `css()`**
 
-**Use shared patterns from `common.styles.ts`:**
+Reusable semantic patterns are defined as [recipes](https://panda-css.com/docs/concepts/recipes) and registered in `panda.config.ts`. Multi-part components use a [slot recipe](https://panda-css.com/docs/concepts/slot-recipes). Consume them from `styled-system/recipes`:
 
 ```typescript
-// component.tsx
-import * as commonStyles from './common.styles';
+import { container, heading, link } from '../../styled-system/recipes';
 
 export const Component = () => (
-  <div className={commonStyles.container}>
-    <h2 className={commonStyles.heading}>Title</h2>
-    <p className={commonStyles.textPrimary}>Description</p>
+  <div className={container()}>
+    <h2 className={heading()}>Title</h2>
+    <Link className={link()} to="/">Home</Link>
   </div>
 );
+```
+
+**Define a slot recipe for one component with many named parts:**
+
+```typescript
+// sidebar.recipe.ts
+import { defineSlotRecipe } from '@pandacss/dev';
+
+export const sidebar = defineSlotRecipe({
+  className: 'sidebar',
+  slots: ['navigation', 'brand', 'navLink'],
+  base: {
+    navigation: { display: 'flex' },
+    brand: { color: 'white' },
+    navLink: { fontWeight: '800' },
+  },
+});
+```
+
+```typescript
+// sidebar.tsx
+import { sidebar } from '../../styled-system/recipes';
+const styles = sidebar();
+// className={styles.navigation}, etc.
 ```
 
 **Define component-specific styles inline with `css()`:**
@@ -316,7 +339,7 @@ For styles used **multiple times** within the same component, define a constant:
 ```typescript
 // component.tsx
 import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
+import { container } from '../../styled-system/recipes';
 
 // Used multiple times in this component
 const bioStyle = css({
@@ -326,7 +349,7 @@ const bioStyle = css({
 });
 
 export const Component = () => (
-  <div className={commonStyles.container}>
+  <div className={container()}>
     <p className={bioStyle}>First paragraph</p>
     <p className={bioStyle}>Second paragraph</p>
   </div>
@@ -338,10 +361,10 @@ For styles used **only once**, inline them directly:
 ```typescript
 // component.tsx
 import { css } from '../../styled-system/css';
-import * as commonStyles from './common.styles';
+import { container } from '../../styled-system/recipes';
 
 export const Component = () => (
-  <div className={commonStyles.container}>
+  <div className={container()}>
     <p
       className={css({
         fontSize: '1.15rem',
@@ -355,18 +378,17 @@ export const Component = () => (
 );
 ```
 
-**✅ Good: Common patterns in shared file**
+**✅ Good: reusable pattern defined once as a recipe, shared by components**
 
 ```typescript
-// common.styles.ts
-export const heading = css({
-  fontFamily: 'heading',
-  color: 'primary',
-  fontSize: '2rem',
+// common.recipes.ts
+export const heading = defineRecipe({
+  className: 'heading',
+  base: { fontFamily: 'heading', color: 'primary', fontSize: '2rem' },
 });
 
-// Multiple components import this
-import * as commonStyles from './common.styles';
+// Multiple components import the generated recipe
+import { heading } from '../../styled-system/recipes';
 ```
 
 **✅ Good: Style constant for multiple uses**
@@ -385,11 +407,11 @@ const bioStyle = css({ fontSize: '1.15rem' });
 <hr className={css({ margin: 0 })} />
 ```
 
-**❌ Bad: Separate file just to re-export common styles**
+**❌ Bad: Separate file just to re-export recipes**
 
 ```typescript
 // component.styles.ts (DON'T DO THIS)
-export { heading, container } from './common.styles';
+export { heading, container } from './common.recipes';
 
 // component.tsx
 import { heading } from './component.styles'; // Unnecessary layer
@@ -403,20 +425,22 @@ const heading = css({
   fontFamily: 'heading',
   color: 'primary',
   fontSize: '2rem',
-}); // Should use commonStyles.heading instead
+}); // Should use the heading recipe instead
 ```
 
-**When to create separate `.styles.ts` files:**
+**When to create a recipe / slot recipe:**
 
-- Complex components with many styles (e.g., `sidebar.styles.ts`)
-- Icon-specific patterns (e.g., `icon.styles.ts`)
+- Complex multi-part components (e.g., the sidebar slot recipe)
+- Icon-specific patterns (e.g., `icon.recipes.ts`)
 - Truly reusable patterns shared by 3+ components
 
-**When NOT to create `.styles.ts` files:**
+**When NOT to define a recipe:**
 
 - Single component with 1-3 unique styles → Define inline (constant or directly in JSX)
-- Just re-exporting from `common.styles.ts` → Import directly
+- Just re-exporting another recipe → Import directly
 - Style used only once in component → Inline directly in JSX with `css()`
+
+Note: recipe class names collide with the recipe function name in scope. If a local variable or prop shadows a recipe name (e.g. a `title` prop vs the `title` recipe), alias the import (`import { title as titleRecipe }`).
 
 #### Dynamic Styles
 

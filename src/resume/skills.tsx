@@ -1,9 +1,7 @@
 import { useSkillsData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
-import { inlineList } from '../../styled-system/recipes';
-import * as commonStyles from '../ui/common.styles';
+import { container, devIcons, heading, inlineList, subheading } from '../../styled-system/recipes';
 import LangIcon from '../ui/lang-icon';
-import * as iconStyles from './icon.styles';
 
 type SkillProps = {
   title: string;
@@ -13,7 +11,7 @@ type SkillProps = {
 function Skill({ title, description }: SkillProps) {
   return (
     <>
-      <div className={commonStyles.subheading}>{title}</div>
+      <div className={subheading()}>{title}</div>
       <ul>
         {description.map((line) => (
           <li key={line}>{line}</li>
@@ -27,13 +25,13 @@ export default function SkillSection() {
   const { skills, techStack } = useSkillsData();
 
   return (
-    <div className={commonStyles.container}>
-      <h2 className={commonStyles.heading}>Skills and Proficiency</h2>
+    <div className={container()}>
+      <h2 className={heading()}>Skills and Proficiency</h2>
 
       {skills.map(({ title, description }) => (
         <Skill title={title} description={description} key={title} />
       ))}
-      <ul className={cx(inlineList(), iconStyles.devIcons)}>
+      <ul className={cx(inlineList(), devIcons())}>
         {techStack.map((language) => (
           <LangIcon name={language} key={language} />
         ))}

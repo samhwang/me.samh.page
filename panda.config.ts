@@ -1,5 +1,9 @@
 import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
 
+import { container, heading, link, section, subheading, textPrimary, title } from './src/ui/common.recipes';
+import { devIcons, socialIcons } from './src/ui/icon.recipes';
+import { sidebar } from './src/ui/sidebar.recipe';
+
 const globalCss = defineGlobalStyles({
   body: {
     pt: '54px',
@@ -96,7 +100,19 @@ export default defineConfig({
           },
         },
       },
+      slotRecipes: {
+        sidebar,
+      },
       recipes: {
+        section,
+        subheading,
+        link,
+        container,
+        heading,
+        title,
+        textPrimary,
+        socialIcons,
+        devIcons,
         entryContainer: {
           base: {
             display: 'flex',

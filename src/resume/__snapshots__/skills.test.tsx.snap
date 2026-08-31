@@ -3,15 +3,15 @@
 exports[`Skill Section Component > Should render without crashing and match snapshot 1`] = `
 <div>
   <div
-    class="w_100%"
+    class="container"
   >
     <h2
-      class="mb_headingMargin"
+      class="heading"
     >
       Skills and Proficiency
     </h2>
     <div
-      class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+      class="subheading"
     >
       test title
     </div>
@@ -21,7 +21,7 @@ exports[`Skill Section Component > Should render without crashing and match snap
       </li>
     </ul>
     <ul
-      class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+      class="inlineList inlineList--gap_large devIcons"
     >
       <li
         class="d_inline-block"

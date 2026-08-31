@@ -81,7 +81,7 @@ Use a functional component with a default export. Fetch data via the hook patter
 ```typescript
 import { useCertificationsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from '../ui/common.styles';
+import { container, heading } from '../../styled-system/recipes';
 
 function Certification({ name, issuer, date }: CertificationProps) {
   return (
@@ -97,8 +97,8 @@ export default function CertificationsSection() {
   if (certifications.length === 0) return null;
 
   return (
-    <div className={commonStyles.container}>
-      <h2 className={commonStyles.heading}>Certifications</h2>
+    <div className={container()}>
+      <h2 className={heading()}>Certifications</h2>
       <ul className={css({ listStyle: 'none', paddingLeft: 0, marginBottom: 0 })}>
         {certifications.map(({ name, issuer, date }) => (
           <Certification key={name} name={name} issuer={issuer} date={date} />
@@ -111,7 +111,7 @@ export default function CertificationsSection() {
 
 Key patterns:
 
-- Import shared styles from `common.styles.ts` for headings, containers, and text
+- Import shared [PandaCSS recipes](https://panda-css.com/docs/concepts/recipes) (e.g. `container`, `heading`) from `styled-system/recipes` for reusable patterns
 - Use [PandaCSS](https://panda-css.com) `css()` for component-specific styles (inline for single use, constant for repeated use)
 - Use the hook pattern (`useXxxData()`) to fetch data from metadata — do not pass data as props
 - Use default exports for components
@@ -138,7 +138,7 @@ For styles used only once, inline them directly:
 <hr className={css({ margin: 0 })} />
 ```
 
-Only create a separate `.styles.ts` file if the component has many styles (like `sidebar.styles.ts`). See [Design Tokens](../reference/03-design-tokens.md) for available colors, fonts, and breakpoints.
+Define a [slot recipe](https://panda-css.com/docs/concepts/slot-recipes) only if the component has many named parts (like `sidebar.recipe.ts`). See [Design Tokens](../reference/03-design-tokens.md) for available colors, fonts, and breakpoints.
 
 ## 6. Write tests
 

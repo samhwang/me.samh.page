@@ -1,6 +1,6 @@
 import { useProjectsData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from '../ui/common.styles';
+import { container, heading, link } from '../../styled-system/recipes';
 
 type ProjectProps = {
   title: string;
@@ -10,7 +10,7 @@ type ProjectProps = {
 
 function Project({ title, description, url = '' }: ProjectProps) {
   const titleText = url ? (
-    <a className={commonStyles.link} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
+    <a className={link()} href={url} rel="noreferrer" target="_blank" aria-label={`Project ${title} URL`}>
       <strong>{`${title}:`}</strong>
     </a>
   ) : (
@@ -48,8 +48,8 @@ export default function ProjectSection() {
   const projects = useProjectsData();
 
   return (
-    <div className={commonStyles.container}>
-      <h2 className={commonStyles.heading}>Projects</h2>
+    <div className={container()}>
+      <h2 className={heading()}>Projects</h2>
       <ul
         className={css({
           listStyle: 'none',

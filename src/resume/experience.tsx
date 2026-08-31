@@ -1,9 +1,8 @@
 import { useExperienceData } from '../../metadata/use-metadata';
 import { cx } from '../../styled-system/css';
-import { dateDisplay, entryContainer, inlineList } from '../../styled-system/recipes';
-import * as commonStyles from '../ui/common.styles';
+import { container, dateDisplay, devIcons, entryContainer, heading, inlineList, subheading, textPrimary } from '../../styled-system/recipes';
+import { title as titleRecipe } from '../../styled-system/recipes';
 import LangIcon from '../ui/lang-icon';
-import * as iconStyles from './icon.styles';
 
 type JobDescriptionProps = {
   title: string;
@@ -17,21 +16,21 @@ function JobDescription({ title, companyName, description, duration, techIcons }
   return (
     <div className={entryContainer()}>
       <div>
-        <h3 className={commonStyles.title}>{title}</h3>
-        <div className={commonStyles.subheading}>{companyName}</div>
+        <h3 className={titleRecipe()}>{title}</h3>
+        <div className={subheading()}>{companyName}</div>
         <ul>
           {description.map((line) => (
             <li key={line}>{line}</li>
           ))}
         </ul>
-        <ul className={cx(inlineList(), iconStyles.devIcons)}>
+        <ul className={cx(inlineList(), devIcons())}>
           {techIcons.map((icon) => (
             <LangIcon name={icon} key={icon} />
           ))}
         </ul>
       </div>
       <div className={dateDisplay()}>
-        <span className={commonStyles.textPrimary}>{duration}</span>
+        <span className={textPrimary()}>{duration}</span>
       </div>
     </div>
   );
@@ -41,8 +40,8 @@ export default function Experiences() {
   const experience = useExperienceData();
 
   return (
-    <div className={commonStyles.container}>
-      <h2 className={commonStyles.heading}>Experience</h2>
+    <div className={container()}>
+      <h2 className={heading()}>Experience</h2>
       {experience.map(({ title, companyName, description, duration, techIcons }) => (
         <JobDescription key={companyName} title={title} companyName={companyName} description={description} duration={duration} techIcons={techIcons} />
       ))}

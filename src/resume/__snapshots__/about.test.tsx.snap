@@ -3,20 +3,20 @@
 exports[`Render About Data > Should match snapshot 1`] = `
 <div>
   <div
-    class="w_100%"
+    class="container"
   >
     <h1
-      class="mb_0"
+      class="title"
     >
       First Name
       <span
-        class="c_primary"
+        class="textPrimary"
       >
         Last Name
       </span>
     </h1>
     <div
-      class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+      class="subheading"
     >
       123 Fake street
     </div>
@@ -26,7 +26,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
       Blah
     </p>
     <div
-      class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+      class="socialIcons"
     >
       <a
         aria-label="github-original URL"

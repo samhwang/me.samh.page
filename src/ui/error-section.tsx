@@ -1,16 +1,16 @@
 import { Link } from '@tanstack/react-router';
 
-import { link, section } from '../ui/common.styles';
+import { link, section } from '../../styled-system/recipes';
 
 export default function ErrorSection() {
   return (
-    <section className={section}>
+    <section className={section()}>
       <header>
         <h2>Error 404: Page not found.</h2>
         <h3>It seems like you&apos;ve hit a dead end. There&apos;s nothing to see here.</h3>
         <h4>
           Please go back to the{' '}
-          <Link className={link} to="/">
+          <Link className={link()} to="/">
             Home page.
           </Link>
         </h4>

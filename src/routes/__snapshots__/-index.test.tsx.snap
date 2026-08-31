@@ -3,24 +3,24 @@
 exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
 <div>
   <section
-    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    class="section"
     id="about"
   >
     <div
-      class="w_100%"
+      class="container"
     >
       <h1
-        class="mb_0"
+        class="title"
       >
         First Name
         <span
-          class="c_primary"
+          class="textPrimary"
         >
           Last Name
         </span>
       </h1>
       <div
-        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+        class="subheading"
       >
         123 Fake street
       </div>
@@ -30,7 +30,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         Blah
       </p>
       <div
-        class="[&_>_a]:d_inline-block [&_>_a]:h_3.5rem [&_>_a]:w_3.5rem [&_>_a]:bg-c_gray.700 [&_>_a]:c_white! [&_>_a]:bdr_100% [&_>_a]:ta_center [&_>_a]:fs_1.5rem [&_>_a]:lh_3.5rem [&_>_a]:mr_1rem [&_>_a]:td_none! [&_>_a]:last:mr_0 [&_>_a]:hover:bg-c_primary!"
+        class="socialIcons"
       >
         <a
           aria-label="github-original URL"
@@ -50,14 +50,14 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     class="m_0"
   />
   <section
-    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    class="section"
     id="experience"
   >
     <div
-      class="w_100%"
+      class="container"
     >
       <h2
-        class="mb_headingMargin"
+        class="heading"
       >
         Experience
       </h2>
@@ -66,12 +66,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       >
         <div>
           <h3
-            class="mb_0"
+            class="title"
           >
             Software Engineer
           </h3>
           <div
-            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="subheading"
           >
             Bruh Industries
           </div>
@@ -81,7 +81,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             </li>
           </ul>
           <ul
-            class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+            class="inlineList inlineList--gap_large devIcons"
           >
             <li
               class="d_inline-block"
@@ -100,7 +100,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           class="dateDisplay dateDisplay--alignment_right"
         >
           <span
-            class="c_primary"
+            class="textPrimary"
           >
             Oct 2022 - Oct 2023
           </span>
@@ -112,14 +112,14 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     class="m_0"
   />
   <section
-    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    class="section"
     id="education"
   >
     <div
-      class="w_100%"
+      class="container"
     >
       <h2
-        class="mb_headingMargin"
+        class="heading"
       >
         Education
       </h2>
@@ -128,12 +128,12 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       >
         <div>
           <h3
-            class="mb_0"
+            class="title"
           >
             Bruh University
           </h3>
           <div
-            class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+            class="subheading"
           >
             Bachelor of Bruh
           </div>
@@ -145,7 +145,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           class="dateDisplay dateDisplay--alignment_right"
         >
           <span
-            class="c_primary"
+            class="textPrimary"
           >
             Oct 2022 - Oct 2023
           </span>
@@ -157,19 +157,19 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     class="m_0"
   />
   <section
-    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    class="section"
     id="skills"
   >
     <div
-      class="w_100%"
+      class="container"
     >
       <h2
-        class="mb_headingMargin"
+        class="heading"
       >
         Skills and Proficiency
       </h2>
       <div
-        class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+        class="subheading"
       >
         test title
       </div>
@@ -179,7 +179,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         </li>
       </ul>
       <ul
-        class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+        class="inlineList inlineList--gap_large devIcons"
       >
         <li
           class="d_inline-block"
@@ -199,14 +199,14 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
     class="m_0"
   />
   <section
-    class="d_flex ai_center p_sectionPadding pt_sectionVertical pb_sectionVertical pl_2rem max-w_contentMaxWidth lg:p_sectionPaddingLg lg:pt_3rem lg:pb_3rem md:min-h_100vh"
+    class="section"
     id="projects"
   >
     <div
-      class="w_100%"
+      class="container"
     >
       <h2
-        class="mb_headingMargin"
+        class="heading"
       >
         Projects
       </h2>
@@ -229,7 +229,7 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
           <p>
             <a
               aria-label="Project Test Project 2 URL"
-              class="c_primary td_none [&:hover,_&:focus,_&:active]:c_slightlyDarker"
+              class="link"
               href="https://testproject2.com"
               rel="noreferrer"
               target="_blank"

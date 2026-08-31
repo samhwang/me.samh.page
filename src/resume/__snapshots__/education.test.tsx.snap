@@ -3,10 +3,10 @@
 exports[`Education section render > Should match snapshot 1`] = `
 <div>
   <div
-    class="w_100%"
+    class="container"
   >
     <h2
-      class="mb_headingMargin"
+      class="heading"
     >
       Education
     </h2>
@@ -15,12 +15,12 @@ exports[`Education section render > Should match snapshot 1`] = `
     >
       <div>
         <h3
-          class="mb_0"
+          class="title"
         >
           Bruh University
         </h3>
         <div
-          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="subheading"
         >
           Bachelor of Bruh
         </div>
@@ -32,7 +32,7 @@ exports[`Education section render > Should match snapshot 1`] = `
         class="dateDisplay dateDisplay--alignment_right"
       >
         <span
-          class="c_primary"
+          class="textPrimary"
         >
           Oct 2022 - Oct 2023
         </span>

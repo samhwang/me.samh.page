@@ -12,17 +12,17 @@ src/
 │   ├── experience.tsx
 │   ├── skills.tsx
 │   ├── projects.tsx
-│   ├── icon.styles.ts     # Component-specific styles
 │   └── *.test.tsx         # Component tests
-├── ui/                # Shared layout, icons, and common styles
+├── ui/                # Shared layout, icons, and theme recipes
 │   ├── layout.tsx
-│   ├── sidebar.tsx / sidebar.styles.ts
+│   ├── sidebar.tsx / sidebar.recipe.ts
 │   ├── footer.tsx
 │   ├── error-section.tsx
 │   ├── lang-icon.tsx
 │   ├── social-icon.tsx
 │   ├── use-icon-class.ts
-│   ├── common.styles.ts   # Shared PandaCSS styles
+│   ├── common.recipes.ts  # Shared PandaCSS recipes
+│   ├── icon.recipes.ts    # Icon recipes
 │   └── *.test.tsx
 ├── routes/           # TanStack Router file-based routes
 │   ├── __root.tsx    # Root layout (wraps all routes)
@@ -39,7 +39,7 @@ src/
 - **kebab-case** for all files: `user-profile.tsx`, `use-metadata.ts`
 - **Component files**: `component-name.tsx`
 - **Test files**: `component-name.test.tsx` (co-located with source)
-- **Style files**: `component-name.styles.ts` (co-located, only when needed)
+- **Recipe files**: `component-name.recipe.ts` / `*.recipes.ts` (PandaCSS recipes, registered in `panda.config.ts`)
 - **Hook files**: `use-hook-name.ts`
 
 ## Generated Files (Do Not Edit)

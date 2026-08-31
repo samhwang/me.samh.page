@@ -1,19 +1,18 @@
 import { useAboutData } from '../../metadata/use-metadata';
 import { css } from '../../styled-system/css';
-import * as commonStyles from '../ui/common.styles';
+import { container, socialIcons, subheading, textPrimary, title } from '../../styled-system/recipes';
 import SocialIcon from '../ui/social-icon';
-import * as iconStyles from './icon.styles';
 
 export default function About() {
   const { firstName, lastName, bio, address, socialLinks } = useAboutData();
 
   return (
-    <div className={commonStyles.container}>
-      <h1 className={commonStyles.title}>
+    <div className={container()}>
+      <h1 className={title()}>
         {firstName}
-        <span className={commonStyles.textPrimary}>{lastName}</span>
+        <span className={textPrimary()}>{lastName}</span>
       </h1>
-      <div className={commonStyles.subheading}>{address}</div>
+      <div className={subheading()}>{address}</div>
       <p
         className={css({
           marginBottom: 'headingMargin',
@@ -23,7 +22,7 @@ export default function About() {
       >
         {bio}
       </p>
-      <div className={iconStyles.socialIcons}>
+      <div className={socialIcons()}>
         {socialLinks.map(({ icon, name, url }) => (
           <SocialIcon key={name} icon={icon} url={url} />
         ))}

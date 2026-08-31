@@ -3,10 +3,10 @@
 exports[`Experience Component > Should render without crashing and match snapshot 1`] = `
 <div>
   <div
-    class="w_100%"
+    class="container"
   >
     <h2
-      class="mb_headingMargin"
+      class="heading"
     >
       Experience
     </h2>
@@ -15,12 +15,12 @@ exports[`Experience Component > Should render without crashing and match snapsho
     >
       <div>
         <h3
-          class="mb_0"
+          class="title"
         >
           Software Engineer
         </h3>
         <div
-          class="mb_subheadingMargin tt_uppercase fw_500 fs_1.5rem ff_heading"
+          class="subheading"
         >
           Bruh Industries
         </div>
@@ -30,7 +30,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
           </li>
         </ul>
         <ul
-          class="inlineList inlineList--gap_large fs_3rem [&_li]:d_flex [&_li]:ai_center [&_li]:jc_center"
+          class="inlineList inlineList--gap_large devIcons"
         >
           <li
             class="d_inline-block"
@@ -49,7 +49,7 @@ exports[`Experience Component > Should render without crashing and match snapsho
         class="dateDisplay dateDisplay--alignment_right"
       >
         <span
-          class="c_primary"
+          class="textPrimary"
         >
           Oct 2022 - Oct 2023
         </span>
