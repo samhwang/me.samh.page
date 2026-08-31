@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import { ResumePage } from './index';
+import { ResumePage } from './page';
 
 describe('ResumePage', () => {
   it('renders without crashing and matches snapshot', () => {
