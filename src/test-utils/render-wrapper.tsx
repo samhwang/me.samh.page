@@ -7,6 +7,8 @@ const testRouter = createRouter({
   history: createMemoryHistory({ initialEntries: ['/'] }),
 });
 
+await testRouter.load();
+
 export default function RenderWrapper() {
   return <RouterProvider router={testRouter} />;
 }

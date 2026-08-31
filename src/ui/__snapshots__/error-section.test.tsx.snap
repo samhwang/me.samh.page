@@ -1,3 +1,405 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ErrorSection > renders without crashing and matches snapshot 1`] = `<div />`;
+exports[`ErrorSection > renders without crashing and matches snapshot 1`] = `
+<div>
+  <div>
+    <nav
+      class="sidebar__navigation"
+    >
+      <a
+        class="sidebar__brand"
+        href="#page-top"
+      >
+        <span
+          class="sidebar__nameText"
+        >
+          First Name Last Name
+        </span>
+        <span
+          class="sidebar__avatarContainer"
+        >
+          <picture>
+            <source
+              srcset="/src/img/avatar.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="/src/img/avatar.jpg"
+              type="image/jpeg"
+            />
+            <img
+              alt="First Name Last Name Avatar"
+              class="sidebar__avatar"
+              src="/src/img/avatar.jpg"
+            />
+          </picture>
+        </span>
+      </a>
+      <button
+        aria-controls="_r_0_"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="sidebar__menuToggle"
+        data-collapsed="true"
+        data-target="#_r_0_"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span
+          class="sidebar__menuIcon"
+        />
+      </button>
+      <div
+        class="sidebar__menu"
+        data-visible="false"
+        id="_r_0_"
+      >
+        <div
+          class="sidebar__navListWrapper"
+        >
+          <ul
+            class="sidebar__navList"
+          >
+            <li
+              class="sidebar__navItem"
+            >
+              <a
+                class="sidebar__navLink"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li
+              class="sidebar__navItem"
+            >
+              <a
+                class="sidebar__navLink"
+                href="#experience"
+              >
+                Experience
+              </a>
+            </li>
+            <li
+              class="sidebar__navItem"
+            >
+              <a
+                class="sidebar__navLink"
+                href="#education"
+              >
+                Education
+              </a>
+            </li>
+            <li
+              class="sidebar__navItem"
+            >
+              <a
+                class="sidebar__navLink"
+                href="#skills"
+              >
+                Skills
+              </a>
+            </li>
+            <li
+              class="sidebar__navItem"
+            >
+              <a
+                class="sidebar__navLink"
+                href="#projects"
+              >
+                Projects
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="w_100% p_0"
+    >
+      <section
+        class="section"
+        id="about"
+      >
+        <div
+          class="fullWidth"
+        >
+          <h1
+            class="title"
+          >
+            First Name
+            <span
+              class="textPrimary"
+            >
+              Last Name
+            </span>
+          </h1>
+          <div
+            class="subheading"
+          >
+            123 Fake street
+          </div>
+          <p
+            class="mb_headingMargin fs_1.15rem fw_400"
+          >
+            Blah
+          </p>
+          <div
+            class="socialIcons"
+          >
+            <a
+              aria-label="github-original URL"
+              href="https://github.com/testusername"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i
+                class="devicon-github-original"
+                data-testid="social-icon-github-original"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="section"
+        id="experience"
+      >
+        <div
+          class="fullWidth"
+        >
+          <h2
+            class="heading"
+          >
+            Experience
+          </h2>
+          <div
+            class="entryContainer entryContainer--responsive_row"
+          >
+            <div>
+              <h3
+                class="title"
+              >
+                Software Engineer
+              </h3>
+              <div
+                class="subheading"
+              >
+                Bruh Industries
+              </div>
+              <ul>
+                <li>
+                  blah
+                </li>
+              </ul>
+              <ul
+                class="inlineList inlineList--gap_large devIcons"
+              >
+                <li
+                  class="d_inline-block"
+                >
+                  <span
+                    aria-label="github-original"
+                    class="devicon-github-original"
+                    data-testid="language-icon-github-original"
+                    role="button"
+                    tabindex="0"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="dateDisplay dateDisplay--alignment_right"
+            >
+              <span
+                class="textPrimary"
+              >
+                Oct 2022 - Oct 2023
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="section"
+        id="education"
+      >
+        <div
+          class="fullWidth"
+        >
+          <h2
+            class="heading"
+          >
+            Education
+          </h2>
+          <div
+            class="entryContainer entryContainer--responsive_row"
+          >
+            <div>
+              <h3
+                class="title"
+              >
+                Bruh University
+              </h3>
+              <div
+                class="subheading"
+              >
+                Bachelor of Bruh
+              </div>
+              <div>
+                blah blah
+              </div>
+            </div>
+            <div
+              class="dateDisplay dateDisplay--alignment_right"
+            >
+              <span
+                class="textPrimary"
+              >
+                Oct 2022 - Oct 2023
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="section"
+        id="skills"
+      >
+        <div
+          class="fullWidth"
+        >
+          <h2
+            class="heading"
+          >
+            Skills and Proficiency
+          </h2>
+          <div
+            class="subheading"
+          >
+            test title
+          </div>
+          <ul>
+            <li>
+              test desc
+            </li>
+          </ul>
+          <ul
+            class="inlineList inlineList--gap_large devIcons"
+          >
+            <li
+              class="d_inline-block"
+            >
+              <span
+                aria-label="github-original"
+                class="devicon-github-original"
+                data-testid="language-icon-github-original"
+                role="button"
+                tabindex="0"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+      <section
+        class="section"
+        id="projects"
+      >
+        <div
+          class="fullWidth"
+        >
+          <h2
+            class="heading"
+          >
+            Projects
+          </h2>
+          <ul
+            class="li-s_none ml_2.5em pl_0 mb_0"
+          >
+            <li
+              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+            >
+              <p>
+                <strong>
+                  Test Project 1:
+                </strong>
+                 Test Description 1
+              </p>
+            </li>
+            <li
+              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+            >
+              <p>
+                <a
+                  aria-label="Project Test Project 2 URL"
+                  class="link"
+                  href="https://testproject2.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <strong>
+                    Test Project 2:
+                  </strong>
+                </a>
+                 Test Description 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr
+        class="m_0"
+      />
+    </div>
+    <section
+      class="section"
+    >
+      <p>
+        © 
+        2022
+         
+        <a
+          class="link"
+          href="https://github.com/samhwang"
+        >
+          Sam Huynh
+        </a>
+        . Hosted on 
+        <a
+          class="link"
+          href="https://workers.cloudflare.com/"
+        >
+          Cloudflare Worker
+        </a>
+        . Built with 
+        <a
+          class="link"
+          href="https://www.vitejs.dev/"
+        >
+          Vite
+        </a>
+         and 
+        <a
+          class="link"
+          href="https://reactjs.org/"
+        >
+          React
+        </a>
+        .
+      </p>
+    </section>
+  </div>
+</div>
+`;
