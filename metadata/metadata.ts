@@ -1,7 +1,7 @@
 import type { ManifestOptions } from 'vite-plugin-pwa';
 
 // Icons List. See https://devicon.dev/
-const ICONS = {
+export const ICONS = {
   ANGULAR: 'angular-plain',
   ASTRO: 'astro-plain',
   AWS: 'amazonwebservices-plain-wordmark',
