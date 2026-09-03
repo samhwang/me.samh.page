@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import SocialIcon from './social-icon';
 
 const ICON_NAME = 'github-plain';
-const URL = 'https://github.com/samhwang';
+const URL = 'https://github.com/testusername';
 
 describe('Social Icon', () => {
   it('Should render without crashing and match snapshot', () => {

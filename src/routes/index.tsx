@@ -7,12 +7,13 @@ export const Route = createFileRoute('/')({
   component: ResumePage,
   head: () => {
     const siteMetadata = useSiteMetadata();
+    const description = `${siteMetadata.title} resume`;
     return {
       title: `Resume | ${siteMetadata.title}`,
       meta: [
         {
           name: 'description',
-          content: 'Sam Huynh resume',
+          content: description,
         },
         {
           property: 'og:title',
@@ -20,7 +21,7 @@ export const Route = createFileRoute('/')({
         },
         {
           property: 'og:description',
-          content: 'Sam Huynh resume',
+          content: description,
         },
       ],
     };

@@ -3,10 +3,61 @@ import babel from '@rolldown/plugin-babel';
 import { devtools } from '@tanstack/devtools-vite';
 import { tanstackRouter } from '@tanstack/router-vite-plugin';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
+import type { Plugin } from 'vite';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
-import { manifest } from './metadata/metadata.ts';
+import { metadata, manifest } from './metadata/metadata.ts';
+
+function htmlMetadata(): Plugin {
+  return {
+    name: 'html-metadata',
+    transformIndexHtml: {
+      order: 'pre',
+      handler(html) {
+        const { title, description } = metadata.site;
+        return html
+          .replace(/<!--.*-->\n\s*/, '')
+          .replace('<title></title>', `<title>${title}</title>`)
+          .replace('<meta name="description" content="" />', `<meta name="description" content="${description}" />`);
+      },
+    },
+  };
+}
+
+function humansTxt(): Plugin {
+  return {
+    name: 'humans-txt',
+    apply: 'build',
+    generateBundle() {
+      const { firstName, lastName, socialLinks } = metadata.personalInformation;
+      const github = socialLinks.find((link) => link.name.toLowerCase() === 'github');
+      const handle = github?.url.replace(/^https?:\/\/(www\.)?github\.com\//, '') ?? '';
+      const date = new Date().toISOString().slice(0, 10);
+      this.emitFile({
+        type: 'asset',
+        fileName: 'humans.txt',
+        source: [
+          '/* TEAM */',
+          `Developer: ${firstName} ${lastName}`,
+          `GitHub: ${handle}`,
+          '',
+          '/* THANKS */',
+          'Vite',
+          'Node',
+          'React',
+          'CloudFlare',
+          'PandaCSS',
+          '',
+          '/* SITE */',
+          `Last update: ${date}`,
+          'Standards: JavaScript, TypeScript, React',
+          '',
+        ].join('\n'),
+      });
+    },
+  };
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,6 +65,7 @@ export default defineConfig({
     manifest: true,
   },
   plugins: [
+    htmlMetadata(),
     devtools(),
     tanstackRouter({
       target: 'react',
@@ -28,6 +80,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest,
     }),
+    humansTxt(),
     cloudflare(),
   ],
 });

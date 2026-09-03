@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
+import { aboutData } from '../test-utils/mock-metadata';
 import RenderWrapper from '../test-utils/render-wrapper';
 import Footer from './footer';
 
@@ -21,17 +22,17 @@ describe('Footer', () => {
   it('displays author name', () => {
     render(<Footer />, { wrapper: RenderWrapper });
 
-    const authorName = screen.getByRole('link', { name: 'Sam Huynh' });
+    const authorName = screen.getByRole('link', { name: `${aboutData.firstName} ${aboutData.lastName}` });
     expect(authorName).toBeInTheDocument();
-    expect(authorName).toHaveAttribute('href', 'https://github.com/samhwang');
+    expect(authorName).toHaveAttribute('href', 'https://github.com/testusername');
   });
 
   it('displays all footer links', () => {
     render(<Footer />, { wrapper: RenderWrapper });
 
     // Test GitHub link
-    const githubLink = screen.getByRole('link', { name: 'Sam Huynh' });
-    expect(githubLink).toHaveAttribute('href', 'https://github.com/samhwang');
+    const githubLink = screen.getByRole('link', { name: `${aboutData.firstName} ${aboutData.lastName}` });
+    expect(githubLink).toHaveAttribute('href', 'https://github.com/testusername');
 
     // Test Cloudflare Workers link
     const cloudflareLink = screen.getByRole('link', { name: 'Cloudflare Worker' });

@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 
+import { useAboutData } from '../../metadata/use-metadata';
 import * as commonStyles from '../../styled-system/recipes';
 
 type FooterLinkProps = {
@@ -16,8 +17,15 @@ function FooterLink({ children, to }: FooterLinkProps) {
 }
 
 export default function Footer() {
+  const { firstName, lastName, socialLinks } = useAboutData();
+  const githubUrl = socialLinks.find((link) => link.name.toLowerCase() === 'github')?.url ?? '#';
+
   const LINKS = {
-    github: <FooterLink to="https://github.com/samhwang">Sam Huynh</FooterLink>,
+    github: (
+      <FooterLink to={githubUrl}>
+        {firstName} {lastName}
+      </FooterLink>
+    ),
     cloudflare: <FooterLink to="https://workers.cloudflare.com/">Cloudflare Worker</FooterLink>,
     vite: <FooterLink to="https://www.vitejs.dev/">Vite</FooterLink>,
     react: <FooterLink to="https://reactjs.org/">React</FooterLink>,

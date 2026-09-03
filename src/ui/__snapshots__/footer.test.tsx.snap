@@ -372,9 +372,11 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
          
         <a
           class="link"
-          href="https://github.com/samhwang"
+          href="https://github.com/testusername"
         >
-          Sam Huynh
+          First Name
+           
+          Last Name
         </a>
         . Hosted on 
         <a

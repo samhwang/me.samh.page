@@ -99,10 +99,12 @@ const ICONS = {
 
 export const iconClasses = Object.values(ICONS).map((icon) => `devicon-${icon}`);
 
+const SITE_NAME = 'Sam Huynh';
+
 // Manifest for PWA.
 export const manifest: Partial<ManifestOptions> = {
-  name: 'Sam Huynh Website',
-  short_name: 'Sam Huynh',
+  name: `${SITE_NAME} Website`,
+  short_name: SITE_NAME,
   start_url: '/',
   background_color: '#FFFFFF',
   theme_color: '#FFFFFF',
@@ -172,9 +174,9 @@ export type Metadata = {
   personalInformation: PersonalInformation;
 };
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   site: {
-    title: 'Sam Huynh',
+    title: SITE_NAME,
     url: 'https://me.samh.page',
     description: 'Online profile of Sam Huynh.',
     manifest,
@@ -577,5 +579,3 @@ const metadata: Metadata = {
     ],
   },
 };
-
-export default metadata;
