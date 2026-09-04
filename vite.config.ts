@@ -21,7 +21,7 @@ function usedDeviconUnicodes(): string[] {
     ...new Set(
       Object.keys(glyphs)
         .filter((n) => ICON_NAMES.has(n))
-        .map((n) => glyphs[n].codePointAt(0)!),
+        .map((n) => glyphs[n].codePointAt(0)!)
     ),
   ].sort((a, b) => a - b);
   return cps.map((cp) => `U+${cp.toString(16).toUpperCase().padStart(4, '0')}`);
