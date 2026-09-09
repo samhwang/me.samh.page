@@ -6,10 +6,9 @@ import { devtools } from '@tanstack/devtools-vite';
 import { tanstackRouter } from '@tanstack/router-vite-plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig, type Plugin } from 'vite';
-import { VitePWA } from 'vite-plugin-pwa';
 import splice from 'vite-plugin-splice';
 
-import { metadata, manifest, ICONS } from './metadata/metadata.ts';
+import { metadata, ICONS } from './metadata/metadata.ts';
 
 const ROOT = path.resolve(import.meta.dirname);
 const ICON_NAMES = new Set(Object.values(ICONS));
@@ -150,11 +149,6 @@ export default defineConfig({
     }),
     react({
       compiler: true,
-    }),
-    VitePWA({
-      injectRegister: 'auto',
-      registerType: 'autoUpdate',
-      manifest,
     }),
     humansTxt(),
     cloudflare(),

@@ -121,7 +121,6 @@ Cloudflare Workers respects these versions when building.
 Files in `public/` directory:
 
 - `favicon.svg`: Site favicon
-- `img192.png`, `img512.png`: PWA icons
 - `robots.txt`: Search engine directives
 - `humans.txt`: Project contributors/credits
 - `Resume_SamHuynh.pdf`: Downloadable resume (if applicable)

@@ -35,15 +35,14 @@ React components yourself. Edit these in order:
 1. **`metadata/metadata.ts`** — your name, bio, address, social links, experience,
    education, projects, skills, and the site title/URL/description. This is the only
    file you must edit for content.
-2. **`src/img/`** — replace `avatar.jpg` / `avatar.webp` with your photo and
-   `website-icon.png` with your site icon.
+2. **`src/img/`** — replace `avatar.jpg` / `avatar.webp` with your photo.
 3. **`wrangler.toml`** — your Cloudflare Worker name and custom domain.
 4. **`index.html`** — title/description placeholders (injected from metadata at build,
    safe to leave), plus your `favicon.svg`.
 5. **`LICENSE`** — set the copyright holder.
 
 Source files contain **no personal literals** — the footer, avatar alt text, SEO
-metadata, PWA manifest, generated `humans.txt`, and browser `<title>` all derive from
+metadata, generated `humans.txt`, and browser `<title>` all derive from
 `metadata/metadata.ts` at build or runtime.
 
 ## Deploying

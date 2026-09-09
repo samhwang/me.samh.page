@@ -1,5 +1,3 @@
-import type { ManifestOptions } from 'vite-plugin-pwa';
-
 // Icons List. See https://devicon.dev/
 export const ICONS = {
   ANGULAR: 'angular-plain',
@@ -101,26 +99,10 @@ export const iconClasses = Object.values(ICONS).map((icon) => `devicon-${icon}`)
 
 const SITE_NAME = 'Sam Huynh';
 
-// Manifest for PWA.
-export const manifest: Partial<ManifestOptions> = {
-  name: `${SITE_NAME} Website`,
-  short_name: SITE_NAME,
-  start_url: '/',
-  background_color: '#FFFFFF',
-  theme_color: '#FFFFFF',
-  display: 'standalone',
-  icons: [
-    {
-      src: 'src/img/website-icon.png',
-    },
-  ],
-};
-
 export type SiteMetadata = {
   title: string;
   url: string;
   description: string;
-  manifest: Partial<ManifestOptions>;
 };
 
 export type SocialLink = {
@@ -179,7 +161,6 @@ export const metadata: Metadata = {
     title: SITE_NAME,
     url: 'https://me.samh.page',
     description: 'Online profile of Sam Huynh.',
-    manifest,
   },
   personalInformation: {
     firstName: 'Sam',
