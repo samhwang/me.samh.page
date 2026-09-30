@@ -3,6 +3,8 @@ import { Link } from '@tanstack/react-router';
 import { useAboutData } from '../../metadata/use-metadata';
 import * as commonStyles from '../../styled-system/recipes';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 type FooterLinkProps = {
   to: string;
   children: React.ReactNode;
@@ -34,7 +36,7 @@ export default function Footer() {
   return (
     <section className={commonStyles.section()}>
       <p>
-        © {new Date().getFullYear()} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
+        © {CURRENT_YEAR} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
       </p>
     </section>
   );
