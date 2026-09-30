@@ -200,6 +200,9 @@ importers:
       '@fontsource/saira-extra-condensed':
         specifier: ^5.3.0
         version: 5.3.0
+      '@pandacss/vite':
+        specifier: ^2.0.0
+        version: 2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0))
       '@react-hookz/web':
         specifier: ^26.1.0
         version: 26.1.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -231,6 +234,12 @@ importers:
       '@pandacss/dev':
         specifier: ^2.0.0
         version: 2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(postcss@8.5.28)
+      '@pandacss/preset-base':
+        specifier: ^2.0.0
+        version: 2.0.0
+      '@pandacss/preset-panda':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@tanstack/devtools-vite':
         specifier: ^0.8.5
         version: 0.8.5(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0))
@@ -1756,9 +1765,38 @@ packages:
     peerDependencies:
       postcss: '>=8'
 
+  '@pandacss/preset-base@2.0.0':
+    resolution: {integrity: sha512-2QcZtX+78DL3w/NlONCZj2UPcMNunv7PEIdceGTF+VS6MD4YoAxK/EGKZo5kB4IizepPjZFWNZCWLmHb6OsPDw==}
+    engines: {node: '>=22'}
+
+  '@pandacss/preset-panda@2.0.0':
+    resolution: {integrity: sha512-evGC1u5iOyG/FHG5XymPaSuMQZFneK19kAYr1iFIG9Fihez5tjVk0VF2ywTDumpygDG1IbdsJUJ3Fo+LnLdCog==}
+    engines: {node: '>=22'}
+
+  '@pandacss/transformer@2.0.0':
+    resolution: {integrity: sha512-qYTPGCR+mWAd7A3jrQj0dIEagxlmWooD7BJvLVJGnxeZtJ3yb2P06WPZgCGAKW985x9xR5whQuK8lVJHNXhwfQ==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      rollup: '>=3.0.0'
+      vite: '>=6.0.0'
+      webpack: '>=5.0.0'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+
   '@pandacss/types@2.0.0':
     resolution: {integrity: sha512-7R7FjgN+4O9f/HFYJ7TpSREYCjOaHkfzdR1QtJTp6Sgwa/4OT+DDt9FsLG1fNVyXhkSWRcXCwUvsSCuIRUV18w==}
     engines: {node: '>=22'}
+
+  '@pandacss/vite@2.0.0':
+    resolution: {integrity: sha512-NwrdDHwaOgyXJvwLEWD9V0Cvc7A8Hc2UGJhcP1OTS5BWN0B+NcnmQK/8eZJ2LuRJT/cw6b2lmOYGqutr55X/CQ==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      vite: '>=6.0.0'
 
   '@parcel/watcher-android-arm64@2.5.6':
     resolution: {integrity: sha512-YQxSS34tPF/6ZG7r/Ih9xy+kP/WwediEUsqmtf0cuCV5TPPKw/PQHRhueUo6JdeFJaqV3pyjm0GdYjZotbRt/A==}
@@ -3899,6 +3937,10 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
+  unplugin@2.3.11:
+    resolution: {integrity: sha512-5uKD0nqiYVzlmCRs01Fhs2BdkEgBS3SAVP6ndrBsuK42iC2+JHyxM05Rm9G8+5mkmRtzMZGY8Ct5+mliZxU/Ww==}
+    engines: {node: '>=18.12.0'}
+
   unplugin@3.3.0:
     resolution: {integrity: sha512-qa66K+crbfyE6JK10GjvbJeRrOsuC/JpbnHctfyp/i4oBTxWOzJfRZyDiOk1PtErMFRu8JhsU/wPvOdBNWe5Rg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -5135,7 +5177,39 @@ snapshots:
       - '@emnapi/core'
       - '@emnapi/runtime'
 
+  '@pandacss/preset-base@2.0.0':
+    dependencies:
+      '@pandacss/types': 2.0.0
+
+  '@pandacss/preset-panda@2.0.0':
+    dependencies:
+      '@pandacss/types': 2.0.0
+
+  '@pandacss/transformer@2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0))':
+    dependencies:
+      '@pandacss/compiler': 2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)
+      '@pandacss/compiler-shared': 2.0.0
+      unplugin: 2.3.11
+    optionalDependencies:
+      rollup: 4.62.4
+      vite: 8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+
   '@pandacss/types@2.0.0': {}
+
+  '@pandacss/vite@2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0))':
+    dependencies:
+      '@pandacss/compiler': 2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)
+      '@pandacss/compiler-shared': 2.0.0
+      '@pandacss/transformer': 2.0.0(@emnapi/core@1.9.1)(@emnapi/runtime@1.11.3)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0))
+      vite: 8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - rollup
+      - webpack
 
   '@parcel/watcher-android-arm64@2.5.6':
     optional: true
@@ -7029,7 +7103,7 @@ snapshots:
   terser@5.44.1:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.15.0
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
     optional: true
@@ -7118,6 +7192,13 @@ snapshots:
       pathe: 2.0.3
 
   universalify@2.0.1: {}
+
+  unplugin@2.3.11:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      acorn: 8.18.0
+      picomatch: 4.0.7
+      webpack-virtual-modules: 0.6.2
 
   unplugin@3.3.0(esbuild@0.28.2)(rolldown@1.2.6)(rollup@4.62.4)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.1)(tsx@4.23.12)(yaml@2.9.0)):
     dependencies:

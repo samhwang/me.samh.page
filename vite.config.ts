@@ -2,6 +2,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 import { cloudflare } from '@cloudflare/vite-plugin';
+import pandacss from '@pandacss/vite';
 import { devtools } from '@tanstack/devtools-vite';
 import { tanstackRouter } from '@tanstack/router-vite-plugin';
 import react from '@vitejs/plugin-react';
@@ -146,6 +147,9 @@ export default defineConfig({
     tanstackRouter({
       target: 'react',
       autoCodeSplitting: true,
+    }),
+    pandacss({
+      transform: true,
     }),
     react({
       compiler: true,
