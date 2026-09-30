@@ -21,7 +21,7 @@ exports[`Render About Data > Should match snapshot 1`] = `
       123 Fake street
     </div>
     <p
-      class="mb_headingMargin fs_1.15rem fw_400"
+      class="fs_1.15rem fw_400 mb_headingMargin"
     >
       Blah
     </p>

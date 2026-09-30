@@ -115,7 +115,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
       </div>
     </nav>
     <div
-      class="w_100% p_0"
+      class="p_0 w_100%"
     >
       <section
         class="section"
@@ -140,7 +140,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
             123 Fake street
           </div>
           <p
-            class="mb_headingMargin fs_1.15rem fw_400"
+            class="fs_1.15rem fw_400 mb_headingMargin"
           >
             Blah
           </p>
@@ -326,10 +326,10 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
             Projects
           </h2>
           <ul
-            class="li-s_none ml_2.5em pl_0 mb_0"
+            class="li-s_none mb_0 ml_2.5em pl_0"
           >
             <li
-              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+              class="mb_0.5rem pos_relative [&::before]:c_warning [&::before]:content_"✓" [&::before]:fs_1.2em [&::before]:fw_bold [&::before]:left_-2em [&::before]:pos_absolute [&::before]:ta_center [&::before]:top_0.14em [&::before]:w_2em"
             >
               <p>
                 <strong>
@@ -339,7 +339,7 @@ exports[`Footer > Should render without crashing and match snapshot 1`] = `
               </p>
             </li>
             <li
-              class="pos_relative mb_0.5rem [&::before]:content_"✓" [&::before]:pos_absolute [&::before]:left_-2em [&::before]:w_2em [&::before]:top_0.14em [&::before]:ta_center [&::before]:c_warning [&::before]:fs_1.2em [&::before]:fw_bold"
+              class="mb_0.5rem pos_relative [&::before]:c_warning [&::before]:content_"✓" [&::before]:fs_1.2em [&::before]:fw_bold [&::before]:left_-2em [&::before]:pos_absolute [&::before]:ta_center [&::before]:top_0.14em [&::before]:w_2em"
             >
               <p>
                 <a
