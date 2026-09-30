@@ -1,9 +1,8 @@
 import { Link } from '@tanstack/react-router';
+import { useState } from 'react';
 
 import { useAboutData } from '../../metadata/use-metadata';
 import * as commonStyles from '../../styled-system/recipes';
-
-const CURRENT_YEAR = new Date().getFullYear();
 
 type FooterLinkProps = {
   to: string;
@@ -19,6 +18,7 @@ function FooterLink({ children, to }: FooterLinkProps) {
 }
 
 export default function Footer() {
+  const [year] = useState(() => new Date().getFullYear());
   const { firstName, lastName, socialLinks } = useAboutData();
   const githubUrl = socialLinks.find((link) => link.name.toLowerCase() === 'github')?.url ?? '#';
 
@@ -36,7 +36,7 @@ export default function Footer() {
   return (
     <section className={commonStyles.section()}>
       <p>
-        © {CURRENT_YEAR} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
+        © {year} {LINKS.github}. Hosted on {LINKS.cloudflare}. Built with {LINKS.vite} and {LINKS.react}.
       </p>
     </section>
   );
