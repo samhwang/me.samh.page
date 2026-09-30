@@ -2,9 +2,17 @@ import { defineConfig, mergeConfig } from 'vitest/config';
 
 import viteConfig from './vite.config.ts';
 
+// Cloudflare plugin starts its own server; exclude it from vitest to avoid conflict
+const filteredPlugins = viteConfig.plugins?.flat().filter((p: any) => !p?.name?.startsWith('vite-plugin-cloudflare')) || [];
+
+const viteConfigForTest = {
+  ...viteConfig,
+  plugins: filteredPlugins,
+};
+
 // https://vitejs.dev/config/
 export default mergeConfig(
-  viteConfig,
+  viteConfigForTest,
   defineConfig({
     test: {
       globals: true,
