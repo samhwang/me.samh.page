@@ -22,8 +22,18 @@ export default mergeConfig(
       coverage: {
         provider: 'v8',
         enabled: !!process.env.CI,
-        exclude: ['styled-system', '**/*.config.*', '**/*.d.ts', '**/*.gen.*', 'src/test-utils/**'],
-        include: ['src/**/**.ts'],
+        exclude: [
+          'styled-system',
+          '**/*.config.*',
+          '**/*.d.ts',
+          '**/*.gen.*',
+          'src/test-utils/**',
+          'src/app.tsx',
+          'src/index.tsx',
+          'src/router.tsx',
+          'src/ui/**/*.recipe*.ts',
+        ],
+        include: ['src/**/**.ts', 'src/**/**.tsx'],
       },
       typecheck: {
         enabled: true,

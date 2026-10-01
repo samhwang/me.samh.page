@@ -15,3 +15,4 @@ styled-system
 
 # TanStack router temp files
 .tanstack
+.vitest/
