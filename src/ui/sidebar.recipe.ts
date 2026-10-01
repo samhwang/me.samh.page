@@ -2,7 +2,21 @@ import { defineSlotRecipe } from '@pandacss/dev';
 
 export const sidebar = defineSlotRecipe({
   className: 'sidebar',
-  slots: ['navigation', 'brand', 'nameText', 'avatarContainer', 'avatar', 'menuToggle', 'menuIcon', 'menu', 'navListWrapper', 'navList', 'navItem', 'navLink'],
+  slots: [
+    'navigation',
+    'brand',
+    'nameText',
+    'avatarContainer',
+    'avatar',
+    'menuToggle',
+    'menuIcon',
+    'menu',
+    'navListWrapper',
+    'tocTitle',
+    'navList',
+    'navItem',
+    'navLink',
+  ],
   base: {
     navigation: {
       position: 'fixed',
@@ -108,19 +122,23 @@ export const sidebar = defineSlotRecipe({
       backgroundSize: '100%',
     },
     menu: {
-      display: 'none',
       flexGrow: 1,
       alignItems: 'center',
-      '&[data-visible="true"]': {
-        display: 'block',
-      },
+      overflow: 'hidden',
+      // Without an explicit animation zag never leaves the closing state.
+      _open: { animation: 'collapsibleExpand 200ms ease-out' },
+      _closed: { animation: 'collapsibleCollapse 200ms ease-out' },
       lg: {
-        display: 'flex !important',
+        display: 'flex',
         alignItems: 'flex-start',
         flexGrow: '0',
         width: '100%',
         marginBottom: 'auto',
       },
+    },
+    // Ark labels the Toc root by its title id, so the title must exist even though it is not shown.
+    tocTitle: {
+      srOnly: true,
     },
     navListWrapper: {
       display: 'flex',
@@ -159,6 +177,9 @@ export const sidebar = defineSlotRecipe({
         color: 'rgba(255, 255, 255, 0.75)',
       },
       '&:focus': {
+        color: 'rgba(255, 255, 255, 0.75)',
+      },
+      '&[data-active]': {
         color: 'rgba(255, 255, 255, 0.75)',
       },
     },

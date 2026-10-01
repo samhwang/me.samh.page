@@ -148,9 +148,9 @@ The `docs/` directory follows the [Diataxis](https://diataxis.fr/) framework. Ea
 
 Current `docs/` structure:
 
-- **`how-to/`**: `01-quick-start`, `02-add-resume-section`
+- **`how-to/`**: `01-quick-start`, `02-add-resume-section`, `03-style-ark-ui-components`
 - **`reference/`**: `01-commands`, `02-project-structure`, `03-design-tokens`
-- **`explanation/`**: `01-architecture`
+- **`explanation/`**: `01-architecture`, `02-use-ark-ui-directly`
 
 When updating docs, do not mix content types. Move how-to steps out of reference docs, move reference tables out of explanation docs, etc.
 

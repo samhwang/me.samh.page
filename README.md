@@ -22,6 +22,7 @@ See [docs/how-to/01-quick-start.md](docs/how-to/01-quick-start.md) for full setu
 - [TypeScript](https://www.typescriptlang.org/) (strict mode)
 - [TanStack Router](https://tanstack.com/router) (file-based routing)
 - [PandaCSS](https://panda-css.com) (zero-runtime CSS-in-JS)
+- [Ark UI](https://ark-ui.com) (headless components, styled with PandaCSS slot recipes)
 - [Vite](https://vite.dev) with [Rolldown](https://rolldown.rs) bundler
 - [Vitest](https://vitest.dev) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) (linting and formatting)

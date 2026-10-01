@@ -25,12 +25,17 @@ exports[`Render About Data > Should match snapshot 1`] = `
     >
       Blah
     </p>
-    <div
-      class="socialIcons"
-    >
+    <div>
       <a
-        aria-label="github-original URL"
+        aria-label="GitHub"
+        class="socialIcon"
+        data-ownedby="_r_0_"
+        data-part="trigger"
+        data-scope="tooltip"
+        data-state="closed"
+        dir="ltr"
         href="https://github.com/testusername"
+        id="tooltip:_r_0_:trigger"
         rel="noreferrer"
         target="_blank"
       >

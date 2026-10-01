@@ -29,12 +29,17 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
       >
         Blah
       </p>
-      <div
-        class="socialIcons"
-      >
+      <div>
         <a
-          aria-label="github-original URL"
+          aria-label="GitHub"
+          class="socialIcon"
+          data-ownedby="_r_0_"
+          data-part="trigger"
+          data-scope="tooltip"
+          data-state="closed"
+          dir="ltr"
           href="https://github.com/testusername"
+          id="tooltip:_r_0_:trigger"
           rel="noreferrer"
           target="_blank"
         >
@@ -86,13 +91,18 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
             <li
               class="d_inline-block"
             >
-              <span
+              <button
                 aria-label="github-original"
-                class="devicon-github-original"
+                class="cursor_auto d_inline-block lh_1 [&_>_span]:d_block focusVisible:ring_2px_solid_currentColor focusVisible:ring-o_2px"
                 data-testid="language-icon-github-original"
-                role="button"
-                tabindex="0"
-              />
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                  class="devicon-github-original"
+                  data-testid="language-icon-glyph-github-original"
+                />
+              </button>
             </li>
           </ul>
         </div>
@@ -184,13 +194,18 @@ exports[`ResumePage > renders without crashing and matches snapshot 1`] = `
         <li
           class="d_inline-block"
         >
-          <span
+          <button
             aria-label="github-original"
-            class="devicon-github-original"
+            class="cursor_auto d_inline-block lh_1 [&_>_span]:d_block focusVisible:ring_2px_solid_currentColor focusVisible:ring-o_2px"
             data-testid="language-icon-github-original"
-            role="button"
-            tabindex="0"
-          />
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+              class="devicon-github-original"
+              data-testid="language-icon-glyph-github-original"
+            />
+          </button>
         </li>
       </ul>
     </div>

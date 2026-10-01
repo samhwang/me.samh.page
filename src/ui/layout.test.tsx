@@ -18,7 +18,7 @@ describe('Layout', () => {
     expect(navigation).toBeInTheDocument();
 
     // Check that at least one sidebar link is present (About)
-    const aboutLink = screen.getByRole('link', { name: 'About' });
+    const aboutLink = screen.getByRole('link', { name: 'About', hidden: true });
     expect(aboutLink).toBeInTheDocument();
   });
 

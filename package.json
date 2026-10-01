@@ -19,6 +19,7 @@
     "ci": "pnpm run lint && pnpm run typecheck && pnpm run test"
   },
   "dependencies": {
+    "@ark-ui/react": "^5.39.2",
     "@fontsource/mulish": "^5.3.0",
     "@fontsource/roboto": "^5.3.0",
     "@fontsource/saira-extra-condensed": "^5.3.0",

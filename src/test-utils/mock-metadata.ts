@@ -19,7 +19,7 @@ export const aboutData: AboutData = {
   socialLinks: [
     {
       icon: 'github-original',
-      name: 'Github',
+      name: 'GitHub',
       url: 'https://github.com/testusername',
     },
   ],

@@ -6,6 +6,7 @@ Welcome to the me.samh.page documentation, organized following the [Diataxis](ht
 
 - [Quick Start](./how-to/01-quick-start.md) — Set up local development
 - [Add a Resume Section](./how-to/02-add-resume-section.md) — Create a new section component with styles and tests
+- [Style Ark UI Components](./how-to/03-style-ark-ui-components.md) — Build Ark UI parts with Panda slot recipes, animations, and tests
 
 ## Reference
 
@@ -16,3 +17,4 @@ Welcome to the me.samh.page documentation, organized following the [Diataxis](ht
 ## Explanation
 
 - [Architecture](./explanation/01-architecture.md) — Tech stack choices, build pipeline, and deployment
+- [Use Ark UI Directly](./explanation/02-use-ark-ui-directly.md) — Why Ark UI, why not Park UI, and the measured cost

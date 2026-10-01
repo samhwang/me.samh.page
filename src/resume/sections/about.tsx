@@ -1,6 +1,6 @@
 import { useAboutData } from '../../../metadata/use-metadata';
 import { css } from '../../../styled-system/css';
-import { fullWidth, socialIcons, subheading, textPrimary, title } from '../../../styled-system/recipes';
+import { fullWidth, subheading, textPrimary, title } from '../../../styled-system/recipes';
 import SocialIcon from '../../ui/social-icon';
 
 export default function About() {
@@ -22,9 +22,9 @@ export default function About() {
       >
         {bio}
       </p>
-      <div className={socialIcons()}>
+      <div>
         {socialLinks.map(({ icon, name, url }) => (
-          <SocialIcon key={name} icon={icon} url={url} />
+          <SocialIcon key={name} icon={icon} name={name} url={url} />
         ))}
       </div>
     </div>

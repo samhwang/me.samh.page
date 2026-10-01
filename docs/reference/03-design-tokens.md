@@ -49,6 +49,17 @@ css({
 });
 ```
 
+## Keyframes
+
+Defined under `theme.extend.keyframes` in `panda.config.ts`. Ark UI parts that mount and unmount use these through `_open` and `_closed` conditions.
+
+| Keyframe              | Usage                     |
+| --------------------- | ------------------------- |
+| `collapsibleExpand`   | Collapsible content open  |
+| `collapsibleCollapse` | Collapsible content close |
+| `tooltipFadeIn`       | Tooltip content open      |
+| `tooltipFadeOut`      | Tooltip content close     |
+
 ## Breakpoints
 
 Mobile-first responsive design. Default styles apply to mobile, then override at larger sizes.

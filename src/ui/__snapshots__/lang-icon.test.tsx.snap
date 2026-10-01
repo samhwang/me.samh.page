@@ -5,13 +5,18 @@ exports[`Lang Icon > Should render without crashing and match snapshot 1`] = `
   <li
     class="d_inline-block"
   >
-    <span
+    <button
       aria-label="php-plain"
-      class="devicon-php-plain"
+      class="cursor_auto d_inline-block lh_1 [&_>_span]:d_block focusVisible:ring_2px_solid_currentColor focusVisible:ring-o_2px"
       data-testid="language-icon-php-plain"
-      role="button"
-      tabindex="0"
-    />
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        class="devicon-php-plain"
+        data-testid="language-icon-glyph-php-plain"
+      />
+    </button>
   </li>
 </div>
 `;

@@ -3,8 +3,15 @@
 exports[`Social Icon > Should render without crashing and match snapshot 1`] = `
 <div>
   <a
-    aria-label="github-plain URL"
+    aria-label="GitHub"
+    class="socialIcon"
+    data-ownedby="_r_0_"
+    data-part="trigger"
+    data-scope="tooltip"
+    data-state="closed"
+    dir="ltr"
     href="https://github.com/testusername"
+    id="tooltip:_r_0_:trigger"
     rel="noreferrer"
     target="_blank"
   >

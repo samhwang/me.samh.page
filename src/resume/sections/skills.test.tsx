@@ -39,7 +39,7 @@ describe('Skill Section Component', () => {
     for (const techIcon of mockSkillsData.techStack) {
       const icon = screen.getByTestId(`language-icon-${techIcon}`);
       expect(icon).toBeInTheDocument();
-      expect(icon).toHaveClass(`devicon-${techIcon}`);
+      expect(icon.firstElementChild).toHaveClass(`devicon-${techIcon}`);
     }
   });
 
@@ -64,8 +64,8 @@ describe('Skill Section Component', () => {
     // Each tech icon should be rendered with proper classes
     for (const techIcon of mockSkillsData.techStack) {
       const icon = screen.getByTestId(`language-icon-${techIcon}`);
-      expect(icon).toHaveClass(`devicon-${techIcon}`);
-      expect(icon).toHaveAttribute('role', 'button');
+      expect(icon.firstElementChild).toHaveClass(`devicon-${techIcon}`);
+      expect(icon.tagName).toBe('BUTTON');
     }
   });
 });

@@ -19,7 +19,7 @@ src/
 │   ├── footer.tsx
 │   ├── error-section.tsx
 │   ├── lang-icon.tsx
-│   ├── social-icon.tsx
+│   ├── social-icon.tsx / tooltip.recipe.ts
 │   ├── use-icon-class.ts
 │   ├── common.recipes.ts  # Shared PandaCSS recipes
 │   ├── icon.recipes.ts    # Icon recipes

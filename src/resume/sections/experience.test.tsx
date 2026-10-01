@@ -55,7 +55,7 @@ describe('Experience Component', () => {
     for (const techIcon of jobData.techIcons) {
       const icon = screen.getByTestId(`language-icon-${techIcon}`);
       expect(icon).toBeInTheDocument();
-      expect(icon).toHaveClass(`devicon-${techIcon}`);
+      expect(icon.firstElementChild).toHaveClass(`devicon-${techIcon}`);
     }
   });
 });

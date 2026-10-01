@@ -103,6 +103,7 @@ Add new skills under `.agents/skills/[skill-name]/SKILL.md` as needed.
 - **[TypeScript](https://www.typescriptlang.org/)** (strict mode)
 - **[TanStack Router](https://tanstack.com/router)** (file-based routing)
 - **[PandaCSS](https://panda-css.com)** (zero-runtime CSS-in-JS)
+- **[Ark UI](https://ark-ui.com)** (headless components: Collapsible, Toc, Tooltip), styled with PandaCSS slot recipes
 - **[Vitest](https://vitest.dev)** + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - **[Vite](https://vite.dev)** (with [Rolldown](https://rolldown.rs) bundler)
 - **[Cloudflare Workers](https://developers.cloudflare.com/workers/)** (hosting)

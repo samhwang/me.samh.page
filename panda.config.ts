@@ -1,8 +1,9 @@
 import { defineConfig, defineGlobalStyles } from '@pandacss/dev';
 
 import { fullWidth, heading, link, section, subheading, textPrimary, title } from './src/ui/common.recipes';
-import { devIcons, socialIcons } from './src/ui/icon.recipes';
+import { devIcons, socialIcon } from './src/ui/icon.recipes';
 import { sidebar } from './src/ui/sidebar.recipe';
+import { tooltip } from './src/ui/tooltip.recipe';
 
 const globalCss = defineGlobalStyles({
   body: {
@@ -65,6 +66,24 @@ export default defineConfig({
   globalCss,
   theme: {
     extend: {
+      keyframes: {
+        collapsibleExpand: {
+          from: { height: '0' },
+          to: { height: 'var(--height)' },
+        },
+        collapsibleCollapse: {
+          from: { height: 'var(--height)' },
+          to: { height: '0' },
+        },
+        tooltipFadeIn: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        tooltipFadeOut: {
+          from: { opacity: '1' },
+          to: { opacity: '0' },
+        },
+      },
       tokens: {
         sizes: {
           sidebarWidth: { value: '17rem' },
@@ -103,6 +122,7 @@ export default defineConfig({
       },
       slotRecipes: {
         sidebar,
+        tooltip,
       },
       recipes: {
         section,
@@ -112,7 +132,7 @@ export default defineConfig({
         heading,
         title,
         textPrimary,
-        socialIcons,
+        socialIcon,
         devIcons,
         entryContainer: {
           base: {

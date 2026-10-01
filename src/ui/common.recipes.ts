@@ -10,7 +10,10 @@ export const section = defineRecipe({
     paddingBottom: 'sectionVertical',
     paddingLeft: '2rem',
     maxWidth: 'contentMaxWidth',
+    // Clears the fixed mobile navbar when jumping to an anchor.
+    scrollMarginTop: '54px',
     lg: {
+      scrollMarginTop: 0,
       padding: 'sectionPaddingLg',
       paddingTop: '3rem',
       paddingBottom: '3rem',

@@ -28,6 +28,10 @@ File-based routing was chosen over manual route configuration because it reduces
 
 PandaCSS was chosen over Tailwind CSS for type-safe style definitions and over runtime CSS-in-JS libraries (styled-components, Emotion) for zero runtime cost.
 
+### Ark UI
+
+[Ark UI](https://ark-ui.com) provides headless, accessible components (Collapsible, Toc, Tooltip) that are styled with PandaCSS slot recipes. See [Use Ark UI Directly](./02-use-ark-ui-directly.md) for the decision and its bundle cost.
+
 ### Vite with Rolldown
 
 [Vite](https://vite.dev) with [Rolldown](https://rolldown.rs) handles the build pipeline. Vite provides fast HMR during development, and Rolldown bundles the production build with automatic minification, tree shaking, code splitting, and asset hashing.

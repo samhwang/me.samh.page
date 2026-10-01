@@ -559,6 +559,18 @@ Defined in `panda.config.ts`:
 - Layout variations
 - Interactive states
 
+## Ark UI Patterns
+
+[Ark UI](https://ark-ui.com) with Panda slot recipes. Steps: `docs/how-to/03-style-ark-ui-components.md`. Rationale: `docs/explanation/02-use-ark-ui-directly.md`.
+
+- Import from subpaths only (`@ark-ui/react/tooltip`), never the package root.
+- Slots: `defineSlotRecipe({ slots: xAnatomy.keys() })`, registered in `panda.config.ts`. Apply `classes.part` to each part, never `styled()`.
+- Style state with `_open` and `_closed`. Use keyframes, not transitions, because Ark waits for `animationend`.
+- `asChild` renders a native element (for example `<a>`) as an Ark part.
+- Tooltip: `lazyMount unmountOnExit`, content in `Portal`, label from the social link `name` to match `aria-label`.
+- Collapsible: `open={isLg || open}` via `useMediaQuery`, because preflight's layered `[hidden]` beats CSS overrides.
+- Toc: no `scrollEl`. Render a visually hidden `Toc.Title` (`span`), because Ark labels the root by its id.
+
 ## Testing Patterns
 
 ### Component Testing
@@ -598,6 +610,20 @@ Use `render-wrapper.tsx` for tests needing providers:
 import { render } from '../test-utils/render-wrapper';
 
 render(<Component />); // Already wrapped with providers
+```
+
+### Ark UI Components
+
+`src/test-utils/setups/ark.ts` stubs `IntersectionObserver`, `ResizeObserver`, `scrollIntoView` and `matchMedia`. Tests using `userEvent` need real timers:
+
+```typescript
+beforeEach(() => {
+  vi.useRealTimers();
+});
+
+afterEach(() => {
+  vi.useFakeTimers();
+});
 ```
 
 ### Snapshot Tests

@@ -5,6 +5,11 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
   <div>
     <nav
       class="sidebar__navigation"
+      data-part="root"
+      data-scope="collapsible"
+      data-state="closed"
+      dir="ltr"
+      id="collapsible:_r_0_"
     >
       <a
         class="sidebar__brand"
@@ -36,13 +41,15 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
         </span>
       </a>
       <button
-        aria-controls="_r_0_"
+        aria-controls="collapsible:_r_0_:content"
         aria-expanded="false"
         aria-label="Toggle navigation"
         class="sidebar__menuToggle"
-        data-collapsed="true"
-        data-target="#_r_0_"
-        data-toggle="collapse"
+        data-part="trigger"
+        data-scope="collapsible"
+        data-state="closed"
+        dir="ltr"
+        id="collapsible:_r_0_:trigger"
         type="button"
       >
         <span
@@ -51,61 +58,145 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
       </button>
       <div
         class="sidebar__menu"
-        data-visible="false"
-        id="_r_0_"
+        data-collapsible=""
+        data-part="content"
+        data-scope="collapsible"
+        data-state="closed"
+        dir="ltr"
+        hidden=""
+        id="collapsible:_r_0_:content"
+        style="--height: 0px; --width: 0px;"
       >
         <div
+          aria-labelledby="toc:_r_1_:title"
           class="sidebar__navListWrapper"
+          data-part="root"
+          data-scope="toc"
+          dir="ltr"
+          id="toc:_r_1_"
         >
+          <span
+            class="sidebar__tocTitle"
+            data-part="title"
+            data-scope="toc"
+            dir="ltr"
+            id="toc:_r_1_:title"
+          >
+            Sections
+          </span>
           <ul
             class="sidebar__navList"
+            data-part="list"
+            data-scope="toc"
+            dir="ltr"
+            id="toc:_r_1_:list"
           >
             <li
               class="sidebar__navItem"
+              data-depth="1"
+              data-part="item"
+              data-scope="toc"
+              data-value="about"
+              dir="ltr"
+              id="toc:_r_1_:item-about"
+              style="--depth: 1;"
             >
               <a
                 class="sidebar__navLink"
+                data-part="link"
+                data-scope="toc"
+                data-value="about"
+                dir="ltr"
                 href="#about"
+                id="toc:_r_1_:link-about"
               >
                 About
               </a>
             </li>
             <li
               class="sidebar__navItem"
+              data-depth="1"
+              data-part="item"
+              data-scope="toc"
+              data-value="experience"
+              dir="ltr"
+              id="toc:_r_1_:item-experience"
+              style="--depth: 1;"
             >
               <a
                 class="sidebar__navLink"
+                data-part="link"
+                data-scope="toc"
+                data-value="experience"
+                dir="ltr"
                 href="#experience"
+                id="toc:_r_1_:link-experience"
               >
                 Experience
               </a>
             </li>
             <li
               class="sidebar__navItem"
+              data-depth="1"
+              data-part="item"
+              data-scope="toc"
+              data-value="education"
+              dir="ltr"
+              id="toc:_r_1_:item-education"
+              style="--depth: 1;"
             >
               <a
                 class="sidebar__navLink"
+                data-part="link"
+                data-scope="toc"
+                data-value="education"
+                dir="ltr"
                 href="#education"
+                id="toc:_r_1_:link-education"
               >
                 Education
               </a>
             </li>
             <li
               class="sidebar__navItem"
+              data-depth="1"
+              data-part="item"
+              data-scope="toc"
+              data-value="skills"
+              dir="ltr"
+              id="toc:_r_1_:item-skills"
+              style="--depth: 1;"
             >
               <a
                 class="sidebar__navLink"
+                data-part="link"
+                data-scope="toc"
+                data-value="skills"
+                dir="ltr"
                 href="#skills"
+                id="toc:_r_1_:link-skills"
               >
                 Skills
               </a>
             </li>
             <li
               class="sidebar__navItem"
+              data-depth="1"
+              data-part="item"
+              data-scope="toc"
+              data-value="projects"
+              dir="ltr"
+              id="toc:_r_1_:item-projects"
+              style="--depth: 1;"
             >
               <a
                 class="sidebar__navLink"
+                data-part="link"
+                data-scope="toc"
+                data-value="projects"
+                dir="ltr"
                 href="#projects"
+                id="toc:_r_1_:link-projects"
               >
                 Projects
               </a>
@@ -144,12 +235,17 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
           >
             Blah
           </p>
-          <div
-            class="socialIcons"
-          >
+          <div>
             <a
-              aria-label="github-original URL"
+              aria-label="GitHub"
+              class="socialIcon"
+              data-ownedby="_r_2_"
+              data-part="trigger"
+              data-scope="tooltip"
+              data-state="closed"
+              dir="ltr"
               href="https://github.com/testusername"
+              id="tooltip:_r_2_:trigger"
               rel="noreferrer"
               target="_blank"
             >
@@ -201,13 +297,18 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
                 <li
                   class="d_inline-block"
                 >
-                  <span
+                  <button
                     aria-label="github-original"
-                    class="devicon-github-original"
+                    class="cursor_auto d_inline-block lh_1 [&_>_span]:d_block focusVisible:ring_2px_solid_currentColor focusVisible:ring-o_2px"
                     data-testid="language-icon-github-original"
-                    role="button"
-                    tabindex="0"
-                  />
+                    type="button"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="devicon-github-original"
+                      data-testid="language-icon-glyph-github-original"
+                    />
+                  </button>
                 </li>
               </ul>
             </div>
@@ -299,13 +400,18 @@ exports[`Layout > renders without crashing and matches snapshot 1`] = `
             <li
               class="d_inline-block"
             >
-              <span
+              <button
                 aria-label="github-original"
-                class="devicon-github-original"
+                class="cursor_auto d_inline-block lh_1 [&_>_span]:d_block focusVisible:ring_2px_solid_currentColor focusVisible:ring-o_2px"
                 data-testid="language-icon-github-original"
-                role="button"
-                tabindex="0"
-              />
+                type="button"
+              >
+                <span
+                  aria-hidden="true"
+                  class="devicon-github-original"
+                  data-testid="language-icon-glyph-github-original"
+                />
+              </button>
             </li>
           </ul>
         </div>
