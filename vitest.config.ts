@@ -22,7 +22,7 @@ export default mergeConfig(
       coverage: {
         provider: 'v8',
         enabled: !!process.env.CI,
-        exclude: ['styled-system', '**/*.config.*', '**/*.d.ts', '**/*.gen.*', 'src/test-utils'],
+        exclude: ['styled-system', '**/*.config.*', '**/*.d.ts', '**/*.gen.*', 'src/test-utils/**'],
         include: ['src/**/**.ts'],
       },
       typecheck: {
