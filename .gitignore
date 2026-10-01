@@ -12,3 +12,6 @@ styled-system
 
 # Wrangler cache
 .wrangler
+
+# TanStack router temp files
+.tanstack
