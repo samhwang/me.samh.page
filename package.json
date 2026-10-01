@@ -16,7 +16,7 @@
     "lint": "oxlint . && oxfmt --check .",
     "lint:fix": "oxlint --fix . && oxfmt --write .",
     "lint:fix:unsafe": "oxlint --fix-dangerously . && oxfmt --write .",
-    "ci": "pnpm run lint && pnpm run typecheck && pnpm run test"
+    "ci": "pnpm run --parallel \"/^(lint|typecheck|test)$/\""
   },
   "dependencies": {
     "@ark-ui/react": "^5.39.2",

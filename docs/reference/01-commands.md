@@ -13,7 +13,7 @@ All available [pnpm](https://pnpm.io) scripts for development, testing, and depl
 | `pnpm lint`            | Lint + format check ([Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter), read-only) |
 | `pnpm lint:fix`        | Auto-fix linting issues and format files                                                                                               |
 | `pnpm lint:fix:unsafe` | Fix including unsafe transformations                                                                                                   |
-| `pnpm ci`              | Full check: lint + typecheck + test                                                                                                    |
+| `pnpm run ci`          | Full check: lint, typecheck and test, run in parallel                                                                                  |
 | `pnpm test`            | Run tests once ([Vitest](https://vitest.dev))                                                                                          |
 | `pnpm test:coverage`   | Run tests with coverage reports                                                                                                        |
 | `pnpm panda:codegen`   | Generate [PandaCSS](https://panda-css.com) utilities                                                                                   |
