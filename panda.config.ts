@@ -7,8 +7,8 @@ import { sidebar } from './src/ui/sidebar.recipe';
 const globalCss = defineGlobalStyles({
   body: {
     pt: '54px',
-    color: 'gray.600!',
-    fontFamily: 'body!',
+    color: 'gray.600',
+    fontFamily: 'body',
     lg: {
       pt: 0,
       pl: '17rem',
