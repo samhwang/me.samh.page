@@ -1,6 +1,8 @@
+import { createMemoryHistory, createRootRoute, createRouter, RouterProvider } from '@tanstack/react-router';
 import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
+import { useAboutData } from '../../metadata/use-metadata';
 import { aboutData } from '../test-utils/mock-metadata';
 import RenderWrapper from '../test-utils/render-wrapper';
 import Footer from './footer';
@@ -45,5 +47,26 @@ describe('Footer', () => {
     // Test React link
     const reactLink = screen.getByRole('link', { name: 'React' });
     expect(reactLink).toHaveAttribute('href', 'https://reactjs.org/');
+  });
+
+  describe('without a GitHub social link', () => {
+    afterEach(() => {
+      vi.mocked(useAboutData).mockReturnValue(aboutData);
+    });
+
+    it('falls back to a hash link for the author link', async () => {
+      vi.mocked(useAboutData).mockReturnValue({ ...aboutData, socialLinks: [] });
+      // RenderWrapper mounts the whole page, so Footer is isolated in its own router.
+      const router = createRouter({
+        routeTree: createRootRoute({ component: Footer }),
+        history: createMemoryHistory({ initialEntries: ['/'] }),
+      });
+      await router.load();
+      render(<RouterProvider router={router} />);
+
+      const authorLink = await screen.findByRole('link', { name: `${aboutData.firstName} ${aboutData.lastName}` });
+      // TanStack Router resolves the '#' fallback against the current path.
+      expect(authorLink).toHaveAttribute('href', '/#');
+    });
   });
 });

@@ -86,4 +86,16 @@ describe('Lang Icon', () => {
     await user.keyboard(key);
     expect(getGlyph()).not.toHaveClass('colored');
   });
+
+  it('should not toggle colored class on non-activating keypress', async () => {
+    const user = userEvent.setup();
+    render(<LangIcon name={ICON_NAME} />);
+    const button = screen.getByRole('button', { name: ICON_NAME });
+
+    await user.tab();
+    expect(button).toHaveFocus();
+
+    await user.keyboard('a');
+    expect(getGlyph()).not.toHaveClass('colored');
+  });
 });
