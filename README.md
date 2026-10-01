@@ -10,6 +10,7 @@ Personal portfolio and resume website, hosted on [Cloudflare Workers](https://de
 
 ```bash
 pnpm install
+pnpm run prepare
 pnpm dev
 ```
 
