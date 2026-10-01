@@ -168,12 +168,12 @@ export const metadata: Metadata = {
     socialLinks: [
       {
         icon: ICONS.GITHUB,
-        name: 'Github',
+        name: 'GitHub',
         url: 'https://github.com/samhwang',
       },
       {
         icon: ICONS.LINKEDIN,
-        name: 'Linkedin',
+        name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/samhwang2112/',
       },
     ],
