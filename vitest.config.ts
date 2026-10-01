@@ -18,6 +18,7 @@ export default mergeConfig(
       globals: true,
       environment: 'jsdom',
       setupFiles: ['src/setup-tests.ts'],
+      pool: 'vmThreads',
       coverage: {
         provider: 'v8',
         enabled: !!process.env.CI,
