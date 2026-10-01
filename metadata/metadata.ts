@@ -142,7 +142,6 @@ export type PersonalInformation = {
   lastName: string;
   bio: string;
   socialLinks: SocialLink[];
-  email: string;
   address: string;
   experience: Job[];
   education: School[];
@@ -178,7 +177,6 @@ export const metadata: Metadata = {
         url: 'https://www.linkedin.com/in/samhwang2112/',
       },
     ],
-    email: 'samhwang2112.dev@gmail.com',
     address: 'Melbourne, Victoria, Australia',
     experience: [
       {
