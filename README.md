@@ -1,8 +1,8 @@
 # me.samh.page
 
-![GitHub](https://img.shields.io/github/license/samhwang/samhwang.github.io?style=for-the-badge)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samhwang/samhwang.github.io?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/samhwang/samhwang.github.io?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/samhwang/me.samh.page?style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/samhwang/me.samh.page?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/samhwang/me.samh.page?style=for-the-badge)
 
 Personal portfolio and resume website, hosted on [Cloudflare Workers](https://developers.cloudflare.com/workers/).
 
