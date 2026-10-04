@@ -142,11 +142,6 @@ import { sectionNameData as mockData } from '../test-utils/mock-metadata';
 import SectionNameSection from './section-name';
 
 describe('SectionNameSection', () => {
-  it('should match snapshot', () => {
-    const { container } = render(<SectionNameSection />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<SectionNameSection />);
     const heading = screen.getByRole('heading', { name: 'Section Name', level: 2 });
@@ -165,7 +160,6 @@ describe('SectionNameSection', () => {
 
 - Import `render` and `screen` from `@testing-library/react` directly
 - Import mock data from `../test-utils/mock-metadata`
-- Include snapshot test
 - Test heading renders with correct name and level
 - Test item data displays
 
@@ -206,7 +200,7 @@ pnpm dev
 - [ ] Component uses hook pattern for data
 - [ ] Component has early return for empty state
 - [ ] Test file created at `src/resume/section-name.test.tsx`
-- [ ] Tests include snapshot, heading, and data assertions
+- [ ] Tests include heading and data assertions
 - [ ] Section added to `src/routes/index.tsx` sections array
 - [ ] `pnpm typecheck` passes
 - [ ] `pnpm lint` passes

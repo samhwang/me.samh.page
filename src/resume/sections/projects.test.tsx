@@ -5,11 +5,6 @@ import { projectsData as mockProjectsData } from '../../test-utils/mock-metadata
 import ProjectSection from './projects';
 
 describe('Project section rendering', () => {
-  it('Should match snapshot', () => {
-    const { container } = render(<ProjectSection />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<ProjectSection />);
     const heading = screen.getByRole('heading', { name: 'Projects', level: 2 });

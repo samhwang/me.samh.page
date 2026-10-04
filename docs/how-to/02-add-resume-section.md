@@ -157,11 +157,6 @@ import { certificationsData as mockData } from '../test-utils/mock-metadata';
 import CertificationsSection from './certifications';
 
 describe('CertificationsSection', () => {
-  it('should match snapshot', () => {
-    const { container } = render(<CertificationsSection />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<CertificationsSection />);
     const heading = screen.getByRole('heading', { name: 'Certifications', level: 2 });

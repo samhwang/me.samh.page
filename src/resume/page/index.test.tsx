@@ -4,11 +4,6 @@ import { describe, expect, it } from 'vitest';
 import { ResumePage } from './index';
 
 describe('ResumePage', () => {
-  it('renders without crashing and matches snapshot', () => {
-    const { container } = render(<ResumePage />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('renders all section headings', () => {
     render(<ResumePage />);
 

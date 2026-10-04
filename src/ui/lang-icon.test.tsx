@@ -8,11 +8,6 @@ const ICON_NAME = 'php-plain';
 const getGlyph = () => screen.getByTestId(`language-icon-glyph-${ICON_NAME}`);
 
 describe('Lang Icon', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const { container } = render(<LangIcon name={ICON_NAME} />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('should show the icon', () => {
     render(<LangIcon name={ICON_NAME} />);
     const icon = screen.getByTestId(`language-icon-${ICON_NAME}`);

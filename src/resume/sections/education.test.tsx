@@ -5,11 +5,6 @@ import { educationData as mockEducationData } from '../../test-utils/mock-metada
 import Education from './education';
 
 describe('Education section render', () => {
-  it('Should match snapshot', () => {
-    const { container } = render(<Education />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<Education />);
     const heading = screen.getByRole('heading', { name: 'Education', level: 2 });

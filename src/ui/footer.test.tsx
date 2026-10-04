@@ -8,11 +8,6 @@ import RenderWrapper from '../test-utils/render-wrapper';
 import Footer from './footer';
 
 describe('Footer', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const { container } = render(<Footer />, { wrapper: RenderWrapper });
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays copyright with current year', () => {
     render(<Footer />, { wrapper: RenderWrapper });
 

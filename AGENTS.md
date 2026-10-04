@@ -82,7 +82,7 @@ Load these rules when working on relevant domains:
 - **[commands.md](.agents/rules/commands.md)** - Complete reference of available pnpm commands, development workflow
 - **[code-style.md](.agents/rules/code-style.md)** - Code formatting, TypeScript conventions, naming, file organization, comment philosophy
 - **[patterns.md](.agents/rules/patterns.md)** - React 19 patterns, TanStack Router usage, PandaCSS styling, testing patterns
-- **[testing.md](.agents/rules/testing.md)** - Vitest setup, React Testing Library, snapshot tests, coverage expectations
+- **[testing.md](.agents/rules/testing.md)** - Vitest setup, React Testing Library, coverage expectations
 - **[deployment.md](.agents/rules/deployment.md)** - Cloudflare Workers deployment, build process, troubleshooting
 - **[communication.md](.agents/rules/communication.md)** - Commit messages, documentation style, American English, writing conventions
 

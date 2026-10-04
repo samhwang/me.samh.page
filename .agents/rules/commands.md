@@ -170,14 +170,6 @@ pnpm install
 
 Nuclear option if dependencies are corrupted.
 
-### Update Snapshots
-
-```bash
-pnpm test -- -u   # Update all snapshots
-```
-
-**Warning**: Review snapshot changes carefully before committing.
-
 ## Environment Requirements
 
 - **Node**: 24.x (specified in package.json)

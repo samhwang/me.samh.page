@@ -5,11 +5,6 @@ import { skillsData as mockSkillsData } from '../../test-utils/mock-metadata';
 import SkillSection from './skills';
 
 describe('Skill Section Component', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const { container } = render(<SkillSection />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<SkillSection />);
     const heading = screen.getByRole('heading', { name: 'Skills and Proficiency', level: 2 });

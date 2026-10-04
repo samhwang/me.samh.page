@@ -5,11 +5,6 @@ import { aboutData as mockAboutData } from '../../test-utils/mock-metadata';
 import About from './about';
 
 describe('Render About Data', () => {
-  it('Should match snapshot', () => {
-    const { container } = render(<About />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('Should contain correct About content', () => {
     render(<About />);
 

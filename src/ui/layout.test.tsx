@@ -5,11 +5,6 @@ import RenderWrapper from '../test-utils/render-wrapper';
 import Layout from './layout';
 
 describe('Layout', () => {
-  it('renders without crashing and matches snapshot', () => {
-    const { container } = render(<Layout />, { wrapper: RenderWrapper });
-    expect(container).toMatchSnapshot();
-  });
-
   it('renders Sidebar component', () => {
     render(<Layout />, { wrapper: RenderWrapper });
 

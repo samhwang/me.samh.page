@@ -9,11 +9,6 @@ const NAME = 'GitHub';
 const URL = 'https://github.com/testusername';
 
 describe('Social Icon', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const { container } = render(<SocialIcon icon={ICON_NAME} name={NAME} url={URL} />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('should show the icon', () => {
     render(<SocialIcon icon={ICON_NAME} name={NAME} url={URL} />);
     const icon = screen.getByTestId(`social-icon-${ICON_NAME}`);

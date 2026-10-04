@@ -65,7 +65,6 @@ The CLI check is more comprehensive than editor feedback. Trust this output.
 ```bash
 pnpm test              # See all failures at once
 pnpm test:coverage     # Run tests with coverage reports
-pnpm test -- -u        # Update snapshots (review changes carefully)
 ```
 
 ### Clean install

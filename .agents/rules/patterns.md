@@ -628,21 +628,7 @@ afterEach(() => {
 
 ### Snapshot Tests
 
-For stable component structures:
-
-```typescript
-import { render } from '../test-utils/render-wrapper';
-import { Component } from './component';
-
-describe('Component', () => {
-  it('matches snapshot', () => {
-    const { container } = render(<Component />);
-    expect(container).toMatchSnapshot();
-  });
-});
-```
-
-**Important**: Snapshots stored in `__snapshots__/` (auto-generated, don't edit)
+Not used. See [testing.md](testing.md) for the rationale. Assert against roles, text, and attributes.
 
 ### User Interactions
 

@@ -5,11 +5,6 @@ import { experienceData as mockExperienceData } from '../../test-utils/mock-meta
 import Experiences from './experience';
 
 describe('Experience Component', () => {
-  it('Should render without crashing and match snapshot', () => {
-    const { container } = render(<Experiences />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('displays the section heading', () => {
     render(<Experiences />);
     const heading = screen.getByRole('heading', { name: 'Experience', level: 2 });

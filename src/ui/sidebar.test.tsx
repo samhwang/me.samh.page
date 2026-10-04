@@ -6,11 +6,6 @@ import { sidebarData as mockSidebarData } from '../test-utils/mock-metadata';
 import Sidebar from './sidebar';
 
 describe('Sidebar', () => {
-  it('renders without crashing and matches snapshot', () => {
-    const { container } = render(<Sidebar />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('does not leave a dangling aria-labelledby reference', () => {
     const { container } = render(<Sidebar />);
 
